@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorator (0.1)
+    fastercsv (1.5.5)
     ffi (1.9.10)
     jekyll (3.0.1)
       colorator (~> 0.1)
@@ -12,6 +13,10 @@ GEM
       mercenary (~> 0.3.3)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-import (0.9.0)
+      fastercsv
+      jekyll (>= 1.4)
+      nokogiri
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
     jekyll-watch (1.3.0)
@@ -22,6 +27,9 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.5)
+    mini_portile2 (2.0.0)
+    nokogiri (1.6.7.1)
+      mini_portile2 (~> 2.0.0.rc2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -34,6 +42,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  jekyll-import
 
 BUNDLED WITH
    1.10.6
