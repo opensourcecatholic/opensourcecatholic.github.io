@@ -4,7 +4,7 @@
 .site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
-    min-height: 115px;
+    min-height: 110px;
     background-color: $osc-color;
 
     // Positioning context for the mobile navigation icon
@@ -15,12 +15,14 @@
     color: $inverse-text-color;
     font-size: 26px;
     font-weight: 300;
-    line-height: 110px;
+    line-height: 105px;
     margin-bottom: 0;
     float: left;
 
     &,
-    &:visited {
+    &:visited,
+    &:hover {
+        text-decoration: none;
         color: $inverse-text-color;
     }
 }
