@@ -25,3 +25,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+
+# Gems
+gems:
+  - jekyll-redirect-from

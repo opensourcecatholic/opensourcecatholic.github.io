@@ -1,25 +1,20 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "OSC Migration to Jekyll and GitHub Pages"
 date:   2016-01-01 15:44:06 -0500
-categories: jekyll update
+categories: jekyll update github pages drupal migrate
+redirect_from:
+  - /test/redirect
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+After almost eight years with Open Source Catholic as a Drupal 7 website hosted on infrastructure generously provided by Midwestern Mac, an effort is underway to migrate all the Drupal content into a static Jekyll-powered site hosted on GitHub Pages.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+To maintain consistency, and make sure the site is ready for many more years of content and community, we'll be doing some of the following in the coming months:
 
-Jekyll also offers powerful support for code snippets:
+  1. Migrating existing comments to Disqus.
+  2. Migrating existing forum topics and book pages into 'blog' style posts.
+  3. Migrating user information into Jekyll so post authorship is maintained.
+  4. Ensuring all (or at least most) URLs are redirected to the new Jekyll style correctly.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Please bear with us as this process will likely take a little while (weeks? months?), and some URLs might be affected by the migration.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+If you would like to keep track of the development progress or contribute, please check out the [Open Source Catholic](https://github.com/opensourcecatholic) organization on GitHub.
