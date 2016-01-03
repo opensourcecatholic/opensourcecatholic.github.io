@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "IRC Chat - ##Catholic channel"
+title: "IRC"
 permalink: /irc/
 redirect_from:
   - /catholic-irc-chat-channel/
