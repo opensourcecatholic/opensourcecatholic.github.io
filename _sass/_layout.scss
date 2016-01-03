@@ -2,8 +2,6 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
     min-height: 110px;
     background-color: $osc-color;
 
@@ -17,6 +15,7 @@
     font-weight: 300;
     line-height: 105px;
     margin-bottom: 0;
+    margin-left: -10px;
     float: left;
 
     &,
@@ -24,6 +23,10 @@
     &:hover {
         text-decoration: none;
         color: $inverse-text-color;
+    }
+
+    @include media-query($on-palm) {
+        font-size: 24px;
     }
 }
 
