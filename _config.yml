@@ -2,14 +2,13 @@
 title: Open Source Catholic
 email: webmaster@opensourcecatholic.com
 description: >
-  We want to help Catholic developers and organizations involved in software and
-  web development find effective solutions for spreading the Gospel of Jesus
-  Christ.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.opensourcecatholic.com" # the base hostname & protocol for your site
+  Helping Catholic developers and organizations involved in software and web
+  development find effective solutions for spreading the Gospel of Jesus Christ.
+baseurl: ""
+url: "http://www.opensourcecatholic.com"
 twitter_username: oscatholic
 github_username:  opensourcecatholic
-permalink: /:year/:title.html
+permalink: /:year/:title
 
 # Build settings
 markdown: kramdown
