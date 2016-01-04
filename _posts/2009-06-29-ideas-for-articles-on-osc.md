@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ideas for Articles on OSC
-author: oscatholic
+author: Jeff Geerling
 nid: 12
 created: 1246250177
 ---

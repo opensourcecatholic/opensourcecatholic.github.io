@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fear of Apples - Reducing Complexity
-author: oscatholic
+author: Jeff Geerling
 nid: 141
 created: 1255877888
 ---

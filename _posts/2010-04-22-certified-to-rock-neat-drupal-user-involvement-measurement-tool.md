@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Certified to Rock - Neat Drupal User Involvement Measurement Tool
-author: oscatholic
+author: Jeff Geerling
 nid: 255
 created: 1271966805
 ---

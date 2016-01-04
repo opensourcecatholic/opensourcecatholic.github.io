@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Value of Open Source / Contributing Back
-author: oscatholic
+author: Jeff Geerling
 nid: 339
 created: 1287436711
 ---

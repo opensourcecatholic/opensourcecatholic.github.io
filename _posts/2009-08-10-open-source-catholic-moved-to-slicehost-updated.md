@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Source Catholic Moved to Slicehost [Updated]
-author: oscatholic
+author: Jeff Geerling
 nid: 105
 created: 1249876950
 ---

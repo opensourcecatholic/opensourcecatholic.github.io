@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vatican Secret Archive is Digitizing to Open FITS Format
-author: oscatholic
+author: Jeff Geerling
 nid: 258
 created: 1272516095
 ---

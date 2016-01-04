@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'OSV Asks: How effectively does your parish''s website connect?'
-author: oscatholic
+author: Jeff Geerling
 nid: 221
 created: 1269010441
 ---

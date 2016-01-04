@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholics Called to Communicate with Charity
-author: oscatholic
+author: Jeff Geerling
 nid: 152
 created: 1257453534
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OSC Users' RSS Feeds... soon to be aggregated
-author: oscatholic
+author: Jeff Geerling
 nid: 305
 created: 1281386245
 ---

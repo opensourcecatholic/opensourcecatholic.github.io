@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use Text Instead of Text-in-a-Picture/Flier for your Website
-author: oscatholic
+author: Jeff Geerling
 nid: 283
 created: 1276787313
 ---

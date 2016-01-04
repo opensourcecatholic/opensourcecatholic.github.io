@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Forms, Registrations, and Online Event Management
-author: oscatholic
+author: Jeff Geerling
 nid: 245
 created: 1271177295
 ---

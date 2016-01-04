@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '2011: Social Media Tipping Point for the Catholic Church'
-author: oscatholic
+author: Jeff Geerling
 nid: 351
 created: 1289498397
 ---

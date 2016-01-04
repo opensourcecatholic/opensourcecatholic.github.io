@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Website Hosting Management, DNS Information
-author: oscatholic
+author: Jeff Geerling
 nid: 328
 created: 1285096506
 ---

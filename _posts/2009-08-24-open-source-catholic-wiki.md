@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Source Catholic Wiki
-author: oscatholic
+author: Jeff Geerling
 nid: 117
 created: 1251087104
 ---

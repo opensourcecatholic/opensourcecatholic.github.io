@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Website Performance
-author: oscatholic
+author: Jeff Geerling
 nid: 250
 created: 1271784155
 ---

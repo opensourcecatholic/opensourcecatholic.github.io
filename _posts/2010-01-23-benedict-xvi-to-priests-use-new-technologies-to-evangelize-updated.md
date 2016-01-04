@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Benedict XVI to Priests: Use New Technologies to Evangelize! [UPDATED]'
-author: oscatholic
+author: Jeff Geerling
 nid: 202
 created: 1264266802
 ---

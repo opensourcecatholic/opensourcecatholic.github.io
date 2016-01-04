@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Major Updates to Open Source Catholic!
-author: oscatholic
+author: Jeff Geerling
 nid: 242
 created: 1270272056
 ---

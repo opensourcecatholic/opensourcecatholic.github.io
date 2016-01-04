@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CKEditor Installed instead of FCKEditor
-author: oscatholic
+author: Jeff Geerling
 nid: 172
 created: 1260004660
 ---

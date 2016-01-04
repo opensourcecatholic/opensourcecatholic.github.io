@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OpenPublish - A solution for newspapers wanting to go Digital
-author: oscatholic
+author: Jeff Geerling
 nid: 90
 created: 1249245868
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting up an Apache Solr Search Server (for many sites/hosts)
-author: oscatholic
+author: Jeff Geerling
 nid: 289
 created: 1277828235
 ---

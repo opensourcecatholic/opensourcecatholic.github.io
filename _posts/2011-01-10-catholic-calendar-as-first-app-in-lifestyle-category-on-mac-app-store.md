@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholic Calendar as First App in 'Lifestyle' Category on Mac App Store
-author: oscatholic
+author: Jeff Geerling
 nid: 365
 created: 1294642347
 ---

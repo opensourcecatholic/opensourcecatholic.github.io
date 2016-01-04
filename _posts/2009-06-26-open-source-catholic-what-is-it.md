@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Source Catholic - What is it?
-author: oscatholic
+author: Jeff Geerling
 nid: 2
 created: 1246057116
 ---

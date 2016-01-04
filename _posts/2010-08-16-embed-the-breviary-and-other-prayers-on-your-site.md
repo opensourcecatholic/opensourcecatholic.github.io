@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Embed the Breviary (and other Prayers) on your Site
-author: oscatholic
+author: Jeff Geerling
 nid: 307
 created: 1281985922
 ---

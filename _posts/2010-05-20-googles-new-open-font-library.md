@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google's New Open Font Library
-author: oscatholic
+author: Jeff Geerling
 nid: 266
 created: 1274332878
 ---

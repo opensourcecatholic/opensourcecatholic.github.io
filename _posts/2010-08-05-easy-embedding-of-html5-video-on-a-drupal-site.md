@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Easy Embedding of HTML5 Video on a Drupal Site
-author: oscatholic
+author: Jeff Geerling
 nid: 302
 created: 1281025191
 ---

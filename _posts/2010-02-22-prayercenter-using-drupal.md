@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PrayerCenter (using Drupal)
-author: oscatholic
+author: Jeff Geerling
 nid: 204
 created: 1266840000
 ---

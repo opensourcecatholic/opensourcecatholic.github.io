@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vatican.va Getting an Upgrade!
-author: oscatholic
+author: Jeff Geerling
 nid: 306
 created: 1281653675
 ---

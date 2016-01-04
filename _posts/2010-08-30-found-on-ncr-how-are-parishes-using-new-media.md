@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Found on NCR: How are parishes using new media?'
-author: oscatholic
+author: Jeff Geerling
 nid: 317
 created: 1283211305
 ---

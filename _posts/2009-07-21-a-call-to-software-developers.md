@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Call to Software Developers
-author: oscatholic
+author: Jeff Geerling
 nid: 60
 created: 1248187031
 ---

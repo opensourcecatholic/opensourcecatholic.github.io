@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Social Media Policies
-author: oscatholic
+author: Jeff Geerling
 nid: 293
 created: 1278606772
 ---

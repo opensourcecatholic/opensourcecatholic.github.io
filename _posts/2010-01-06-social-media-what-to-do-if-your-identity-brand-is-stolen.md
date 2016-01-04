@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Social Media: What to do if your Identity/Brand is Stolen'
-author: oscatholic
+author: Jeff Geerling
 nid: 193
 created: 1262800024
 ---

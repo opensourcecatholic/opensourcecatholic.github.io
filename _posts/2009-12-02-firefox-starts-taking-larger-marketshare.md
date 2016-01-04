@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FireFox Starts Taking Larger Marketshare
-author: oscatholic
+author: Jeff Geerling
 nid: 169
 created: 1259767632
 ---

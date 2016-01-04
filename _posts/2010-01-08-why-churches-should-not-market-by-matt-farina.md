@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '"Why Churches Should Not Market" (by Matt Farina)'
-author: oscatholic
+author: Jeff Geerling
 nid: 195
 created: 1262985077
 ---

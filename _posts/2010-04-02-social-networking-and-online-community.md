@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Social Networking and Online Community
-author: oscatholic
+author: Jeff Geerling
 nid: 234
 created: 1270247128
 ---

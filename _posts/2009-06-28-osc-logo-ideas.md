@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OSC Logo Ideas?
-author: oscatholic
+author: Jeff Geerling
 nid: 11
 created: 1246233216
 ---

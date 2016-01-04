@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Few Site Updates
-author: oscatholic
+author: Jeff Geerling
 nid: 163
 created: 1258787994
 ---

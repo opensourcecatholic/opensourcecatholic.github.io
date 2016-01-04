@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Post Photos to Your Drupal Site from the iPad
-author: oscatholic
+author: Jeff Geerling
 nid: 265
 created: 1273796616
 ---

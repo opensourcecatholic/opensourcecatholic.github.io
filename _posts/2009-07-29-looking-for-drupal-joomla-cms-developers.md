@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Looking for Drupal / Joomla / CMS Developers
-author: oscatholic
+author: Jeff Geerling
 nid: 78
 created: 1248893639
 ---

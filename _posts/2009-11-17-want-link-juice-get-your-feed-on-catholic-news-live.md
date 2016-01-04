@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Want Link Juice? Get your Feed on Catholic News Live.
-author: oscatholic
+author: Jeff Geerling
 nid: 151
 created: 1258499241
 ---

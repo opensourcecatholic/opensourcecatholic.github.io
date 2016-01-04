@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Build a Drupal Module - for Beginners
-author: oscatholic
+author: Jeff Geerling
 nid: 344
 created: 1288321838
 ---

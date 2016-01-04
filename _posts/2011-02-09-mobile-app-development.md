@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mobile App Development?
-author: oscatholic
+author: Jeff Geerling
 nid: 372
 created: 1297280824
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Parish School Websites
-author: oscatholic
+author: Jeff Geerling
 nid: 313
 created: 1283090057
 ---

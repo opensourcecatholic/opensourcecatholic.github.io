@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Priests and New/Social Media
-author: oscatholic
+author: Jeff Geerling
 nid: 46
 created: 1247528109
 ---

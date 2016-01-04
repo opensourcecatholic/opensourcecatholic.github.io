@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What Makes a Good Parish Website?
-author: oscatholic
+author: Jeff Geerling
 nid: 143
 created: 1256662071
 ---

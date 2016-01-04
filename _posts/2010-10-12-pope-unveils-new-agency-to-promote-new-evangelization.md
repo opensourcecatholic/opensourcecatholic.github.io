@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pope unveils new agency to promote 'new evangelization'
-author: oscatholic
+author: Jeff Geerling
 nid: 335
 created: 1286897154
 ---

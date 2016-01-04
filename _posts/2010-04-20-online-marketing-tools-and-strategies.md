@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Online Marketing Tools and Strategies
-author: oscatholic
+author: Jeff Geerling
 nid: 251
 created: 1271785387
 ---

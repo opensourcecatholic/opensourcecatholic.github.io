@@ -1,7 +1,7 @@
 ---
 layout: post
 title: U.S. Archdioceses and Dioceses on Facebook
-author: oscatholic
+author: Jeff Geerling
 nid: 93
 created: 1249484416
 ---

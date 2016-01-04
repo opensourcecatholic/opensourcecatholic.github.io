@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working on a new Intranet - Sharepoint vs. Drupal
-author: oscatholic
+author: Jeff Geerling
 nid: 316
 created: 1283203256
 ---

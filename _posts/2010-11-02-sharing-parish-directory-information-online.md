@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sharing Parish Directory Information Online
-author: oscatholic
+author: Jeff Geerling
 nid: 346
 created: 1288733297
 ---

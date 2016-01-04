@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Good Warriors of the Net - IP for Peace!
-author: oscatholic
+author: Jeff Geerling
 nid: 70
 created: 1248587462
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drupal Gardens enters Open Public Beta
-author: oscatholic
+author: Jeff Geerling
 nid: 299
 created: 1279832570
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Speeding up a Site: Quicker 404 Errors for files in Drupal'
-author: oscatholic
+author: Jeff Geerling
 nid: 256
 created: 1272480697
 ---

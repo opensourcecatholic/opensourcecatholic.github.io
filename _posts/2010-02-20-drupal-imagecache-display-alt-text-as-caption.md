@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drupal ImageCache - Display Alt Text as Caption
-author: oscatholic
+author: Jeff Geerling
 nid: 212
 created: 1266698607
 ---

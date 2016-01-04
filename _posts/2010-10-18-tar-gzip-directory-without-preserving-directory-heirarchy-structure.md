@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tar/Gzip Directory without Preserving Directory Heirarchy/Structure
-author: oscatholic
+author: Jeff Geerling
 nid: 338
 created: 1287415112
 ---

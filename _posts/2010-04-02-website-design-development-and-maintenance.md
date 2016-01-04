@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Website Design, Development, and Maintenance
-author: oscatholic
+author: Jeff Geerling
 nid: 241
 created: 1270250027
 ---

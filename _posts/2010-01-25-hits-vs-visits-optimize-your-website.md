@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hits vs. Visits - Optimize Your Website!
-author: oscatholic
+author: Jeff Geerling
 nid: 203
 created: 1264438019
 ---

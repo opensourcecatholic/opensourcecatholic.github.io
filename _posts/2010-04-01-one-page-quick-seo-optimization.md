@@ -1,7 +1,7 @@
 ---
 layout: post
 title: One-Page Quick SEO Optimization
-author: oscatholic
+author: Jeff Geerling
 nid: 231
 created: 1270131912
 ---

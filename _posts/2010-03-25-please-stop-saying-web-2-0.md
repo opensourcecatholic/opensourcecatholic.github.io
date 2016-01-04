@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Please Stop Saying "Web 2.0"
-author: oscatholic
+author: Jeff Geerling
 nid: 224
 created: 1269543047
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Website Design Tools and Resources
-author: oscatholic
+author: Jeff Geerling
 nid: 304
 created: 1281042406
 ---

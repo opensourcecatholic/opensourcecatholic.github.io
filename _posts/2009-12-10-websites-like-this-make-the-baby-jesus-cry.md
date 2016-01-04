@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Websites like this make the baby Jesus cry...
-author: oscatholic
+author: Jeff Geerling
 nid: 178
 created: 1260426056
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Drupal: Restoring core comment title permalinks in a Zen Subtheme'
-author: oscatholic
+author: Jeff Geerling
 nid: 273
 created: 1275601229
 ---

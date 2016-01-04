@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Beautiful, Easy Maps in Drupal using Views and Mapstraction
-author: oscatholic
+author: Jeff Geerling
 nid: 370
 created: 1296749183
 ---

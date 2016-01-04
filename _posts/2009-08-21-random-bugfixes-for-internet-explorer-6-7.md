@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Random Bugfixes for Internet Explorer 6/7
-author: oscatholic
+author: Jeff Geerling
 nid: 157
 created: 1250873325
 ---

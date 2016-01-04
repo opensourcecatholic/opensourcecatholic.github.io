@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a More Friendly 404 Page
-author: oscatholic
+author: Jeff Geerling
 nid: 263
 created: 1272997096
 ---

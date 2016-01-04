@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Status Updates
-author: oscatholic
+author: Jeff Geerling
 nid: 104
 created: 1249854359
 ---

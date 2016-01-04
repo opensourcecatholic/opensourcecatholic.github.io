@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set a View's Context Inside an Organic Group
-author: oscatholic
+author: Jeff Geerling
 nid: 268
 created: 1274456575
 ---

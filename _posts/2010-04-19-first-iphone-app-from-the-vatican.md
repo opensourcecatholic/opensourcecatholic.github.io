@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'First iPhone App from the Vatican:'
-author: oscatholic
+author: Jeff Geerling
 nid: 249
 created: 1271708015
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Podcasting: Some Ideas...'
-author: oscatholic
+author: Jeff Geerling
 nid: 5
 created: 1246119848
 ---

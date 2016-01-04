@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Email Marketing Tools and Strategies
-author: oscatholic
+author: Jeff Geerling
 nid: 252
 created: 1271786666
 ---

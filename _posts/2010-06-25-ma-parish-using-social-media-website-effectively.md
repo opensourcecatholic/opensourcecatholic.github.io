@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MA Parish Using Social Media/Website Effectively
-author: oscatholic
+author: Jeff Geerling
 nid: 288
 created: 1277481145
 ---

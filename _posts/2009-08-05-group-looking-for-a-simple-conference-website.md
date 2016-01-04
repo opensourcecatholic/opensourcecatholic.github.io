@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Group Looking for a Simple Conference Website
-author: oscatholic
+author: Jeff Geerling
 nid: 97
 created: 1249498942
 ---

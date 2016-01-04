@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Online Calendaring: FullCalendar.js'
-author: oscatholic
+author: Jeff Geerling
 nid: 357
 created: 1290613797
 ---

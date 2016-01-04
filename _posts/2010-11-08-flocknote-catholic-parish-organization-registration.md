@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FlockNote - Catholic parish/organization Registration
-author: oscatholic
+author: Jeff Geerling
 nid: 349
 created: 1289249702
 ---

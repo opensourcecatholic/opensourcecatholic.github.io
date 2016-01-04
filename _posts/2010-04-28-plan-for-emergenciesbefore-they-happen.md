@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Plan for Emergencies—Before they Happen
-author: oscatholic
+author: Jeff Geerling
 nid: 257
 created: 1272482274
 ---

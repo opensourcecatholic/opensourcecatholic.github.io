@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Embedding a 'Related Content' block in your Drupal nodes
-author: oscatholic
+author: Jeff Geerling
 nid: 352
 created: 1289500376
 ---

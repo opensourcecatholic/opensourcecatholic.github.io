@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mass Attendance Rose 7.4% as result of Marketing/Website
-author: oscatholic
+author: Jeff Geerling
 nid: 337
 created: 1287073276
 ---

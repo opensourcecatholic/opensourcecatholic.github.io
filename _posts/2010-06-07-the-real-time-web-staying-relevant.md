@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Real-Time Web – Staying Relevant
-author: oscatholic
+author: Jeff Geerling
 nid: 277
 created: 1275945554
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Website Accessibility for Persons with Disabilities
-author: oscatholic
+author: Jeff Geerling
 nid: 348
 created: 1288883715
 ---

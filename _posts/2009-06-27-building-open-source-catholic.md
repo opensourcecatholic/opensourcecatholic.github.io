@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building Open Source Catholic
-author: oscatholic
+author: Jeff Geerling
 nid: 3
 created: 1246075777
 ---

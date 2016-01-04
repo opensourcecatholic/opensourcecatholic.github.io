@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Found: DISC (Diocesan Information Systems Conference)'
-author: oscatholic
+author: Jeff Geerling
 nid: 226
 created: 1269615462
 ---

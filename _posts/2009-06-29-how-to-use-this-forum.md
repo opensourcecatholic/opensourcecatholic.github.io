@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Use this Forum
-author: oscatholic
+author: Jeff Geerling
 nid: 15
 created: 1246285315
 ---

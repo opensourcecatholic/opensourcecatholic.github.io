@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'New Forum Added: "Traditional Media"'
-author: oscatholic
+author: Jeff Geerling
 nid: 80
 created: 1248930111
 ---

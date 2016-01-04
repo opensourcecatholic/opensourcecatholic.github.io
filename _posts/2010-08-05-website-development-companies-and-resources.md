@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Website Development Companies and Resources
-author: oscatholic
+author: Jeff Geerling
 nid: 303
 created: 1281035482
 ---

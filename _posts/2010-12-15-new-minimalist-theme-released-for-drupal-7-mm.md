@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New minimalist theme released for Drupal 7 - MM
-author: oscatholic
+author: Jeff Geerling
 nid: 358
 created: 1292426440
 ---

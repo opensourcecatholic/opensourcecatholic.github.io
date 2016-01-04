@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRM, Donation Reception, Online Payments
-author: oscatholic
+author: Jeff Geerling
 nid: 361
 created: 1293476174
 ---

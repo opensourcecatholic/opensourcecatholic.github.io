@@ -1,7 +1,7 @@
 ---
 layout: post
 title: From the Catholic Media Conference (in LA)
-author: oscatholic
+author: Jeff Geerling
 nid: 272
 created: 1275582026
 ---

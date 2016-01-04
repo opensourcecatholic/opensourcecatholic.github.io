@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Designers These Days...
-author: oscatholic
+author: Jeff Geerling
 nid: 230
 created: 1270044578
 ---

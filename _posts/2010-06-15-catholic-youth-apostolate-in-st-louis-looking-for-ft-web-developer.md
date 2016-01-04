@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholic Youth Apostolate in St. Louis looking for FT Web Developer
-author: oscatholic
+author: Jeff Geerling
 nid: 281
 created: 1276620200
 ---

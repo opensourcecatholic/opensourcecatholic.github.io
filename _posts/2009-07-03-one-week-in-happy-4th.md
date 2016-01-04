@@ -1,7 +1,7 @@
 ---
 layout: post
 title: One Week in... Happy 4th!
-author: oscatholic
+author: Jeff Geerling
 nid: 39
 created: 1246660189
 ---

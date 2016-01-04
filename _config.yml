@@ -24,3 +24,12 @@ exclude:
 gems:
   - jekyll-redirect-from
   - jekyll-paginate
+
+# Authors
+authors:
+  "Jeff Geerling":
+    name: Jeff Geerling
+    email: geerlingguy@mac.com
+    web: http://www.jeffgeerling.com/
+    twitter: geerlingguy
+    github: geerlingguy

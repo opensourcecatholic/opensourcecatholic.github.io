@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Oh IE, how I Hate Thee
-author: oscatholic
+author: Jeff Geerling
 nid: 187
 created: 1260909824
 ---

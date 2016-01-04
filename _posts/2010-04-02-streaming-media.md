@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Streaming Media
-author: oscatholic
+author: Jeff Geerling
 nid: 240
 created: 1270249736
 ---

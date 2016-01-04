@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Announcing Catholic News Live!
-author: oscatholic
+author: Jeff Geerling
 nid: 147
 created: 1256911162
 ---

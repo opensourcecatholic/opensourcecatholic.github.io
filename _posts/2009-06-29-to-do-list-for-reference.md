@@ -1,7 +1,7 @@
 ---
 layout: post
 title: To-Do List (for Reference)
-author: oscatholic
+author: Jeff Geerling
 nid: 13
 created: 1246257075
 ---

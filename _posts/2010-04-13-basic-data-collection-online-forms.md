@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Basic Data Collection - Online Forms
-author: oscatholic
+author: Jeff Geerling
 nid: 246
 created: 1271177718
 ---

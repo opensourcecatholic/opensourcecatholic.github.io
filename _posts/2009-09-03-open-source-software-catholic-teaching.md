@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Source Software / Catholic Teaching
-author: oscatholic
+author: Jeff Geerling
 nid: 125
 created: 1251998617
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Source Catholic Theme Released to Drupal.org
-author: oscatholic
+author: Jeff Geerling
 nid: 30
 created: 1246343706
 ---

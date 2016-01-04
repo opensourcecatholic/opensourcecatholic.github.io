@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Event Registrations and Management
-author: oscatholic
+author: Jeff Geerling
 nid: 247
 created: 1271178524
 ---

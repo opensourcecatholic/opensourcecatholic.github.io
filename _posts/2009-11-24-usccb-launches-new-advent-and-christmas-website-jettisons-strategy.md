@@ -1,7 +1,7 @@
 ---
 layout: post
 title: USCCB Launches New 'Advent and Christmas' Website - Jettisons Strategy?
-author: oscatholic
+author: Jeff Geerling
 nid: 165
 created: 1259099576
 ---

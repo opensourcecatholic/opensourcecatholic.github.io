@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholic News Live - Simple iPhone App for Catholic News
-author: oscatholic
+author: Jeff Geerling
 nid: 378
 created: 1300381392
 ---

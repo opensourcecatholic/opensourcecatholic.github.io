@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google Real Time Search Goes Live
-author: oscatholic
+author: Jeff Geerling
 nid: 175
 created: 1260226833
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'BXVI: Proclaim the Gospel on the "Digital Continent"'
-author: oscatholic
+author: Jeff Geerling
 nid: 144
 created: 1256842270
 ---

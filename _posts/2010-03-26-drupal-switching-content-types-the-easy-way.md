@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Drupal: Switching Content Types the Easy Way'
-author: oscatholic
+author: Jeff Geerling
 nid: 228
 created: 1269626226
 ---

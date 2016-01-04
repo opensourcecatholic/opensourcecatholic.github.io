@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resetting Files Table after Drupal 4.7.x -> 6.x Upgrade
-author: oscatholic
+author: Jeff Geerling
 nid: 260
 created: 1272644334
 ---

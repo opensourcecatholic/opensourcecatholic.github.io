@@ -1,7 +1,7 @@
 ---
 layout: post
 title: USCCB Social Media Guidelines
-author: oscatholic
+author: Jeff Geerling
 nid: 292
 created: 1278606282
 ---

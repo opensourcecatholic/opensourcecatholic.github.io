@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Connecting to the Facebook API
-author: oscatholic
+author: Jeff Geerling
 nid: 276
 created: 1275807932
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Live Streaming from Rome - Quick Ustreaming at a Multicam Event
-author: oscatholic
+author: Jeff Geerling
 nid: 142
 created: 1256287437
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Don't Neglect Your print.css file!
-author: oscatholic
+author: Jeff Geerling
 nid: 267
 created: 1274373838
 ---

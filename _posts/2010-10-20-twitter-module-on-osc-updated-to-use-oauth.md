@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Twitter Module on OSC Updated to use OAuth
-author: oscatholic
+author: Jeff Geerling
 nid: 341
 created: 1287605094
 ---

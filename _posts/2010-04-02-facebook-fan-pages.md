@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Facebook Fan Pages
-author: oscatholic
+author: Jeff Geerling
 nid: 238
 created: 1270248787
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Preparing for the iPad...
-author: oscatholic
+author: Jeff Geerling
 nid: 233
 created: 1270148180
 ---

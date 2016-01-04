@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drupal Gardens Beta - A Giant Leap in Community Building...
-author: oscatholic
+author: Jeff Geerling
 nid: 218
 created: 1267576710
 ---

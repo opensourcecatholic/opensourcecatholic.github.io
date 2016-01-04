@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Archdiocese of Saint Louis' Upgraded Website
-author: oscatholic
+author: Jeff Geerling
 nid: 198
 created: 1266840001
 ---

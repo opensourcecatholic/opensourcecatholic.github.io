@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Are Macs Catholic?
-author: oscatholic
+author: Jeff Geerling
 nid: 136
 created: 1254926702
 ---

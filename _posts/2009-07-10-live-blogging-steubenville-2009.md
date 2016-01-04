@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Live-Blogging Steubenville 2009
-author: oscatholic
+author: Jeff Geerling
 nid: 43
 created: 1247246984
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Our Designs Have to Reflect Christ
-author: oscatholic
+author: Jeff Geerling
 nid: 262
 created: 1272988669
 ---

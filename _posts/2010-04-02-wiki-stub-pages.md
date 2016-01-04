@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wiki Stub Pages
-author: oscatholic
+author: Jeff Geerling
 nid: 236
 created: 1270247766
 ---

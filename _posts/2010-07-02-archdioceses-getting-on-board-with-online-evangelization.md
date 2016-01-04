@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "(Arch)Dioceses Getting On Board with Online Evangelization"
-author: oscatholic
+author: Jeff Geerling
 nid: 290
 created: 1278098827
 ---

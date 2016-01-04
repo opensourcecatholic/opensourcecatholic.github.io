@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Two Trackbacks - First Things & OpenSource.com
-author: oscatholic
+author: Jeff Geerling
 nid: 310
 created: 1282915249
 ---

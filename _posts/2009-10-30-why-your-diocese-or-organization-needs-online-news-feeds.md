@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Your Diocese or Organization Needs Online News Feeds
-author: oscatholic
+author: Jeff Geerling
 nid: 145
 created: 1256882290
 ---

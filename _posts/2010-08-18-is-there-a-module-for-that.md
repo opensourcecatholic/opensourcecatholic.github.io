@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Is there a module for that?
-author: oscatholic
+author: Jeff Geerling
 nid: 308
 created: 1282100497
 ---

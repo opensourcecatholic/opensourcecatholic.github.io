@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New Twitter Hashtag for Catholic Media, Social Media
-author: oscatholic
+author: Jeff Geerling
 nid: 320
 created: 1283373721
 ---

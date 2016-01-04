@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Social Media Strategy for your Parish
-author: oscatholic
+author: Jeff Geerling
 nid: 332
 created: 1285361827
 ---

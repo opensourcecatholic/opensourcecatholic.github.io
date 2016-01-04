@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creative Marketing by Microsoft at DrupalCon Chicago
-author: oscatholic
+author: Jeff Geerling
 nid: 377
 created: 1299555483
 ---

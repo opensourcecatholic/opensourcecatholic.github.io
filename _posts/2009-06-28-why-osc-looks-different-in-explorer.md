@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why OSC Looks Different in Explorer
-author: oscatholic
+author: Jeff Geerling
 nid: 10
 created: 1246232610
 ---

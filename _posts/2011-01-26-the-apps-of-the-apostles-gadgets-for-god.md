@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '"The Apps of the Apostles" - Gadgets for God'
-author: oscatholic
+author: Jeff Geerling
 nid: 367
 created: 1296076473
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Facebook Groups
-author: oscatholic
+author: Jeff Geerling
 nid: 237
 created: 1270247798
 ---

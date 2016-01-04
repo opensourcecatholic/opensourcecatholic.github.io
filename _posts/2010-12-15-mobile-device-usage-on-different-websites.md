@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mobile Device Usage on Different Websites
-author: oscatholic
+author: Jeff Geerling
 nid: 359
 created: 1292432053
 ---

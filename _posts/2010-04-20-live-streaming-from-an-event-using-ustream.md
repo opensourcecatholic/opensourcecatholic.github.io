@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Live Streaming from an Event using Ustream
-author: oscatholic
+author: Jeff Geerling
 nid: 254
 created: 1271790600
 ---

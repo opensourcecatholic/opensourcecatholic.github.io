@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Moving Again... And a Couple Updates [UPDATED]
-author: oscatholic
+author: Jeff Geerling
 nid: 128
 created: 1252502916
 ---

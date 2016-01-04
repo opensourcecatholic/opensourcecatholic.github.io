@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Open Source Catholic Challenge: Rosary in HTML5'
-author: oscatholic
+author: Jeff Geerling
 nid: 311
 created: 1282921782
 ---

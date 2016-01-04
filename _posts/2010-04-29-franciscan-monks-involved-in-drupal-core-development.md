@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Franciscan Monks Involved in Drupal Core Development!
-author: oscatholic
+author: Jeff Geerling
 nid: 259
 created: 1272562161
 ---

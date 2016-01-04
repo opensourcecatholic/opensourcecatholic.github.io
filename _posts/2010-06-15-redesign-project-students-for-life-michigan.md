@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Redesign Project: Students for Life Michigan'
-author: oscatholic
+author: Jeff Geerling
 nid: 282
 created: 1276632111
 ---

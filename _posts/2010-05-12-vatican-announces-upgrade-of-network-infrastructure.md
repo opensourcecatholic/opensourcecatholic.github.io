@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vatican Announces Upgrade of Network Infrastructure
-author: oscatholic
+author: Jeff Geerling
 nid: 264
 created: 1273667092
 ---

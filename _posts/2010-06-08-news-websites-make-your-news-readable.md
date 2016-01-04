@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'News Websites: Make Your News Readable!'
-author: oscatholic
+author: Jeff Geerling
 nid: 278
 created: 1276007096
 ---

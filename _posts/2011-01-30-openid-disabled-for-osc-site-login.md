@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OpenID Disabled for OSC Site Login
-author: oscatholic
+author: Jeff Geerling
 nid: 368
 created: 1296429111
 ---
