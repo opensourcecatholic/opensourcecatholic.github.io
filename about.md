@@ -5,7 +5,7 @@ permalink: /about/
 redirect_from:
   - /about-osc/
 ---
-<a href="/sites/opensourcecatholic.com/files/OSC-Logo-1000_0.png"><img src="/sites/opensourcecatholic.com/files/user-uploads/oscatholic/OSC-Logo-250.png" alt="Open Source Catholic - Key Logo" width="250" height="249" style="float: right; margin: 10px; border: none;" /></a>Open Source Catholic was started in 2009 during the [Catholic New Media Convention](http://cnmc.sqpn.com/) (actually, on the plane rides there and back) by [Jeff Geerling](http://www.jeffgeerling.com/), based on some ideas he had discussed with many other Catholic techies over the preceding year.
+<a href="/sites/opensourcecatholic.com/files/OSC-Logo-1000.png"><img src="/sites/opensourcecatholic.com/files/user-uploads/oscatholic/OSC-Logo-250.png" alt="Open Source Catholic - Key Logo" width="250" height="249" style="float: right; margin: 10px; border: none;" /></a>Open Source Catholic was started in 2009 during the [Catholic New Media Convention](http://cnmc.sqpn.com/) (actually, on the plane rides there and back) by [Jeff Geerling](http://www.jeffgeerling.com/), based on some ideas he had discussed with many other Catholic techies over the preceding year.
 
 On this site, Catholics who are interested in discovering and sharing new ways of communicating the Gospel Message of Jesus Christ to the faithful in the Church can do so.
 
