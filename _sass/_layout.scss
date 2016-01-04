@@ -168,7 +168,13 @@
  */
 
 .pagination {
-  /* TODO */
+  text-align: center;
+}
+
+.previous,
+.next {
+    margin: 0 1em;
+    font-weight: bold;
 }
 
 .disabled {
