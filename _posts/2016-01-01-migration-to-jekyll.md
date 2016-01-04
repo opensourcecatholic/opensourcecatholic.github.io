@@ -4,7 +4,7 @@ title:  "OSC Migration to Jekyll and GitHub Pages"
 date:   2016-01-01 15:44:06 -0500
 categories: jekyll update github pages drupal migrate
 redirect_from:
-  - /test/redirect
+  - /test/redirect/
 ---
 After almost eight years with Open Source Catholic as a Drupal 7 website hosted on infrastructure generously provided by Midwestern Mac, an effort is underway to migrate all the Drupal content into a static Jekyll-powered site hosted on GitHub Pages.
 
