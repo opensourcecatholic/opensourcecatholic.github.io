@@ -22,9 +22,9 @@ layout: default
         </div>
 
         {% if post.comments %}
-        <span class="post-comment-count">
+        <div class="post-comment-count">
           <a href="{{ post.url | prepend: site.url }}#disqus_thread">View Comments</a>
-        </span>
+        </div>
         {% endif %}
       </li>
     {% endfor %}
