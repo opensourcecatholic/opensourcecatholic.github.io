@@ -9,7 +9,7 @@ url: "http://www.opensourcecatholic.com"
 twitter_username: oscatholic
 github_username:  opensourcecatholic
 permalink: /:year/:title
-paginate: 6
+paginate: 7
 
 # Build settings
 markdown: kramdown
