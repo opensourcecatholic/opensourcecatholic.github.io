@@ -9,6 +9,7 @@ url: "http://www.opensourcecatholic.com"
 twitter_username: oscatholic
 github_username:  opensourcecatholic
 permalink: /:year/:title
+paginate: 6
 
 # Build settings
 markdown: kramdown
@@ -22,3 +23,4 @@ exclude:
 # Gems
 gems:
   - jekyll-redirect-from
+  - jekyll-paginate
