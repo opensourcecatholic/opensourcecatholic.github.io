@@ -13,5 +13,3 @@ created: 1270249736
 	Catholics should seek to become involved in streaming media in a deeper way than simply broadcasting and rebroadcasting Masses and homilies. This section of the Wiki provides useful information for Catholics involved in the production and delivery of streaming media.</p>
 <p>
 	CatholicTuner.com offers a wide variety of online streams for your viewing pleasure; let&#39;s help <a href="/users/joaomachado">Joao</a>&nbsp;(maintainer of Catholic Tuner) fill up his listings!</p>
-<p>
-	$STUB$</p>

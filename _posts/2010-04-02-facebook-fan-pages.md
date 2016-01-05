@@ -21,5 +21,3 @@ created: 1270248787
 	<li>
 		Fan Pages have a feature that keeps track of metrics like &#39;post quality,&#39; number of followers, and the fan page audience metrics (like male vs. female visitors), which can be very helpful in determining the effectiveness of your Fan Page use.</li>
 </ul>
-<p>
-	$STUB$</p>

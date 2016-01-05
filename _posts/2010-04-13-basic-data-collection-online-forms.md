@@ -27,5 +27,3 @@ created: 1271177718
 	<li>
 		<strong><a href="http://www.forms-for-joomla.com/">Forms for Joomla</a></strong> - An easy-to-use form builder for Joomla-based websites, similar to Webform, but costing over $20.</li>
 </ul>
-<p>
-	$STUB$</p>
