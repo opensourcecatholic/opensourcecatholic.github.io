@@ -3,6 +3,8 @@ layout: post
 title: Communications Issues - The Catholic Church's "Confession" App
 author: Jeff Geerling
 nid: 371
+redirect_from:
+  - /blog/jeff-geerling/communications-snafu-/
 created: 1297193192
 ---
 <p><em>[Note: Please read through the comments at the end of this post for some great insights about this situation.]</em></p>

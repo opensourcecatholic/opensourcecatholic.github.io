@@ -3,6 +3,8 @@ layout: post
 title: Social Media Strategy for your Parish
 author: Jeff Geerling
 nid: 332
+redirect_from:
+  - /blog/oscatholic/social-media-strategy-yo/
 created: 1285361827
 ---
 <p>From an <a href="http://www.todaysparish.com/Parish-social-media">article posted to Today&#39;s Parish</a>, from <a href="http://twitter.com/jongivens">@jongivens</a>:</p>

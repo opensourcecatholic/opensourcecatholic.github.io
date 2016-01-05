@@ -3,6 +3,8 @@ layout: post
 title: Building Open Source Catholic
 author: Jeff Geerling
 nid: 3
+redirect_from:
+  - /blog/oscatholic/building-open-source-catholic/
 created: 1246075777
 ---
 <p>

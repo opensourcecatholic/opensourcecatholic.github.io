@@ -3,6 +3,8 @@ layout: post
 title: Vatican Announces Upgrade of Network Infrastructure
 author: Jeff Geerling
 nid: 264
+redirect_from:
+  - /blog/oscatholic/vatican-announces/
 created: 1273667092
 ---
 <p>It looks like the Vatican is going optical! Here are the details, from <a href="http://www.cathnewsasia.com/2010/05/12/vatican-in-major-fibre-optic-comms-upgrade/">CathNews Asia</a>:</p>

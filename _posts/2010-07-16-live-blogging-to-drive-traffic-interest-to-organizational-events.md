@@ -3,6 +3,8 @@ layout: post
 title: Live-Blogging to Drive Traffic, Interest to Organizational Events
 author: Jeff Geerling
 nid: 297
+redirect_from:
+  - /blog/geerlingguy/live-blogging-drive/
 created: 1279315700
 ---
 <p>The <a href="http://stlyouth.org/steubenville">Steubenville St. Louis Mid-America conference</a> is attended by over 6,000 teens every year, and there are many parents, friends, and other teens who wish they could participate as well. We have always posted information after the conference, but in St. Louis, for the past two years, we&#39;ve started live-blogging and posting to social networks frequently throughout the conference, driving up traffic to our OYM websites.</p>

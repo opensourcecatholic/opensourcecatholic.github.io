@@ -3,6 +3,8 @@ layout: post
 title: Catholic/New Media Job Opportunities
 author: Jeff Geerling
 nid: 442
+redirect_from:
+  - /blog/jeff-geerling/catholicnew-media-job/
 created: 1342130757
 ---
 Lately there have been a few new job opportunities for Catholics who are in the tech realm and/or are looking to work with social/new media. Here are two I've heard about in the past week:

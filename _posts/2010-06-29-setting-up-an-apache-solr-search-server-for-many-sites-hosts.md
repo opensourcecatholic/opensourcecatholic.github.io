@@ -3,6 +3,8 @@ layout: post
 title: Setting up an Apache Solr Search Server (for many sites/hosts)
 author: Jeff Geerling
 nid: 289
+redirect_from:
+  - /blog/oscatholic/setting-apache-solr/
 created: 1277828235
 ---
 <img src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/magnifying-glass.jpeg" alt="Magnifying Glass" title="" style="float: right; width: 225px; height: 169px; margin: 10px;" />[<strong>Update</strong>: I now use Midwestern Mac, LLC's <a href="http://www.midwesternmac.com/services/hosted-solr-search">hosted Apache Solr search for Drupal</a> to host Solr; it's a lot easier than setting up (or even needing) a VPS for Solr.]

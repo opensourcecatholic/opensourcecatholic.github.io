@@ -3,6 +3,8 @@ layout: post
 title: Priests and New/Social Media
 author: Jeff Geerling
 nid: 46
+redirect_from:
+  - /blog/oscatholic/priests-and-newsocial-media/
 created: 1247528109
 ---
 <p class="rtecenter"><img alt="Technopriest and iPadre - website screenshots" width="500" height="257" src="/sites/opensourcecatholic.com/files/user-uploads/oscatholic/screenie-ipadre-technopriest.jpg" /></p>

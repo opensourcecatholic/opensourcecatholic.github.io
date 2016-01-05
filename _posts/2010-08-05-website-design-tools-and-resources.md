@@ -3,6 +3,8 @@ layout: post
 title: Website Design Tools and Resources
 author: Jeff Geerling
 nid: 304
+redirect_from:
+  - /wiki/117/website-design-tools-and/
 created: 1281042406
 ---
 <p>This section of the Wiki will list resources for web developers and designers - software, snippets, and online resources for new design work.</p>

@@ -3,6 +3,8 @@ layout: post
 title: Twitter Module on OSC Updated to use OAuth
 author: Jeff Geerling
 nid: 341
+redirect_from:
+  - /blog/oscatholic/twitter-module-osc-updat/
 created: 1287605094
 ---
 <p class="rtecenter"><img alt="Post to Twitter" src="/sites/opensourcecatholic.com/files/post-to-twitter.png" style="border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; width: 153px; height: 20px; " /></p>

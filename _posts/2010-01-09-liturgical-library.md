@@ -3,6 +3,8 @@ layout: post
 title: Liturgical Library
 author: lutra
 nid: 196
+redirect_from:
+  - /forum/topics/196/
 created: 1263007272
 ---
 <p>

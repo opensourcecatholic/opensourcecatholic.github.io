@@ -3,6 +3,8 @@ layout: post
 title: A New Kind of Church Directory, Built on Open Source
 author: akavlie
 nid: 470
+redirect_from:
+  - /blog/aaron-kavlie/new-kind-church/
 created: 1368503990
 ---
 I recently launched <a href="http://parish.io">a little site for finding Catholic parishes and mass times</a> called <em>parish.io</em>. It takes a very different approach to gathering parish info and mass times than other sites in this category. Not only is this approach beneficial to users (more accurate and complete mass schedules), I think it's of particular interest to other software developers.

@@ -3,6 +3,8 @@ layout: post
 title: 'Drupal: Switching Content Types the Easy Way'
 author: Jeff Geerling
 nid: 228
+redirect_from:
+  - /blog/oscatholic/drupal-switching-content/
 created: 1269626226
 ---
 <p>

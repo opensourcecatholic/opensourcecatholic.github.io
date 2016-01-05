@@ -3,6 +3,8 @@ layout: post
 title: Video Editing Software
 author: mbetit
 nid: 65
+redirect_from:
+  - /forum/topics/65/
 created: 1248447621
 ---
 <p>[<em>Some good discussion going on in the forums about video editing software &ndash; OSC</em>]</p>

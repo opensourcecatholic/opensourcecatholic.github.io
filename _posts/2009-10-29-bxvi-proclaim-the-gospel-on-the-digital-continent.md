@@ -3,6 +3,8 @@ layout: post
 title: 'BXVI: Proclaim the Gospel on the "Digital Continent"'
 author: Jeff Geerling
 nid: 144
+redirect_from:
+  - /blog/oscatholic/bxvi-proclaim-gospel-digital-conti/
 created: 1256842270
 ---
 <p>From the Catholic News Agency:</p>

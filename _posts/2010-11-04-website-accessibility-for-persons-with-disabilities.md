@@ -3,6 +3,8 @@ layout: post
 title: Website Accessibility for Persons with Disabilities
 author: Jeff Geerling
 nid: 348
+redirect_from:
+  - /wiki/117/website-accessibility-per/
 created: 1288883715
 ---
 <p>Building your website should be, in essence, no different than building a physical space for your parishioners and constituents to enter. When building a physical space, you must follow certain guidelines for accessibilities, offering wider aisles for wheelchair access, elevators and/or ramps, and other special needs implementations.</p>

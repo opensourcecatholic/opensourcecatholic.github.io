@@ -3,6 +3,8 @@ layout: post
 title: Ideas for Articles on OSC
 author: Jeff Geerling
 nid: 12
+redirect_from:
+  - /forum/topics/12/
 created: 1246250177
 ---
 <p>Rather than save a file on my computer with some article ideas I have, I decided to put 'em in here, that way I can not only share the ideas... but maybe someone <em>else</em> can write up one of the ideas in an article or blog post. Then I don't have to do it ;-)</p>

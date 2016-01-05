@@ -3,6 +3,8 @@ layout: post
 title: iPhone - A Powerful tool for the New Evangelization
 author: Jeff Geerling
 nid: 446
+redirect_from:
+  - /blog/jeff-geerling/iphone-powerful-tool/
 created: 1345671952
 ---
 Elizabeth Westhoff, the Archdiocese of St. Louis' Director of Marketing, wrote <a href="http://catholicstlouis.wordpress.com/2012/08/22/e-vangelization-in-the-archdiocese-of-st-louis/">an excellent article</a> summarizing the many ways she and others in St. Louis are using iPhones and a shoestring budget to promote the faith through video, pictures, social media, etc.

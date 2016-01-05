@@ -3,6 +3,8 @@ layout: post
 title: 'News Websites: Make Your News Readable!'
 author: Jeff Geerling
 nid: 278
+redirect_from:
+  - /blog/oscatholic/news-websites-make-your/
 created: 1276007096
 ---
 <p>For anyone involved in web development for news publications, one of the most important aspects of the website is its textual layout.&nbsp;Your site must be readable on a variety of devices, and, failing that, you should try to make it look great on at least one platform (usually the desktop browser)&mdash;typically other platforms will follow.</p>

@@ -3,6 +3,8 @@ layout: post
 title: Is there a module for that?
 author: Jeff Geerling
 nid: 308
+redirect_from:
+  - /blog/oscatholic/there-module/
 created: 1282100497
 ---
 <p>More often than not, this website provides the correct answer out of the box:</p>

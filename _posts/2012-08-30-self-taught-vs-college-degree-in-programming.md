@@ -3,6 +3,8 @@ layout: post
 title: Self-Taught vs. College Degree in programming?
 author: matthew-west
 nid: 449
+redirect_from:
+  - /forum/topics/449/
 created: 1346349875
 ---
 I'm a graphic designer that learned to build static sites way back in 1997 or so and most of my freelance and later employment has utilized my self-taught internet skills. I'm now what I've heard described as a PHP/Javascript "tweaker". Sometimes I know enough to be dangerous but I'm finding my way. I started learning drupal with some success but found it difficult when building larger, more complex sites. Wordpress has been a fairly easy transition and that's been my platform for the last two years.

@@ -3,6 +3,8 @@ layout: post
 title: The Importance of Mobile for the Church
 author: Jeff Geerling
 nid: 421
+redirect_from:
+  - /blog/jeff-geerling/importance-mobile-chu/
 created: 1338906546
 ---
 <img src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/Jeff%20Geerling/vatican-website-iphone.png" alt="Vatican Website on the iPhone" width="253" height="475" style="float: right; margin: 10px;" />By 2015 (probably sooner), more people in the world will be accessing Church websites with mobile devices than traditional desktop computers (<a href="http://www.lukew.com/ff/entry.asp?1510">source</a>).

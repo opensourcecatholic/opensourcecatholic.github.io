@@ -3,6 +3,8 @@ layout: post
 title: Developer Wanted
 author: Petros Media
 nid: 455
+redirect_from:
+  - /forum/topics/455/
 created: 1348602840
 ---
 Petros Media is currently seeking developers and programmers with substantial experience in the fields of iOS and Android app development, web design, and graphic design.

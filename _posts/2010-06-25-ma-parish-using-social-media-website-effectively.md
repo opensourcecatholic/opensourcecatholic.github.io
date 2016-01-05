@@ -3,6 +3,8 @@ layout: post
 title: MA Parish Using Social Media/Website Effectively
 author: Jeff Geerling
 nid: 288
+redirect_from:
+  - /blog/oscatholic/ma-parish-using-social/
 created: 1277481145
 ---
 <p>After reading <a href="http://www.catholicnews.com/data/stories/cns/1002362.htm">this article from the CNS</a> about a Massachusetts parish&#39;s use of its website, YouTube, Facebook, etc., it seems like they would be a good example of what to emulate in other parishes.</p>

@@ -3,6 +3,8 @@ layout: post
 title: Debian With a Refreshing Minty Flavor
 author: Steely
 nid: 324
+redirect_from:
+  - /blog/steely/debian-refreshing-minty-f/
 created: 1284613646
 ---
 <p><img alt="" class="imagecache-300px-by-300px" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/imagecache/300px-by-300px/user-uploads/Steely/linuxmint-logo.png" title="" /><img alt="" class="imagecache-300px-by-300px" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/imagecache/300px-by-300px/user-uploads/Steely/debian_splash.png" title="" /></p>

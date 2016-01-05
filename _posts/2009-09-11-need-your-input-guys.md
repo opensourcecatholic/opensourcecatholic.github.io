@@ -3,6 +3,8 @@ layout: post
 title: Need Your Input Guys
 author: Cade_One
 nid: 129
+redirect_from:
+  - /forum/topics/129/
 created: 1252644156
 ---
 <p>I am currently working on an album cover for a Catholic, Celtic band.&nbsp; Please take the time to <a href="http://twtpoll.com/3u1khl">rank which cover you like best</a>.&nbsp; Feel free to make suggestions or constructive criticisms in the comment section below. God bless.</p>

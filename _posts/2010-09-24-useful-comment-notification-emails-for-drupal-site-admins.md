@@ -3,6 +3,8 @@ layout: post
 title: Useful Comment Notification Emails for Drupal Site Admins
 author: Jeff Geerling
 nid: 331
+redirect_from:
+  - /blog/oscatholic/useful-comment-notificat/
 created: 1285308732
 ---
 <p>I have, for some time, used the amazingly dexterous Rules module on my Drupal sites to receive email notifications when new comments were posted. I set up a Rule in the admin interface which would send an email if a new comment was saved on the site.</p>

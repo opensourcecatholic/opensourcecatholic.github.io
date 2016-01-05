@@ -3,6 +3,8 @@ layout: post
 title: New Parish Website
 author: jdzondo
 nid: 463
+redirect_from:
+  - /forum/topics/463/
 created: 1358980528
 ---
 Hey everyone,

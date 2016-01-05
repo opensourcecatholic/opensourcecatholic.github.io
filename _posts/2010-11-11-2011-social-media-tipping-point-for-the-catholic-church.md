@@ -3,6 +3,8 @@ layout: post
 title: '2011: Social Media Tipping Point for the Catholic Church'
 author: Jeff Geerling
 nid: 351
+redirect_from:
+  - /blog/oscatholic/2011-social-media-tippin/
 created: 1289498397
 ---
 <p class="rteleft"><img alt="Vatican Social Media Flag" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/vatican-social-media.jpg" style="border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; float: right; width: 300px; height: 215px; " title="" />My prediction: <strong>2011 will be the year of Social Media for the Catholic Church</strong>... at least in the United States.</p>

@@ -3,6 +3,8 @@ layout: post
 title: Looking for photo tagging / archiving software
 author: catholicservant
 nid: 131
+redirect_from:
+  - /forum/topics/131/
 created: 1253042139
 ---
 <p>Howdy folks,</p>

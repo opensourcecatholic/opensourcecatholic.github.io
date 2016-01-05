@@ -3,6 +3,8 @@ layout: post
 title: Franciscan Monks Involved in Drupal Core Development!
 author: Jeff Geerling
 nid: 259
+redirect_from:
+  - /blog/oscatholic/franciscan-monks/
 created: 1272562161
 ---
 <p><a href="http://buytaert.net/drupalcon-san-francisco-wrapup">According to Dries Buytaert</a>, a Franciscan Monk was working on Drupal Core at DrupalCon SF last week; he was involved in the core developer&#39;s summit with 149 other attendees.</p>

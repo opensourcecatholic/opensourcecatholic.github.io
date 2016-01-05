@@ -3,6 +3,8 @@ layout: post
 title: PDF Archive Solution
 author: catholicservant
 nid: 28
+redirect_from:
+  - /forum/topics/28/
 created: 1246335072
 ---
 <p>&nbsp;Howdy,</p>

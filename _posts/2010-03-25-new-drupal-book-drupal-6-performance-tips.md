@@ -3,6 +3,8 @@ layout: post
 title: New Drupal Book - Drupal 6 Performance Tips
 author: trevor.james
 nid: 225
+redirect_from:
+  - /blog/trevorjames/new-drupal-book-drupal-/
 created: 1269543977
 ---
 <p>

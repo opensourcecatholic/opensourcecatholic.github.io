@@ -3,6 +3,8 @@ layout: post
 title: Our Lady of Mount Carmel Church wants to go Digital for Catechesis any thoughts?
 author: Valerie Shpak
 nid: 116
+redirect_from:
+  - /forum/topics/116/
 created: 1250887950
 ---
 <p>We are hoping to create&nbsp; our digital catechesis site from grades k-8 including the entire families.&nbsp; We want it to be charismatic, creative and user friendly while sticking to standards.</p>

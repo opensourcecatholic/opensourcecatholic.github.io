@@ -3,6 +3,8 @@ layout: post
 title: Websites like this make the baby Jesus cry...
 author: Jeff Geerling
 nid: 178
+redirect_from:
+  - /forum/topics/178/
 created: 1260426056
 ---
 <p>

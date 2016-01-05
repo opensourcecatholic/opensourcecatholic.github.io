@@ -3,6 +3,8 @@ layout: post
 title: which one is good WP or drupal ?
 author: abrar.arshad
 nid: 88
+redirect_from:
+  - /forum/topics/88/
 created: 1249213504
 ---
 <p>hi everyone,</p>

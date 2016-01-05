@@ -3,6 +3,8 @@ layout: post
 title: Hits vs. Visits - Optimize Your Website!
 author: Jeff Geerling
 nid: 203
+redirect_from:
+  - /blog/oscatholic/hits-vs-visits-optimize-/
 created: 1264438019
 ---
 <p>

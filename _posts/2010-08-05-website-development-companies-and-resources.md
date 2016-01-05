@@ -3,6 +3,8 @@ layout: post
 title: Website Development Companies and Resources
 author: Jeff Geerling
 nid: 303
+redirect_from:
+  - /wiki/117/website-development-compa/
 created: 1281035482
 ---
 Companies and online resource sites that help with parish and Catholic organization&nbsp;website design are listed on this page:

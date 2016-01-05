@@ -3,6 +3,8 @@ layout: post
 title: Catholic Sisters Online.
 author: lindamicciche
 nid: 55
+redirect_from:
+  - /forum/topics/55/
 created: 1247768805
 ---
 <p>We are experiementing with Facebook, Twitter and Blogs. &nbsp;We are also redesigning our website.&nbsp;</p>

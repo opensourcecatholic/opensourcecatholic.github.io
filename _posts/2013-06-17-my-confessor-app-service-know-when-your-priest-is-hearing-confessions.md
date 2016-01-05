@@ -3,6 +3,8 @@ layout: post
 title: My Confessor app/service - know when your priest is hearing confessions
 author: Jeff Geerling
 nid: 472
+redirect_from:
+  - /blog/jeff-geerling/my-confessor/
 created: 1371513386
 ---
 <blockquote>

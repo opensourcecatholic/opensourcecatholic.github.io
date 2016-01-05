@@ -3,6 +3,8 @@ layout: post
 title: Drupal Theme Generators
 author: JoaoMachado
 nid: 127
+redirect_from:
+  - /forum/topics/127/
 created: 1252197255
 ---
 <p>Found this software, has anyone had any luck using this software?</p>

@@ -3,6 +3,8 @@ layout: post
 title: '"Why Churches Should Not Market" (by Matt Farina)'
 author: Jeff Geerling
 nid: 195
+redirect_from:
+  - /forum/topics/195/
 created: 1262985077
 ---
 <p>

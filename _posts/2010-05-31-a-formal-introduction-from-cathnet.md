@@ -3,6 +3,8 @@ layout: post
 title: A Formal Introduction from Cathnet
 author: lutra
 nid: 270
+redirect_from:
+  - /forum/topics/270/
 created: 1275338260
 ---
 <p>Hello, this is DJ Ortley (lutra.)&nbsp; I&#39;ve yet to have an opportunity to introduce either <a href="http://www.cathnet.org">Cathnet</a> or myself.</p>

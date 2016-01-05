@@ -3,6 +3,8 @@ layout: post
 title: 'Open Source Catholic Challenge: Rosary in HTML5'
 author: Jeff Geerling
 nid: 311
+redirect_from:
+  - /blog/oscatholic/open-source-catholic-cha/
 created: 1282921782
 ---
 <p>An idea I&#39;ve been having in the back of my mind for some time is putting the Rosary (or another devotional) online in such a way as to (a) faithfully instruct individuals on the purpose and beauty in its prayer, and (b) stretch my skills and build a usable, friendly, and prayerful web application.</p>

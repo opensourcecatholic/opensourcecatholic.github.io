@@ -3,6 +3,8 @@ layout: post
 title: The Value of Open Source / Contributing Back
 author: Jeff Geerling
 nid: 339
+redirect_from:
+  - /blog/oscatholic/value-open-source-contri/
 created: 1287436711
 ---
 <p><a href="http://www.opensource.org/"><img alt="Open Source Initiative" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/osi_standard_logo.png" style="border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; float: right; width: 225px; height: 258px; " title="" /></a>Today I released my first contributed Drupal module, <a href="http://drupal.org/project/gallery_archive">Gallery Archive</a>&nbsp;(<a href="http://www.lifeisaprayer.com/blog/2010/just-created-new-drupal-module">backstory here</a>). I had already created the Drupal theme <a href="http://drupal.org/project/airyblue">Airy Blue</a> (in use on this site) some time ago, and have created many modules and themes in use on this site and many other Drupal sites I manage. However, it takes a lot more polish, a lot more work, and a lot more long-term dedication to release a module for public consumption!</p>

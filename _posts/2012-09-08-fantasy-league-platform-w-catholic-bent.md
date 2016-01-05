@@ -3,6 +3,8 @@ layout: post
 title: Fantasy League Platform w/Catholic Bent
 author: JMGrenda
 nid: 451
+redirect_from:
+  - /forum/topics/451/
 created: 1347117756
 ---
 I'm looking for a Catholic programmer who is proficient in building sports league fantasy platforms to be used in an educational manner with Catholic undertones.

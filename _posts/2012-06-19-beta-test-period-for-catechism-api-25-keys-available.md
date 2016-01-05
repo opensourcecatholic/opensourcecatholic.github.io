@@ -3,6 +3,8 @@ layout: post
 title: Beta test period for Catechism API - 25 keys available
 author: Jeffrey Pinyan - Praying the Mass
 nid: 438
+redirect_from:
+  - /blog/jeffrey-pinyan-praying-ma/beta-test/
 created: 1340127783
 ---
 A year ago, I registered the domain <strong>catholiccrossreference.com</strong> after my previous web site suffered a meltdown. This domain became the new home of my Catechism search engine (among other things).

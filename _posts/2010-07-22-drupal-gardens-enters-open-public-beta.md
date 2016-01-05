@@ -3,6 +3,8 @@ layout: post
 title: Drupal Gardens enters Open Public Beta
 author: Jeff Geerling
 nid: 299
+redirect_from:
+  - /blog/oscatholic/drupal-gardens-enters/
 created: 1279832570
 ---
 <p>...and now anyone can set up a fresh, hosted Drupal 7 website in seconds&mdash;for free.</p>

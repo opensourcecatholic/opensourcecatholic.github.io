@@ -3,6 +3,8 @@ layout: post
 title: When and where can I go to church in the neighbourhood?
 author: vicmortelmans
 nid: 481
+redirect_from:
+  - /forum/topics/481/
 created: 1387040981
 ---
 Hi,

@@ -3,6 +3,8 @@ layout: post
 title: Linux Contractor Fired for Using Firefox/Linux...
 author: JoaoMachado
 nid: 164
+redirect_from:
+  - /blog/joaomachado/linux-contractor-fired-/
 created: 1259026072
 ---
 <p>This is a complicated story but one that must be told. I'm not sure there is anything that can be done about it except rage at the moon...<br />

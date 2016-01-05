@@ -3,6 +3,8 @@ layout: post
 title: Artisteer - Templates/Themes made easy
 author: Matt K
 nid: 232
+redirect_from:
+  - /forum/topics/232/
 created: 1270133682
 ---
 <p>

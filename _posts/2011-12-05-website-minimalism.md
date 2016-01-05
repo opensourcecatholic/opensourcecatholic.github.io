@@ -3,6 +3,8 @@ layout: post
 title: Website Minimalism
 author: Jeff Geerling
 nid: 413
+redirect_from:
+  - /blog/jeff-geerling/website-minimalism/
 created: 1323121122
 ---
 <em>Before I get started, I want to make it <strong>abundantly clear</strong> that I am in no way ripping on <a href="http://catholichotdish.com/">Catholic Hot Dish.com</a> in this post—I simply wanted an example for illustration, and this is one site that follows a design pattern I've seen on many Catholic sites. I enjoy Catholic Hot Dish, and am saying nothing of the blog or it's content—simply it's design choices...</em>

@@ -3,6 +3,8 @@ layout: post
 title: Parish School Websites
 author: Jeff Geerling
 nid: 313
+redirect_from:
+  - /wiki/117/parish-school-websites/
 created: 1283090057
 ---
 <p>Often, a school has radically different requirements than a parish, even though the two are, physically, attached to each other. Schools have teachers, classrooms, assignments, etc., and serve a very different audience than a general parish.</p>

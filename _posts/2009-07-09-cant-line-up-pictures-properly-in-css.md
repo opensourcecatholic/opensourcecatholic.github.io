@@ -3,6 +3,8 @@ layout: post
 title: Can't line up pictures properly in css?
 author: Whack
 nid: 42
+redirect_from:
+  - /forum/topics/42/
 created: 1247098412
 ---
 <p>I am having trouble getting my css to line up properly.&nbsp; My css is quite messy as I&nbsp;am a beginner, and a lot of it is there that probably doesn't need to be, because I&nbsp;was testing different things.&nbsp; I need the two large silver bars to line up behind the login bar, and I&nbsp;can't seem to get them to get any closer to lined up than they are. &nbsp;</p>

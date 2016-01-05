@@ -3,6 +3,8 @@ layout: post
 title: Streaming Media
 author: Jeff Geerling
 nid: 240
+redirect_from:
+  - /wiki/streaming-media/
 created: 1270249736
 ---
 <p>

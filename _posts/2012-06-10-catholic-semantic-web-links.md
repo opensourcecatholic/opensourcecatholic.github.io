@@ -3,6 +3,8 @@ layout: post
 title: Catholic Semantic Web Links
 author: rjzaar
 nid: 432
+redirect_from:
+  - /wiki/catholic-semantic-web-lin/
 created: 1339298516
 ---
 <a href="http://semanticbible.com/">Semantic Bible</a>

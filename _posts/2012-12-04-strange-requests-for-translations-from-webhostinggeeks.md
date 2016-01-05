@@ -3,6 +3,8 @@ layout: post
 title: Strange requests for translations from WebHostingGeeks
 author: Jeff Geerling
 nid: 460
+redirect_from:
+  - /blog/jeff-geerling/strange-requests/
 created: 1354634025
 ---
 If you run a few different websites, you might have received a message at some point from a person by the name "Jovana Milutinovich" asking if she could translate a particular page on your website.

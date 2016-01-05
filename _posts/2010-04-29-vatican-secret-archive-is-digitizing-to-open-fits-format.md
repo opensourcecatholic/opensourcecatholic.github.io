@@ -3,6 +3,8 @@ layout: post
 title: Vatican Secret Archive is Digitizing to Open FITS Format
 author: Jeff Geerling
 nid: 258
+redirect_from:
+  - /blog/oscatholic/vatican-secret-archive/
 created: 1272516095
 ---
 <p>Tip &#39;o the hat to the <a href="http://www.splendoroftruth.com/curtjester/2010/04/fits/">Curt Jester</a>, and originally posted on <a href="http://hardware.slashdot.org/story/10/04/28/1814221/Vatican-Chooses-Open-FITS-Image-Format">Slashdot</a>:</p>

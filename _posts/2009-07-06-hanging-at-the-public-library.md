@@ -3,6 +3,8 @@ layout: post
 title: Hanging At The Public Library
 author: catholicservant
 nid: 40
+redirect_from:
+  - /blog/catholicservant/hanging-public-library/
 created: 1246901986
 ---
 <p>One day during the week (2 this Summer) I do freelance work.</p>

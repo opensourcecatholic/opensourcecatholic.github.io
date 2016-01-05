@@ -3,6 +3,8 @@ layout: post
 title: How to become a good open source project manager?
 author: allencch
 nid: 369
+redirect_from:
+  - /forum/topics/369/
 created: 1296566918
 ---
 <p>I am not sure where is the best channel to ask this question.</p>

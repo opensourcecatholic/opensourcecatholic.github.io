@@ -3,6 +3,8 @@ layout: post
 title: Mobile App Development Resources
 author: Jeff Geerling
 nid: 403
+redirect_from:
+  - /wiki/117/mobile-app-development-re/
 created: 1317419361
 ---
 Is your parish or organization interested in building its own iPhone, Android, or Blackberry App? There are tons of resources available to help you in building the App.

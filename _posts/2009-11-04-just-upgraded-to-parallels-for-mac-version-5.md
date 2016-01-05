@@ -3,6 +3,8 @@ layout: post
 title: Just upgraded to Parallels for Mac version 5
 author: catholicservant
 nid: 148
+redirect_from:
+  - /blog/catholicservant/just-upgraded-paral/
 created: 1257370552
 ---
 <p>As some of you already know, I was a PC for about 15 years (although I was a Mac before that when I worked in the music biz).</p>

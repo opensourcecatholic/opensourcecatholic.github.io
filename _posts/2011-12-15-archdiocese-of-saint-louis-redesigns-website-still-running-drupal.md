@@ -3,6 +3,8 @@ layout: post
 title: Archdiocese of Saint Louis redesigns website (still running Drupal)
 author: Jeff Geerling
 nid: 416
+redirect_from:
+  - /blog/jeff-geerling/archdiocese-saint-lou/
 created: 1323971704
 ---
 I used to work in the <a href="http://archstl.org/">Archdiocese of St. Louis</a> as the director of Web Development, so archstl.org (and other online Archdiocesan properties) are near and dear to my heart. I spent countless hours <a href="http://www.opensourcecatholic.com/blog/oscatholic/archdiocese-saint-louis-upgraded-website">merging some 49 Joomla websites into the Drupal install</a> that (still) runs archstl.org, and besides a bunch of database heavy lifting that was outsourced, I bled over almost every feature on the site (I've chronicled many experiences on this site in the past).

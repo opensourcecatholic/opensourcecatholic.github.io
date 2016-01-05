@@ -3,6 +3,8 @@ layout: post
 title: Vatican Applies for Four gTLDs
 author: Jeff Geerling
 nid: 436
+redirect_from:
+  - /blog/jeff-geerling/vatican-applies-four-/
 created: 1339618456
 ---
 Today ICANN release a <a href="http://newgtlds.icann.org/en/program-status/application-results/strings-1200utc-13jun12-en">list of all the generic Top Level Domains</a> (gTLDs) that have been applied for since January 12 this year. Among rather oddball names such as .lol, .boo, and .barefoot, the Vatican (yes, the <a href="http://www.vatican.va/">Vatican.va</a> one in Italy) has applied for four domains, all variations of the English word 'Catholic'. The domains are:

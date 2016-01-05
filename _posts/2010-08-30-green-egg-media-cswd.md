@@ -3,6 +3,8 @@ layout: post
 title: Green Egg Media / CSWD
 author: catholicschoolwebdesign
 nid: 315
+redirect_from:
+  - /forum/topics/315/
 created: 1283201907
 ---
 <p>Hi everyone,</p>

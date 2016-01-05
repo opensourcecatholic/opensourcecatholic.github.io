@@ -3,6 +3,8 @@ layout: post
 title: Catholics are my last resort...
 author: JoaoMachado
 nid: 295
+redirect_from:
+  - /forum/topics/295/
 created: 1278895684
 ---
 <p>I have searched all over for help on this CSS issue ( I assume is a css issue), it is not directly related to Catholic media but I have nowhere else to go.</p>

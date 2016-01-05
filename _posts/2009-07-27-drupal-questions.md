@@ -3,6 +3,8 @@ layout: post
 title: Drupal Questions
 author: catholicservant
 nid: 71
+redirect_from:
+  - /forum/topics/71/
 created: 1248701820
 ---
 <p>Hello,</p>

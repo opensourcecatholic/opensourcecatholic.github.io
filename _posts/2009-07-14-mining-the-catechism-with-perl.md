@@ -3,6 +3,8 @@ layout: post
 title: Mining the Catechism with Perl
 author: Jeffrey Pinyan - Praying the Mass
 nid: 50
+redirect_from:
+  - /blog/praying-mass/mining-catechism-perl/
 created: 1247586521
 ---
 <p>There are a few copies of the <em>Catechism of the Catholic Church</em> online, and they all have a very simple search interface.&nbsp; While this might be helpful when looking up words like &quot;Incarnation&quot; or &quot;Purgatory&quot;, these search interfaces are not very robust.&nbsp; What's more, they don't enable readers to identify paragraphs of the Catechism which make reference to a particular passage of Scripture.</p>

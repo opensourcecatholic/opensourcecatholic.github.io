@@ -3,6 +3,8 @@ layout: post
 title: Saint Timelines
 author: liangjh
 nid: 479
+redirect_from:
+  - /blog/jonathan-l/saint-timelines/
 created: 1378614538
 ---
 It has been several months since we launched the initial version of <a href="http://saintstir.com">Saintstir</a>, a 21st century taxonomy and social site centered around the saints of the Catholic Church.  It comes with an API for application developers as well (check out our <a href="http://www.saintstir.com/developers">developers</a> page).

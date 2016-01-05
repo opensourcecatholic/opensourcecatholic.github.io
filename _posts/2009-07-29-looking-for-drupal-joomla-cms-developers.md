@@ -3,6 +3,8 @@ layout: post
 title: Looking for Drupal / Joomla / CMS Developers
 author: Jeff Geerling
 nid: 78
+redirect_from:
+  - /content/looking-drupal-joomla-cms-developers/
 created: 1248893639
 ---
 <p>

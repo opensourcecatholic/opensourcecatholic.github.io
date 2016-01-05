@@ -4,6 +4,8 @@ title: Code for automatically figuring out the Liturgical Season and changing th
   colour on a website
 author: jamesbergin
 nid: 467
+redirect_from:
+  - /blog/james-bergin/code-automatically/
 created: 1364848816
 ---
 Back in 2006, I started to work on my first Catholic blog (www.beingfrank.co.nz).  As I started to explore Wordpress as a CMS and how the themes work within that platform, I wanted to get the colours of the site to change with the liturgical seasons of the Church - i.e. violet for Lent and Advent, gold for Easter etc.

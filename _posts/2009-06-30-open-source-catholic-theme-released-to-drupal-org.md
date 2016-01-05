@@ -3,6 +3,8 @@ layout: post
 title: Open Source Catholic Theme Released to Drupal.org
 author: Jeff Geerling
 nid: 30
+redirect_from:
+  - /content/open-source-catholic-theme-released-drupalorg/
 created: 1246343706
 ---
 <p>What is open source without people who freely give of their time to make open source projects better? It's no source at all!</p>

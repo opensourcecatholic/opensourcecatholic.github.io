@@ -3,6 +3,8 @@ layout: post
 title: An App for Every Diocese
 author: Jeff Geerling
 nid: 450
+redirect_from:
+  - /blog/jeff-geerling/app-every-diocese/
 created: 1346714747
 ---
 I've been working on the <a href="http://catholicdioceseapp.com/">Catholic Diocese App</a> (for Android and iPhone) for the past year and a half, and it's my hope that every Catholic diocese or organization that wants an app can have one.

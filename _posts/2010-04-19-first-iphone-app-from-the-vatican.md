@@ -3,6 +3,8 @@ layout: post
 title: 'First iPhone App from the Vatican:'
 author: Jeff Geerling
 nid: 249
+redirect_from:
+  - /blog/oscatholic/first-iphone-app-vatican/
 created: 1271708015
 ---
 <p class="rtecenter">

@@ -3,6 +3,8 @@ layout: post
 title: Website Background Question
 author: catholicservant
 nid: 176
+redirect_from:
+  - /forum/topics/176/
 created: 1260230398
 ---
 <p>

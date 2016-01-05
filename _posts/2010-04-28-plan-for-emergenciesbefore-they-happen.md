@@ -3,6 +3,8 @@ layout: post
 title: Plan for Emergencies—Before they Happen
 author: Jeff Geerling
 nid: 257
+redirect_from:
+  - /blog/oscatholic/plan-emergencies—-they-h/
 created: 1272482274
 ---
 <p>I was recently emailed by an organization who has recently had their website go belly-up, and they lost most of their recent data. Their development company supposedly has some backups, but are not being the best of communicators right now (it can happen to the best of us).</p>

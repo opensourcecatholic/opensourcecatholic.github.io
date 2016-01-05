@@ -3,6 +3,8 @@ layout: post
 title: OneBillionStories.com seeks Intern for Web Development
 author: OneBillionStories.com
 nid: 410
+redirect_from:
+  - /forum/topics/410/
 created: 1320270846
 ---
 <p align="center">A Global Search Begins</p>

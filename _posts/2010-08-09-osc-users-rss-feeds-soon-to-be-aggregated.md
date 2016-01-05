@@ -3,6 +3,8 @@ layout: post
 title: OSC Users' RSS Feeds... soon to be aggregated
 author: Jeff Geerling
 nid: 305
+redirect_from:
+  - /blog/oscatholic/osc-users-rss-feeds-soon/
 created: 1281386245
 ---
 <p class="rtecenter"><img alt="RSS Icon" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/rss-icon.jpg" style="width: 200px; height: 133px; " title="" /></p>

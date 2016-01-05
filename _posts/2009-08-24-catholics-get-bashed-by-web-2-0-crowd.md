@@ -3,6 +3,8 @@ layout: post
 title: Catholics Get Bashed by Web 2.0 Crowd
 author: 98faithCA
 nid: 118
+redirect_from:
+  - /blog/98faithca/catholics-get-bashed-web-20-crowd/
 created: 1251120608
 ---
 <p>[<em>This post offers up some interesting topics for discussion &mdash; Ed.</em>]</p>

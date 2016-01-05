@@ -3,6 +3,8 @@ layout: post
 title: What's in YOUR ears?
 author: catholicservant
 nid: 99
+redirect_from:
+  - /forum/topics/99/
 created: 1249563295
 ---
 <p>Since I&nbsp;spend alot of time on wifi in libraries and coffee shops, I&nbsp;bring along my squishy marshmallow green ear buds (http://tinyurl.com/lvojdy) and fire up itunes.</p>

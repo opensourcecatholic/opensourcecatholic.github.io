@@ -3,6 +3,8 @@ layout: post
 title: Going the self-publishing route
 author: Jeffrey Pinyan - Praying the Mass
 nid: 132
+redirect_from:
+  - /blog/praying-mass/going-self-publishing-route/
 created: 1253799789
 ---
 <p>[<em>Good post on making a self-published book &mdash;Ed.</em>]</p>

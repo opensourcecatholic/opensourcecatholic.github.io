@@ -3,6 +3,8 @@ layout: post
 title: Vatican website may have been 'Google bombing' victim
 author: Matt K
 nid: 298
+redirect_from:
+  - /blog/matt-k/vatican-website-may-have/
 created: 1279565144
 ---
 <blockquote>

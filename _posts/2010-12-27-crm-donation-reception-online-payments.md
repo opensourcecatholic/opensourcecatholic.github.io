@@ -3,6 +3,8 @@ layout: post
 title: CRM, Donation Reception, Online Payments
 author: Jeff Geerling
 nid: 361
+redirect_from:
+  - /wiki/117/crm-donation-reception-on/
 created: 1293476174
 ---
 <p>This section of the OSC Wiki will include information about relevant services that provide Catholic parishes, organizations, and dioceses the tools they need to accept and track donations, relate with their donors and customers, and accept payments and registration fees for various purposes.</p>

@@ -3,6 +3,8 @@ layout: post
 title: Mass Attendance Rose 7.4% as result of Marketing/Website
 author: Jeff Geerling
 nid: 337
+redirect_from:
+  - /blog/oscatholic/mass-attendance-rose-74-/
 created: 1287073276
 ---
 <p><a href="http://www.catholicscomehome.org/"><img alt="Catholics Come Home.org" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/CatholicComeHomeLogoweb.jpg" style="border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; float: right; width: 275px; height: 215px; " title="" /></a>Well, this is refreshing news!</p>

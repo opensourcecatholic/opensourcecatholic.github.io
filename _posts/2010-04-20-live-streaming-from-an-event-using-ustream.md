@@ -3,6 +3,8 @@ layout: post
 title: Live Streaming from an Event using Ustream
 author: Jeff Geerling
 nid: 254
+redirect_from:
+  - /wiki/117/live-streaming-event/
 created: 1271790600
 ---
 <p>Ustream, a great streaming website (founded by a Catholic, nonetheless!), is the de-facto standard for live streaming online. <a href="http://www.ustream.tv/">Ustream</a> has made it extremely easy for anyone with a webcam (or a whole dedicated multicam rig) to stream an event from anywhere to thousands of users. Ustream is completely free, and uses Flash for stream delivery (although alternative methods are in the works... and you can stream straight from an iPhone!).</p>

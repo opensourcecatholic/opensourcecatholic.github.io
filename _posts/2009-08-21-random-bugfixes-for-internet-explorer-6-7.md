@@ -3,6 +3,8 @@ layout: post
 title: Random Bugfixes for Internet Explorer 6/7
 author: Jeff Geerling
 nid: 157
+redirect_from:
+  - /blog/oscatholic/random-bugfixes-internet/
 created: 1250873325
 ---
 <p>For the better part of two days, I was working on making a new design (currently <a href="http://www.archstl.org/new/front/">here</a>) for the <a href="http://www.archstl.org/">Archstl.org</a> website display correctly in Internet Explorer. There were a few bugs that took me hours to solve, so I thought I'd share here my solutions (note: 'good browsers = all browsers but IE').</p>

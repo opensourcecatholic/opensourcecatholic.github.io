@@ -3,6 +3,8 @@ layout: post
 title: Live-Blogging Steubenville 2009
 author: Jeff Geerling
 nid: 43
+redirect_from:
+  - /blog/oscatholic/live-blogging-steubenville-2009/
 created: 1247246984
 ---
 <p>Seen in St. Louis: The <a href="http://www.stlyouth.org">Office of Youth Ministry</a> is <a href="http://live.stlyouth.org/">live-blogging the 2009 Steubenville St. Louis Mid-America Youth Conference</a>! Pretty snazzy - pictures, videos, audio clips, etc., and viewers can rate their favorite content!</p>

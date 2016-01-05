@@ -3,6 +3,8 @@ layout: post
 title: Celebrating the Holy Mass from an iPad
 author: Jeff Geerling
 nid: 286
+redirect_from:
+  - /blog/geerlingguy/celebrating-holy-mass/
 created: 1276895437
 ---
 <p><img alt="iPad with Roman Missal" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/roman-missal-ipad.png" style="margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; float: right; width: 214px; height: 289px; " title="" />As seen <a href="http://wdtprs.com/blog/2010/06/ipad-replacing-altar-missal-wdtprs-poll/">on WDTPRS earlier today</a> (and quoted from the AP&mdash;Fr. Z&#39;s comments in bold):</p>

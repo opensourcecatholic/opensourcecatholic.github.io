@@ -3,6 +3,8 @@ layout: post
 title: MapTiming - a web app that adds time to maps
 author: vicmortelmans
 nid: 484
+redirect_from:
+  - /forum/topics/484/
 created: 1404414336
 ---
 Hi,

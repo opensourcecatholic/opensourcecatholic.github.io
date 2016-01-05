@@ -3,6 +3,8 @@ layout: post
 title: 5 Things Every Parish Website Should Have in 2015
 author: Nobis Media
 nid: 487
+redirect_from:
+  - /blog/conoon-kim/5-things-every-parish/
 created: 1430428261
 ---
 Every year it's important to assess your website to understand things that work and don't work. With Easter season's arrival, now is the perfect time to renew your website for some "spring cleaning."

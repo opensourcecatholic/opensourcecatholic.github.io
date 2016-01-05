@@ -3,6 +3,8 @@ layout: post
 title: From the Catholic Media Conference (in LA)
 author: Jeff Geerling
 nid: 272
+redirect_from:
+  - /blog/oscatholic/catholic-media/
 created: 1275582026
 ---
 <p>It looks like <a href="http://twitter.com/ijimcoyle">@iJimCoyle</a> is tweeting from the Catholic Media Conference in Louisiana this week. Found today on his Twitter stream:</p>

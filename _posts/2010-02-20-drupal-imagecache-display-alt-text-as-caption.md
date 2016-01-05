@@ -3,6 +3,8 @@ layout: post
 title: Drupal ImageCache - Display Alt Text as Caption
 author: Jeff Geerling
 nid: 212
+redirect_from:
+  - /blog/oscatholic/drupal-imagecache-displa/
 created: 1266698607
 ---
 <p>

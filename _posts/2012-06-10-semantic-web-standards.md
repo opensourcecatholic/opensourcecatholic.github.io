@@ -3,6 +3,8 @@ layout: post
 title: SEMANTIC WEB STANDARDS
 author: rjzaar
 nid: 428
+redirect_from:
+  - /wiki/semantic-web-standards/
 created: 1339293573
 ---
 <span class="link-external">*Note: this information is out of date and yearns for someone to update it*

@@ -3,6 +3,8 @@ layout: post
 title: Looking for Custom Web Developer with Extensive Wordpress Knowledge
 author: Dr Peter Howard
 nid: 325
+redirect_from:
+  - /forum/topics/325/
 created: 1284674131
 ---
 <p>I am looking for a custom web developer to transform my current website (www.thecatholichour.org) into a custom website based on the Wordpress CMS. The end product will most likely be a custom CMS based on Wordpress as my site will require multiple databases. My original webmaster is too tied up to work within my current timeframe of 2-3 weeks to get essential components up and running followed by a Phase II which will require more customized work on the site.&nbsp;</p>

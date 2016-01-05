@@ -3,6 +3,8 @@ layout: post
 title: Migrate Content from ASP site to Joomla/PHP
 author: catholicservant
 nid: 72
+redirect_from:
+  - /forum/topics/72/
 created: 1248706397
 ---
 <p>Hello,</p>

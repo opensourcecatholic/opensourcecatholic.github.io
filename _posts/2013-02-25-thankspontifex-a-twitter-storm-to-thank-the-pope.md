@@ -3,6 +3,8 @@ layout: post
 title: "#ThanksPontifex - a Twitter Storm to Thank the Pope"
 author: MPSchneiderLC
 nid: 466
+redirect_from:
+  - /blog/br-matthew-p-schneider-lc-0/
 created: 1361803939
 ---
 I wanted to thank the Pope as he retired but I didn't know how. I happen to work with youth ministry, so I also wanted a way for teens to get involved. Then this idea came to me, why don't we create a Twitter storm of thank-you messages. If we got enough, our tag would appear on "Trending" for all users on twitter even non-Catholics.

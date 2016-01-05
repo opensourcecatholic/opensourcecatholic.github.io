@@ -3,6 +3,8 @@ layout: post
 title: Embedding a 'Related Content' block in your Drupal nodes
 author: Jeff Geerling
 nid: 352
+redirect_from:
+  - /blog/oscatholic/embedding-related-conten/
 created: 1289500376
 ---
 <p>Many of my favorite websites offer a nice little feature, immediately following the body of the page, that highlights 3-5 &quot;possibly related&quot; stories or blog posts. I wanted to do this on OSC and some other sites, but found that it&#39;s difficult to add regions inside of nodes&mdash;the closest I could get with the default theme/block behavior is to have it appear after comment section, which is too far down the page to be relevant.</p>

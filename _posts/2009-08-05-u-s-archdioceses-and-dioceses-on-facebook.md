@@ -3,6 +3,8 @@ layout: post
 title: U.S. Archdioceses and Dioceses on Facebook
 author: Jeff Geerling
 nid: 93
+redirect_from:
+  - /blog/oscatholic/us-archdioceses-and-dioceses-faceb/
 created: 1249484416
 ---
 <p>As a companion posting to our directory of <a href="/blog/geerlingguy/us-archdioceses-and-dioceses-twitter">U.S. Archdioceses and Dioceses on Twitter</a>, I thought I'd include any of our stateside entities on Facebook below (note: not all of these groups leverage their social media presence as much as they could... but it's good that they're trying ;-).</p>

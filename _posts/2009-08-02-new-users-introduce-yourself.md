@@ -3,6 +3,8 @@ layout: post
 title: 'New Users: Introduce yourself  :)'
 author: Pistos
 nid: 86
+redirect_from:
+  - /forum/topics/86/
 created: 1249185036
 ---
 <p>Hello. &nbsp;I found this website because of my web analytics software. &nbsp;Nice! &nbsp;Being Catholic and doing open source development are two things I'm quite passionate about, so this looks like a cool community.</p>

@@ -3,6 +3,8 @@ layout: post
 title: How Do I Remove The Title in Drupal?
 author: Cade_One
 nid: 177
+redirect_from:
+  - /forum/topics/177/
 created: 1260320304
 ---
 <p>

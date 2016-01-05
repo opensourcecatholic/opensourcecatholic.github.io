@@ -3,6 +3,8 @@ layout: post
 title: Images not displaying in Drupal posts.
 author: jsignal
 nid: 271
+redirect_from:
+  - /forum/topics/271/
 created: 1275426711
 ---
 <p>Hello,</p>

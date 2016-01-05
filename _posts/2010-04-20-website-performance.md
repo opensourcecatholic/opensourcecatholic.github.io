@@ -3,6 +3,8 @@ layout: post
 title: Website Performance
 author: Jeff Geerling
 nid: 250
+redirect_from:
+  - /wiki/117/website-performance/
 created: 1271784155
 ---
 <p>

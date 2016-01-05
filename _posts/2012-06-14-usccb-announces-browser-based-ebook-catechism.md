@@ -3,6 +3,8 @@ layout: post
 title: USCCB Announces 'Browser-Based eBook' Catechism
 author: Jeff Geerling
 nid: 437
+redirect_from:
+  - /blog/jeff-geerling/usccb-announces-brows/
 created: 1339691273
 ---
 This morning, the USCCB <a href="http://usccb.org/news/2012/12-107.cfm">announced</a> the release of a new Catechism of the Catholic Church as an eBook. My hopes that this was finally true were dashed when I found two problems:

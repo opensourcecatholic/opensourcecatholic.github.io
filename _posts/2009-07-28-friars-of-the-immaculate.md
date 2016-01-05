@@ -3,6 +3,8 @@ layout: post
 title: Friars of the Immaculate
 author: Matt K
 nid: 77
+redirect_from:
+  - /blog/matt-k/friars-immaculate/
 created: 1248822123
 ---
 <p>[<em>Editor's note: Do you have any examples of </em>other<em> consecrated, ordained, or lay groups leveraging the power of their websites, YouTube channels, etc. to great effect? Please share them, and write as much as you can about them</em>!]</p>

@@ -3,6 +3,8 @@ layout: post
 title: Open Source Catholic - What is it?
 author: Jeff Geerling
 nid: 2
+redirect_from:
+  - /content/open-source-catholic-what-it/
 created: 1246057116
 ---
 <p>...Thus begins a new website. The site was an idea in <a href="http://www.lifeisaprayer.com/">Jeff Geerling's</a> head for about a year, but time was the major constraint holding the site back from actually being made. Now, though, it is time. The website is ready, and hopefully it can be come a hub for Catholics to share solutions and ideas for improving evangelization using new technological media.</p>

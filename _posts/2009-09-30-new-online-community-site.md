@@ -3,6 +3,8 @@ layout: post
 title: New Online Community Site
 author: catholicservant
 nid: 135
+redirect_from:
+  - /blog/catholicservant/new-online-community-site/
 created: 1254346994
 ---
 <p>&nbsp;Howdy folks,</p>

@@ -3,6 +3,8 @@ layout: post
 title: Too many ways to contribute
 author: Joel Stein
 nid: 120
+redirect_from:
+  - /forum/topics/120/
 created: 1251403844
 ---
 <p>Hello everyone! &nbsp;I finally joined (at Jeff's persistent urging). &nbsp;I'm excited to meet other Catholics who share the burden of building websites. &nbsp;I've been a web developer since 2002, and besides a short job I took after college, I've been working for Catholic companies doing web development ever since, and I've always been the only &quot;web guy&quot; around. &nbsp;This site is a good idea to connect all of us.</p>

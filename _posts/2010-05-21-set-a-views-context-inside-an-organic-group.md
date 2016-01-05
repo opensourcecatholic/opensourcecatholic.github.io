@@ -3,6 +3,8 @@ layout: post
 title: Set a View's Context Inside an Organic Group
 author: Jeff Geerling
 nid: 268
+redirect_from:
+  - /blog/oscatholic/set-views-context-inside/
 created: 1274456575
 ---
 <p>A very simple way to allow a view to display as if it were a page in an organic group on your Drupal site: Simply paste the code below in your view&#39;s Header or Footer, using the PHP Code input format.</p>

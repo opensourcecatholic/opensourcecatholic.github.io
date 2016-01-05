@@ -3,6 +3,8 @@ layout: post
 title: Create a Podcast, Quick n' Easy, using Drupal with Views + FileField
 author: Jeff Geerling
 nid: 345
+redirect_from:
+  - /blog/oscatholic/create-podcast-quick-n-e/
 created: 1288388757
 ---
 <p><img alt="Podcast Logo" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/podcast.png" style="border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; float: right; width: 150px; height: 150px; " title="" />After having created a <a href="http://www.lifeisaprayer.com/catholic-car-wash">few</a> <a href="http://feeds.feedburner.com/lolsaints-podcast?format=xml">different</a> <a href="http://www.reapteam.org/podcast">podcasts</a> on different Drupal sites for different purposes, using a variety of methods, I can speak with a little authority on which methods are the best, easiest, etc. There is an <a href="http://drupal.org/project/audio">Audio</a> module, and an <a href="http://drupal.org/project/itunes">iTunes</a> module, which help with more advanced podcasting needs... but most people just want a podcast which will allow visitors to either listen while on the website, or to be able to subscribe to the podcast in iTunes or another media player.</p>

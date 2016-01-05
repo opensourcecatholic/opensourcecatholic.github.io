@@ -3,6 +3,8 @@ layout: post
 title: drupal use by religious communities
 author: reckshow
 nid: 109
+redirect_from:
+  - /forum/topics/109/
 created: 1250026886
 ---
 <p>Hi there,</p>

@@ -3,6 +3,8 @@ layout: post
 title: Open Source Software / Catholic Teaching
 author: Jeff Geerling
 nid: 125
+redirect_from:
+  - /blog/oscatholic/open-source-software-catholic-teac/
 created: 1251998617
 ---
 <p>From the wayback machine: an article that originally appeared in 2005 on Linux.com, written by Marco Fioretti, titled &quot;Free software's surprising sympathy with Catholic doctrine.&quot;</p>

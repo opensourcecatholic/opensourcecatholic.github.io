@@ -3,6 +3,8 @@ layout: post
 title: One-Page Quick SEO Optimization
 author: Jeff Geerling
 nid: 231
+redirect_from:
+  - /blog/oscatholic/one-page-quick-seo-optim/
 created: 1270131912
 ---
 <p>

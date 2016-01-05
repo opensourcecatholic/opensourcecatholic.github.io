@@ -4,6 +4,8 @@ title: Developing a Drupal solution for a Diocese (+ e-learning, crm, event mana
   integrated parish sites)
 author: jonathan.henderson
 nid: 473
+redirect_from:
+  - /forum/topics/473/
 created: 1371565681
 ---
 Dear faith filled friends of Drupal,

@@ -3,6 +3,8 @@ layout: post
 title: Website Hosting Management, DNS Information
 author: Jeff Geerling
 nid: 328
+redirect_from:
+  - /wiki/117/website-hosting-managemen/
 created: 1285096506
 ---
 <p>Almost every website on the Internet is accessed using a name like &quot;www.opensourcecatholic.com&quot; or &quot;www.archstl.org.&quot; These are called <em>domain names</em>. There is a whole system on the internet called DNS, which allow people&#39;s computers to access the right information when they type in a domain name in their browser.</p>

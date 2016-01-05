@@ -3,6 +3,8 @@ layout: post
 title: Archdiocese of Saint Louis' Upgraded Website
 author: Jeff Geerling
 nid: 198
+redirect_from:
+  - /blog/oscatholic/archdiocese-saint-louis-upgraded-website/
 created: 1266840001
 ---
 <p>

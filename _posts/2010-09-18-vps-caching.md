@@ -3,6 +3,8 @@ layout: post
 title: VPS caching
 author: catholicservant
 nid: 327
+redirect_from:
+  - /blog/catholicservant/vps-caching/
 created: 1284779411
 ---
 <p>I&#39;m looking at installing APC (Alternative PHP Cache) on one of the VPS&#39;es I support.</p>

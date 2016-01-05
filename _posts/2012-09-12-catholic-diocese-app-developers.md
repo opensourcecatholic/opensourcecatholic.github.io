@@ -3,6 +3,8 @@ layout: post
 title: Catholic Diocese App Developers
 author: Jeff Geerling
 nid: 452
+redirect_from:
+  - /wiki/catholic-diocese-app/catholic/
 created: 1347475735
 ---
 The following developers would love to help your Diocese or organization build an app based on our Catholic Diocese App:

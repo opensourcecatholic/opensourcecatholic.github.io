@@ -3,6 +3,8 @@ layout: post
 title: Vatican - One of the First Websites... Still Hasn't Changed?
 author: Jeff Geerling
 nid: 154
+redirect_from:
+  - /blog/oscatholic/vatican-one-first-websit/
 created: 1258348727
 ---
 <p>After reading an article (from Six Revisions) on the <a href="http://sixrevisions.com/resources/the-history-of-the-internet-in-a-nutshell/">History of the Internet</a>, I realized just how cutting-edge our Church has been, historically, when it comes to using the web for communications. The Vatican website (<a href="http://www.vatican.va/">www.vatican.va</a>) was one of the first globally-relevant and vast websites in the world!</p>

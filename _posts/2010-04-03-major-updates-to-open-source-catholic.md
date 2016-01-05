@@ -3,6 +3,8 @@ layout: post
 title: Major Updates to Open Source Catholic!
 author: Jeff Geerling
 nid: 242
+redirect_from:
+  - /blog/oscatholic/major-updates-open-sourc/
 created: 1270272056
 ---
 <p>

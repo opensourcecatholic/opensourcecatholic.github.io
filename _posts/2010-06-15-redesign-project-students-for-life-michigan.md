@@ -3,6 +3,8 @@ layout: post
 title: 'Redesign Project: Students for Life Michigan'
 author: Jeff Geerling
 nid: 282
+redirect_from:
+  - /forum/topics/282/
 created: 1276632111
 ---
 <p>From the Students for Life:</p>

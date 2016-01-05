@@ -3,6 +3,8 @@ layout: post
 title: Are Macs Catholic?
 author: Jeff Geerling
 nid: 136
+redirect_from:
+  - /forum/topics/136/
 created: 1254926702
 ---
 <p>Are Macs Catholic? Question posed by Scott P. Richert on the About.com Catholic blog:</p>

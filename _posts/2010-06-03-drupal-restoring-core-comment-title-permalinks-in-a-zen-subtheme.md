@@ -3,6 +3,8 @@ layout: post
 title: 'Drupal: Restoring core comment title permalinks in a Zen Subtheme'
 author: Jeff Geerling
 nid: 273
+redirect_from:
+  - /blog/oscatholic/drupal-restoring-core/
 created: 1275601229
 ---
 <p>I was scratching my head after trying to troubleshoot a template problem for a few hours today; I was building a Zen subtheme for a site that had, until now, been using Garland for it&#39;s styling. In this subtheme, I wanted to have comments display with a similar look to Garland, and I especially wanted automatic permalinks to comments, referenced by a comment number:</p>

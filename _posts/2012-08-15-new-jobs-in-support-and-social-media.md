@@ -3,6 +3,8 @@ layout: post
 title: New Jobs in support and social media
 author: Jeff Geerling
 nid: 444
+redirect_from:
+  - /forum/topics/444/
 created: 1345036701
 ---
 I recently posted the following stories to the OSC home page, and am posting links here for those who might be interested in the following opportunities:

@@ -3,6 +3,8 @@ layout: post
 title: Online Prayer
 author: mairtin
 nid: 106
+redirect_from:
+  - /blog/mairtin/online-prayer/
 created: 1249913944
 ---
 <p>Hi everybody</p>

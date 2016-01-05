@@ -3,6 +3,8 @@ layout: post
 title: '2013 World Communications Day: Social Networks'
 author: Jeff Geerling
 nid: 464
+redirect_from:
+  - /blog/jeff-geerling/2013-world-0/
 created: 1359048833
 ---
 Pope Benedict XVI released his message for this year's World Communications Day (which will be May 12th), with the theme <em>Social Networks: portals of truth and faith; new spaces for evangelization</em>.

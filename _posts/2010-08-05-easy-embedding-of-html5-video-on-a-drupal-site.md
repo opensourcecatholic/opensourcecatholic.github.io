@@ -3,6 +3,8 @@ layout: post
 title: Easy Embedding of HTML5 Video on a Drupal Site
 author: Jeff Geerling
 nid: 302
+redirect_from:
+  - /blog/oscatholic/easy-embedding-html5-vid/
 created: 1281025191
 ---
 <p>For the past year, I&#39;ve watched the HTML5&nbsp;&lt;video&gt; element debate (mostly over video formats/containers) with a great interest&mdash;I abhor having to use Adobe Flash on my sites to embed video, especially since that means many videos don&#39;t work on my Linux workstation (which doesn&#39;t have Flash), or on my iPhone/iPad.</p>

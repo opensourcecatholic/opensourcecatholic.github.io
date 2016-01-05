@@ -3,6 +3,8 @@ layout: post
 title: Being Christ to the un -Evangelized at Mass
 author: GNW_Paul
 nid: 14
+redirect_from:
+  - /forum/topics/14/
 created: 1246257204
 ---
 <p>I have a tough time with this. &nbsp;Today, at my home parish usual 9:00 Mass we had a baptism.&nbsp; My family was sitting in our usual spot near the front.&nbsp; Directly in front of us was the family of the infant being baptized.&nbsp; As usual several members of the family showed signs that probably aren't regular Mass attendees.</p>

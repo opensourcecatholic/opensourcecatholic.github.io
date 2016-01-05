@@ -3,6 +3,8 @@ layout: post
 title: Wiki Stub Pages
 author: Jeff Geerling
 nid: 236
+redirect_from:
+  - /forum/topics/236/
 created: 1270247766
 ---
 <p>

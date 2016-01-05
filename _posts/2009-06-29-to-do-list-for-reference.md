@@ -3,6 +3,8 @@ layout: post
 title: To-Do List (for Reference)
 author: Jeff Geerling
 nid: 13
+redirect_from:
+  - /forum/topics/13/
 created: 1246257075
 ---
 To do list (I'm sticking it here, just so it's somewhere ;-):

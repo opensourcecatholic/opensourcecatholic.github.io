@@ -3,6 +3,8 @@ layout: post
 title: CKEditor Installed instead of FCKEditor
 author: Jeff Geerling
 nid: 172
+redirect_from:
+  - /forum/topics/172/
 created: 1260004660
 ---
 <p>

@@ -3,6 +3,8 @@ layout: post
 title: Study shows 2/3 of Churches not using any Social Media
 author: Jeff Geerling
 nid: 301
+redirect_from:
+  - /blog/oscatholic/study-shows-23-churches/
 created: 1280243120
 ---
 <p>Buzzplant (a social media firm) recently surveyed thousands of Churches (it was a general survey, so not just Catholics), asking what forms of social communications they were using to communicate with their parishioners. Here&#39;s a summary of the results:</p>

@@ -3,6 +3,8 @@ layout: post
 title: Anyone Use ExpressionEngine?
 author: catholicschoolwebdesign
 nid: 314
+redirect_from:
+  - /forum/topics/314/
 created: 1283199359
 ---
 <p>Hey everyone,</p>

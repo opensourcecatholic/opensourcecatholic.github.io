@@ -3,6 +3,8 @@ layout: post
 title: Sharing Parish Directory Information Online
 author: Jeff Geerling
 nid: 346
+redirect_from:
+  - /forum/topics/346/
 created: 1288733297
 ---
 <p>I just recently got around to a task I&#39;ve been wanting to complete for quite some time: I have set up a (very rough, so far) feed on archstl.org listing ALL the parishes, and including their GeoRSS location data.</p>

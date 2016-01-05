@@ -3,6 +3,8 @@ layout: post
 title: Open Access to the Catholic Bible and Catechism (NAB/NABRE and CCC)
 author: Jeff Geerling
 nid: 417
+redirect_from:
+  - /blog/jeff-geerling/open-access-catholic/
 created: 1324964222
 ---
 <img src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/Jeff%20Geerling/nabre-bible-leather.jpg" alt="Holy Bible - NAB Revised Edition - Leather bound" width="180" height="300" style="float: right; margin: 8px;" />After seeing about <a href="http://twitter.theinfo.org/149560641345159168">50 responses on Twitter</a> to a casual comment about the USCCB not being able/willing to allow open access to the <a href="http://old.usccb.org/nab/bible/">Bible</a> (NAB or NABRE translation) or <a href="http://old.usccb.org/catechism/text/">Catechism of the Catholic Church</a> to developers like me (and many others), I thought I'd simply post here all the information I have about the current situation, and what might be able to be done to remedy this situation...

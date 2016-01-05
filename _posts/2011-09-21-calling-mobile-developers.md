@@ -3,6 +3,8 @@ layout: post
 title: Calling Mobile Developers
 author: Jeff Geerling
 nid: 402
+redirect_from:
+  - /blog/jeff-geerling/calling-mobile-develo/
 created: 1316633113
 ---
 <strong>Update</strong>: I've posted links to some Catholic developers who have responded to this post over on the <a href="http://www.opensourcecatholic.com/wiki/117/mobile-app-development-re">Catholic Mobile App Development Resources</a> page.

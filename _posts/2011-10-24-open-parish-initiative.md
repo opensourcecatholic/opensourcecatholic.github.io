@@ -3,6 +3,8 @@ layout: post
 title: Open Parish Initiative
 author: Jeff Geerling
 nid: 409
+redirect_from:
+  - /project/open-parish/
 created: 1319421916
 ---
 Open Parish is an initiative to improve parish websites and online presences.

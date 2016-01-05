@@ -3,6 +3,8 @@ layout: post
 title: Catholic Semantic Web
 author: rjzaar
 nid: 427
+redirect_from:
+  - /wiki/catholic-semantic-web/
 created: 1339293387
 ---
 <span>The Catholic Semantic Web could have three key parts that will one day interact.</span>

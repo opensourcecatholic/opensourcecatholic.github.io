@@ -3,6 +3,8 @@ layout: post
 title: Pope Benedict's Message for 45th World Communications Day
 author: Jeff Geerling
 nid: 366
+redirect_from:
+  - /blog/jeff-geerling/pope-benedicts-messag/
 created: 1295888854
 ---
 <p>The Pope delivered his <a href="http://www.vatican.va/holy_father/benedict_xvi/messages/communications/documents/hf_ben-xvi_mes_20110124_45th-world-communications-day_en.html">message on the 45th World Day of Communications</a>. Very apropos:</p>

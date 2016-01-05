@@ -3,6 +3,8 @@ layout: post
 title: Why Your Diocese or Organization Needs Online News Feeds
 author: Jeff Geerling
 nid: 145
+redirect_from:
+  - /blog/oscatholic/why-your-diocese-or-orga/
 created: 1256882290
 ---
 <p>I hear from many people involved in Diocesan and organizational work&nbsp;that they are interested in &quot;doing more things online&quot; and &quot;connecting&nbsp;with their members online.&quot; it's great to wish for these things, and&nbsp;even better to try to achieve them. But wouldn't it be nice to&nbsp;<em>actually</em> achieve these goals?</p>

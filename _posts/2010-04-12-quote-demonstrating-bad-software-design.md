@@ -3,6 +3,8 @@ layout: post
 title: Quote demonstrating bad software design
 author: jr.duboc
 nid: 244
+redirect_from:
+  - /blog/jrduboc/quote-demonstrating-bad-s/
 created: 1271101959
 ---
 <p>

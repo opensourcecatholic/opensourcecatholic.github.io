@@ -3,6 +3,8 @@ layout: post
 title: Catholicism and New Media
 author: inspiredangela
 nid: 126
+redirect_from:
+  - /forum/topics/126/
 created: 1252008906
 ---
 <p>Hello, friends.</p>

@@ -3,6 +3,8 @@ layout: post
 title: Church.io OneBody directory and social networking software
 author: Jeff Geerling
 nid: 485
+redirect_from:
+  - /blog/jeff-geerling/churchio-onebody/
 created: 1406322215
 ---
 While browsing Hacker News today, I noticed a neat project by Tim Morgan, <a href="https://github.com/churchio/onebody">OneBody</a>. It is described as a "private member portal for churches" that offers "church directory and social networking" for your Church.

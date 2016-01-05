@@ -3,6 +3,8 @@ layout: post
 title: 'Drupal Views Filters: Making Exposed Searches User-Friendly'
 author: archstl
 nid: 207
+redirect_from:
+  - /blog/archstl/drupal-views-filters-mak/
 created: 1265233730
 ---
 <p>

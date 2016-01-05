@@ -3,6 +3,8 @@ layout: post
 title: Designers These Days...
 author: Jeff Geerling
 nid: 230
+redirect_from:
+  - /forum/topics/230/
 created: 1270044578
 ---
 <p>

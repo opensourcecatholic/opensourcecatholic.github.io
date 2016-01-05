@@ -3,6 +3,8 @@ layout: post
 title: "(Arch)Dioceses Getting On Board with Online Evangelization"
 author: Jeff Geerling
 nid: 290
+redirect_from:
+  - /blog/oscatholic/archdioceses-getting/
 created: 1278098827
 ---
 <p>On July 1, it looks like two separate Archdioceses made announcements relating to online evangelization:</p>

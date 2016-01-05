@@ -3,6 +3,8 @@ layout: post
 title: How to Build a Drupal Module - for Beginners
 author: Jeff Geerling
 nid: 344
+redirect_from:
+  - /blog/oscatholic/how-build-drupal-module-/
 created: 1288321838
 ---
 <p><img alt="Druplicon" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/druplicon.small_.png" style="border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; float: right; width: 105px; height: 120px; " title="" />At a recent St. Louis area Drupal meetup (<a href="http://groups.drupal.org/node/97899">details here</a>), I presented a quick session on how to build a drupal module, geared towards beginning Drupal developers (I don&#39;t consider myself too advanced, but I have found that my experiences can often help others).</p>

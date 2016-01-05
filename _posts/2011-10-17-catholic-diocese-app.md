@@ -3,6 +3,8 @@ layout: post
 title: Catholic Diocese App
 author: Jeff Geerling
 nid: 407
+redirect_from:
+  - /project/catholic-diocese-app/
 created: 1318820721
 ---
 <img src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/project/resources/diocese-app-screenshot.jpg" alt="Parish finder in Catholic Diocese App" width="200" height="288" style="float: right; border-width: 1px; border-color: #555; border-style: solid; margin: 10px;" />The <strong>Catholic Diocese App</strong> is an open source project for iOS and/or Android that can be customized and modified to allow Catholic Dioceses and Archdioceses to build an app suited to their needs.

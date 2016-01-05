@@ -3,6 +3,8 @@ layout: post
 title: XML Format for Parish Directory Information
 author: Jeff Geerling
 nid: 419
+redirect_from:
+  - /wiki/117/xml-format-parish-directo/
 created: 1325094895
 ---
 For some time, developers on Open Source Catholic have been working on formalizing a standard for sharing Catholic Parish directory information online through a universal XML format, in the thread <a href="http://www.opensourcecatholic.com/forum/topics/346">Sharing Parish Directory Information Online</a>.
