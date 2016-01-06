@@ -1,27 +1,5 @@
 <div class="post-comments">
   <div id="disqus_thread"></div>
-  <!-- Test 4: {{ page.nid }} -->
-  {% if page.nid|size == 0 %}
-    <!-- size test -->
-  {% endif %}
-  {% if page.nid > 0 %}
-    <!-- size test 2 -->
-  {% endif %}
-  {% if page.nid > 1 %}
-    <!-- size test 3 -->
-  {% endif %}
-  {% if page.nid == 0 %}
-    <!-- zero test -->
-  {% endif %}
-  {% if page.nid == empty %}
-    <!-- empty test -->
-  {% endif %}
-  {% if page.nid.exists? %}
-    <!-- exists test -->
-  {% endif %}
-  {% if page.nid.empty? %}
-    <!-- empty test -->
-  {% endif %}
   <script>
     var disqus_config = function () {
       {% if page.nid > 0 %}
