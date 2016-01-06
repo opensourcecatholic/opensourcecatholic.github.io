@@ -2,8 +2,7 @@
 layout: page
 title: "IRC"
 permalink: /irc/
-redirect_from:
-  - /catholic-irc-chat-channel/
+redirect_from: /catholic-irc-chat-channel/
 ---
 Below, you can login to the public Catholic chat channel on the Freenode's IRC (Internet Relay Chat) system. Simply type in a nickname and click the "Connect" button.
 

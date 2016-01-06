@@ -2,8 +2,7 @@
 layout: page
 title: "Search"
 permalink: /search/
-redirect_from:
-  - /search/site/
+redirect_from: /search/site/
 ---
 <script>
   (function() {
