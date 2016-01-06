@@ -22,7 +22,7 @@ layout: default
         </div>
 
         {% if post.comments %}
-          {% if page.nid > 0 %}
+          {% if post.nid > 0 %}
             {% comment %} This post was imported from Drupal. {% endcomment %}
             {% assign comments_url = post.redirect_from %}
           {% else %}
