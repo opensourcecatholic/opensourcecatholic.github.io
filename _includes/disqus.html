@@ -4,6 +4,12 @@
   {% if page.nid|size == 0 %}
     <!-- size test -->
   {% endif %}
+  {% if page.nid > 0 %}
+    <!-- size test 2 -->
+  {% endif %}
+  {% if page.nid > 1 %}
+    <!-- size test 3 -->
+  {% endif %}
   {% if page.nid == 0 %}
     <!-- zero test -->
   {% endif %}
@@ -18,14 +24,14 @@
   {% endif %}
   <script>
     var disqus_config = function () {
-      {% if page.nid == 0 %}
-        {% comment %} This is a native Jekyll post. {% endcomment %}
-        this.page.url = "{{ page.url | prepend: site.url }}";
-        this.page.identifier = "{{ page.url }}";
-      {% else %}
+      {% if page.nid > 0 %}
         {% comment %} This post was imported from Drupal. {% endcomment %}
         this.page.url = "{{ page.redirect_from | prepend: site.url }}";
         this.page.identifier = "node/{{ page.nid }}";
+      {% else %}
+        {% comment %} This is a native Jekyll post. {% endcomment %}
+        this.page.url = "{{ page.url | prepend: site.url }}";
+        this.page.identifier = "{{ page.url }}";
       {% endif %}
     };
     (function() { // DON'T EDIT BELOW THIS LINE
