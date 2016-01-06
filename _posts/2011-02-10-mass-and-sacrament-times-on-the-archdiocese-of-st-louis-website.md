@@ -7,22 +7,35 @@ comments: true
 redirect_from: /blog/oscatholic/mass-and-sacrament-times/
 created: 1297355665
 ---
-<p>One question I'm often asked by many other diocesan web development teams/individuals is how we put together our online Mass Time search (also used for searching adoration and reconciliation times). We also get questions about how we do our online mapping—but I've already covered that (see: <a href="/blog/oscatholic/beautiful-easy-maps-drup">Beautiful, Easy Maps in Drupal using Views and Mapstraction</a>).</p><p style="text-align: center;"><a href="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/search-for-mass-time-ash-wednesday.png"><img src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/imagecache/300px-by-300px/user-uploads/oscatholic/search-for-mass-time-ash-wednesday.png" alt="Mass Times Search Interface" style="border: 0px initial initial;" class="imagecache-300px-by-300px" /></a><br />The Archdiocesan <a href="http://archstl.org/parishes/mass-times">Mass Times search</a> interface (click to enlarge)</p>
-<p>We already have a database provided by the Archdiocesan IT department (they maintain it with the help of our diocesan Parish Support staff, and parish secretaries who can update their own schedules and information), so we needed to do the following on the web:</p>
-<ul>
-<li>Import all the Sacrament time information and attach it to a parish node (so times/days could be affiliated with parishes).</li>
-<li>Display the time information on parish node pages, in a meaningful way.</li>
-<li>Allow users to search by Sacrament times, showing parishes on a map, and showing the Sacrament times in a list under the map.</li>
-</ul>
-<p>I'll cover each of these important aspects of our website's functionality below.</p><p><em>Preliminary note: much of this code was provided originally by the great folks at <a href="http://www.palantir.net/">Palantir</a>, who helped us set up this and many other features on the Archdiocesan website...</em></p>
-<h3>Importing time information, attaching it to Parish nodes</h3>
-<p>The first step in the process is importing some 3,000+ parish event nodes (which contain data for each 'event' - the event time, the event type (Mass/Reconciliation/Adoration), whether the event is a 'Normal Service' or a special kind of Mass, the location of the event (often in a side chapel or somewhere else), the event day, and the reference for the parish to which the event is attached.</p>
-<p>Our site uses the <a href="http://drupal.org/project/migrate">Migrate</a> module to import all the data, and we have the module set up to import all the events first, then import the Parishes, attaching the events to parishes (through custom code) using a node reference.</p><!--break-->
-<p>The CSV file containing the parish event data contains over 3,000 lines of information like the following:</p>
-<pre>29,"362",1,37,48,"07:30","",0,"","English"<br /></pre>
-<p>Our migrate import takes that line, creates a new node with the information, then later, while importing parish nodes, attaches all event nodes affiliated with that parish to the parish node itself. Then, as they say, the magic happens (via a nodereference field).</p>
-<p>Here's the code we use to prepare our parish event node via the migrate import process:</p>
-<?php
+One question I'm often asked by many other diocesan web development teams/individuals is how we put together our online Mass Time search (also used for searching adoration and reconciliation times). We also get questions about how we do our online mapping—but I've already covered that (see: [Beautiful, Easy Maps in Drupal using Views and Mapstraction](/blog/oscatholic/beautiful-easy-maps-drup)).
+
+<p style="text-align: center;"><a href="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/search-for-mass-time-ash-wednesday.png"><img src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/imagecache/300px-by-300px/user-uploads/oscatholic/search-for-mass-time-ash-wednesday.png" alt="Mass Times Search Interface" style="border: 0px initial initial;" class="imagecache-300px-by-300px" /></a><br />The Archdiocesan <a href="http://archstl.org/parishes/mass-times">Mass Times search</a> interface (click to enlarge)</p>
+
+We already have a database provided by the Archdiocesan IT department (they maintain it with the help of our diocesan Parish Support staff, and parish secretaries who can update their own schedules and information), so we needed to do the following on the web:
+
+  - Import all the Sacrament time information and attach it to a parish node (so times/days could be affiliated with parishes).
+  - Display the time information on parish node pages, in a meaningful way.
+  - Allow users to search by Sacrament times, showing parishes on a map, and showing the Sacrament times in a list under the map.
+
+I'll cover each of these important aspects of our website's functionality below.
+
+_Preliminary note: much of this code was provided originally by the great folks at [Palantir](http://www.palantir.net/), who helped us set up this and many other features on the Archdiocesan website..._
+
+## Importing time information, attaching it to Parish nodes
+
+The first step in the process is importing some 3,000+ parish event nodes (which contain data for each 'event' - the event time, the event type (Mass/Reconciliation/Adoration), whether the event is a 'Normal Service' or a special kind of Mass, the location of the event (often in a side chapel or somewhere else), the event day, and the reference for the parish to which the event is attached.
+
+Our site uses the [Migrate](http://drupal.org/project/migrate) module to import all the data, and we have the module set up to import all the events first, then import the Parishes, attaching the events to parishes (through custom code) using a node reference.
+
+The CSV file containing the parish event data contains over 3,000 lines of information like the following:
+
+    29,"362",1,37,48,"07:30","",0,"","English"
+
+Our migrate import takes that line, creates a new node with the information, then later, while importing parish nodes, attaches all event nodes affiliated with that parish to the parish node itself. Then, as they say, the magic happens (via a nodereference field).
+
+Here's the code we use to prepare our parish event node via the migrate import process:
+
+```php
 function dir_migrate_prep_parish_event(&$node, $tblinfo, $row) {
   // Just stick on a filler title
   $node->title = "Parish event #" . $row->peventkey;
@@ -45,9 +58,12 @@ function dir_migrate_prep_parish_event(&$node, $tblinfo, $row) {
     $node->taxonomy[$term->tid] = $term;
   }
 }
-?>
-<p>We basically sanitize the dates coming in from the database (we want them in standard time/0000 format), and then we add taxonomy terms to the dates.</p><p>While importing parish nodes, among other things, we attach the parish event nid to the parish node's masstimes/adorationtimes/reconciliationtimes nodereference fields:</p>
-<?php
+```
+
+We basically sanitize the dates coming in from the database (we want them in standard time/0000 format), and then we add taxonomy terms to the dates.
+While importing parish nodes, among other things, we attach the parish event nid to the parish node's masstimes/adorationtimes/reconciliationtimes nodereference fields:
+
+```php
 $mt = dir_migrate_get_map_table('parish-event');
 $fields = dir_migrate_evtype_field_mapping();
 $result = db_query("SELECT mt.destid AS nid, e.fkpettypekey AS type
@@ -59,9 +75,13 @@ $result = db_query("SELECT mt.destid AS nid, e.fkpettypekey AS type
 while ($record = db_fetch_object($result)) {
   $node->{$fields[$record->type]}[] = array('nid' => $record->nid);
 }
-?>
-<p>Displaying Event Time Information in the Nodes</p><p>To display the time information in a particular node, we simply did a bit of theming magic. It's not the most highly performant bit of code in the world, but it works.</p><p>First, we set up a field_formatter and theme function for parish event times (the following code samples are all from our site's custom.module):</p>
-<?php
+```
+
+## Displaying Event Time Information in the Nodes
+To display the time information in a particular node, we simply did a bit of theming magic. It's not the most highly performant bit of code in the world, but it works.
+First, we set up a field_formatter and theme function for parish event times (the following code samples are all from our site's custom.module):
+
+```php
 /**
  * Implementation of hook_field_formatter_info()
  */
@@ -85,9 +105,13 @@ function custom_theme() {
     ),
   );
 }
-?>
-<p>These two functions just tell Drupal that we're defining a custom display formatter for parish event times (that can be used in Views, on node teasers, and in full node displays), and then defines a theme function in which we'll tell drupal how to format everything for display.</p><p>This next function is a doozy - it basically does all the display dirtywork, and causes a performance burden on the site—if we tried displaying the mass time information for all 200 parish nodes on the site at once, the queries/processing would probably take 20-30 seconds! Therefore, we cache everything aggressively so people don't have to wait for the following theme function to do its work—after it's been done once in a day, it doesn't have to go again, as we cache the resulting page for 18 hours.</p>
-<?php
+```
+
+These two functions just tell Drupal that we're defining a custom display formatter for parish event times (that can be used in Views, on node teasers, and in full node displays), and then defines a theme function in which we'll tell drupal how to format everything for display.
+
+This next function is a doozy - it basically does all the display dirtywork, and causes a performance burden on the site—if we tried displaying the mass time information for all 200 parish nodes on the site at once, the queries/processing would probably take 20-30 seconds! Therefore, we cache everything aggressively so people don't have to wait for the following theme function to do its work—after it's been done once in a day, it doesn't have to go again, as we cache the resulting page for 18 hours.
+
+```
 /**
  * Theming function for the "Parish Event Times" formatter.
  */
@@ -102,7 +126,7 @@ function theme_custom_formatter_parish_event_times($element) {
   foreach (element_children($element) as $key) {
     // Load the node
     $node = node_load($element[$key]['#item']['nid']);
-    
+
     // Parse and format the time
     // Pad start time with leading zero if only 3 digits
     if (strlen($node->field_event_start[0]['value']) == 3) {
@@ -124,7 +148,7 @@ function theme_custom_formatter_parish_event_times($element) {
     if ($node->field_event_end[0]['value'] > 0) {
       $time .= ' &ndash; '.date('g:i a', strtotime($node->field_event_end[0]['value']));
     }
-    
+
     // Node contains taxonomy
     if (!empty($node->taxonomy)) {
       $time_data = array();
@@ -159,7 +183,7 @@ function theme_custom_formatter_parish_event_times($element) {
       }
     }
   }
-  
+
   // Sort the Days using the weight above (this could be improved...)
   // @see http://archstldev.com/node/521
   asort($days);
@@ -176,10 +200,22 @@ function theme_custom_formatter_parish_event_times($element) {
   $output .= '</dl>';
   return $output;
 }
-?>
-<p>What we basically do here is load each referenced node, then grab all the metadata for that parish event from the parish event node. Then, we display all the metadata in a nice definition list, which gets themed to look like the following:</p><p style="text-align: center;"><img src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/mass-times-display.png" alt="Sacramental Time Information Display on Parish Node" width="600" height="251" /></p>
-<p>Looks nice, eh? Using the asort() function, we were able to <a href="http://archstldev.com/node/574">sort the times in the order of our Taxonomy</a> listing (so we could control which days would appear first...).</p><h3>Allow Users to Search by Time/Day using Views</h3><p>The final step in the process was to allow users to search on the website by Mass Time (or other Sacrament times), and since we were using Views for all our other search/filtering needs, we decided to use Views to do the time search as well.</p><p>Inside our dir_migrate.module (though this could live just as easily in our custom.module), we added a views handler, "dir_migrate_views_handler_filter_inttime."</p><p>In dir_migrate/dir_migrate.module:</p>
-<?php
+```
+
+What we basically do here is load each referenced node, then grab all the metadata for that parish event from the parish event node. Then, we display all the metadata in a nice definition list, which gets themed to look like the following:
+
+<p style="text-align: center;"><img src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/mass-times-display.png" alt="Sacramental Time Information Display on Parish Node" width="600" height="251" /></p>
+
+Looks nice, eh? Using the asort() function, we were able to <a href="http://archstldev.com/node/574">sort the times in the order of our Taxonomy</a> listing (so we could control which days would appear first...).
+
+## Allow Users to Search by Time/Day using Views
+
+The final step in the process was to allow users to search on the website by Mass Time (or other Sacrament times), and since we were using Views for all our other search/filtering needs, we decided to use Views to do the time search as well.
+Inside our `dir_migrate.module` (though this could live just as easily in our custom.module), we added a views handler, `dir_migrate_views_handler_filter_inttime`.
+
+In `dir_migrate/dir_migrate.module`:
+
+```php
 /**
  * Implementation of hook_views_api().
  */
@@ -189,9 +225,11 @@ function dir_migrate_views_api() {
     'path' => drupal_get_path('module', 'dir_migrate') . '/views',
   );
 }
-?>
-<p>In dir_migrate/views/dir_migrate.views.inc:</p>
-<?php
+```
+
+In `dir_migrate/views/dir_migrate.views.inc`:
+
+```php
 function dir_migrate_views_handlers() {
   return array(
     'info' => array(
@@ -213,9 +251,11 @@ function dir_migrate_views_data_alter(&$data) {
   $field['help'] = t('Filter handler that translates from int storage to time of day');
   $field['filter']['handler'] = 'dir_migrate_views_handler_filter_inttime';
 }
-?>
-<p>In dir_migrate/views/dir_migrate_views_handler_filter_inttime.inc (this is where we define our custom views filter...):</p>
-<?php
+```
+
+In `dir_migrate/views/dir_migrate_views_handler_filter_inttime.inc` (this is where we define our custom views filter...):
+
+```php
 class dir_migrate_views_handler_filter_inttime extends views_handler_filter_numeric {
   function option_definition() {
     $options = parent::option_definition();
@@ -258,9 +298,11 @@ class dir_migrate_views_handler_filter_inttime extends views_handler_filter_nume
     );
   }
 }
-?>
-<p>...and finally, some helpful functions for our integer/time CCK field/formatting, found in dir_migrate/dir_migrate.module:</p>
-<?php
+```
+
+...and finally, some helpful functions for our integer/time CCK field/formatting, found in `dir_migrate/dir_migrate.module`:
+
+```php
 // ==================== CCK Bits
 
 function int_time_theme() {
@@ -362,6 +404,14 @@ function int_time_increments_assoc() {
   }
   return $assoc;
 }
-?>
-<p><em>Wow... this is probably the longest post/code-dump I've ever written... sorry about that! Complex issues demand complex solutions, I guess?</em></p>
-<h3>Some Things Could Be Improved...</h3><p>Well, actually, a <em>lot</em> of things could be improved. For instance, we could avoid a lot of this custom code if there were a way to create Date fields without a month or year attached—basically, a timestamp without a fully-compliant 'date' attached to it—but this is currently not possible.</p><p>Right now, I'm focusing on a few other projects, but someday I really want to tackle issue #499 on the Archdiocesan Development website: <a href="http://archstldev.com/node/499">Create timefield module for Time CCK/Field</a>. I envision a module that allows you to add time information to a node like "Saturday, from 4 p.m. to 5 p.m.," and then be able to filter Views results by time values alone... but I don't know if/when I'll get the time to do this :(</p><p>Any other thoughts or ideas?</p>
+```
+
+_Wow... this is probably the longest post/code-dump I've ever written... sorry about that! Complex issues demand complex solutions, I guess?_
+
+## Some Things Could Be Improved...
+
+Well, actually, a _lot_ of things could be improved. For instance, we could avoid a lot of this custom code if there were a way to create Date fields without a month or year attached—basically, a timestamp without a fully-compliant 'date' attached to it—but this is currently not possible.
+
+Right now, I'm focusing on a few other projects, but someday I really want to tackle issue #499 on our internal tracker: _Create timefield module for Time CCK/Field_. I envision a module that allows you to add time information to a node like "Saturday, from 4 p.m. to 5 p.m.," and then be able to filter Views results by time values alone... but I don't know if/when I'll get the time to do this :(
+
+Any other thoughts or ideas?
