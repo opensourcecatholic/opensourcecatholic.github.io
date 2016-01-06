@@ -30,7 +30,7 @@ layout: default
             {% assign comments_url = '{{ post.redirect_from }}' %}
           {% endif %}
         <div class="post-comment-count">
-          <a href="{{ post.url | prepend: site.url }}#disqus_thread">View Comments</a>
+          <a href="{{ comments_url | prepend: site.url }}#disqus_thread">View Comments</a>
         </div>
         {% endif %}
       </li>
