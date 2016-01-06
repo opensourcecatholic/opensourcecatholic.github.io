@@ -3,8 +3,8 @@ layout: post
 title: 'Site Reorganization, #oscatholic IRC channel decommissioned'
 author: Jeff Geerling
 nid: 434
-redirect_from:
-  - /blog/jeff-geerling/site-reorganization-o/
+comments: true
+redirect_from: /blog/jeff-geerling/site-reorganization-o/
 created: 1339428353
 ---
 A few quick updates on Open Source Catholic:

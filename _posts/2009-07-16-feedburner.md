@@ -3,8 +3,8 @@ layout: post
 title: Feedburner?
 author: catholicservant
 nid: 53
-redirect_from:
-  - /forum/topics/53/
+comments: true
+redirect_from: /forum/topics/53/
 created: 1247754720
 ---
 <p>Hey Jeff,</p>

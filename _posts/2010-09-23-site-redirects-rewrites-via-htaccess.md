@@ -3,8 +3,8 @@ layout: post
 title: Site Redirects/Rewrites via .htaccess
 author: catholicservant
 nid: 330
-redirect_from:
-  - /blog/catholicservant/site-redirectsrewri/
+comments: true
+redirect_from: /blog/catholicservant/site-redirectsrewri/
 created: 1285268877
 ---
 <p>Greetings,</p>

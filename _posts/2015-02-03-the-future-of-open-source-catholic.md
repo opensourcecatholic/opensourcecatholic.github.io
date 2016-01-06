@@ -3,8 +3,8 @@ layout: post
 title: The Future of Open Source Catholic
 author: Jeff Geerling
 nid: 486
-redirect_from:
-  - /blog/jeff-geerling/future-open-source/
+comments: true
+redirect_from: /blog/jeff-geerling/future-open-source/
 created: 1422978324
 ---
 When I started Open Source Catholic in 2009, I was hoping to create a centralized resource for Catholics who were involved in OSS, sharing of ideas, tips and techniques for technology and web use for Catholic organizations, and a forum for Catholic software and app developers.

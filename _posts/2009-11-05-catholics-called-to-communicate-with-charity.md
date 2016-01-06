@@ -3,8 +3,8 @@ layout: post
 title: Catholics Called to Communicate with Charity
 author: Jeff Geerling
 nid: 152
-redirect_from:
-  - /blog/oscatholic/catholics-called-communi/
+comments: true
+redirect_from: /blog/oscatholic/catholics-called-communi/
 created: 1257453534
 ---
 <p>Seen on the <a href="http://www.catholicnews.com/data/stories/cns/0904838.htm">Catholic News Service wire</a>, and <a href="http://whispersintheloggia.blogspot.com/2009/11/quote-of-day.html">mentioned on Whispers</a>:</p>

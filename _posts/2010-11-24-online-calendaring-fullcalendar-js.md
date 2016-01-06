@@ -3,8 +3,8 @@ layout: post
 title: 'Online Calendaring: FullCalendar.js'
 author: Jeff Geerling
 nid: 357
-redirect_from:
-  - /blog/oscatholic/online-calendaring-fullc/
+comments: true
+redirect_from: /blog/oscatholic/online-calendaring-fullc/
 created: 1290613797
 ---
 <p>In my always-continuing quest to find the perfect online calendar display/management solution, I have found the next level of calendar display/management bliss.</p>

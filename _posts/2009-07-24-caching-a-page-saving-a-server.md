@@ -3,8 +3,8 @@ layout: post
 title: Caching a Page; Saving a Server
 author: Jeff Geerling
 nid: 158
-redirect_from:
-  - /blog/geerlingguy/caching-page-saving-server/
+comments: true
+redirect_from: /blog/geerlingguy/caching-page-saving-server/
 created: 1248468236
 ---
 <p>

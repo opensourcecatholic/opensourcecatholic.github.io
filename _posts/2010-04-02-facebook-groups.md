@@ -3,8 +3,8 @@ layout: post
 title: Facebook Groups
 author: Jeff Geerling
 nid: 237
-redirect_from:
-  - /wiki/facebook-groups/
+comments: true
+redirect_from: /wiki/facebook-groups/
 created: 1270247798
 ---
 <p>

@@ -3,8 +3,8 @@ layout: post
 title: What Makes a Good Parish Website?
 author: Jeff Geerling
 nid: 143
-redirect_from:
-  - /blog/oscatholic/what-makes-good-parish-website/
+comments: true
+redirect_from: /blog/oscatholic/what-makes-good-parish-website/
 created: 1256662071
 ---
 <p>I have been asked more times than I care to recall if I know of any good example parish websites, and, if not, what would make a good parish website.</p>

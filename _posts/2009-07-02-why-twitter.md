@@ -3,8 +3,8 @@ layout: post
 title: Why Twitter?
 author: archstl
 nid: 160
-redirect_from:
-  - /blog/archstl/why-twitter/
+comments: true
+redirect_from: /blog/archstl/why-twitter/
 created: 1246549030
 ---
 <p class="rtecenter"><a href="https://twitter.com/archstl"><img alt="@archstl Twitter Account page" width="400" height="273" style="border: 1px solid #999; padding: 4px;" src="/sites/opensourcecatholic.com/files/user-uploads/archstl/archstl-twitter-account.jpg" /></a></p>

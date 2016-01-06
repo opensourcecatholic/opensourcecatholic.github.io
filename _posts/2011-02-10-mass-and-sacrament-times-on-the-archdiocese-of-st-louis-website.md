@@ -3,8 +3,8 @@ layout: post
 title: Mass and Sacrament Times on the Archdiocese of St. Louis' Website
 author: Jeff Geerling
 nid: 373
-redirect_from:
-  - /blog/oscatholic/mass-and-sacrament-times/
+comments: true
+redirect_from: /blog/oscatholic/mass-and-sacrament-times/
 created: 1297355665
 ---
 <p>One question I'm often asked by many other diocesan web development teams/individuals is how we put together our online Mass Time search (also used for searching adoration and reconciliation times). We also get questions about how we do our online mapping—but I've already covered that (see: <a href="/blog/oscatholic/beautiful-easy-maps-drup">Beautiful, Easy Maps in Drupal using Views and Mapstraction</a>).</p><p style="text-align: center;"><a href="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/search-for-mass-time-ash-wednesday.png"><img src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/imagecache/300px-by-300px/user-uploads/oscatholic/search-for-mass-time-ash-wednesday.png" alt="Mass Times Search Interface" style="border: 0px initial initial;" class="imagecache-300px-by-300px" /></a><br />The Archdiocesan <a href="http://archstl.org/parishes/mass-times">Mass Times search</a> interface (click to enlarge)</p>

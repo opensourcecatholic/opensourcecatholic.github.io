@@ -3,8 +3,8 @@ layout: post
 title: Creating a More Friendly 404 Page
 author: Jeff Geerling
 nid: 263
-redirect_from:
-  - /blog/oscatholic/creating-more-friendly/
+comments: true
+redirect_from: /blog/oscatholic/creating-more-friendly/
 created: 1272997096
 ---
 <p>I finally had a little time today to update the Archdiocese of Saint Louis&#39; 404 Not Found page. Drupal has built-in 404 handling, so I simply created a new node, added in the content of the 404 page in the node body, and went to the &#39;site information&#39; page to set 404 errors to that node.</p>

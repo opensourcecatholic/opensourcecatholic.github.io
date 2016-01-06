@@ -3,8 +3,8 @@ layout: post
 title: Working on a new Intranet - Sharepoint vs. Drupal
 author: Jeff Geerling
 nid: 316
-redirect_from:
-  - /forum/topics/316/
+comments: true
+redirect_from: /forum/topics/316/
 created: 1283203256
 ---
 <p>I&#39;m working on a new Intranet for the Archdiocese of St. Louis, and I&#39;ve been developing in Drupal for the time being (the end-user experience, in my opinion, is crucial to the success or downfall of this Intranet), but the Data Center has offered SharePoint as an option.</p>

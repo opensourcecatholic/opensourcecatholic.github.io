@@ -3,8 +3,8 @@ layout: post
 title: 'OSV Asks: How effectively does your parish''s website connect?'
 author: Jeff Geerling
 nid: 221
-redirect_from:
-  - /blog/oscatholic/osv-asks-how-effectively/
+comments: true
+redirect_from: /blog/oscatholic/osv-asks-how-effectively/
 created: 1269010441
 ---
 <p>

@@ -3,8 +3,8 @@ layout: post
 title: Text Editors for Mac
 author: catholicservant
 nid: 149
-redirect_from:
-  - /forum/topics/149/
+comments: true
+redirect_from: /forum/topics/149/
 created: 1257371075
 ---
 <p>I spent a bit of time today evaluating text editing on my mac. Honestly, I've just been using text edit (I really only used notepad on Windows), since I don't do much heavy code lifting.</p>

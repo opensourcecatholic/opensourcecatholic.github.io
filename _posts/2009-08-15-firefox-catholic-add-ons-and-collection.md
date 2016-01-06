@@ -3,8 +3,8 @@ layout: post
 title: Firefox Catholic add-ons and collection
 author: mdhoerr
 nid: 111
-redirect_from:
-  - /blog/mdhoerr/firefox-catholic-add-ons-and-collec/
+comments: true
+redirect_from: /blog/mdhoerr/firefox-catholic-add-ons-and-collec/
 created: 1250357937
 ---
 <p>I noticed that there are Christian, Jewish and Moslem plug-ins and collections for Firefox, but nothing that is specifically Catholic.</p>

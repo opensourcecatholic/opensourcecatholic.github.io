@@ -3,8 +3,8 @@ layout: post
 title: Room To Pray Website
 author: mairtin
 nid: 107
-redirect_from:
-  - /forum/topics/107/
+comments: true
+redirect_from: /forum/topics/107/
 created: 1249916757
 ---
 <p><a target="_blank" href="http://www.roomtopray.net">www.roomtopray.net</a>&nbsp;is my website to encourage people to pause for prayer when browsing and also as a portal to interactive online prayer.</p>

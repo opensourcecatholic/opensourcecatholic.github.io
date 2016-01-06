@@ -3,8 +3,8 @@ layout: post
 title: Has anyone used the facebook ads to increase visability on FB?
 author: lindamicciche
 nid: 57
-redirect_from:
-  - /forum/topics/57/
+comments: true
+redirect_from: /forum/topics/57/
 created: 1247871247
 ---
 <p>Has it worked?&nbsp;</p>

@@ -3,8 +3,8 @@ layout: post
 title: PapalEncyclicals.net FYI (eReader related)
 author: lutra
 nid: 420
-redirect_from:
-  - /forum/topics/420/
+comments: true
+redirect_from: /forum/topics/420/
 created: 1329242694
 ---
 From the PapalEncyclicals announcement list:

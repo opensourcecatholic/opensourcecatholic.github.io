@@ -3,8 +3,8 @@ layout: post
 title: Wingdings type font with a certain character
 author: Lurgid
 nid: 200
-redirect_from:
-  - /forum/topics/200/
+comments: true
+redirect_from: /forum/topics/200/
 created: 1263938633
 ---
 <p>

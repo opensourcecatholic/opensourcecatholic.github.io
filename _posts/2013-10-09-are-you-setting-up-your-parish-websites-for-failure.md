@@ -3,8 +3,8 @@ layout: post
 title: Are you setting up your parish websites for failure?
 author: Jeff Geerling
 nid: 480
-redirect_from:
-  - /blog/jeff-geerling/are-you-setting-your/
+comments: true
+redirect_from: /blog/jeff-geerling/are-you-setting-your/
 created: 1381283317
 ---
 Earlier this year, a study found that <a href="http://www.techhive.com/article/254694/religious_sites_carry_more_malware_than_porn_sites_security_firm_reports.html">religious websites have more malware than porn websites</a>. Unfortunately, this is not too surprising.

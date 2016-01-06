@@ -3,8 +3,8 @@ layout: post
 title: Live Streaming from Rome - Quick Ustreaming at a Multicam Event
 author: Jeff Geerling
 nid: 142
-redirect_from:
-  - /blog/oscatholic/live-streaming-rome-quick-ustreami/
+comments: true
+redirect_from: /blog/oscatholic/live-streaming-rome-quick-ustreami/
 created: 1256287437
 ---
 <p>For the past week (and the next), <a href="http://www.lifeisaprayer.com/special-sections/roma">I've been in the Eternal City</a>, helping the Redemptorist community stream their 24th General Chapter. They wanted to share the proceedings in a more immediate fashion with the broader Redemptorist community around the world, and this is probably the best way to do it.</p>

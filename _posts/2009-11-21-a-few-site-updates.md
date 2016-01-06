@@ -3,8 +3,8 @@ layout: post
 title: A Few Site Updates
 author: Jeff Geerling
 nid: 163
-redirect_from:
-  - /blog/oscatholic/few-site-updates/
+comments: true
+redirect_from: /blog/oscatholic/few-site-updates/
 created: 1258787994
 ---
 <p>I finally had a few hours tonight to update the modules and Drupal core on Open Source Catholic, and I hope to have some time to perform some bugfixes on the Airy Blue theme as well.</p>

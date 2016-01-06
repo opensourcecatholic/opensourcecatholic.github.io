@@ -3,8 +3,8 @@ layout: post
 title: Want Link Juice? Get your Feed on Catholic News Live.
 author: Jeff Geerling
 nid: 151
-redirect_from:
-  - /blog/oscatholic/want-some-free-link-juic/
+comments: true
+redirect_from: /blog/oscatholic/want-some-free-link-juic/
 created: 1258499241
 ---
 <p><img alt="Link Juice Drink" width="300" height="228" style="margin: 10px;" align="right" src="/sites/opensourcecatholic.com/files/user-uploads/oscatholic/link-juice.jpg" />Apparently, the Google Bot is quite happy when your a website offers a constantly updating home page - to the tune of 1,000+ page hits per day! Catholic News Live has received an average of 13,000 page views per week from the Google Bot since it's launch two weeks ago... meaning it has had a field day updating content from the site, and finding stories from Catholic blogs and news sites. It seems the bot checks in at least once an hour.</p>

@@ -3,8 +3,8 @@ layout: post
 title: The Catholic Developer and Blogger Christmas Wish List - 2011
 author: Jeff Geerling
 nid: 412
-redirect_from:
-  - /blog/jeff-geerling/catholic-developers-c/
+comments: true
+redirect_from: /blog/jeff-geerling/catholic-developers-c/
 created: 1322074265
 ---
 In Luke 12, Jesus teaches us to guard against greed: "Take care to guard against all greed, for though one may be rich, one’s life does not consist of possessions." However, it is a longstanding tradition for Catholics and non-Catholics alike to give and be given simple gifts.

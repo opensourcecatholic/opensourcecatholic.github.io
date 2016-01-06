@@ -3,8 +3,8 @@ layout: post
 title: Catholic Diocese App for iOS/Android powers new Jesuit App
 author: Jeff Geerling
 nid: 441
-redirect_from:
-  - /blog/jeff-geerling/catholic-diocese-app/
+comments: true
+redirect_from: /blog/jeff-geerling/catholic-diocese-app/
 created: 1341025465
 ---
 Ever since building <a href="http://archstl.org/mobile-app">Catholic STL</a>, an iOS app for the Archdiocese of St. Louis, and then generalizing the code to produce the <a href="https://github.com/geerlingguy/Catholic-Diocese-App-iOS">Catholic Diocese App for iOS</a>, I've wanted to develop a version for Android.

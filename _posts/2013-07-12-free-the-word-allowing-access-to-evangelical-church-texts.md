@@ -3,8 +3,8 @@ layout: post
 title: Free the Word - Allowing Access to Evangelical Church Texts
 author: Jeff Geerling
 nid: 475
-redirect_from:
-  - /blog/jeff-geerling/free-word-allowing/
+comments: true
+redirect_from: /blog/jeff-geerling/free-word-allowing/
 created: 1373595419
 ---
 Brandon Vogt has posted a petition on his website titled <a href="http://brandonvogt.com/free-word/">Free the Word: Why the Church Needs to Release Her Teachings to the World</a>. I've posted on Open Source Catholic about the same topic in the past (see the links at the bottom of this post), and I'm glad to see this getting more attention.

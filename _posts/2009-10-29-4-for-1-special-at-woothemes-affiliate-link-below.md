@@ -3,8 +3,8 @@ layout: post
 title: 4 for 1 Special at WooThemes - Affiliate Link Below
 author: catholicservant
 nid: 146
-redirect_from:
-  - /blog/catholicservant/4-1-special-woothem/
+comments: true
+redirect_from: /blog/catholicservant/4-1-special-woothem/
 created: 1256844894
 ---
 <p>Howdy folks,</p>

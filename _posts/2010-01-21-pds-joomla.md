@@ -3,8 +3,8 @@ layout: post
 title: PDS/Joomla
 author: krisk
 nid: 201
-redirect_from:
-  - /forum/topics/201/
+comments: true
+redirect_from: /forum/topics/201/
 created: 1264086652
 ---
 <p>

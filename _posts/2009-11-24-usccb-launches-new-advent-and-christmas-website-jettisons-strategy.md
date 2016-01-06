@@ -3,8 +3,8 @@ layout: post
 title: USCCB Launches New 'Advent and Christmas' Website - Jettisons Strategy?
 author: Jeff Geerling
 nid: 165
-redirect_from:
-  - /blog/oscatholic/usccb-launches-new-adven/
+comments: true
+redirect_from: /blog/oscatholic/usccb-launches-new-adven/
 created: 1259099576
 ---
 <p>The USCCB has launched yet another one-off website, this time for <a href="http://www.usccb.org/advent/">Advent and Christmas, 2009</a>. I commend their willingness to continually push tons of new data out to the Catholics in the US through these one-off websites (<a href="http://www.usccb.org/healthcare/">Health Care Reform</a>, <a href="http://www.usccb.org/romanmissal/">New Roman Missal Translation</a>, et all), but I wonder if they are starting to consider more long-term solutions to the problem of creating mass quantities of different HTML-only websites that don't really seem to fit together or use any kind of CMS.</p>

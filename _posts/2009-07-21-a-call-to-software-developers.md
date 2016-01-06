@@ -3,8 +3,8 @@ layout: post
 title: A Call to Software Developers
 author: Jeff Geerling
 nid: 60
-redirect_from:
-  - /blog/oscatholic/call-software-developers/
+comments: true
+redirect_from: /blog/oscatholic/call-software-developers/
 created: 1248187031
 ---
 <p>There have been a few people asking over the past few months about making an iPhone or Palm OS app, and getting it onto the App Store. I personally have only rudimentary programming knowledge, and not enough to make a quality app that would effectively fulfill the needs of the organizations/people who have asked about an app.</p>

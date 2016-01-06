@@ -3,8 +3,8 @@ layout: post
 title: Now I'm Crying...
 author: Jeff Geerling
 nid: 189
-redirect_from:
-  - /blog/oscatholic/now-im-crying/
+comments: true
+redirect_from: /blog/oscatholic/now-im-crying/
 created: 1261524211
 ---
 <p>

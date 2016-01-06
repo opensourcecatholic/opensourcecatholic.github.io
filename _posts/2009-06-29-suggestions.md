@@ -3,8 +3,8 @@ layout: post
 title: Suggestions
 author: catholicservant
 nid: 19
-redirect_from:
-  - /forum/topics/19/
+comments: true
+redirect_from: /forum/topics/19/
 created: 1246295041
 ---
 <p>Just some thoughts...</p>

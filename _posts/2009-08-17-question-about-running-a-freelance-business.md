@@ -3,8 +3,8 @@ layout: post
 title: Question About Running A Freelance Business
 author: Cade_One
 nid: 112
-redirect_from:
-  - /forum/topics/112/
+comments: true
+redirect_from: /forum/topics/112/
 created: 1250527775
 ---
 <p>So, here are some of my concerns about diving into the freelance field after I officially lose my job (which seems to be taking longer than expected, which is a good thing, while at the same time quite frustrating).</p>

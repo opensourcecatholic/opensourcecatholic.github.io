@@ -3,8 +3,8 @@ layout: post
 title: Top 5 drawbacks of Joomla
 author: Matt K
 nid: 134
-redirect_from:
-  - /forum/topics/134/
+comments: true
+redirect_from: /forum/topics/134/
 created: 1254252428
 ---
 <p>Interesting article</p>

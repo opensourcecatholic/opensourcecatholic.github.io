@@ -3,8 +3,8 @@ layout: post
 title: Open Source Catholic Upgraded to Drupal 7
 author: Jeff Geerling
 nid: 445
-redirect_from:
-  - /blog/jeff-geerling/open-source-catholic/
+comments: true
+redirect_from: /blog/jeff-geerling/open-source-catholic/
 created: 1345609539
 ---
 <p style="text-align: center;"><a href="http://drupal.org/drupal-7.0"><img src="http://drupal.org/files/issues/drupal7banner_940.jpg" alt="Drupal 7 - It's Here" width="550" height="117" /></a></p>

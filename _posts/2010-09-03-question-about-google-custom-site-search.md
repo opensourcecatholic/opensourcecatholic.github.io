@@ -3,8 +3,8 @@ layout: post
 title: Question about Google Custom Site Search
 author: catholicservant
 nid: 322
-redirect_from:
-  - /forum/topics/322/
+comments: true
+redirect_from: /forum/topics/322/
 created: 1283484393
 ---
 <p>Hello,</p>

@@ -3,8 +3,8 @@ layout: post
 title: Building Catholic Parish/Organization Websites
 author: Jeff Geerling
 nid: 113
-redirect_from:
-  - /blog/geerlingguy/building-catholic-parishorganizat/
+comments: true
+redirect_from: /blog/geerlingguy/building-catholic-parishorganizat/
 created: 1250735231
 ---
 <p>I don't know how many times I've now been contacted about building custom Church websites for various parishes, organizations, and ministries... and most of the time I am unable to accept these requests. I think our Church is finally at the point where the greatest hurdle is not necessarily pastors/leaders misunderstanding the importance of a good web presence, but the lack of great tools for building that presence.</p>

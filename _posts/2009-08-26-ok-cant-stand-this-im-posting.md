@@ -3,8 +3,8 @@ layout: post
 title: OK...can't stand this...I'm posting
 author: catholicservant
 nid: 119
-redirect_from:
-  - /blog/catholicservant/okcant-stand-thisim-posting/
+comments: true
+redirect_from: /blog/catholicservant/okcant-stand-thisim-posting/
 created: 1251325014
 ---
 <p>&nbsp;OK...there hasn't been any new content in 27 hours. Not cool. I'll stop complaining and post something.</p>

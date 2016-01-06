@@ -3,8 +3,8 @@ layout: post
 title: Preparing for the iPad...
 author: Jeff Geerling
 nid: 233
-redirect_from:
-  - /forum/topics/233/
+comments: true
+redirect_from: /forum/topics/233/
 created: 1270148180
 ---
 <p>

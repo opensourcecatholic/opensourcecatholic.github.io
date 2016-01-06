@@ -3,8 +3,8 @@ layout: post
 title: Favorite blogs
 author: Matt K
 nid: 58
-redirect_from:
-  - /forum/topics/58/
+comments: true
+redirect_from: /forum/topics/58/
 created: 1248126165
 ---
 <p>Which blogs are your favorite?&nbsp;&nbsp;</p>

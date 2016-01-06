@@ -3,8 +3,8 @@ layout: post
 title: Open Source Catholic Moved to Slicehost [Updated]
 author: Jeff Geerling
 nid: 105
-redirect_from:
-  - /content/open-source-catholic-moved-slicehos/
+comments: true
+redirect_from: /content/open-source-catholic-moved-slicehos/
 created: 1249876950
 ---
 <p>[<strong>Update</strong>: An article on Midwestern Mac explaining <a href="http://www.midwesternmac.com/blogs/geerlingguy/getting-oscs-drupal-install-optimized-slicehost">how I optimized the Slice to serve up OSC without any huge resource-hogging</a>.]</p>

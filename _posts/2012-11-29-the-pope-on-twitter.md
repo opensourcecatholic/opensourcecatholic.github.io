@@ -3,8 +3,8 @@ layout: post
 title: The Pope, on Twitter
 author: Jeff Geerling
 nid: 459
-redirect_from:
-  - /blog/jeff-geerling/pope-twitter/
+comments: true
+redirect_from: /blog/jeff-geerling/pope-twitter/
 created: 1354206614
 ---
 Apparently, on December 3, the Holy See Press Office will hold a press conference announcing the Pope's official entry into the Twitterverse. From the <a href="http://www.news.va/en/news/the-pope-on-twitter">Vatican Information Service</a>:

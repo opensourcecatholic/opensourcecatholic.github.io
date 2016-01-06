@@ -3,8 +3,8 @@ layout: post
 title: '2013 World Communications Day Theme: Social Networks'
 author: Jeff Geerling
 nid: 456
-redirect_from:
-  - /blog/jeff-geerling/2013-world/
+comments: true
+redirect_from: /blog/jeff-geerling/2013-world/
 created: 1349194444
 ---
 The theme for the 2013 World Communications Day has been announced: <em>Social Networks: portals of truth and faith; new spaces for evangelization</em>.

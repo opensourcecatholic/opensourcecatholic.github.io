@@ -3,8 +3,8 @@ layout: post
 title: A Saint Taxonomy Explorer and API
 author: liangjh
 nid: 469
-redirect_from:
-  - /blog/jonathan-l/saintstircom/
+comments: true
+redirect_from: /blog/jonathan-l/saintstircom/
 created: 1368329851
 ---
 I'd like to announce the rollout of <a href="http://www.saintstir.com">Saintstir</a>, which is currently in beta.

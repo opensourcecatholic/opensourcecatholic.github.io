@@ -3,8 +3,8 @@ layout: post
 title: Post Photos to Your Drupal Site from the iPad
 author: Jeff Geerling
 nid: 265
-redirect_from:
-  - /blog/oscatholic/post-photos-your-drupal/
+comments: true
+redirect_from: /blog/oscatholic/post-photos-your-drupal/
 created: 1273796616
 ---
 <p>Over on my personal blog, I write about <a href="http://www.lifeisaprayer.com/articles/web-design/post-photos-from-ipad-to-drupal">how to post photos from the iPad to ImageFields on a Drupal site</a>. I intend to do so quite a bit this weekend on my visit to New York City (this will be my first trip without a laptop&mdash;yikes!).</p>

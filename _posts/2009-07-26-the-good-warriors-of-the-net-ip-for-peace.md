@@ -3,8 +3,8 @@ layout: post
 title: The Good Warriors of the Net - IP for Peace!
 author: Jeff Geerling
 nid: 70
-redirect_from:
-  - /blog/oscatholic/good-warriors-net-ip-peace/
+comments: true
+redirect_from: /blog/oscatholic/good-warriors-net-ip-peace/
 created: 1248587462
 ---
 <p>A nice throwback to the early days of the 'Net, when things were more orderly and peaceful... actually, this is still pretty much how things are run! My favorite character is Mr. Router. :-)</p>

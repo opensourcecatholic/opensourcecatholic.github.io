@@ -3,8 +3,8 @@ layout: post
 title: Use Text Instead of Text-in-a-Picture/Flier for your Website
 author: Jeff Geerling
 nid: 283
-redirect_from:
-  - /blog/oscatholic/use-text-instead-text/
+comments: true
+redirect_from: /blog/oscatholic/use-text-instead-text/
 created: 1276787313
 ---
 <p>Make your information searchable, accessible, and reader-friendly... this is from <a href="http://archstldev.com/story/2010/use-text-instead-tex">a post on archstldev.com</a>:</p>

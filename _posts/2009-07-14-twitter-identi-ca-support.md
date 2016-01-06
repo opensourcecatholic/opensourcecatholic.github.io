@@ -3,8 +3,8 @@ layout: post
 title: Twitter / Identi.ca support
 author: balleyne
 nid: 48
-redirect_from:
-  - /forum/topics/48/
+comments: true
+redirect_from: /forum/topics/48/
 created: 1247558504
 ---
 <p>As per a discussion on Twitter, I really think that oscatholic should add support for Identi.ca alongside Twitter!</p>

@@ -3,8 +3,8 @@ layout: post
 title: CSS issue in IE6 (go figure!)
 author: catholicservant
 nid: 73
-redirect_from:
-  - /forum/topics/73/
+comments: true
+redirect_from: /forum/topics/73/
 created: 1248728254
 ---
 <p>Howdy,</p>

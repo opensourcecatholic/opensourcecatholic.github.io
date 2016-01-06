@@ -3,8 +3,8 @@ layout: post
 title: Social Networking and Online Community
 author: Jeff Geerling
 nid: 234
-redirect_from:
-  - /wiki/social-networking-and-onl/
+comments: true
+redirect_from: /wiki/social-networking-and-onl/
 created: 1270247128
 ---
 <blockquote>

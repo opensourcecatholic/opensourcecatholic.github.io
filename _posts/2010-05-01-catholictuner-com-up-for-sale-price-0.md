@@ -3,8 +3,8 @@ layout: post
 title: CatholicTuner.com up for sale, Price $0
 author: JoaoMachado
 nid: 261
-redirect_from:
-  - /forum/topics/261/
+comments: true
+redirect_from: /forum/topics/261/
 created: 1272679735
 ---
 <p>Looking for a good Catholic developer to take over Catholictuner.com. FREE as in beer.<br />

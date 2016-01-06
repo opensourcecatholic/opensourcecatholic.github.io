@@ -3,8 +3,8 @@ layout: post
 title: Forms, Registrations, and Online Event Management
 author: Jeff Geerling
 nid: 245
-redirect_from:
-  - /wiki/forms-registrations-and-o/
+comments: true
+redirect_from: /wiki/forms-registrations-and-o/
 created: 1271177295
 ---
 <p>Before this century, most event organizers would use many hours of data collection, tabulation, and payment processing time to prepare for a large (or even a small) event.</p>

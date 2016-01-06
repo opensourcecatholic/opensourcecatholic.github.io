@@ -3,8 +3,8 @@ layout: post
 title: Created a new App for my kids
 author: cjamesrun
 nid: 468
-redirect_from:
-  - /blog/cary-molyneux/created-new-app-my/
+comments: true
+redirect_from: /blog/cary-molyneux/created-new-app-my/
 created: 1367875983
 ---
 On May 3, 2013, myself and three others, launched a new app into the world of iOS. We have been working on this app for what seems like forever. This app crosses over into my personal life, as well as business.

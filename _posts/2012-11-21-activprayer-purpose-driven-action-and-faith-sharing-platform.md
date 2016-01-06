@@ -3,8 +3,8 @@ layout: post
 title: ActivPrayer - Purpose-Driven Action & Faith Sharing Platform
 author: activprayer
 nid: 457
-redirect_from:
-  - /project/activprayer-purpose/
+comments: true
+redirect_from: /project/activprayer-purpose/
 created: 1353534990
 ---
 ActivPrayer is a two year old organization whose role in the New Evangelization is promoting purpose-driven action - helping the world learn to sanctify its actions, one action at a time, and then share their experiences with the world through a website and iPhone app.

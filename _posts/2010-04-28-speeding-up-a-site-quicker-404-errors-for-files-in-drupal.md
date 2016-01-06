@@ -3,8 +3,8 @@ layout: post
 title: 'Speeding up a Site: Quicker 404 Errors for files in Drupal'
 author: Jeff Geerling
 nid: 256
-redirect_from:
-  - /blog/oscatholic/speeding-site-quicker/
+comments: true
+redirect_from: /blog/oscatholic/speeding-site-quicker/
 created: 1272480697
 ---
 <p>On the Archdiocese of Saint Louis website, we moved thousands of files around as part of our <a href="http://archstl.org/commoffice/page/evolution-archdiocesan-website">site migration</a> from 49 separate Joomla sites to Drupal. Internally, all our file links were updated. However, there are thousands of hotlinks from different websites to the Archdiocesan website (for instance, the blog American Papist hits a missing file of a Church interior about 80 times a day).</p>

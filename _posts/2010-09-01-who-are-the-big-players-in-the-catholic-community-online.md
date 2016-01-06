@@ -3,8 +3,8 @@ layout: post
 title: Who are the "big players" in the Catholic community online?
 author: catholicschoolwebdesign
 nid: 318
-redirect_from:
-  - /forum/topics/318/
+comments: true
+redirect_from: /forum/topics/318/
 created: 1283363120
 ---
 <p>This is a question I&#39;ve wondered for a while, and I figured this would be the right crowd for discussion!</p>

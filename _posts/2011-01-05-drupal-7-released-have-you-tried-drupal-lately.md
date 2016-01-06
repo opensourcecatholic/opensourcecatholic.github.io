@@ -3,8 +3,8 @@ layout: post
 title: Drupal 7 Released - Have You Tried Drupal Lately?
 author: Jeff Geerling
 nid: 364
-redirect_from:
-  - /blog/oscatholic/drupal-7-released-have-y/
+comments: true
+redirect_from: /blog/oscatholic/drupal-7-released-have-y/
 created: 1294249476
 ---
 <p class="rtecenter"><a href="http://drupal.org/start"><img src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/get-started-drupal-7.jpeg" alt="Get Started with Drupal 7" width="468" height="60" style="width: 468px; height: 60px; display: block; margin-left: auto; margin-right: auto; border-width: 0px; border-style: solid;" class="blog-image" /></a></p>

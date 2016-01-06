@@ -3,8 +3,8 @@ layout: post
 title: Moving Again... And a Couple Updates [UPDATED]
 author: Jeff Geerling
 nid: 128
-redirect_from:
-  - /content/moving-again-and-couple-updates-upd/
+comments: true
+redirect_from: /content/moving-again-and-couple-updates-upd/
 created: 1252502916
 ---
 <p>[<strong>UPDATE</strong>: Everything should be operational again. Please let me know if you have any trouble logging in or posting information!]</p>

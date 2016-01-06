@@ -3,8 +3,8 @@ layout: post
 title: Web presence, Social media, Internet Advertising Introduction
 author: Mark Skender
 nid: 363
-redirect_from:
-  - /blog/mark-skender/web-presence-social-me/
+comments: true
+redirect_from: /blog/mark-skender/web-presence-social-me/
 created: 1294085787
 ---
 <p>I just joined the group and wanted to introduce myself.&nbsp; My name is Mark Skender and help non- profit organizations with their internet and web presence.&nbsp; I create customized on-line media strategies including; social media, web presence, search and display advertising, re-marketing, on-line chat, reputation management etc.</p>

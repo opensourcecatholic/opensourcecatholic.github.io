@@ -3,8 +3,8 @@ layout: post
 title: Vatican.va Getting an Upgrade!
 author: Jeff Geerling
 nid: 306
-redirect_from:
-  - /blog/oscatholic/vaticanva-getting-upgrad/
+comments: true
+redirect_from: /blog/oscatholic/vaticanva-getting-upgrad/
 created: 1281653675
 ---
 <p><img alt="Vatican Website Splash Page" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/vatican-home-page.jpg" style="float: right; width: 250px; height: 176px; " title="" />The Vatican website (<a href="/blog/oscatholic/vatican-one-first-websit">one of the oldest domains/websites on the Internet</a>) has been due for an overhaul for some time. Looks like it&#39;s finally going to happen! Here&#39;s the news, <a href="http://www.ewtnnews.com/new.php?id=1395">from EWTN</a>:</p>

@@ -3,8 +3,8 @@ layout: post
 title: CNMC 2012 - Tech Summit
 author: Jeff Geerling
 nid: 448
-redirect_from:
-  - /blog/jeff-geerling/cnmc-2012-tech-summit/
+comments: true
+redirect_from: /blog/jeff-geerling/cnmc-2012-tech-summit/
 created: 1346270574
 ---
 Many different aspects of Open Source Catholic's resources were mentioned during the course of the 2012 CNMC Tech Summit, on August 29. I've consolidated links to these resources here:

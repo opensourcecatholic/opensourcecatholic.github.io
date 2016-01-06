@@ -3,8 +3,8 @@ layout: post
 title: 'Free eBook: Getting Good with Git'
 author: Jeff Geerling
 nid: 334
-redirect_from:
-  - /blog/jeff-geerling/free-ebook-getting-go/
+comments: true
+redirect_from: /blog/jeff-geerling/free-ebook-getting-go/
 created: 1286817276
 ---
 <p>To those in software development, version control can be both a godsend and a devilish frustration. <a href="http://git-scm.com/">Git</a> solves many of the challenging problems users of systems like SVN and CVS encounter, but it can take a little learning to start using appropriately.</p>

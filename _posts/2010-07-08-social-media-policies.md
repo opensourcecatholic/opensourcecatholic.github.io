@@ -3,8 +3,8 @@ layout: post
 title: Social Media Policies
 author: Jeff Geerling
 nid: 293
-redirect_from:
-  - /wiki/117/social-media-policies/
+comments: true
+redirect_from: /wiki/117/social-media-policies/
 created: 1278606772
 ---
 <p>Before allowing personnel, students, staff, volunteers, etc. access to a public social media profile, or to become a blogger or online representative of your organization, it is a good idea to have a general social media policy, and to instruct everyone in its use.</p>

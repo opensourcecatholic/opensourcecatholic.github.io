@@ -3,8 +3,8 @@ layout: post
 title: PHP Array (List) of All United States Dioceses
 author: Jeff Geerling
 nid: 394
-redirect_from:
-  - /wiki/117/php-array-list-all-united/
+comments: true
+redirect_from: /wiki/117/php-array-list-all-united/
 created: 1310061569
 ---
 <p>Below is a listing, via PHP array, of all U.S. Dioceses and Archdioceses by city name. The IDs were arbitrarily assigned to the dioceses (and they're not <em>all</em> in the U.S., but oh well), and this is the listing that is being used to help with an open parish directory, so it may change from time to time. Any time a new diocese is added, it should be added to the list alphabetically, but with an ID one higher than the ID of the greatest item in the list.</p>

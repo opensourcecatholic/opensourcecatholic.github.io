@@ -3,8 +3,8 @@ layout: post
 title: Oh IE, how I Hate Thee
 author: Jeff Geerling
 nid: 187
-redirect_from:
-  - /blog/oscatholic/oh-ie-how-i-hate-thee/
+comments: true
+redirect_from: /blog/oscatholic/oh-ie-how-i-hate-thee/
 created: 1260909824
 ---
 <p>

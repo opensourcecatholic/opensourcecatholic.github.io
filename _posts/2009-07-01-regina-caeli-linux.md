@@ -3,8 +3,8 @@ layout: post
 title: Regina Caeli Linux
 author: arkanabar
 nid: 33
-redirect_from:
-  - /forum/topics/33/
+comments: true
+redirect_from: /forum/topics/33/
 created: 1246471031
 ---
 <p>An idea that's been floating in my head for some time.&nbsp; I&nbsp;don't really consider myself a linux developer, butI know what I&nbsp;like, and I&nbsp;have some idea just what tends to attract users.&nbsp; So, without further ado:</p>

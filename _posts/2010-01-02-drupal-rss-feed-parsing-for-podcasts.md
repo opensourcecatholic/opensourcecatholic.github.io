@@ -3,8 +3,8 @@ layout: post
 title: Drupal RSS Feed parsing - For Podcasts
 author: JoaoMachado
 nid: 191
-redirect_from:
-  - /forum/topics/191/
+comments: true
+redirect_from: /forum/topics/191/
 created: 1262398414
 ---
 <p>

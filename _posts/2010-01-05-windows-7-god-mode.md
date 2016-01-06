@@ -3,8 +3,8 @@ layout: post
 title: Windows 7 "God Mode"
 author: Matt K
 nid: 192
-redirect_from:
-  - /forum/topics/192/
+comments: true
+redirect_from: /forum/topics/192/
 created: 1262723867
 ---
 Although its not open source, I thought someone might find this interesting. 

@@ -3,8 +3,8 @@ layout: post
 title: Mobile Device Usage on Different Websites
 author: Jeff Geerling
 nid: 359
-redirect_from:
-  - /blog/oscatholic/mobile-device-usage-diff/
+comments: true
+redirect_from: /blog/oscatholic/mobile-device-usage-diff/
 created: 1292432053
 ---
 <p>I have recently been advancing my work in mobile theming and architecture for a few different websites, as I agree with many others who have said before that the web will become mobile (meaning it needs to display equally well on a smartphone, a tablet, and the desktop) in the next 5-10 years... and we need to be ready for that!</p>

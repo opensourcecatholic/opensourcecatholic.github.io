@@ -3,8 +3,8 @@ layout: post
 title: Just loaded Snow Leopard
 author: catholicservant
 nid: 122
-redirect_from:
-  - /blog/catholicservant/just-loaded-snow-leopard/
+comments: true
+redirect_from: /blog/catholicservant/just-loaded-snow-leopard/
 created: 1251485617
 ---
 <p>Hit the Apple store at Ridgedale around 11am this morning. Place was packed. Line for Snow Leopard was about 5 deep but moving pretty quickly.</p>

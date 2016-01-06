@@ -3,8 +3,8 @@ layout: post
 title: Feast of Our Lady of Mount Carmel
 author: lindamicciche
 nid: 56
-redirect_from:
-  - /blog/lindamicciche/feast-our-lady-mount-carmel/
+comments: true
+redirect_from: /blog/lindamicciche/feast-our-lady-mount-carmel/
 created: 1247769895
 ---
 <p><u><strong><span style="text-decoration: underline; ">Feast of Our Lady of Mount Carmel,</span></strong></u>&nbsp;traditionally, is a title given to Our Blessed Mother in honor of having give the Scapular of Mount Carmel to Saint Simon Stock. &nbsp;According to a pious tradition the Blessed Virgin appeared to St. Simon Stock at Cambridge, England on Sunday, 16 July, 1251. In answer to his appeal for help for his oppressed order, she appeared to him with a scapular in her hand and said: &ldquo;Take, beloved son, this scapular of thine order as a badge of my confraternity and for thee and all Carmelites a special sign of grace; whoever dies in this garment, will not suffer everlasting fire.</p>

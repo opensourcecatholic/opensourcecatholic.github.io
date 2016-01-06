@@ -3,8 +3,8 @@ layout: post
 title: Looking for work in North-West Ohio
 author: Cade_One
 nid: 62
-redirect_from:
-  - /forum/topics/62/
+comments: true
+redirect_from: /forum/topics/62/
 created: 1248205400
 ---
 <p><span style="font-weight: bold;">About Me:</span> Catholic Christian, Husband, Parent, Graphic/Web Designer, Podcaster, Youth Group Ministry, Member of the Knights of Columbus, and founder of the &quot;Catholic Tech Tips&quot; blog.</p>

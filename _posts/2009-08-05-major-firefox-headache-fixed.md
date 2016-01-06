@@ -3,8 +3,8 @@ layout: post
 title: Major Firefox Headache - FIXED!
 author: catholicservant
 nid: 96
-redirect_from:
-  - /blog/catholicservant/major-firefox-headache-fixed/
+comments: true
+redirect_from: /blog/catholicservant/major-firefox-headache-fixed/
 created: 1249493768
 ---
 <p>For the past few months, Firefox has been getting slower and slower to boot/quit and frequently needed to be restarted.</p>

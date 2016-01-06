@@ -3,8 +3,8 @@ layout: post
 title: Basic Data Collection - Online Forms
 author: Jeff Geerling
 nid: 246
-redirect_from:
-  - /wiki/basic-data-collection-onl/
+comments: true
+redirect_from: /wiki/basic-data-collection-onl/
 created: 1271177718
 ---
 <p>

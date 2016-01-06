@@ -3,8 +3,8 @@ layout: post
 title: The New Mass
 author: lutra
 nid: 360
-redirect_from:
-  - /forum/topics/360/
+comments: true
+redirect_from: /forum/topics/360/
 created: 1292445309
 ---
 <p>So, <a href="http://www.opensourcecatholic.com/blog/oscatholic/open-source-catholic-cha">this post</a> reminded me of a project I always thought would be useful, but never really embarked upon.&nbsp; Maybe by mentioning it here, someone may think it interesting enough to start on.</p>

@@ -3,8 +3,8 @@ layout: post
 title: Fear of Apples - Reducing Complexity
 author: Jeff Geerling
 nid: 141
-redirect_from:
-  - /blog/oscatholic/fear-apples-reducing-complexity/
+comments: true
+redirect_from: /blog/oscatholic/fear-apples-reducing-complexity/
 created: 1255877888
 ---
 <p>After reading Seth Godin&#39;s simple article on reducing complexity, entitled <a href="http://sethgodin.typepad.com/seths_blog/2009/10/fear-of-apples.html">Fear of Apples</a>, I felt compelled to write &nbsp;short piece about steps one could take to make users&#39; browsing experience that much nicer.</p>

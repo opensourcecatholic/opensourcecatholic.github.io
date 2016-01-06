@@ -3,8 +3,8 @@ layout: post
 title: Catholictuner.com
 author: JoaoMachado
 nid: 79
-redirect_from:
-  - /forum/topics/79/
+comments: true
+redirect_from: /forum/topics/79/
 created: 1248915865
 ---
 <p>I am looking for developers for this site. The goals are rather ambitious;</p>

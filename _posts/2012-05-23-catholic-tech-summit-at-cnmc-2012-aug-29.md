@@ -3,8 +3,8 @@ layout: post
 title: Catholic Tech Summit at CNMC 2012, Aug 29
 author: Jeff Geerling
 nid: 422
-redirect_from:
-  - /blog/jeff-geerling/catholic-tech-summit-/
+comments: true
+redirect_from: /blog/jeff-geerling/catholic-tech-summit-/
 created: 1337742063
 ---
 <p style="text-align: center;"><a href="http://cnmc.sqpn.com/"><img src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/Jeff%20Geerling/cnmc-2012-banner.jpg" alt="CNMC 2012 Banner" title="" width="425" height="232" /></a></p>

@@ -3,8 +3,8 @@ layout: post
 title: Tar/Gzip Directory without Preserving Directory Heirarchy/Structure
 author: Jeff Geerling
 nid: 338
-redirect_from:
-  - /blog/oscatholic/targzip-directory-withou/
+comments: true
+redirect_from: /blog/oscatholic/targzip-directory-withou/
 created: 1287415112
 ---
 <p>I just wanted to post this code snippet up here in case anyone else is stuck Googling for many hours without success how to do this...</p>

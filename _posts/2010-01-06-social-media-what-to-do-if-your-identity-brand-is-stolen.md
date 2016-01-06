@@ -3,8 +3,8 @@ layout: post
 title: 'Social Media: What to do if your Identity/Brand is Stolen'
 author: Jeff Geerling
 nid: 193
-redirect_from:
-  - /blog/oscatholic/social-media-what-do-if-/
+comments: true
+redirect_from: /blog/oscatholic/social-media-what-do-if-/
 created: 1262800024
 ---
 <p>

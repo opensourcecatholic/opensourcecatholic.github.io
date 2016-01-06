@@ -3,8 +3,8 @@ layout: post
 title: Development + Design Help
 author: iloveitaly
 nid: 399
-redirect_from:
-  - /forum/topics/399/
+comments: true
+redirect_from: /forum/topics/399/
 created: 1314012449
 ---
 <p>Hey All,&nbsp;</p><p>Looking for some help with a fairly large upcoming project, in addition to possible help with a future smaller project. Here is what I'm looking for:</p>

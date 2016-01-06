@@ -3,8 +3,8 @@ layout: post
 title: Pros & Cons of Branding Catholic
 author: matthew-west
 nid: 453
-redirect_from:
-  - /forum/topics/453/
+comments: true
+redirect_from: /forum/topics/453/
 created: 1347558361
 ---
 Anyone else dealing with this?

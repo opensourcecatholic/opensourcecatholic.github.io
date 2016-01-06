@@ -3,8 +3,8 @@ layout: post
 title: Any Way to Transfer Calendar Data into/out of Exchange?
 author: Jeff Geerling
 nid: 321
-redirect_from:
-  - /forum/topics/321/
+comments: true
+redirect_from: /forum/topics/321/
 created: 1283448016
 ---
 <p>I&#39;m working on an Intranet for the Archdiocese, and one of the primary concerns brought up by the Data Center is online calendaring. They mentioned that our offices already use Microsoft Exchange/Outlook for shared and personal calendaring functionality, and they don&#39;t want to create duplication of efforts (or, worse, mismatched data) between the Intranet and Exchange.</p>

@@ -3,8 +3,8 @@ layout: post
 title: Your Last Meal
 author: Cade_One
 nid: 83
-redirect_from:
-  - /forum/topics/83/
+comments: true
+redirect_from: /forum/topics/83/
 created: 1248974983
 ---
 <p><strong>Other than the Eucharist, of course, what would you want your last mail to be?</strong></p>

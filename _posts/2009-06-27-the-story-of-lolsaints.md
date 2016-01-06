@@ -3,8 +3,8 @@ layout: post
 title: The Story of LOLSaints
 author: Jeff Geerling
 nid: 162
-redirect_from:
-  - /blog/geerlingguy/story-lolsaints/
+comments: true
+redirect_from: /blog/geerlingguy/story-lolsaints/
 created: 1246133251
 ---
 <p class="rtecenter">

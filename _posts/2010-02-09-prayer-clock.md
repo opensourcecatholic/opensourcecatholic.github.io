@@ -3,8 +3,8 @@ layout: post
 title: Prayer Clock
 author: allencch
 nid: 208
-redirect_from:
-  - /forum/topics/208/
+comments: true
+redirect_from: /forum/topics/208/
 created: 1265696735
 ---
 <p>I have written a small open source application as a prayer reminder, with Angelus and 3 o&#39;clock prayer to Divine Mercy.</p>

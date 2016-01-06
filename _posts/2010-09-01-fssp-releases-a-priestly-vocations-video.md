@@ -3,8 +3,8 @@ layout: post
 title: FSSP Releases a Priestly Vocations Video!
 author: fatherjosephlee
 nid: 319
-redirect_from:
-  - /blog/fatherjosephlee/fssp-releases-pries/
+comments: true
+redirect_from: /blog/fatherjosephlee/fssp-releases-pries/
 created: 1283372142
 ---
 <p><img alt="FSSP priestly vocations" height="400" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/fatherjosephlee/schola.jpg" title="" width="600" /></p>

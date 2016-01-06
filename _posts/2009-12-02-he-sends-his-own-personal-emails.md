@@ -3,8 +3,8 @@ layout: post
 title: '"He sends his own personal emails!"'
 author: Jeff Geerling
 nid: 168
-redirect_from:
-  - /blog/oscatholic/he-sends-his-own-persona/
+comments: true
+redirect_from: /blog/oscatholic/he-sends-his-own-persona/
 created: 1259766770
 ---
 <blockquote>[He] sends his own personal emails. He does!</blockquote>

@@ -3,8 +3,8 @@ layout: post
 title: Open Source Catholic Wiki
 author: Jeff Geerling
 nid: 117
-redirect_from:
-  - /book/open-source-catholic-wiki/
+comments: true
+redirect_from: /book/open-source-catholic-wiki/
 created: 1251087104
 ---
 <strong><em>You can browse Wiki pages at the bottom of this page</em></strong>

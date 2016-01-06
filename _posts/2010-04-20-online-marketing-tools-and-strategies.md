@@ -3,8 +3,8 @@ layout: post
 title: Online Marketing Tools and Strategies
 author: Jeff Geerling
 nid: 251
-redirect_from:
-  - /wiki/117/online-marketing-tools-an/
+comments: true
+redirect_from: /wiki/117/online-marketing-tools-an/
 created: 1271785387
 ---
 <p>

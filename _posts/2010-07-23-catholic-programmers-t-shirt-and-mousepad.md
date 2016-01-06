@@ -3,8 +3,8 @@ layout: post
 title: Catholic Programmer's T-Shirt and Mousepad
 author: Jeff Geerling
 nid: 300
-redirect_from:
-  - /blog/geerlingguy/catholic-programmers-t/
+comments: true
+redirect_from: /blog/geerlingguy/catholic-programmers-t/
 created: 1279897500
 ---
 <p>A few weeks back, after finishing a full day of swimming in PHP, HTML and CSS, I was pondering the great mystery of human existence, but probably had a little too much to drink. The result?</p>

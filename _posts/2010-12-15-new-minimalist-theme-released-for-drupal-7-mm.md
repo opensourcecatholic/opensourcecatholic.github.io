@@ -3,8 +3,8 @@ layout: post
 title: New minimalist theme released for Drupal 7 - MM
 author: Jeff Geerling
 nid: 358
-redirect_from:
-  - /blog/oscatholic/new-minimalist-theme-rel/
+comments: true
+redirect_from: /blog/oscatholic/new-minimalist-theme-rel/
 created: 1292426440
 ---
 <p>About a year-and-a-half after <a href="/content/open-source-catholic-theme-released-drupalorg">releasing my first contributed theme</a> for Drupal, <a href="http://drupal.org/project/airyblue">Airy Blue</a>, I have finished and release my second contributed theme, <a href="http://drupal.org/project/mm">MM</a><a href="http://drupal.org/project/mm">&nbsp;- A Minimalist Theme</a>.</p>

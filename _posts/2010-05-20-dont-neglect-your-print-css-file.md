@@ -3,8 +3,8 @@ layout: post
 title: Don't Neglect Your print.css file!
 author: Jeff Geerling
 nid: 267
-redirect_from:
-  - /blog/oscatholic/dont-neglect-your/
+comments: true
+redirect_from: /blog/oscatholic/dont-neglect-your/
 created: 1274373838
 ---
 <p>I just spent a few hours working on <a href="http://archstldev.com/story/2010/better-printing-arch">making a better print.css file</a> for the Archdiocese of St. Louis' website, and, imho, it was time very well spent.</p>

@@ -3,8 +3,8 @@ layout: post
 title: '"The Apps of the Apostles" - Gadgets for God'
 author: Jeff Geerling
 nid: 367
-redirect_from:
-  - /blog/oscatholic/apps-apostles-gadgets-go/
+comments: true
+redirect_from: /blog/oscatholic/apps-apostles-gadgets-go/
 created: 1296076473
 ---
 <p>Just found these gems on the <a href="http://www.ship-of-fools.com/gadgets/apps/index.html">Ship of Fools.com</a> website:</p>

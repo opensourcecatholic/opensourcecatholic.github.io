@@ -3,8 +3,8 @@ layout: post
 title: Google Real Time Search Goes Live
 author: Jeff Geerling
 nid: 175
-redirect_from:
-  - /forum/topics/175/
+comments: true
+redirect_from: /forum/topics/175/
 created: 1260226833
 ---
 <p>

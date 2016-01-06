@@ -3,8 +3,8 @@ layout: post
 title: The Importance of Accessibility on the Web
 author: Jeff Geerling
 nid: 347
-redirect_from:
-  - /blog/jeff-geerling/importance-accessibil/
+comments: true
+redirect_from: /blog/jeff-geerling/importance-accessibil/
 created: 1288883299
 ---
 <p><img src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/universal-access.png" alt="Universal Access - Accessibility (Icon)" style="float: right; width: 247px; height: 248px; border-width: 0px; border-style: solid; margin: 10px;" />An issue which is often in the back of my mind, but often not even on the radar of a lot of Catholic web developers (I know this from experience) is online accessibility. Many new/remodeled Catholic Churches have hundreds of new technologies in place to help those with disabilities—wheelchair ramps, wider aisles, larger bathrooms, elevators... and many of these innovations cost a pretty penny.</p>

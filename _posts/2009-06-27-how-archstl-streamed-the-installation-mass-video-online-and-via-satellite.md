@@ -3,8 +3,8 @@ layout: post
 title: How @archstl Streamed the Installation Mass Video Online and via Satellite
 author: archstl
 nid: 161
-redirect_from:
-  - /blog/archstl/how-archstl-streamed-inst/
+comments: true
+redirect_from: /blog/archstl/how-archstl-streamed-inst/
 created: 1246138584
 ---
 <p>On June 10, 2009, the <a href="http://www.archstl.org/">Archdiocese of Saint Louis</a> was blessed to have its tenth bishop (and ninth Archbishop; Robert J. Carlson) Installed at a ceremony in the <a href="http://www.cathedralstl.org/">Cathedral-Basilica of Saint Louis</a>. The event was not only recorded for future reference; it was streamed to the Archdiocesan website, put on satellite for <a href="http://www.ewtn.com">EWTN</a> and <a href="http://www.catholictv.com">CatholicTV</a> to pick up and air live, and sent to local TV stations as well.</p>

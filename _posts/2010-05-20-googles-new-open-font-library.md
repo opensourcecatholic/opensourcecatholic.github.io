@@ -3,8 +3,8 @@ layout: post
 title: Google's New Open Font Library
 author: Jeff Geerling
 nid: 266
-redirect_from:
-  - /blog/oscatholic/googles-new-open-font/
+comments: true
+redirect_from: /blog/oscatholic/googles-new-open-font/
 created: 1274332878
 ---
 <p>Reposted from Life is a Prayer.com:</p>

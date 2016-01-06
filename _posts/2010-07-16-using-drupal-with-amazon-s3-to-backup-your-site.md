@@ -3,8 +3,8 @@ layout: post
 title: Using Drupal with Amazon S3 to backup your site
 author: JoaoMachado
 nid: 296
-redirect_from:
-  - /forum/topics/296/
+comments: true
+redirect_from: /forum/topics/296/
 created: 1279243041
 ---
 <p>I would like to share with you an extremely inexpensive and highly effective way to backup your Drupal sites (both MySQL and your /sites/default/files directory)</p>

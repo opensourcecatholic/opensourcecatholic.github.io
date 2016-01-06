@@ -3,8 +3,8 @@ layout: post
 title: Google Refine 2.0
 author: Matt K
 nid: 355
-redirect_from:
-  - /forum/topics/355/
+comments: true
+redirect_from: /forum/topics/355/
 created: 1290013972
 ---
 <p>Check out the video, very cool!&nbsp; I make closed source software that works like this.</p>

@@ -3,8 +3,8 @@ layout: post
 title: Event Registrations and Management
 author: Jeff Geerling
 nid: 247
-redirect_from:
-  - /wiki/117/event-registrations-and-m/
+comments: true
+redirect_from: /wiki/117/event-registrations-and-m/
 created: 1271178524
 ---
 <p>Many organizations are looking to alleviate a lot of the stress and hours of work that comes with managing event registrations. Instead of dealing with hundreds or thousands of mailed-in registration forms, checks, cash, and manual credit card transactions, your organization can benefit from using an online event registration and management system.</p>

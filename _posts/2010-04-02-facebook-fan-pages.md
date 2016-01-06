@@ -3,8 +3,8 @@ layout: post
 title: Facebook Fan Pages
 author: Jeff Geerling
 nid: 238
-redirect_from:
-  - /wiki/facebook-fan-pages/
+comments: true
+redirect_from: /wiki/facebook-fan-pages/
 created: 1270248787
 ---
 <p>

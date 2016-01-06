@@ -3,8 +3,8 @@ layout: post
 title: USCCB Social Media Guidelines
 author: Jeff Geerling
 nid: 292
-redirect_from:
-  - /blog/oscatholic/usccb-social-media/
+comments: true
+redirect_from: /blog/oscatholic/usccb-social-media/
 created: 1278606282
 ---
 <p>The USCCB recently released a <a href="http://www.usccb.org/comm/social-media-guidelines.shtml">working draft of their social media guidelines</a>, after receiving input from a variety of diocesan personnel. The draft includes general principles for social media use, a call to the development of diocesan-level policies, and quoted exhortations for proclaiming the Word online from Pope Benedict.</p>

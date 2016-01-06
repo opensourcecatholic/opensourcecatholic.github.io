@@ -3,8 +3,8 @@ layout: post
 title: Open-Source Project Manager for Faith-Sharing Network
 author: activprayer
 nid: 458
-redirect_from:
-  - /forum/topics/458/
+comments: true
+redirect_from: /forum/topics/458/
 created: 1353535464
 ---
 ActivPrayer is a faith-based organization that is building an open-source faith-sharing platform centered around purpose-driven action. For example, a high school athlete can dedicate his next football game for Pro-Life causes around the world or to his mother and then share his "ActivPrayer" with the world when it's completed via rich media. This is done both through the ActivPrayer iphone app and our website, which will have a live streaming feed of ActivPrayers from around the world at live.activprayer.org.

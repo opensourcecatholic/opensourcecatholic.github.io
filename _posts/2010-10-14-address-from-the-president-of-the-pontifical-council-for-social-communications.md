@@ -3,8 +3,8 @@ layout: post
 title: Address from the President of the Pontifical Council for Social Communications
 author: jsignal
 nid: 336
-redirect_from:
-  - /blog/jsignal/interesting-address-presi/
+comments: true
+redirect_from: /blog/jsignal/interesting-address-presi/
 created: 1287069650
 ---
 <p>This morning I noticed the following <a href="http://visnews-en.blogspot.com/2010/10/sixth-general-congregation.html">interesting address</a> from Archbishop Claudio Maria Celli, President of the Pontifical Council for Social Communications, to of all places, the 6th general congregation of the synod on the Middle East, which is ongoing now.&nbsp;</p>

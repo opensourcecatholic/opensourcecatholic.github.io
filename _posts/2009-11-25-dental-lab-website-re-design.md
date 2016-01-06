@@ -3,8 +3,8 @@ layout: post
 title: Dental Lab Website Re-Design
 author: Cade_One
 nid: 166
-redirect_from:
-  - /forum/topics/166/
+comments: true
+redirect_from: /forum/topics/166/
 created: 1259163600
 ---
 <p><style type="text/css"></style></p>

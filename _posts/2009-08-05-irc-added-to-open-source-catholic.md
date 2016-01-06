@@ -3,8 +3,8 @@ layout: post
 title: IRC Added to Open Source Catholic
 author: Jeff Geerling
 nid: 92
-redirect_from:
-  - /blog/geerlingguy/irc-added-open-source-catholic/
+comments: true
+redirect_from: /blog/geerlingguy/irc-added-open-source-catholic/
 created: 1249482489
 ---
 <p>Last night I added a new section to Open Source Catholic - the IRC (&quot;Internet Relay Chat&quot;) discussion area. Simply click on the IRC link at the top of any page, choose a nickname, and join in with other Catholics who want to discuss a wide variety of issues&mdash;pretty much anything goes!</p>

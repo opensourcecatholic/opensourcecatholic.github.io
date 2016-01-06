@@ -3,8 +3,8 @@ layout: post
 title: Status Updates
 author: Jeff Geerling
 nid: 104
-redirect_from:
-  - /blog/oscatholic/status-updates/
+comments: true
+redirect_from: /blog/oscatholic/status-updates/
 created: 1249854359
 ---
 <p>Just wanted to let everyone know a couple things:</p>

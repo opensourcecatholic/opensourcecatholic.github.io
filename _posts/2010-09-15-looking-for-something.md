@@ -3,8 +3,8 @@ layout: post
 title: Looking for..something
 author: lutra
 nid: 323
-redirect_from:
-  - /forum/topics/323/
+comments: true
+redirect_from: /forum/topics/323/
 created: 1284589587
 ---
 <p>Hello, my name is David (DJ) Ortley.</p>

@@ -3,8 +3,8 @@ layout: post
 title: Why OSC Looks Different in Explorer
 author: Jeff Geerling
 nid: 10
-redirect_from:
-  - /blog/oscatholic/why-osc-looks-different-explorer/
+comments: true
+redirect_from: /blog/oscatholic/why-osc-looks-different-explorer/
 created: 1246232610
 ---
 <p>If you're like me, you run multiple browsers; <a href="http://www.getfirefox.com/">FireFox</a>, <a href="http://www.apple.com/safari/">Safari</a>, <a href="http://caminobrowser.org/">Camino</a>, and (last, and certainly least) Internet Explorer... actually, all three of the past versions of IE: 6, 7 and 8. And, if you have any ability to see, you'll notice that there are aspects of the site that look different&mdash;most notably the navigation buttons, the sidebar sections, and certain other elements.</p>

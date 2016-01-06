@@ -3,8 +3,8 @@ layout: post
 title: One of the Best Days of my Life...
 author: jmadrone
 nid: 483
-redirect_from:
-  - /blog/josh-emerald-madrone/one-best-days/
+comments: true
+redirect_from: /blog/josh-emerald-madrone/one-best-days/
 created: 1396028113
 ---
 Where to begin? So much has happened; my life has changed. I guess there's no where better to start than the beginning.

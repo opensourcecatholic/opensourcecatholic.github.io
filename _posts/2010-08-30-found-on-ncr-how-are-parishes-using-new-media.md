@@ -3,8 +3,8 @@ layout: post
 title: 'Found on NCR: How are parishes using new media?'
 author: Jeff Geerling
 nid: 317
-redirect_from:
-  - /blog/oscatholic/found-ncr-how-are-parish/
+comments: true
+redirect_from: /blog/oscatholic/found-ncr-how-are-parish/
 created: 1283211305
 ---
 <p>From Matthew Warner&#39;s blog on the National Catholic Register website: <a href="http://www.ncregister.com/blog/how-are-parishes-using-new-media/">How are parishes using new media?</a></p>

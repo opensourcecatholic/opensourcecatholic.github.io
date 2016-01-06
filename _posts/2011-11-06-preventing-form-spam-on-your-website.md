@@ -3,8 +3,8 @@ layout: post
 title: Preventing Form Spam on Your Website
 author: Jeff Geerling
 nid: 411
-redirect_from:
-  - /blog/jeff-geerling/preventing-form-spam-/
+comments: true
+redirect_from: /blog/jeff-geerling/preventing-form-spam-/
 created: 1320539156
 ---
 As more Catholic websites are adding comment forms and feedback forms, the problem of form spam (where you get submissions that are either obviously not written by humans, or submissions that are simply opportunities for people to link back to their own websites) increases.

@@ -3,8 +3,8 @@ layout: post
 title: Lectionary Web Service (alpha)
 author: murdaugh
 nid: 478
-redirect_from:
-  - /forum/topics/478/
+comments: true
+redirect_from: /forum/topics/478/
 created: 1376084584
 ---
 After looking (for too many years) for ways to scrape readings for a given celebration in some usable and predictable way, I decided to undertake creating a web service that returns liturgical reading citations (in JSON) given a date.

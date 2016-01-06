@@ -3,8 +3,8 @@ layout: post
 title: How to Use this Forum
 author: Jeff Geerling
 nid: 15
-redirect_from:
-  - /forum/topics/15/
+comments: true
+redirect_from: /forum/topics/15/
 created: 1246285315
 ---
 This forum's purpose is to help those seeking work find it, and those having work to be done to find the work-seekers. If you would like to offer your services—software programming, design, web development, etc.—please post a short bio/examples of your work here, and what kind of interests you have.

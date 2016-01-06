@@ -3,8 +3,8 @@ layout: post
 title: Catholic XML
 author: rjzaar
 nid: 431
-redirect_from:
-  - /wiki/catholic-xml/
+comments: true
+redirect_from: /wiki/catholic-xml/
 created: 1339298463
 ---
 <div id="oc-wiki-content" class="oc-wiki-content">

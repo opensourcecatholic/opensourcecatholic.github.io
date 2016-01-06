@@ -3,8 +3,8 @@ layout: post
 title: Which do you use? - Donor management software / CRM
 author: inspiredangela
 nid: 415
-redirect_from:
-  - /forum/topics/415/
+comments: true
+redirect_from: /forum/topics/415/
 created: 1323707828
 ---
 Hi, friends. I'm back in action on OSC, wanting your advice.

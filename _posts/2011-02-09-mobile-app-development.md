@@ -3,8 +3,8 @@ layout: post
 title: Mobile App Development?
 author: Jeff Geerling
 nid: 372
-redirect_from:
-  - /forum/topics/372/
+comments: true
+redirect_from: /forum/topics/372/
 created: 1297280824
 ---
 <p>Was just wondering - does anyone else here do much work with iPhone/Android/other mobile app development? If so, I might open up a Mobile Development forum or something of the like, so we can discuss issues there.</p>

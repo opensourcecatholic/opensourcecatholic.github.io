@@ -3,8 +3,8 @@ layout: post
 title: 'Another Catholic Job Opportunity: eCatholic'
 author: Jeff Geerling
 nid: 443
-redirect_from:
-  - /blog/jeff-geerling/another-catholic-job-/
+comments: true
+redirect_from: /blog/jeff-geerling/another-catholic-job-/
 created: 1345036002
 ---
 It looks like there's another great opportunity for Catholics today; eCatholic, a company that helps parishes with their online presence, is hiring a sales and marketing rock star:

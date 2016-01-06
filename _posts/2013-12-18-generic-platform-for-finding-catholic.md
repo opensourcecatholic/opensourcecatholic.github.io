@@ -3,8 +3,8 @@ layout: post
 title: Generic platform for finding catholic
 author: vicmortelmans
 nid: 482
-redirect_from:
-  - /forum/topics/482/
+comments: true
+redirect_from: /forum/topics/482/
 created: 1387402178
 ---
 Hi,

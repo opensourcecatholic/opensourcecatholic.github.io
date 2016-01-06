@@ -3,8 +3,8 @@ layout: post
 title: Catholic Semantic Web explained
 author: rjzaar
 nid: 429
-redirect_from:
-  - /wiki/catholic-semantic-web-exp/
+comments: true
+redirect_from: /wiki/catholic-semantic-web-exp/
 created: 1339293876
 ---
 <p class="documentDescription">The Catholic Semantic Web is a network of resources and tools to provide computer intelligent services.</p>

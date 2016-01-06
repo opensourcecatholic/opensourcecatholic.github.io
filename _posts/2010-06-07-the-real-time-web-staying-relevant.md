@@ -3,8 +3,8 @@ layout: post
 title: The Real-Time Web – Staying Relevant
 author: Jeff Geerling
 nid: 277
-redirect_from:
-  - /blog/oscatholic/real-time-web-–-staying-r/
+comments: true
+redirect_from: /blog/oscatholic/real-time-web-–-staying-r/
 created: 1275945554
 ---
 <p>Something I posted on the Archdiocese of St. Louis&#39; <a href="http://archstldev.com/">Development Website</a> earlier today:</p>

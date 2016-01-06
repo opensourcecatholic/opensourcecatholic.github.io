@@ -3,8 +3,8 @@ layout: post
 title: Please Stop Saying "Web 2.0"
 author: Jeff Geerling
 nid: 224
-redirect_from:
-  - /blog/oscatholic/please-stop-saying-web-2/
+comments: true
+redirect_from: /blog/oscatholic/please-stop-saying-web-2/
 created: 1269543047
 ---
 <p>

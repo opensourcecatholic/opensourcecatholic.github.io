@@ -3,8 +3,8 @@ layout: post
 title: Website Design, Development, and Maintenance
 author: Jeff Geerling
 nid: 241
-redirect_from:
-  - /wiki/website-design-developmen/
+comments: true
+redirect_from: /wiki/website-design-developmen/
 created: 1270250027
 ---
 <p>A Catholic organization's website is one of its most important tools for evangelization, fundraising, and community involvement, especially moving forward through the 21st century.</p>

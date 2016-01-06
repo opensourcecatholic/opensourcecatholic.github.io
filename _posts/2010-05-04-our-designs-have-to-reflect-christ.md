@@ -3,8 +3,8 @@ layout: post
 title: Our Designs Have to Reflect Christ
 author: Jeff Geerling
 nid: 262
-redirect_from:
-  - /blog/oscatholic/our-designs-have-reflect/
+comments: true
+redirect_from: /blog/oscatholic/our-designs-have-reflect/
 created: 1272988669
 ---
 <p>Interesting Quote from the blog &#39;<a href="http://vitaminc.surefireorange.com/2010/why-the-ipad-makes-me-think-of-jesus/">Vitamin C</a>&#39;:</p>

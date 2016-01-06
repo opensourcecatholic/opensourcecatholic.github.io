@@ -3,8 +3,8 @@ layout: post
 title: Open source is 'only reliable way' to preserve human history, argues Vatican
 author: Jeff Geerling
 nid: 488
-redirect_from:
-  - /blog/jeff-geerling/open-source-only/
+comments: true
+redirect_from: /blog/jeff-geerling/open-source-only/
 created: 1431201250
 ---
 From <a href="http://www.theinquirer.net/inquirer/news/2407221/open-source-is-only-reliable-way-to-preserve-human-history-argues-vatican">The Inquirer</a>:

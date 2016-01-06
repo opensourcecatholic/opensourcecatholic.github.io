@@ -3,8 +3,8 @@ layout: post
 title: The Pope's first tweet (@pontifex)
 author: Jeff Geerling
 nid: 461
-redirect_from:
-  - /blog/jeff-geerling/popes-first-tweet/
+comments: true
+redirect_from: /blog/jeff-geerling/popes-first-tweet/
 created: 1355327165
 ---
 As seen on <a href="http://whispersintheloggia.blogspot.com/2012/12/habemuspapam-pope-tweets.html">Whispers</a>...

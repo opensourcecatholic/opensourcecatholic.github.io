@@ -3,8 +3,8 @@ layout: post
 title: CSS Styling Issue - UL, positioning, links
 author: inspiredangela
 nid: 170
-redirect_from:
-  - /forum/topics/170/
+comments: true
+redirect_from: /forum/topics/170/
 created: 1259791981
 ---
 <p class="rteleft">I am currently finishing up a design for Mission San Jose Church here in San Antonio, and am having some issues with the navigation system I set up. Any thoughts would be helpful.</p>

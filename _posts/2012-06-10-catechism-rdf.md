@@ -3,8 +3,8 @@ layout: post
 title: Catechism RDF
 author: rjzaar
 nid: 430
-redirect_from:
-  - /wiki/catechism-rdf/
+comments: true
+redirect_from: /wiki/catechism-rdf/
 created: 1339298382
 ---
 <div id="oc-wiki-content" class="oc-wiki-content">

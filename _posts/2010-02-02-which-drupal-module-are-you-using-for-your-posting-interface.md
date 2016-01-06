@@ -3,8 +3,8 @@ layout: post
 title: Which Drupal module are you using for your posting interface?
 author: Cade_One
 nid: 206
-redirect_from:
-  - /forum/topics/206/
+comments: true
+redirect_from: /forum/topics/206/
 created: 1265071247
 ---
 <p>

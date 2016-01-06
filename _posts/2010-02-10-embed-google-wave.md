@@ -3,8 +3,8 @@ layout: post
 title: Embed Google Wave
 author: mdhoerr
 nid: 209
-redirect_from:
-  - /blog/mdhoerr/embed-google-wave/
+comments: true
+redirect_from: /blog/mdhoerr/embed-google-wave/
 created: 1265834652
 ---
 <script type="text/javascript" src="http://wave-api.appspot.com/public/embed.js"></script><script type="text/javascript">

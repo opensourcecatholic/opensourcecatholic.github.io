@@ -3,8 +3,8 @@ layout: post
 title: Need a simple Flash ad made for free
 author: JoaoMachado
 nid: 174
-redirect_from:
-  - /forum/topics/174/
+comments: true
+redirect_from: /forum/topics/174/
 created: 1260217621
 ---
 <p>

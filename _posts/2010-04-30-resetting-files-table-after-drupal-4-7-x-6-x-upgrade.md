@@ -3,8 +3,8 @@ layout: post
 title: Resetting Files Table after Drupal 4.7.x -> 6.x Upgrade
 author: Jeff Geerling
 nid: 260
-redirect_from:
-  - /blog/oscatholic/resetting-files-table/
+comments: true
+redirect_from: /blog/oscatholic/resetting-files-table/
 created: 1272644334
 ---
 <p>At some point during the upgrade process from Drupal 4.7.11 to 6.16 (through versions of 5.x, with contributed module updates along the way), one of my sites&#39; files tables got screwed up. All the &#39;filepath&#39; entries were converted to &#39;filepath&#39; (instead of sites/example.com/files/filename.ext).</p>

@@ -3,8 +3,8 @@ layout: post
 title: One Week in... Happy 4th!
 author: Jeff Geerling
 nid: 39
-redirect_from:
-  - /blog/oscatholic/one-week-happy-4th/
+comments: true
+redirect_from: /blog/oscatholic/one-week-happy-4th/
 created: 1246660189
 ---
 <p>Happy almost-one-week-birthday, Open Source Catholic! One week in, we have 35 users, many websites to rate, and a few good comments, articles and blog entries. Plus, we've gotten 950 unique visitors in the past 4 days (not bad, eh?):</p>

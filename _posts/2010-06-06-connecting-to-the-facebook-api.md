@@ -3,8 +3,8 @@ layout: post
 title: Connecting to the Facebook API
 author: Jeff Geerling
 nid: 276
-redirect_from:
-  - /wiki/117/connecting-facebook-api/
+comments: true
+redirect_from: /wiki/117/connecting-facebook-api/
 created: 1275807932
 ---
 <p>Facebook has a lot of data available to website developers through their Open Graph API, and Facebook also offers a ton of nice features to web developers to tie into Facebook&#39;s user profiles, commenting system, &#39;Like&#39; system, etc.</p>

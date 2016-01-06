@@ -3,8 +3,8 @@ layout: post
 title: Catholic Youth Apostolate in St. Louis looking for FT Web Developer
 author: Jeff Geerling
 nid: 281
-redirect_from:
-  - /forum/topics/281/
+comments: true
+redirect_from: /forum/topics/281/
 created: 1276620200
 ---
 <p>From the <a href="http://archstl.org/hr/joblisting/web-developer-full-time-6112010">HR posting on archstl.org</a>:</p>

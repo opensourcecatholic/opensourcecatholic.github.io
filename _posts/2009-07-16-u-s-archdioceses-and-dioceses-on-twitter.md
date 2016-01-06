@@ -3,8 +3,8 @@ layout: post
 title: U.S. Archdioceses and Dioceses on Twitter
 author: Jeff Geerling
 nid: 54
-redirect_from:
-  - /blog/geerlingguy/us-archdioceses-and-dioceses-twit/
+comments: true
+redirect_from: /blog/geerlingguy/us-archdioceses-and-dioceses-twit/
 created: 1247761871
 ---
 <p>[Update: Also, check out our list of <a href="/blog/oscatholic/us-archdioceses-and-dioceses-faceb">(Arch)Dioceses on Facebook</a>!]</p>

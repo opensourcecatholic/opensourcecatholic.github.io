@@ -3,8 +3,8 @@ layout: post
 title: Commenting now requires registration
 author: Jeff Geerling
 nid: 474
-redirect_from:
-  - /forum/topics/474/
+comments: true
+redirect_from: /forum/topics/474/
 created: 1372528665
 ---
 Just a quick note: I've disabled anonymous commenting, since it seems the site's finally been targeted by a more dedicated breed of spammers. Even the 1-2 punch of [Mollom](http://mollom.com/) and [Honeypot](https://drupal.org/project/honeypot) haven't been deterring these 'generic drugs for cheap' spammers lately.

@@ -3,8 +3,8 @@ layout: post
 title: mycatholic.com
 author: Matt K
 nid: 211
-redirect_from:
-  - /forum/topics/211/
+comments: true
+redirect_from: /forum/topics/211/
 created: 1266253113
 ---
 <p>

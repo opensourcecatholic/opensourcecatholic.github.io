@@ -3,8 +3,8 @@ layout: post
 title: OpenPublish - A solution for newspapers wanting to go Digital
 author: Jeff Geerling
 nid: 90
-redirect_from:
-  - /forum/topics/90/
+comments: true
+redirect_from: /forum/topics/90/
 created: 1249245868
 ---
 <p>Their product (free and open source):</p>

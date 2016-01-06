@@ -3,8 +3,8 @@ layout: post
 title: FireFox Starts Taking Larger Marketshare
 author: Jeff Geerling
 nid: 169
-redirect_from:
-  - /blog/oscatholic/firefox-starts-taking-la/
+comments: true
+redirect_from: /blog/oscatholic/firefox-starts-taking-la/
 created: 1259767632
 ---
 <p class="rteleft">Despite Microsoft including Internet Explorer in all its operating systems, people are installing FireFox as their default browser at an astonishing rate. I take pride in the fact that all but two of the sites I help maintain have already seen FireFox (and sometimes even Safari) overtake Explorer (all versions combined) as the most used browser.</p>

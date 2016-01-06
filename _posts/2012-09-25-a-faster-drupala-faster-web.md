@@ -3,8 +3,8 @@ layout: post
 title: A Faster Drupal—a Faster Web
 author: Jeff Geerling
 nid: 454
-redirect_from:
-  - /blog/jeff-geerling/faster-drupal-faster-web/
+comments: true
+redirect_from: /blog/jeff-geerling/faster-drupal-faster-web/
 created: 1348601391
 ---
 I just sent a new note to the Flocknote Development list about <a href="http://www.flocknote.com/note/59251">making Flocknote speedier</a>. Flocknote is a very complex web application, and at the beginning of this summer, I noticed that some pages were taking more than a second to generate on our server (that's <em>before</em> the page would be sent to the end user!).

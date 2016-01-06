@@ -3,8 +3,8 @@ layout: post
 title: How to make "Tweet This" or "Post to Facebook" links
 author: Jeff Geerling
 nid: 159
-redirect_from:
-  - /blog/geerlingguy/how-make-tweet-or-post-/
+comments: true
+redirect_from: /blog/geerlingguy/how-make-tweet-or-post-/
 created: 1247561824
 ---
 <p>If your website has an audience comprised of many Facebook and/or Twitter users, you might be thinking of ways you can get them to share your postings on Facebook and Twitter.</p>

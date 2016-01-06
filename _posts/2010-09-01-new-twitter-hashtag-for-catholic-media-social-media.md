@@ -3,8 +3,8 @@ layout: post
 title: New Twitter Hashtag for Catholic Media, Social Media
 author: Jeff Geerling
 nid: 320
-redirect_from:
-  - /blog/oscatholic/new-twitter-hashtag-cath/
+comments: true
+redirect_from: /blog/oscatholic/new-twitter-hashtag-cath/
 created: 1283373721
 ---
 <p class="rtecenter"><a href="http://search.twitter.com/search?q=%23cathmedia"><img alt="#cathmedia - for catholic (social) media" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/cathmedia-twitter-hashtag-for-catholics_0.jpg" style="border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; width: 542px; height: 53px; " title="" /></a></p>

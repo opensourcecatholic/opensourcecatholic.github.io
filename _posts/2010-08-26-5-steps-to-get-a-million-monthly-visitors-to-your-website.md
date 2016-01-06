@@ -3,8 +3,8 @@ layout: post
 title: 5 Steps to Get a Million Monthly Visitors to your Website
 author: Jeff Geerling
 nid: 309
-redirect_from:
-  - /blog/oscatholic/5-steps-get-million-mont/
+comments: true
+redirect_from: /blog/oscatholic/5-steps-get-million-mont/
 created: 1282852003
 ---
 <p><img alt="Business Chart - Courtesy of Icons, etc." src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/business-chart.png" style="float: right; width: 225px; height: 225px; " title="" />There are many things you can do to get more visitors to your website, and attract more attention. Some are more important than others... here are my top five (based on over 10 years of web development experience, and running five top-million websites (according to <a href="http://www.alexa.com/">Alexa</a>):</p>

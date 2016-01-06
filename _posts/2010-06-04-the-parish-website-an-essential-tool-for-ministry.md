@@ -3,8 +3,8 @@ layout: post
 title: 'The Parish Website: An Essential Tool for Ministry'
 author: Carson Weber
 nid: 274
-redirect_from:
-  - /blog/carson-weber/parish-website/
+comments: true
+redirect_from: /blog/carson-weber/parish-website/
 created: 1275691301
 ---
 <p>Jeff&#39;s post here on OSCatholic titled &quot;<a href="http://www.opensourcecatholic.com/blog/oscatholic/what-makes-good-parish-website">What Makes a Good Parish Website?</a>&quot; brought me to brainstorm and design a PowerPoint presentation for clergy and parish staff/volunteers in the Diocese of Sacramento, to get folks moving in the right direction.</p>
