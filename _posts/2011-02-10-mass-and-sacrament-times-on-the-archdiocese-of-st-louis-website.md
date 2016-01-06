@@ -35,7 +35,7 @@ Our migrate import takes that line, creates a new node with the information, the
 
 Here's the code we use to prepare our parish event node via the migrate import process:
 
-```php
+{% highlight php %}
 function dir_migrate_prep_parish_event(&$node, $tblinfo, $row) {
   // Just stick on a filler title
   $node->title = "Parish event #" . $row->peventkey;
@@ -58,12 +58,12 @@ function dir_migrate_prep_parish_event(&$node, $tblinfo, $row) {
     $node->taxonomy[$term->tid] = $term;
   }
 }
-```
+{% endhighlight %}
 
 We basically sanitize the dates coming in from the database (we want them in standard time/0000 format), and then we add taxonomy terms to the dates.
 While importing parish nodes, among other things, we attach the parish event nid to the parish node's masstimes/adorationtimes/reconciliationtimes nodereference fields:
 
-```php
+{% highlight php %}
 $mt = dir_migrate_get_map_table('parish-event');
 $fields = dir_migrate_evtype_field_mapping();
 $result = db_query("SELECT mt.destid AS nid, e.fkpettypekey AS type
@@ -75,13 +75,13 @@ $result = db_query("SELECT mt.destid AS nid, e.fkpettypekey AS type
 while ($record = db_fetch_object($result)) {
   $node->{$fields[$record->type]}[] = array('nid' => $record->nid);
 }
-```
+{% endhighlight %}
 
 ## Displaying Event Time Information in the Nodes
 To display the time information in a particular node, we simply did a bit of theming magic. It's not the most highly performant bit of code in the world, but it works.
 First, we set up a field_formatter and theme function for parish event times (the following code samples are all from our site's custom.module):
 
-```php
+{% highlight php %}
 /**
  * Implementation of hook_field_formatter_info()
  */
@@ -105,13 +105,13 @@ function custom_theme() {
     ),
   );
 }
-```
+{% endhighlight %}
 
 These two functions just tell Drupal that we're defining a custom display formatter for parish event times (that can be used in Views, on node teasers, and in full node displays), and then defines a theme function in which we'll tell drupal how to format everything for display.
 
 This next function is a doozy - it basically does all the display dirtywork, and causes a performance burden on the site—if we tried displaying the mass time information for all 200 parish nodes on the site at once, the queries/processing would probably take 20-30 seconds! Therefore, we cache everything aggressively so people don't have to wait for the following theme function to do its work—after it's been done once in a day, it doesn't have to go again, as we cache the resulting page for 18 hours.
 
-```
+{% highlight php %}
 /**
  * Theming function for the "Parish Event Times" formatter.
  */
@@ -200,7 +200,7 @@ function theme_custom_formatter_parish_event_times($element) {
   $output .= '</dl>';
   return $output;
 }
-```
+{% endhighlight %}
 
 What we basically do here is load each referenced node, then grab all the metadata for that parish event from the parish event node. Then, we display all the metadata in a nice definition list, which gets themed to look like the following:
 
@@ -215,7 +215,7 @@ Inside our `dir_migrate.module` (though this could live just as easily in our cu
 
 In `dir_migrate/dir_migrate.module`:
 
-```php
+{% highlight php %}
 /**
  * Implementation of hook_views_api().
  */
@@ -225,11 +225,11 @@ function dir_migrate_views_api() {
     'path' => drupal_get_path('module', 'dir_migrate') . '/views',
   );
 }
-```
+{% endhighlight %}
 
 In `dir_migrate/views/dir_migrate.views.inc`:
 
-```php
+{% highlight php %}
 function dir_migrate_views_handlers() {
   return array(
     'info' => array(
@@ -251,11 +251,11 @@ function dir_migrate_views_data_alter(&$data) {
   $field['help'] = t('Filter handler that translates from int storage to time of day');
   $field['filter']['handler'] = 'dir_migrate_views_handler_filter_inttime';
 }
-```
+{% endhighlight %}
 
 In `dir_migrate/views/dir_migrate_views_handler_filter_inttime.inc` (this is where we define our custom views filter...):
 
-```php
+{% highlight php %}
 class dir_migrate_views_handler_filter_inttime extends views_handler_filter_numeric {
   function option_definition() {
     $options = parent::option_definition();
@@ -298,11 +298,11 @@ class dir_migrate_views_handler_filter_inttime extends views_handler_filter_nume
     );
   }
 }
-```
+{% endhighlight %}
 
 ...and finally, some helpful functions for our integer/time CCK field/formatting, found in `dir_migrate/dir_migrate.module`:
 
-```php
+{% highlight php %}
 // ==================== CCK Bits
 
 function int_time_theme() {
@@ -404,7 +404,7 @@ function int_time_increments_assoc() {
   }
   return $assoc;
 }
-```
+{% endhighlight %}
 
 _Wow... this is probably the longest post/code-dump I've ever written... sorry about that! Complex issues demand complex solutions, I guess?_
 
