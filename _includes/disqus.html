@@ -3,11 +3,11 @@
   <script>
     var disqus_config = function () {
       {% if page.nid.empty? %}
-        // Use Jekyll URL as identifier.
+        {% comment %} This is a native Jekyll post. {% endcomment %}
         this.page.url = "{{ page.url | prepend: site.url }}";
         this.page.identifier = "{{ page.url }}";
       {% else %}
-        // Use imported Drupal nid and redirect URL as identifier.
+        {% comment %} This post was imported from Drupal. {% endcomment %}
         this.page.url = "{{ page.redirect_from | prepend: site.url }}";
         this.page.identifier = "node/{{ page.nid }}";
       {% endif %}
