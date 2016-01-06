@@ -1,22 +1,23 @@
 <div class="post-comments">
   <div id="disqus_thread"></div>
+  <!-- Test 4: {{ page.nid }} -->
+  {% if page.nid|size == 0 %}
+    <!-- size test -->
+  {% endif %}
+  {% if page.nid == 0 %}
+    <!-- zero test -->
+  {% endif %}
+  {% if page.nid == empty %}
+    <!-- empty test -->
+  {% endif %}
+  {% if page.nid.exists? %}
+    <!-- exists test -->
+  {% endif %}
+  {% if page.nid.empty? %}
+    <!-- empty test -->
+  {% endif %}
   <script>
     var disqus_config = function () {
-      {% if page.nid|size == 0 %}
-        <!-- size test -->
-      {% endif %}
-      {% if page.nid == 0 %}
-        <!-- zero test -->
-      {% endif %}
-      {% if page.nid == empty %}
-        <!-- empty test -->
-      {% endif %}
-      {% if page.nid.exists? %}
-        <!-- exists test -->
-      {% endif %}
-      {% if page.nid.empty? %}
-        <!-- empty test -->
-      {% endif %}
       {% if page.nid == 0 %}
         {% comment %} This is a native Jekyll post. {% endcomment %}
         this.page.url = "{{ page.url | prepend: site.url }}";
@@ -34,6 +35,5 @@
       (d.head || d.body).appendChild(s);
     })();
   </script>
-  <!-- Test 3 {{ page.nid }} -->
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </div>
