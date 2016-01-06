@@ -2,7 +2,16 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      {% if page.nid > 0 %}
+      {% if page.nid|size == 0 %}
+        <!-- page.nid|size -->
+      {% endif %}
+      {% if page.nid == 0 %}
+        <!-- page.nid == 0 -->
+      {% endif %}
+      {% if page.nid == empty %}
+        <!-- page.nid == empty -->
+      {% endif %}
+      {% if page.nid == 0 %}
         {% comment %} This is a native Jekyll post. {% endcomment %}
         this.page.url = "{{ page.url | prepend: site.url }}";
         this.page.identifier = "{{ page.url }}";
@@ -19,6 +28,6 @@
       (d.head || d.body).appendChild(s);
     })();
   </script>
-  <!-- Test 1 {{ page.nid }} -->
+  <!-- Test 2 {{ page.nid }} -->
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </div>
