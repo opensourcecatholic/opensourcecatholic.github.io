@@ -22,7 +22,7 @@ layout: default
         </div>
 
         {% if post.comments %}
-          {% if post.nid? %}
+          {% if post.nid > 0 %}
             {% comment %} This is a native Jekyll post. {% endcomment %}
             {% assign comments_url = post.url %}
           {% else %}
