@@ -2,7 +2,7 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      {% if page.nid.empty? %}
+      {% if page.nid %}
         {% comment %} This is a native Jekyll post. {% endcomment %}
         this.page.url = "{{ page.url | prepend: site.url }}";
         this.page.identifier = "{{ page.url }}";
