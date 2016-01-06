@@ -10,16 +10,15 @@ On this site, Catholics who are interested in discovering and sharing new ways o
 
 Our logo, which displays one of the keys to the Church (as seen on the Papal coat of arms), was designed by [Tim Canny](http://lappedcatholic.blogspot.com/); he's a graphic designer from Philadelphia who likes to make logos and icons. He would be happy to talk to you about your design needs, and, as evidenced by the logo, he does great work! If you'd like a larger copy of the logo, click on the logo and you'll be taken to a 1000px wide transparent PNG.
 
-<h3>How Can I Help?</h3>
+### How Can I Help?
 
 You can help this website by doing one of many things:
 
-<ol>
-  <li>Join the discussion on posts on the site.</li>
-  <li>Contribute new content to the site through the [Open Source Catholic GitHub organization](https://github.com/opensourcecatholic).</li>
-  <li>Pray for the Church (it works wonders!).</li>
-</ol>
+  1. Join the discussion on posts on the site.
+  2. Contribute new content to the site through the [Open Source Catholic GitHub organization](https://github.com/opensourcecatholic).
+  3. Join public discussions in the [Open Source Catholic mailing list](https://groups.google.com/forum/#!forum/open-source-catholic).
+  4. Pray for the Church (it works wonders!).
 
-<h3>Can I Copy Content from Open Source Catholic?</h3>
+### Can I Copy Content from Open Source Catholic?
 
 We're happy to share all of our information with as many people as possible, and we love having others spread the word through their own blogs and websites, but please don't blindly copy and paste everything to another site. We'd much rather you post a snippet and then link back to our site for the full posting.
