@@ -15,6 +15,7 @@ paginate: 7
 markdown: kramdown
 exclude:
   - CNAME
+  - CONTRIBUTING.md
   - LICENSE
   - README.md
   - Gemfile
