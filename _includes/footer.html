@@ -8,6 +8,12 @@
       <div class="footer-col footer-col-1">
         <p class="rss-subscribe">Subscribe <a href="{{ "/rss.xml" | prepend: site.baseurl }}">via RSS</a></p>
         <ul class="social-media-list">
+          {% if site.mailinglist_name %}
+          <li>
+            {% include icon-mailing-list.html list_name=site.mailinglist_name %}
+          </li>
+          {% endif %}
+
           {% if site.github_username %}
           <li>
             {% include icon-github.html username=site.github_username %}

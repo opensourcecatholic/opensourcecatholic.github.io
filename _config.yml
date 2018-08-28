@@ -8,6 +8,7 @@ baseurl: ""
 url: "http://www.opensourcecatholic.com"
 twitter_username: oscatholic
 github_username:  opensourcecatholic
+mailinglist_name: open-source-catholic
 permalink: /:year/:title
 paginate: 7
 
