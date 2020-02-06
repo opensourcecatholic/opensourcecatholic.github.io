@@ -17,3 +17,5 @@ At any rate, the algorithm I ended up using is known as the Meeus/Jones/Butcher 
 I have recently updated the code as I refreshed Being Frank for Easter 2013, and thought that I would post it here in case it is of use to other Catholic techies out there for use on their projects.  It doesn't require any updating of tables as it calculates everything from the server date.  The code version I've attached is PHP, but you could easily convert it to other formats I'm sure.
 
 Hope it's of use to someone!  :)
+
+GitHub project: [CatholicLiturgicalCalendar](https://github.com/jamesbergin/CatholicLiturgicalCalendar).
