@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Facebook Groups
-author: Jeff Geerling
+author: geerlingguy
 nid: 237
 comments: true
 redirect_from: /wiki/facebook-groups/

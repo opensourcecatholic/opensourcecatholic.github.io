@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OSC Logo Ideas?
-author: Jeff Geerling
+author: geerlingguy
 nid: 11
 comments: true
 redirect_from: /forum/topics/11/

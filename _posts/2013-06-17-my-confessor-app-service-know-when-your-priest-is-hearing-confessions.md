@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My Confessor app/service - know when your priest is hearing confessions
-author: Jeff Geerling
+author: geerlingguy
 nid: 472
 comments: true
 redirect_from: /blog/jeff-geerling/my-confessor/

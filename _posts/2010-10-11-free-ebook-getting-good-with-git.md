@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Free eBook: Getting Good with Git'
-author: Jeff Geerling
+author: geerlingguy
 nid: 334
 comments: true
 redirect_from: /blog/jeff-geerling/free-ebook-getting-go/

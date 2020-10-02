@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Friars of the Immaculate
-author: Matt K
+author: matt-k
 nid: 77
 comments: true
 redirect_from: /blog/matt-k/friars-immaculate/

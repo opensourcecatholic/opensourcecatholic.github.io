@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Looking for Drupal / Joomla / CMS Developers
-author: Jeff Geerling
+author: geerlingguy
 nid: 78
 comments: true
 redirect_from: /content/looking-drupal-joomla-cms-developers/

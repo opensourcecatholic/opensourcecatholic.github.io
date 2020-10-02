@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google Real Time Search Goes Live
-author: Jeff Geerling
+author: geerlingguy
 nid: 175
 comments: true
 redirect_from: /forum/topics/175/

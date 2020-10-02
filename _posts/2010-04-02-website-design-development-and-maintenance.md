@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Website Design, Development, and Maintenance
-author: Jeff Geerling
+author: geerlingguy
 nid: 241
 comments: true
 redirect_from: /wiki/website-design-developmen/

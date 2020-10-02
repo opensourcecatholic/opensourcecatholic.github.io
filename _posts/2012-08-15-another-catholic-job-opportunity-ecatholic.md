@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Another Catholic Job Opportunity: eCatholic'
-author: Jeff Geerling
+author: geerlingguy
 nid: 443
 comments: true
 redirect_from: /blog/jeff-geerling/another-catholic-job-/

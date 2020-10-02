@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Major Updates to Open Source Catholic!
-author: Jeff Geerling
+author: geerlingguy
 nid: 242
 comments: true
 redirect_from: /blog/oscatholic/major-updates-open-sourc/

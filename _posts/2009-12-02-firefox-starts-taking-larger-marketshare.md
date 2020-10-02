@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FireFox Starts Taking Larger Marketshare
-author: Jeff Geerling
+author: geerlingguy
 nid: 169
 comments: true
 redirect_from: /blog/oscatholic/firefox-starts-taking-la/

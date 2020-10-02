@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Pope's first tweet (@pontifex)
-author: Jeff Geerling
+author: geerlingguy
 nid: 461
 comments: true
 redirect_from: /blog/jeff-geerling/popes-first-tweet/

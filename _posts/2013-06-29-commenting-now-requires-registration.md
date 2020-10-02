@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Commenting now requires registration
-author: Jeff Geerling
+author: geerlingguy
 nid: 474
 comments: true
 redirect_from: /forum/topics/474/

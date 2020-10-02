@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How Do I Remove The Title in Drupal?
-author: Cade_One
+author: cade-one
 nid: 177
 comments: true
 redirect_from: /forum/topics/177/

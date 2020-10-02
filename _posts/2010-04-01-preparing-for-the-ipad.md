@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Preparing for the iPad...
-author: Jeff Geerling
+author: geerlingguy
 nid: 233
 comments: true
 redirect_from: /forum/topics/233/

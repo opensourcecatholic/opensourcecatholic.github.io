@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Drupal: Restoring core comment title permalinks in a Zen Subtheme'
-author: Jeff Geerling
+author: geerlingguy
 nid: 273
 comments: true
 redirect_from: /blog/oscatholic/drupal-restoring-core/

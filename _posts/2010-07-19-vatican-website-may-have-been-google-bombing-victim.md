@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vatican website may have been 'Google bombing' victim
-author: Matt K
+author: matt-k
 nid: 298
 comments: true
 redirect_from: /blog/matt-k/vatican-website-may-have/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Event Registrations and Management
-author: Jeff Geerling
+author: geerlingguy
 nid: 247
 comments: true
 redirect_from: /wiki/117/event-registrations-and-m/

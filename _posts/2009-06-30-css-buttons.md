@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Css Buttons
-author: Whack
+author: whack
 nid: 27
 comments: true
 redirect_from: /forum/topics/27/

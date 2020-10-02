@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Looking for Custom Web Developer with Extensive Wordpress Knowledge
-author: Dr Peter Howard
+author: dr-peter-howard
 nid: 325
 comments: true
 redirect_from: /forum/topics/325/

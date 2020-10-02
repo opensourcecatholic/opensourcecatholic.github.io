@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google's New Open Font Library
-author: Jeff Geerling
+author: geerlingguy
 nid: 266
 comments: true
 redirect_from: /blog/oscatholic/googles-new-open-font/

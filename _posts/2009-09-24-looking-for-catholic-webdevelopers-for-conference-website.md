@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Looking for Catholic Webdeveloper(s) for Conference Website
-author: Michael.Sullivan
+author: michael-sullivan
 nid: 133
 comments: true
 redirect_from: /forum/topics/133/

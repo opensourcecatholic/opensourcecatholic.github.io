@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Embed the Breviary (and other Prayers) on your Site
-author: Jeff Geerling
+author: geerlingguy
 nid: 307
 comments: true
 redirect_from: /forum/topics/307/

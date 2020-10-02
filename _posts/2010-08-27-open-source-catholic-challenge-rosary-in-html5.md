@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Open Source Catholic Challenge: Rosary in HTML5'
-author: Jeff Geerling
+author: geerlingguy
 nid: 311
 comments: true
 redirect_from: /blog/oscatholic/open-source-catholic-cha/

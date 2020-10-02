@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Windows 7 "God Mode"
-author: Matt K
+author: matt-k
 nid: 192
 comments: true
 redirect_from: /forum/topics/192/

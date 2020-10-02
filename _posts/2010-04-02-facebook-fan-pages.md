@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Facebook Fan Pages
-author: Jeff Geerling
+author: geerlingguy
 nid: 238
 comments: true
 redirect_from: /wiki/facebook-fan-pages/

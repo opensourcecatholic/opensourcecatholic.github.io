@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Posting documents for web in Word format ...... and defending the decision
-author: Matt K
+author: matt-k
 nid: 284
 comments: true
 redirect_from: /forum/topics/284/

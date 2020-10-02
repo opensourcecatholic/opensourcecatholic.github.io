@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Faster Drupal—a Faster Web
-author: Jeff Geerling
+author: geerlingguy
 nid: 454
 comments: true
 redirect_from: /blog/jeff-geerling/faster-drupal-faster-web/

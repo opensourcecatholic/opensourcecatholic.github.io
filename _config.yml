@@ -22,6 +22,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - scripts
 
 # Gems
 plugins:
@@ -30,9 +31,139 @@ plugins:
 
 # Authors
 authors:
-  "Jeff Geerling":
+  98faithca:
+    name: 98faithCA
+  abrar-arshad:
+    name: abrar.arshad
+  activprayer:
+    name: activprayer
+  akavlie:
+    name: akavlie
+  allencch:
+    name: allencch
+  archstl:
+    name: archstl
+  arkanabar:
+    name: arkanabar
+  auger:
+    name: auger
+  balleyne:
+    name: balleyne
+  barbarakb:
+    name: BarbaraKB
+  cade-one:
+    name: Cade_One
+  carson-weber:
+    name: Carson Weber
+  catholicschoolwebdesign:
+    name: catholicschoolwebdesign
+  catholicservant:
+    name: catholicservant
+  cjamesrun:
+    name: cjamesrun
+  davidmcafee:
+    name: davidmcafee
+  denise205:
+    name: Denise205
+  dr-peter-howard:
+    name: Dr Peter Howard
+  fatherjosephlee:
+    name: fatherjosephlee
+  geerlingguy:
     name: Jeff Geerling
     email: geerlingguy@mac.com
     web: http://www.jeffgeerling.com/
     twitter: geerlingguy
     github: geerlingguy
+  gnw-paul:
+    name: GNW_Paul
+  hughmacken:
+    name: hughmacken
+  iloveitaly:
+    name: iloveitaly
+  inspiredangela:
+    name: inspiredangela
+  jamesbergin:
+    name: jamesbergin
+  jdzondo:
+    name: jdzondo
+  jeffrey-pinyan-praying-the-mass:
+    name: Jeffrey Pinyan - Praying the Mass
+  jm0rr0w:
+    name: jm0rr0w
+  jmadrone:
+    name: jmadrone
+  jmgrenda:
+    name: JMGrenda
+  jmmr:
+    name: JMMR
+  jnichols886:
+    name: jnichols886
+  joaomachado:
+    name: JoaoMachado
+  joel-stein:
+    name: Joel Stein
+  johnfitzgerald:
+    name: JohnFitzgerald
+  jonathan-henderson:
+    name: jonathan.henderson
+  jr-duboc:
+    name: jr.duboc
+  jsignal:
+    name: jsignal
+  krisk:
+    name: krisk
+  kyle:
+    name: kyle
+  liangjh:
+    name: liangjh
+  lindamicciche:
+    name: lindamicciche
+  lurgid:
+    name: Lurgid
+  lutra:
+    name: lutra
+  mairtin:
+    name: mairtin
+  mark-skender:
+    name: Mark Skender
+  matt-k:
+    name: Matt K
+  matthew-west:
+    name: matthew-west
+  mbetit:
+    name: mbetit
+  mdhoerr:
+    name: mdhoerr
+  michael-sullivan:
+    name: Michael.Sullivan
+  mpschneiderlc:
+    name: MPSchneiderLC
+  murdaugh:
+    name: murdaugh
+  nobis-media:
+    name: Nobis Media
+  onebillionstories-com:
+    name: OneBillionStories.com
+  petros-media:
+    name: Petros Media
+  pistos:
+    name: Pistos
+  reckshow:
+    name: reckshow
+  rjzaar:
+    name: rjzaar
+  steely:
+    name: Steely
+  stmaryscoltsneck:
+    name: stmaryscoltsneck
+  trevor-james:
+    name: trevor.james
+  valerie-shpak:
+    name: Valerie Shpak
+  vicmortelmans:
+    name: vicmortelmans
+  whack:
+    name: Whack
+  youshaa:
+    name: Youshaa

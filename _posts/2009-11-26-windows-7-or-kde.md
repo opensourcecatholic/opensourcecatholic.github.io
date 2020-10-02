@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Windows 7 or KDE?
-author: JoaoMachado
+author: joaomachado
 nid: 167
 comments: true
 redirect_from: /blog/joaomachado/windows-7-or-kde/

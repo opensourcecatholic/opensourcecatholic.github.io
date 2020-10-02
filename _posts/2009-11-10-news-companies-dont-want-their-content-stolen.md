@@ -1,7 +1,7 @@
 ---
 layout: post
 title: News companies don't want their content "stolen"
-author: Matt K
+author: matt-k
 nid: 153
 comments: true
 redirect_from: /forum/topics/153/

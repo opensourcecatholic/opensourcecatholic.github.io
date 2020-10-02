@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Priests and New/Social Media
-author: Jeff Geerling
+author: geerlingguy
 nid: 46
 comments: true
 redirect_from: /blog/oscatholic/priests-and-newsocial-media/

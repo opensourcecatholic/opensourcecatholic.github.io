@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '"Why Churches Should Not Market" (by Matt Farina)'
-author: Jeff Geerling
+author: geerlingguy
 nid: 195
 comments: true
 redirect_from: /forum/topics/195/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Debian With a Refreshing Minty Flavor
-author: Steely
+author: steely
 nid: 324
 comments: true
 redirect_from: /blog/steely/debian-refreshing-minty-f/

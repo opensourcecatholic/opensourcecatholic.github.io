@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Free the Word - Allowing Access to Evangelical Church Texts
-author: Jeff Geerling
+author: geerlingguy
 nid: 475
 comments: true
 redirect_from: /blog/jeff-geerling/free-word-allowing/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Your Last Meal
-author: Cade_One
+author: cade-one
 nid: 83
 comments: true
 redirect_from: /forum/topics/83/

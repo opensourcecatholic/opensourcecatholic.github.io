@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What Makes a Good Parish Website?
-author: Jeff Geerling
+author: geerlingguy
 nid: 143
 comments: true
 redirect_from: /blog/oscatholic/what-makes-good-parish-website/

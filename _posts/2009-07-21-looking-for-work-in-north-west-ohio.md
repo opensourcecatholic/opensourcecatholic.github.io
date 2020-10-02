@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Looking for work in North-West Ohio
-author: Cade_One
+author: cade-one
 nid: 62
 comments: true
 redirect_from: /forum/topics/62/

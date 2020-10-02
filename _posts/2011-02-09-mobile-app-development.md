@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mobile App Development?
-author: Jeff Geerling
+author: geerlingguy
 nid: 372
 comments: true
 redirect_from: /forum/topics/372/

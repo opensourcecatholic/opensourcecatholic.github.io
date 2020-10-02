@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '2013 World Communications Day Theme: Social Networks'
-author: Jeff Geerling
+author: geerlingguy
 nid: 456
 comments: true
 redirect_from: /blog/jeff-geerling/2013-world/

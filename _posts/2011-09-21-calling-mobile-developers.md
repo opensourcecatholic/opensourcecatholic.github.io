@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Calling Mobile Developers
-author: Jeff Geerling
+author: geerlingguy
 nid: 402
 comments: true
 redirect_from: /blog/jeff-geerling/calling-mobile-develo/

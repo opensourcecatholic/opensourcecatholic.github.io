@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'News Websites: Make Your News Readable!'
-author: Jeff Geerling
+author: geerlingguy
 nid: 278
 comments: true
 redirect_from: /blog/oscatholic/news-websites-make-your/

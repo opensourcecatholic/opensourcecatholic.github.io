@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Few Site Updates
-author: Jeff Geerling
+author: geerlingguy
 nid: 163
 comments: true
 redirect_from: /blog/oscatholic/few-site-updates/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hits vs. Visits - Optimize Your Website!
-author: Jeff Geerling
+author: geerlingguy
 nid: 203
 comments: true
 redirect_from: /blog/oscatholic/hits-vs-visits-optimize-/

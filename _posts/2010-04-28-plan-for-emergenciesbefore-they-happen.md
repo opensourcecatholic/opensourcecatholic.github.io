@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Plan for Emergencies—Before they Happen
-author: Jeff Geerling
+author: geerlingguy
 nid: 257
 comments: true
 redirect_from: /blog/oscatholic/plan-emergencies—-they-h/

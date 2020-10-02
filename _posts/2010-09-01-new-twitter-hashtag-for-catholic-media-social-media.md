@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New Twitter Hashtag for Catholic Media, Social Media
-author: Jeff Geerling
+author: geerlingguy
 nid: 320
 comments: true
 redirect_from: /blog/oscatholic/new-twitter-hashtag-cath/

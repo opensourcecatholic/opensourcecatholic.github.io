@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Which Drupal module are you using for your posting interface?
-author: Cade_One
+author: cade-one
 nid: 206
 comments: true
 redirect_from: /forum/topics/206/

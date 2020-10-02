@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sharing Parish Directory Information Online
-author: Jeff Geerling
+author: geerlingguy
 nid: 346
 comments: true
 redirect_from: /forum/topics/346/

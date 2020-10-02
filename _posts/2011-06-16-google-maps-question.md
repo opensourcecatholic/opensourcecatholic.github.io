@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google Maps Question
-author: Cade_One
+author: cade-one
 nid: 385
 comments: true
 redirect_from: /forum/topics/385/

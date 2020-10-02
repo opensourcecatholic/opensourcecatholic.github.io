@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholic Programmer's T-Shirt and Mousepad
-author: Jeff Geerling
+author: geerlingguy
 nid: 300
 comments: true
 redirect_from: /blog/geerlingguy/catholic-programmers-t/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Pope, on Twitter
-author: Jeff Geerling
+author: geerlingguy
 nid: 459
 comments: true
 redirect_from: /blog/jeff-geerling/pope-twitter/

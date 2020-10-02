@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Public Domain Catholic Bibles
-author: JoaoMachado
+author: joaomachado
 nid: 84
 comments: true
 redirect_from: /forum/topics/84/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New minimalist theme released for Drupal 7 - MM
-author: Jeff Geerling
+author: geerlingguy
 nid: 358
 comments: true
 redirect_from: /blog/oscatholic/new-minimalist-theme-rel/

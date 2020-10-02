@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OpenID Disabled for OSC Site Login
-author: Jeff Geerling
+author: geerlingguy
 nid: 368
 comments: true
 redirect_from: /blog/oscatholic/openid-disabled-osc-site/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iPhone - A Powerful tool for the New Evangelization
-author: Jeff Geerling
+author: geerlingguy
 nid: 446
 comments: true
 redirect_from: /blog/jeff-geerling/iphone-powerful-tool/

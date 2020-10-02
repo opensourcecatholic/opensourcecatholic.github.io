@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Future of Open Source Catholic
-author: Jeff Geerling
+author: geerlingguy
 nid: 486
 comments: true
 redirect_from: /blog/jeff-geerling/future-open-source/

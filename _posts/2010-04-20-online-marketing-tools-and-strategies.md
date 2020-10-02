@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Online Marketing Tools and Strategies
-author: Jeff Geerling
+author: geerlingguy
 nid: 251
 comments: true
 redirect_from: /wiki/117/online-marketing-tools-an/

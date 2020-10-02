@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Moving Again... And a Couple Updates [UPDATED]
-author: Jeff Geerling
+author: geerlingguy
 nid: 128
 comments: true
 redirect_from: /content/moving-again-and-couple-updates-upd/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "(Arch)Dioceses Getting On Board with Online Evangelization"
-author: Jeff Geerling
+author: geerlingguy
 nid: 290
 comments: true
 redirect_from: /blog/oscatholic/archdioceses-getting/

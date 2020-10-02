@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An App for Every Diocese
-author: Jeff Geerling
+author: geerlingguy
 nid: 450
 comments: true
 redirect_from: /blog/jeff-geerling/app-every-diocese/

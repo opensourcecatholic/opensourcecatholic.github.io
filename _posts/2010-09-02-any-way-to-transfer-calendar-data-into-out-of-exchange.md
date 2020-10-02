@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Any Way to Transfer Calendar Data into/out of Exchange?
-author: Jeff Geerling
+author: geerlingguy
 nid: 321
 comments: true
 redirect_from: /forum/topics/321/

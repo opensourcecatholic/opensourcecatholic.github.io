@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Source Software / Catholic Teaching
-author: Jeff Geerling
+author: geerlingguy
 nid: 125
 comments: true
 redirect_from: /blog/oscatholic/open-source-software-catholic-teac/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Being Christ to the un -Evangelized at Mass
-author: GNW_Paul
+author: gnw-paul
 nid: 14
 comments: true
 redirect_from: /forum/topics/14/

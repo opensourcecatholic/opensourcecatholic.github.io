@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Value of Open Source / Contributing Back
-author: Jeff Geerling
+author: geerlingguy
 nid: 339
 comments: true
 redirect_from: /blog/oscatholic/value-open-source-contri/

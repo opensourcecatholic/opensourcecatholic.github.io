@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholic/New Media Job Opportunities
-author: Jeff Geerling
+author: geerlingguy
 nid: 442
 comments: true
 redirect_from: /blog/jeff-geerling/catholicnew-media-job/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: U.S. Archdioceses and Dioceses on Facebook
-author: Jeff Geerling
+author: geerlingguy
 nid: 93
 comments: true
 redirect_from: /blog/oscatholic/us-archdioceses-and-dioceses-faceb/

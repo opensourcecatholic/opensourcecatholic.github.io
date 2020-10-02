@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Importance of Mobile for the Church
-author: Jeff Geerling
+author: geerlingguy
 nid: 421
 comments: true
 redirect_from: /blog/jeff-geerling/importance-mobile-chu/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'The Parish Website: An Essential Tool for Ministry'
-author: Carson Weber
+author: carson-weber
 nid: 274
 comments: true
 redirect_from: /blog/carson-weber/parish-website/

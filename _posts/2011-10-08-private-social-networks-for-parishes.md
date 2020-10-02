@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Private Social Networks for Parishes
-author: Jeff Geerling
+author: geerlingguy
 nid: 404
 comments: true
 redirect_from: /blog/jeff-geerling/private-social-networ/

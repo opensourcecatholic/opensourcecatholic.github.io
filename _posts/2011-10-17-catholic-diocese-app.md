@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholic Diocese App
-author: Jeff Geerling
+author: geerlingguy
 nid: 407
 comments: true
 redirect_from: /project/catholic-diocese-app/

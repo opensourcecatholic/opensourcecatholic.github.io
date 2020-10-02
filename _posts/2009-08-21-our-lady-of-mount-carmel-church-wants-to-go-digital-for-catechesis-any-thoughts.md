@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Our Lady of Mount Carmel Church wants to go Digital for Catechesis any thoughts?
-author: Valerie Shpak
+author: valerie-shpak
 nid: 116
 comments: true
 redirect_from: /forum/topics/116/

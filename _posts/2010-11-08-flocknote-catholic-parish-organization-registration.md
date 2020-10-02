@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FlockNote - Catholic parish/organization Registration
-author: Jeff Geerling
+author: geerlingguy
 nid: 349
 comments: true
 redirect_from: /wiki/117/flocknote-catholic-parish/

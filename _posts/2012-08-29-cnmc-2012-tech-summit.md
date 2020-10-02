@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CNMC 2012 - Tech Summit
-author: Jeff Geerling
+author: geerlingguy
 nid: 448
 comments: true
 redirect_from: /blog/jeff-geerling/cnmc-2012-tech-summit/

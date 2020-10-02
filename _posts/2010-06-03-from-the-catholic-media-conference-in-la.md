@@ -1,7 +1,7 @@
 ---
 layout: post
 title: From the Catholic Media Conference (in LA)
-author: Jeff Geerling
+author: geerlingguy
 nid: 272
 comments: true
 redirect_from: /blog/oscatholic/catholic-media/

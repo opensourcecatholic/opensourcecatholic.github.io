@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Going the self-publishing route
-author: Jeffrey Pinyan - Praying the Mass
+author: jeffrey-pinyan-praying-the-mass
 nid: 132
 comments: true
 redirect_from: /blog/praying-mass/going-self-publishing-route/

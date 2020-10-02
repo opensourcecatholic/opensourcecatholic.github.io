@@ -1,7 +1,7 @@
 ---
 layout: post
 title: One Week in... Happy 4th!
-author: Jeff Geerling
+author: geerlingguy
 nid: 39
 comments: true
 redirect_from: /blog/oscatholic/one-week-happy-4th/

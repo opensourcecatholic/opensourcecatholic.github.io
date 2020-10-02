@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building Open Source Catholic
-author: Jeff Geerling
+author: geerlingguy
 nid: 3
 comments: true
 redirect_from: /blog/oscatholic/building-open-source-catholic/

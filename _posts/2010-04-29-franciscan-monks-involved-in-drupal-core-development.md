@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Franciscan Monks Involved in Drupal Core Development!
-author: Jeff Geerling
+author: geerlingguy
 nid: 259
 comments: true
 redirect_from: /blog/oscatholic/franciscan-monks/

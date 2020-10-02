@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mining the Catechism with Perl
-author: Jeffrey Pinyan - Praying the Mass
+author: jeffrey-pinyan-praying-the-mass
 nid: 50
 comments: true
 redirect_from: /blog/praying-mass/mining-catechism-perl/

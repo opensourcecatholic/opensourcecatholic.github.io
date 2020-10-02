@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Breadcrumb Navigation
-author: Denise205
+author: denise205
 nid: 66
 comments: true
 redirect_from: /forum/topics/66/

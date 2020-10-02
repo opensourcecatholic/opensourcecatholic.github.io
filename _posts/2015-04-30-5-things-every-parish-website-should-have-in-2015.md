@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 5 Things Every Parish Website Should Have in 2015
-author: Nobis Media
+author: nobis-media
 nid: 487
 comments: true
 redirect_from: /blog/conoon-kim/5-things-every-parish/

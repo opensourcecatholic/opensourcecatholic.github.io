@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vatican Announces Upgrade of Network Infrastructure
-author: Jeff Geerling
+author: geerlingguy
 nid: 264
 comments: true
 redirect_from: /blog/oscatholic/vatican-announces/

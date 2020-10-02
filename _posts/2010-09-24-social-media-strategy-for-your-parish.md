@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Social Media Strategy for your Parish
-author: Jeff Geerling
+author: geerlingguy
 nid: 332
 comments: true
 redirect_from: /blog/oscatholic/social-media-strategy-yo/

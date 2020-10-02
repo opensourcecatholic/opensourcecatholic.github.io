@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Website Design Tools and Resources
-author: Jeff Geerling
+author: geerlingguy
 nid: 304
 comments: true
 redirect_from: /wiki/117/website-design-tools-and/

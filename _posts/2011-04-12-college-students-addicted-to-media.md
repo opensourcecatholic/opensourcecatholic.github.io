@@ -1,7 +1,7 @@
 ---
 layout: post
 title: College Students - Addicted to Media
-author: Jeff Geerling
+author: geerlingguy
 nid: 380
 comments: true
 redirect_from: /blog/jeff-geerling/college-students-addi/

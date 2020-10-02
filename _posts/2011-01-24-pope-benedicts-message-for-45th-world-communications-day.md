@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pope Benedict's Message for 45th World Communications Day
-author: Jeff Geerling
+author: geerlingguy
 nid: 366
 comments: true
 redirect_from: /blog/jeff-geerling/pope-benedicts-messag/

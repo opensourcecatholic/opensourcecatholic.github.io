@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Caching a Page; Saving a Server
-author: Jeff Geerling
+author: geerlingguy
 nid: 158
 comments: true
 redirect_from: /blog/geerlingguy/caching-page-saving-server/

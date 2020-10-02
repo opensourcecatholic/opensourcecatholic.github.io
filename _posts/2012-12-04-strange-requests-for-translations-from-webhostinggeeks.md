@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Strange requests for translations from WebHostingGeeks
-author: Jeff Geerling
+author: geerlingguy
 nid: 460
 comments: true
 redirect_from: /blog/jeff-geerling/strange-requests/

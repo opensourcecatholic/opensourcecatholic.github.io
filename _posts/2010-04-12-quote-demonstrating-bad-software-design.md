@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Quote demonstrating bad software design
-author: jr.duboc
+author: jr-duboc
 nid: 244
 comments: true
 redirect_from: /blog/jrduboc/quote-demonstrating-bad-s/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholic Youth Apostolate in St. Louis looking for FT Web Developer
-author: Jeff Geerling
+author: geerlingguy
 nid: 281
 comments: true
 redirect_from: /forum/topics/281/

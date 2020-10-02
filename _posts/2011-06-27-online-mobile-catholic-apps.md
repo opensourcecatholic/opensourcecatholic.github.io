@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Online / Mobile Catholic Apps
-author: Jeff Geerling
+author: geerlingguy
 nid: 387
 comments: true
 redirect_from: /wiki/117/online-mobile-catholic-ap/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: which one is good WP or drupal ?
-author: abrar.arshad
+author: abrar-arshad
 nid: 88
 comments: true
 redirect_from: /forum/topics/88/

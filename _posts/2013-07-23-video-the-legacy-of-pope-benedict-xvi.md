@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Video: The Legacy of Pope Benedict XVI'
-author: JohnFitzgerald
+author: johnfitzgerald
 nid: 476
 comments: true
 redirect_from: /blog/john-fitzgerald/video-legacy-pope/

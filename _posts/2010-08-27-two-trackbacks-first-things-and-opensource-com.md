@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Two Trackbacks - First Things & OpenSource.com
-author: Jeff Geerling
+author: geerlingguy
 nid: 310
 comments: true
 redirect_from: /blog/oscatholic/two-trackbacks-first-thi/

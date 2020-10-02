@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fantasy League Platform w/Catholic Bent
-author: JMGrenda
+author: jmgrenda
 nid: 451
 comments: true
 redirect_from: /forum/topics/451/

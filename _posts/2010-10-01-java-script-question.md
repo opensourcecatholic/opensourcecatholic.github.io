@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java Script question
-author: JoaoMachado
+author: joaomachado
 nid: 333
 comments: true
 redirect_from: /forum/topics/333/

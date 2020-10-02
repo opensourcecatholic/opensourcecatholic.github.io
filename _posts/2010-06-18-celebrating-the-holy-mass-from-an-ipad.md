@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Celebrating the Holy Mass from an iPad
-author: Jeff Geerling
+author: geerlingguy
 nid: 286
 comments: true
 redirect_from: /blog/geerlingguy/celebrating-holy-mass/

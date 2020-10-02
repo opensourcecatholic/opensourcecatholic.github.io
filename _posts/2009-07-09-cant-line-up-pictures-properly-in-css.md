@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Can't line up pictures properly in css?
-author: Whack
+author: whack
 nid: 42
 comments: true
 redirect_from: /forum/topics/42/

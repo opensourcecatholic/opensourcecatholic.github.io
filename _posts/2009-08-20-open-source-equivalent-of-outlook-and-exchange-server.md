@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open source equivalent of Outlook and Exchange Server
-author: Matt K
+author: matt-k
 nid: 114
 comments: true
 redirect_from: /forum/topics/114/

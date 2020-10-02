@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CKEditor Installed instead of FCKEditor
-author: Jeff Geerling
+author: geerlingguy
 nid: 172
 comments: true
 redirect_from: /forum/topics/172/

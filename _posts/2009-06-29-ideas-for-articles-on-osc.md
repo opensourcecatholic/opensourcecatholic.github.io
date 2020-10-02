@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ideas for Articles on OSC
-author: Jeff Geerling
+author: geerlingguy
 nid: 12
 comments: true
 redirect_from: /forum/topics/12/

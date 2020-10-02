@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PrayerCenter (using Drupal)
-author: Jeff Geerling
+author: geerlingguy
 nid: 204
 comments: true
 redirect_from: /blog/oscatholic/free-alternative-prayerc/

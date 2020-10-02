@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dental Lab Website Re-Design
-author: Cade_One
+author: cade-one
 nid: 166
 comments: true
 redirect_from: /forum/topics/166/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Forms, Registrations, and Online Event Management
-author: Jeff Geerling
+author: geerlingguy
 nid: 245
 comments: true
 redirect_from: /wiki/forms-registrations-and-o/

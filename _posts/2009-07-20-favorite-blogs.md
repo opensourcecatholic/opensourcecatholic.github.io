@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Favorite blogs
-author: Matt K
+author: matt-k
 nid: 58
 comments: true
 redirect_from: /forum/topics/58/

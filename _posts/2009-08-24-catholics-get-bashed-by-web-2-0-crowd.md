@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholics Get Bashed by Web 2.0 Crowd
-author: 98faithCA
+author: 98faithca
 nid: 118
 comments: true
 redirect_from: /blog/98faithca/catholics-get-bashed-web-20-crowd/

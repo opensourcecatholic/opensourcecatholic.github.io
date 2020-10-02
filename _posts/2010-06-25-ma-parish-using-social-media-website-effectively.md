@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MA Parish Using Social Media/Website Effectively
-author: Jeff Geerling
+author: geerlingguy
 nid: 288
 comments: true
 redirect_from: /blog/oscatholic/ma-parish-using-social/

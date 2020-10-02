@@ -1,7 +1,7 @@
 ---
 layout: post
 title: USCCB Social Media Guidelines
-author: Jeff Geerling
+author: geerlingguy
 nid: 292
 comments: true
 redirect_from: /blog/oscatholic/usccb-social-media/

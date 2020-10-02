@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create a Podcast, Quick n' Easy, using Drupal with Views + FileField
-author: Jeff Geerling
+author: geerlingguy
 nid: 345
 comments: true
 redirect_from: /blog/oscatholic/create-podcast-quick-n-e/

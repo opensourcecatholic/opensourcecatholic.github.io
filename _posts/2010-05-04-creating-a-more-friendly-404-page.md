@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a More Friendly 404 Page
-author: Jeff Geerling
+author: geerlingguy
 nid: 263
 comments: true
 redirect_from: /blog/oscatholic/creating-more-friendly/

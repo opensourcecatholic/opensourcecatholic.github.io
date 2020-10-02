@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Basic Data Collection - Online Forms
-author: Jeff Geerling
+author: geerlingguy
 nid: 246
 comments: true
 redirect_from: /wiki/basic-data-collection-onl/

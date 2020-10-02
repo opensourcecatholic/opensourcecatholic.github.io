@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Benedict XVI to Priests: Use New Technologies to Evangelize! [UPDATED]'
-author: Jeff Geerling
+author: geerlingguy
 nid: 202
 comments: true
 redirect_from: /blog/oscatholic/benedict-xvi-priests-use/

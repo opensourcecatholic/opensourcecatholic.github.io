@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Preventing Form Spam on Your Website
-author: Jeff Geerling
+author: geerlingguy
 nid: 411
 comments: true
 redirect_from: /blog/jeff-geerling/preventing-form-spam-/

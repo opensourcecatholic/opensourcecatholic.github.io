@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Acquia to fund $8 Million for Drupal development
-author: Matt K
+author: matt-k
 nid: 76
 comments: true
 redirect_from: /forum/topics/76/

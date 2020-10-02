@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PHP Array (List) of All United States Dioceses
-author: Jeff Geerling
+author: geerlingguy
 nid: 394
 comments: true
 redirect_from: /wiki/117/php-array-list-all-united/

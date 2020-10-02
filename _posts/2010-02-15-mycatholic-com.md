@@ -1,7 +1,7 @@
 ---
 layout: post
 title: mycatholic.com
-author: Matt K
+author: matt-k
 nid: 211
 comments: true
 redirect_from: /forum/topics/211/

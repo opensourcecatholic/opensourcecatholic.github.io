@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wingdings type font with a certain character
-author: Lurgid
+author: lurgid
 nid: 200
 comments: true
 redirect_from: /forum/topics/200/

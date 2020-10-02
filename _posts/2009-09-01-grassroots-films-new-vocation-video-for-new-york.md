@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grassroots Films new vocation video for New York
-author: Matt K
+author: matt-k
 nid: 123
 comments: true
 redirect_from: /blog/matt-k/grassroots-films-new-vocation-video/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Now I'm Crying...
-author: Jeff Geerling
+author: geerlingguy
 nid: 189
 comments: true
 redirect_from: /blog/oscatholic/now-im-crying/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Call to Software Developers
-author: Jeff Geerling
+author: geerlingguy
 nid: 60
 comments: true
 redirect_from: /blog/oscatholic/call-software-developers/

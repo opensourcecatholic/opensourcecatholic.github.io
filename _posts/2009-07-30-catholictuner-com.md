@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholictuner.com
-author: JoaoMachado
+author: joaomachado
 nid: 79
 comments: true
 redirect_from: /forum/topics/79/

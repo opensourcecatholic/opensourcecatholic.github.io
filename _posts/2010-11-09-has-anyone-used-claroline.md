@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Has anyone used Claroline?
-author: JMMR
+author: jmmr
 nid: 350
 comments: true
 redirect_from: /forum/topics/350/

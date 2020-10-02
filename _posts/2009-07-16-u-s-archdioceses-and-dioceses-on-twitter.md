@@ -1,7 +1,7 @@
 ---
 layout: post
 title: U.S. Archdioceses and Dioceses on Twitter
-author: Jeff Geerling
+author: geerlingguy
 nid: 54
 comments: true
 redirect_from: /blog/geerlingguy/us-archdioceses-and-dioceses-twit/

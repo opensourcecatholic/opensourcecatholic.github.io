@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Are you setting up your parish websites for failure?
-author: Jeff Geerling
+author: geerlingguy
 nid: 480
 comments: true
 redirect_from: /blog/jeff-geerling/are-you-setting-your/

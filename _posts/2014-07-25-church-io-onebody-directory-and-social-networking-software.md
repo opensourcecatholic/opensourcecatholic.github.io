@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Church.io OneBody directory and social networking software
-author: Jeff Geerling
+author: geerlingguy
 nid: 485
 comments: true
 redirect_from: /blog/jeff-geerling/churchio-onebody/

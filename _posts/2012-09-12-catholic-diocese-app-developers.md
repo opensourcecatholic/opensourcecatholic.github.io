@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholic Diocese App Developers
-author: Jeff Geerling
+author: geerlingguy
 nid: 452
 comments: true
 redirect_from: /wiki/catholic-diocese-app/catholic/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Commenter with similar names
-author: Matt K
+author: matt-k
 nid: 121
 comments: true
 redirect_from: /forum/topics/121/

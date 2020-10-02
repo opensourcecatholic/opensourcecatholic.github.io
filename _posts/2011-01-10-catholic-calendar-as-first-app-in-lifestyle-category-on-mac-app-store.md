@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholic Calendar as First App in 'Lifestyle' Category on Mac App Store
-author: Jeff Geerling
+author: geerlingguy
 nid: 365
 comments: true
 redirect_from: /blog/oscatholic/catholic-calendar-first-/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Good Warriors of the Net - IP for Peace!
-author: Jeff Geerling
+author: geerlingguy
 nid: 70
 comments: true
 redirect_from: /blog/oscatholic/good-warriors-net-ip-peace/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vatican.va Getting an Upgrade!
-author: Jeff Geerling
+author: geerlingguy
 nid: 306
 comments: true
 redirect_from: /blog/oscatholic/vaticanva-getting-upgrad/

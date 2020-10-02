@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Archdiocese of St. Louis' New iPhone App
-author: Jeff Geerling
+author: geerlingguy
 nid: 375
 comments: true
 redirect_from: /blog/jeff-geerling/archdiocese-st-louis-/

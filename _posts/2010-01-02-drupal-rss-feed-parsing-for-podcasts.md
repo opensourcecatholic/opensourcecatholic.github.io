@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drupal RSS Feed parsing - For Podcasts
-author: JoaoMachado
+author: joaomachado
 nid: 191
 comments: true
 redirect_from: /forum/topics/191/

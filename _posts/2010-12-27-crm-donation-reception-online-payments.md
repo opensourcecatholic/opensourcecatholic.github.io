@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRM, Donation Reception, Online Payments
-author: Jeff Geerling
+author: geerlingguy
 nid: 361
 comments: true
 redirect_from: /wiki/117/crm-donation-reception-on/

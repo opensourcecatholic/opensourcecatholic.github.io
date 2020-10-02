@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Access to the Catholic Bible and Catechism (NAB/NABRE and CCC)
-author: Jeff Geerling
+author: geerlingguy
 nid: 417
 comments: true
 redirect_from: /blog/jeff-geerling/open-access-catholic/

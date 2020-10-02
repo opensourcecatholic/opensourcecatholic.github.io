@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Certified to Rock - Neat Drupal User Involvement Measurement Tool
-author: Jeff Geerling
+author: geerlingguy
 nid: 255
 comments: true
 redirect_from: /blog/oscatholic/certified-rock-neat/

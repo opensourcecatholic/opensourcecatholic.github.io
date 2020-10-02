@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Story of LOLSaints
-author: Jeff Geerling
+author: geerlingguy
 nid: 162
 comments: true
 redirect_from: /blog/geerlingguy/story-lolsaints/

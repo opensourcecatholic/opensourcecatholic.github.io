@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Source Catholic Theme Released to Drupal.org
-author: Jeff Geerling
+author: geerlingguy
 nid: 30
 comments: true
 redirect_from: /content/open-source-catholic-theme-released-drupalorg/

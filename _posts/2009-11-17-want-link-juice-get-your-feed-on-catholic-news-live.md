@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Want Link Juice? Get your Feed on Catholic News Live.
-author: Jeff Geerling
+author: geerlingguy
 nid: 151
 comments: true
 redirect_from: /blog/oscatholic/want-some-free-link-juic/

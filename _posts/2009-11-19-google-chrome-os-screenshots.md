@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google Chrome OS screenshots
-author: Matt K
+author: matt-k
 nid: 156
 comments: true
 redirect_from: /forum/topics/156/

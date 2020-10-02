@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Website Development Companies and Resources
-author: Jeff Geerling
+author: geerlingguy
 nid: 303
 comments: true
 redirect_from: /wiki/117/website-development-compa/
