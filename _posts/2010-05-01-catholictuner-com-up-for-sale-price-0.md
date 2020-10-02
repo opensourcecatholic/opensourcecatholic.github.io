@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CatholicTuner.com up for sale, Price $0
-author: JoaoMachado
+author: joaomachado
 nid: 261
 comments: true
 redirect_from: /forum/topics/261/

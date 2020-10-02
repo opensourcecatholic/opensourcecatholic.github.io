@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Status Updates
-author: Jeff Geerling
+author: geerlingguy
 nid: 104
 comments: true
 redirect_from: /blog/oscatholic/status-updates/

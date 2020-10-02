@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'New Users: Introduce yourself  :)'
-author: Pistos
+author: pistos
 nid: 86
 comments: true
 redirect_from: /forum/topics/86/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Parish School Websites
-author: Jeff Geerling
+author: geerlingguy
 nid: 313
 comments: true
 redirect_from: /wiki/117/parish-school-websites/

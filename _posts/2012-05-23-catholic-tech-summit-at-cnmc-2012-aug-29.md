@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholic Tech Summit at CNMC 2012, Aug 29
-author: Jeff Geerling
+author: geerlingguy
 nid: 422
 comments: true
 redirect_from: /blog/jeff-geerling/catholic-tech-summit-/

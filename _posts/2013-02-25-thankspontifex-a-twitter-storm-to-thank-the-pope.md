@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "#ThanksPontifex - a Twitter Storm to Thank the Pope"
-author: MPSchneiderLC
+author: mpschneiderlc
 nid: 466
 comments: true
 redirect_from: /blog/br-matthew-p-schneider-lc-0/

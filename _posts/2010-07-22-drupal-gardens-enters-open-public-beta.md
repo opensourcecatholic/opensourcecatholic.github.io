@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drupal Gardens enters Open Public Beta
-author: Jeff Geerling
+author: geerlingguy
 nid: 299
 comments: true
 redirect_from: /blog/oscatholic/drupal-gardens-enters/

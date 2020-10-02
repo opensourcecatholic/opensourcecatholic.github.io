@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Real-Time Web – Staying Relevant
-author: Jeff Geerling
+author: geerlingguy
 nid: 277
 comments: true
 redirect_from: /blog/oscatholic/real-time-web-–-staying-r/

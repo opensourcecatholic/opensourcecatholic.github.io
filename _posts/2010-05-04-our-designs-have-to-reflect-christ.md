@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Our Designs Have to Reflect Christ
-author: Jeff Geerling
+author: geerlingguy
 nid: 262
 comments: true
 redirect_from: /blog/oscatholic/our-designs-have-reflect/

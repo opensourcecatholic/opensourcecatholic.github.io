@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Build a Drupal Module - for Beginners
-author: Jeff Geerling
+author: geerlingguy
 nid: 344
 comments: true
 redirect_from: /blog/oscatholic/how-build-drupal-module-/

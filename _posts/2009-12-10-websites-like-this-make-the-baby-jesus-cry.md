@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Websites like this make the baby Jesus cry...
-author: Jeff Geerling
+author: geerlingguy
 nid: 178
 comments: true
 redirect_from: /forum/topics/178/

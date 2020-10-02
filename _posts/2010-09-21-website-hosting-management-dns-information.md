@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Website Hosting Management, DNS Information
-author: Jeff Geerling
+author: geerlingguy
 nid: 328
 comments: true
 redirect_from: /wiki/117/website-hosting-managemen/

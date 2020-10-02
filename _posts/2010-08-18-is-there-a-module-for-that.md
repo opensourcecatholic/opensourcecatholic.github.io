@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Is there a module for that?
-author: Jeff Geerling
+author: geerlingguy
 nid: 308
 comments: true
 redirect_from: /blog/oscatholic/there-module/

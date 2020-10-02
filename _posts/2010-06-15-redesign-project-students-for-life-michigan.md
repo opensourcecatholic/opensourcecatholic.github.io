@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Redesign Project: Students for Life Michigan'
-author: Jeff Geerling
+author: geerlingguy
 nid: 282
 comments: true
 redirect_from: /forum/topics/282/

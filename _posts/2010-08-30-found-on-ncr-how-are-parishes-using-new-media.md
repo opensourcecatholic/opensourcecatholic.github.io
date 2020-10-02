@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Found on NCR: How are parishes using new media?'
-author: Jeff Geerling
+author: geerlingguy
 nid: 317
 comments: true
 redirect_from: /blog/oscatholic/found-ncr-how-are-parish/

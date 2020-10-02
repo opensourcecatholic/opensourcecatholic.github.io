@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The distraction caused by Mobile in Church
-author: Youshaa
+author: youshaa
 nid: 440
 comments: true
 redirect_from: /blog/youshaa/youth-should-not-bring-mo/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Social Networking and Online Community
-author: Jeff Geerling
+author: geerlingguy
 nid: 234
 comments: true
 redirect_from: /wiki/social-networking-and-onl/

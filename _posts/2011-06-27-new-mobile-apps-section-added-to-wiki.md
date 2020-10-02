@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New 'Mobile Apps' Section added to Wiki
-author: Jeff Geerling
+author: geerlingguy
 nid: 391
 comments: true
 redirect_from: /blog/jeff-geerling/new-mobile-apps-secti/

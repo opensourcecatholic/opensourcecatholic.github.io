@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'New Forum Added: "Traditional Media"'
-author: Jeff Geerling
+author: geerlingguy
 nid: 80
 comments: true
 redirect_from: /content/new-forum-added-traditional-media/

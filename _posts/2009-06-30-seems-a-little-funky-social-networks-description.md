@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Seems a little funky (social networks description)
-author: Whack
+author: whack
 nid: 24
 comments: true
 redirect_from: /forum/topics/24/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Speeding up a Site: Quicker 404 Errors for files in Drupal'
-author: Jeff Geerling
+author: geerlingguy
 nid: 256
 comments: true
 redirect_from: /blog/oscatholic/speeding-site-quicker/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Embedding a 'Related Content' block in your Drupal nodes
-author: Jeff Geerling
+author: geerlingguy
 nid: 352
 comments: true
 redirect_from: /blog/oscatholic/embedding-related-conten/

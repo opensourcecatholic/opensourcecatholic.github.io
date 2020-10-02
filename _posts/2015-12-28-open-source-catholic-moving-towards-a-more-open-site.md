@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Source Catholic - moving towards a more open site
-author: Jeff Geerling
+author: geerlingguy
 nid: 489
 redirect_from: /blog/jeff-geerling/open-source-catholic-future-github/
 created: 1451333151

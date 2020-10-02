@@ -1,7 +1,7 @@
 ---
 layout: post
 title: XML Format for Parish Directory Information
-author: Jeff Geerling
+author: geerlingguy
 nid: 419
 comments: true
 redirect_from: /wiki/117/xml-format-parish-directo/

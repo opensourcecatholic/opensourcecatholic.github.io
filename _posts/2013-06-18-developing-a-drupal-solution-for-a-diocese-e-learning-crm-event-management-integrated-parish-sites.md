@@ -2,7 +2,7 @@
 layout: post
 title: Developing a Drupal solution for a Diocese (+ e-learning, crm, event management,
   integrated parish sites)
-author: jonathan.henderson
+author: jonathan-henderson
 nid: 473
 comments: true
 redirect_from: /forum/topics/473/

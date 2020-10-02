@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Online Calendaring: FullCalendar.js'
-author: Jeff Geerling
+author: geerlingguy
 nid: 357
 comments: true
 redirect_from: /blog/oscatholic/online-calendaring-fullc/

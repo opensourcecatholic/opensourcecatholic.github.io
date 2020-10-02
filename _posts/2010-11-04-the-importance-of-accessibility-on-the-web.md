@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Importance of Accessibility on the Web
-author: Jeff Geerling
+author: geerlingguy
 nid: 347
 comments: true
 redirect_from: /blog/jeff-geerling/importance-accessibil/

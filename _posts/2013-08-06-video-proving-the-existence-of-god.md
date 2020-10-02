@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Video: Proving the Existence of God'
-author: JohnFitzgerald
+author: johnfitzgerald
 nid: 477
 comments: true
 redirect_from: /blog/john-fitzgerald/video-proving/

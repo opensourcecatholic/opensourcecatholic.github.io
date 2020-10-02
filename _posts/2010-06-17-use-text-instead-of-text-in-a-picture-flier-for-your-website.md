@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use Text Instead of Text-in-a-Picture/Flier for your Website
-author: Jeff Geerling
+author: geerlingguy
 nid: 283
 comments: true
 redirect_from: /blog/oscatholic/use-text-instead-text/

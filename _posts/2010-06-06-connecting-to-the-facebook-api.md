@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Connecting to the Facebook API
-author: Jeff Geerling
+author: geerlingguy
 nid: 276
 comments: true
 redirect_from: /wiki/117/connecting-facebook-api/

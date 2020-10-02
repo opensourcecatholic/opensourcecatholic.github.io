@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Useful Comment Notification Emails for Drupal Site Admins
-author: Jeff Geerling
+author: geerlingguy
 nid: 331
 comments: true
 redirect_from: /blog/oscatholic/useful-comment-notificat/

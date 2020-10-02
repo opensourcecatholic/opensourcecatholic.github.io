@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Oh IE, how I Hate Thee
-author: Jeff Geerling
+author: geerlingguy
 nid: 187
 comments: true
 redirect_from: /blog/oscatholic/oh-ie-how-i-hate-thee/

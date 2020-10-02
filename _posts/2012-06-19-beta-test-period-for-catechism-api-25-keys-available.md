@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Beta test period for Catechism API - 25 keys available
-author: Jeffrey Pinyan - Praying the Mass
+author: jeffrey-pinyan-praying-the-mass
 nid: 438
 comments: true
 redirect_from: /blog/jeffrey-pinyan-praying-ma/beta-test/

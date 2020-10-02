@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working on a new Intranet - Sharepoint vs. Drupal
-author: Jeff Geerling
+author: geerlingguy
 nid: 316
 comments: true
 redirect_from: /forum/topics/316/

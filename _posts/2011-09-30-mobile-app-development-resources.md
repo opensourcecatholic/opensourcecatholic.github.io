@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mobile App Development Resources
-author: Jeff Geerling
+author: geerlingguy
 nid: 403
 comments: true
 redirect_from: /wiki/117/mobile-app-development-re/

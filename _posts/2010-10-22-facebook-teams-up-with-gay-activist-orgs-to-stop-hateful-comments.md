@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Facebook Teams Up with Gay Activist Orgs to Stop ‘Hateful’ Comments
-author: Matt K
+author: matt-k
 nid: 342
 comments: true
 redirect_from: /forum/topics/342/

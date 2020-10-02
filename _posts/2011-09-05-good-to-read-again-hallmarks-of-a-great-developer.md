@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Good to Read Again: Hallmarks of a Great Developer'
-author: Jeff Geerling
+author: geerlingguy
 nid: 401
 comments: true
 redirect_from: /blog/jeff-geerling/good-read-again-hallm/

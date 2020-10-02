@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pope Benedict Tweets the Launch of News.va
-author: Jeff Geerling
+author: geerlingguy
 nid: 392
 comments: true
 redirect_from: /blog/jeff-geerling/pope-benedict-tweets-/

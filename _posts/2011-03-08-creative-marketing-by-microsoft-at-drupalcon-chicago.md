@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creative Marketing by Microsoft at DrupalCon Chicago
-author: Jeff Geerling
+author: geerlingguy
 nid: 377
 comments: true
 redirect_from: /blog/oscatholic/creative-marketing-micro/

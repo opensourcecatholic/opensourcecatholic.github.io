@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '"The Apps of the Apostles" - Gadgets for God'
-author: Jeff Geerling
+author: geerlingguy
 nid: 367
 comments: true
 redirect_from: /blog/oscatholic/apps-apostles-gadgets-go/

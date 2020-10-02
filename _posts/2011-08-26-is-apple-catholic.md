@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "'Is Apple Catholic?'"
-author: Jeff Geerling
+author: geerlingguy
 nid: 400
 comments: true
 redirect_from: /blog/jeff-geerling/apple-catholic/

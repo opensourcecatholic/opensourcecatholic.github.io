@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Developer Wanted
-author: Petros Media
+author: petros-media
 nid: 455
 comments: true
 redirect_from: /forum/topics/455/

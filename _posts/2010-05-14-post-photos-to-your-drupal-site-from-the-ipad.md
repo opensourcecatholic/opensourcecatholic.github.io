@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Post Photos to Your Drupal Site from the iPad
-author: Jeff Geerling
+author: geerlingguy
 nid: 265
 comments: true
 redirect_from: /blog/oscatholic/post-photos-your-drupal/

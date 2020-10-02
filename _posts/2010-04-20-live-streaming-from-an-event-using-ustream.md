@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Live Streaming from an Event using Ustream
-author: Jeff Geerling
+author: geerlingguy
 nid: 254
 comments: true
 redirect_from: /wiki/117/live-streaming-event/

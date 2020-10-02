@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Live-Blogging to Drive Traffic, Interest to Organizational Events
-author: Jeff Geerling
+author: geerlingguy
 nid: 297
 comments: true
 redirect_from: /blog/geerlingguy/live-blogging-drive/

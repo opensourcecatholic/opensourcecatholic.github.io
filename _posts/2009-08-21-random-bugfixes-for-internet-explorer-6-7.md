@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Random Bugfixes for Internet Explorer 6/7
-author: Jeff Geerling
+author: geerlingguy
 nid: 157
 comments: true
 redirect_from: /blog/oscatholic/random-bugfixes-internet/

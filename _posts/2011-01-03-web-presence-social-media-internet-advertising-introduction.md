@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Web presence, Social media, Internet Advertising Introduction
-author: Mark Skender
+author: mark-skender
 nid: 363
 comments: true
 redirect_from: /blog/mark-skender/web-presence-social-me/

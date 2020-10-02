@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Announcing Catholic News Live!
-author: Jeff Geerling
+author: geerlingguy
 nid: 147
 comments: true
 redirect_from: /blog/oscatholic/announcing-catholic-news/

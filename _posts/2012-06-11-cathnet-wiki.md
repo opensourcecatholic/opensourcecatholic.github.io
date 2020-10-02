@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cathnet Wiki
-author: Jeff Geerling
+author: geerlingguy
 nid: 433
 comments: true
 redirect_from: /wiki/433/cathnet-wiki/

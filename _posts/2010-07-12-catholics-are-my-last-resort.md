@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholics are my last resort...
-author: JoaoMachado
+author: joaomachado
 nid: 295
 comments: true
 redirect_from: /forum/topics/295/

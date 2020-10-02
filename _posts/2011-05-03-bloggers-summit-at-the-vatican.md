@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bloggers' Summit at the Vatican
-author: Jeff Geerling
+author: geerlingguy
 nid: 381
 comments: true
 redirect_from: /blog/oscatholic/bloggers-summit-vatican/

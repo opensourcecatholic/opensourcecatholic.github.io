@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Site Reorganization, #oscatholic IRC channel decommissioned'
-author: Jeff Geerling
+author: geerlingguy
 nid: 434
 comments: true
 redirect_from: /blog/jeff-geerling/site-reorganization-o/

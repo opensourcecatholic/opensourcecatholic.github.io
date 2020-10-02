@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting up an Apache Solr Search Server (for many sites/hosts)
-author: Jeff Geerling
+author: geerlingguy
 nid: 289
 comments: true
 redirect_from: /blog/oscatholic/setting-apache-solr/

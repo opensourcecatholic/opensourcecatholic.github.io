@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Source Catholic Wiki
-author: Jeff Geerling
+author: geerlingguy
 nid: 117
 comments: true
 redirect_from: /book/open-source-catholic-wiki/

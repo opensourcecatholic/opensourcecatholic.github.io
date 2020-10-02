@@ -3,7 +3,7 @@ layout: post
 title:  "Migration to Jekyll and GitHub Pages from Drupal site"
 date:   2016-01-05 22:44:58 -0500
 categories: jekyll update github pages drupal migrate
-author: Jeff Geerling
+author: geerlingguy
 comments: true
 ---
 <img src="/images/jekyll-github-pages.png" alt="Jekyll and GitHub Pages" class="center-image" width="600" height="230" />

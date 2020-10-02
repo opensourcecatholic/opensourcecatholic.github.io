@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Don't Neglect Your print.css file!
-author: Jeff Geerling
+author: geerlingguy
 nid: 267
 comments: true
 redirect_from: /blog/oscatholic/dont-neglect-your/

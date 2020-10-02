@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stupid Flash – Making Menus Appear Over Flash Video/Content
-author: Jeff Geerling
+author: geerlingguy
 nid: 269
 comments: true
 redirect_from: /blog/oscatholic/stupid-flash-–-making-m/

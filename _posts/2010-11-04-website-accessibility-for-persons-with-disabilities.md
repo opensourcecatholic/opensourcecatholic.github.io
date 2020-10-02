@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Website Accessibility for Persons with Disabilities
-author: Jeff Geerling
+author: geerlingguy
 nid: 348
 comments: true
 redirect_from: /wiki/117/website-accessibility-per/

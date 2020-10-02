@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholic Tech Talk's 5 Best Diocesan Websites
-author: Jeff Geerling
+author: geerlingguy
 nid: 382
 comments: true
 redirect_from: /blog/jeff-geerling/catholic-tech-talks-5/

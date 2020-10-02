@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholic Diocese App for iOS/Android powers new Jesuit App
-author: Jeff Geerling
+author: geerlingguy
 nid: 441
 comments: true
 redirect_from: /blog/jeff-geerling/catholic-diocese-app/

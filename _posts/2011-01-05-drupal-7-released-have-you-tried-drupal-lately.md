@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drupal 7 Released - Have You Tried Drupal Lately?
-author: Jeff Geerling
+author: geerlingguy
 nid: 364
 comments: true
 redirect_from: /blog/oscatholic/drupal-7-released-have-y/

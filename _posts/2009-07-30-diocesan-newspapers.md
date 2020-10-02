@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Diocesan newspapers
-author: Matt K
+author: matt-k
 nid: 82
 comments: true
 redirect_from: /forum/topics/82/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configuring cron jobs in Drupal
-author: Cade_One
+author: cade-one
 nid: 69
 comments: true
 redirect_from: /forum/topics/69/

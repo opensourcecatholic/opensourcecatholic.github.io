@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tar/Gzip Directory without Preserving Directory Heirarchy/Structure
-author: Jeff Geerling
+author: geerlingguy
 nid: 338
 comments: true
 redirect_from: /blog/oscatholic/targzip-directory-withou/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drupal Gardens Beta - A Giant Leap in Community Building...
-author: Jeff Geerling
+author: geerlingguy
 nid: 218
 comments: true
 redirect_from: /blog/oscatholic/drupal-gardens-beta-gian/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Code Snippets and Programming Resources
-author: Jeff Geerling
+author: geerlingguy
 nid: 393
 comments: true
 redirect_from: /wiki/117/code-snippets-and-program/

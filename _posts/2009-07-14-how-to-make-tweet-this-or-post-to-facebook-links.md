@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to make "Tweet This" or "Post to Facebook" links
-author: Jeff Geerling
+author: geerlingguy
 nid: 159
 comments: true
 redirect_from: /blog/geerlingguy/how-make-tweet-or-post-/

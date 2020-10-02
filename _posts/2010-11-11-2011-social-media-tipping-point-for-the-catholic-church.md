@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '2011: Social Media Tipping Point for the Catholic Church'
-author: Jeff Geerling
+author: geerlingguy
 nid: 351
 comments: true
 redirect_from: /blog/oscatholic/2011-social-media-tippin/

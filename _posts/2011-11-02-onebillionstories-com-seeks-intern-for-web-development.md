@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OneBillionStories.com seeks Intern for Web Development
-author: OneBillionStories.com
+author: onebillionstories-com
 nid: 410
 comments: true
 redirect_from: /forum/topics/410/

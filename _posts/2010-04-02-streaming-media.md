@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Streaming Media
-author: Jeff Geerling
+author: geerlingguy
 nid: 240
 comments: true
 redirect_from: /wiki/streaming-media/

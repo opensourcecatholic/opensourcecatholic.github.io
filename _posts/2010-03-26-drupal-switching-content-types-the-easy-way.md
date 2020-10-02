@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Drupal: Switching Content Types the Easy Way'
-author: Jeff Geerling
+author: geerlingguy
 nid: 228
 comments: true
 redirect_from: /blog/oscatholic/drupal-switching-content/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Artisteer - Templates/Themes made easy
-author: Matt K
+author: matt-k
 nid: 232
 comments: true
 redirect_from: /forum/topics/232/

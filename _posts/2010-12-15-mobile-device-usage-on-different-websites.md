@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mobile Device Usage on Different Websites
-author: Jeff Geerling
+author: geerlingguy
 nid: 359
 comments: true
 redirect_from: /blog/oscatholic/mobile-device-usage-diff/

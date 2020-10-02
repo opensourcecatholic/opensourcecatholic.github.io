@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholic Mobile App Directories
-author: Jeff Geerling
+author: geerlingguy
 nid: 447
 comments: true
 redirect_from: /wiki/catholic-mobile-app/catholic-mobile/

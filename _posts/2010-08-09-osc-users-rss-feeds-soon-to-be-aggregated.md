@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OSC Users' RSS Feeds... soon to be aggregated
-author: Jeff Geerling
+author: geerlingguy
 nid: 305
 comments: true
 redirect_from: /blog/oscatholic/osc-users-rss-feeds-soon/

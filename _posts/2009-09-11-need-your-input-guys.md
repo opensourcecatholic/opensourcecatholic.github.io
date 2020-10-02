@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Need Your Input Guys
-author: Cade_One
+author: cade-one
 nid: 129
 comments: true
 redirect_from: /forum/topics/129/

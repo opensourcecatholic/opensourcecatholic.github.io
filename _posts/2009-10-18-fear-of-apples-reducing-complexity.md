@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fear of Apples - Reducing Complexity
-author: Jeff Geerling
+author: geerlingguy
 nid: 141
 comments: true
 redirect_from: /blog/oscatholic/fear-apples-reducing-complexity/

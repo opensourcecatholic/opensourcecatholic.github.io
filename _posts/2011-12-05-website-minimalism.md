@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Website Minimalism
-author: Jeff Geerling
+author: geerlingguy
 nid: 413
 comments: true
 redirect_from: /blog/jeff-geerling/website-minimalism/

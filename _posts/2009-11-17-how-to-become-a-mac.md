@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to become a Mac
-author: Matt K
+author: matt-k
 nid: 155
 comments: true
 redirect_from: /forum/topics/155/

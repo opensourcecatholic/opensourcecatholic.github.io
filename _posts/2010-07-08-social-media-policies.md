@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Social Media Policies
-author: Jeff Geerling
+author: geerlingguy
 nid: 293
 comments: true
 redirect_from: /wiki/117/social-media-policies/

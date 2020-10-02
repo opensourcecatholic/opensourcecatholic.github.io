@@ -1,7 +1,7 @@
 ---
 layout: post
 title: To-Do List (for Reference)
-author: Jeff Geerling
+author: geerlingguy
 nid: 13
 comments: true
 redirect_from: /forum/topics/13/

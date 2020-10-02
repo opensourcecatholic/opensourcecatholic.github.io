@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drupal ImageCache - Display Alt Text as Caption
-author: Jeff Geerling
+author: geerlingguy
 nid: 212
 comments: true
 redirect_from: /blog/oscatholic/drupal-imagecache-displa/

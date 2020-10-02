@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Great article on how Twitter Corp was hacked
-author: Matt K
+author: matt-k
 nid: 75
 comments: true
 redirect_from: /forum/topics/75/

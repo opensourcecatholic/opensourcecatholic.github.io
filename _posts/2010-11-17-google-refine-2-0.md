@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google Refine 2.0
-author: Matt K
+author: matt-k
 nid: 355
 comments: true
 redirect_from: /forum/topics/355/

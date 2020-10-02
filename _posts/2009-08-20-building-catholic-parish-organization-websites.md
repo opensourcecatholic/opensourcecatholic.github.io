@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building Catholic Parish/Organization Websites
-author: Jeff Geerling
+author: geerlingguy
 nid: 113
 comments: true
 redirect_from: /blog/geerlingguy/building-catholic-parishorganizat/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Podcasting: Some Ideas...'
-author: Jeff Geerling
+author: geerlingguy
 nid: 5
 comments: true
 redirect_from: /content/podcasting-some-ideas/

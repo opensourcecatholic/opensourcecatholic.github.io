@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Top 5 drawbacks of Joomla
-author: Matt K
+author: matt-k
 nid: 134
 comments: true
 redirect_from: /forum/topics/134/

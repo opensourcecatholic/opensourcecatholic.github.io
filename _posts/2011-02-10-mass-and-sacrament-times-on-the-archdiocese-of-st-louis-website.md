@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mass and Sacrament Times on the Archdiocese of St. Louis' Website
-author: Jeff Geerling
+author: geerlingguy
 nid: 373
 comments: true
 redirect_from: /blog/oscatholic/mass-and-sacrament-times/

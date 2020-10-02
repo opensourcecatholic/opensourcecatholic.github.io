@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Beautiful, Easy Maps in Drupal using Views and Mapstraction
-author: Jeff Geerling
+author: geerlingguy
 nid: 370
 comments: true
 redirect_from: /blog/oscatholic/beautiful-easy-maps-drup/

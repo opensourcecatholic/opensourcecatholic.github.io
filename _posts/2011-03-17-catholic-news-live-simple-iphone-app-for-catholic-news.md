@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholic News Live - Simple iPhone App for Catholic News
-author: Jeff Geerling
+author: geerlingguy
 nid: 378
 comments: true
 redirect_from: /blog/oscatholic/catholic-news-live-simpl/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vatican Secret Archive is Digitizing to Open FITS Format
-author: Jeff Geerling
+author: geerlingguy
 nid: 258
 comments: true
 redirect_from: /blog/oscatholic/vatican-secret-archive/

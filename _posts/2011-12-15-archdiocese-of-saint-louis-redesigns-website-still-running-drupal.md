@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Archdiocese of Saint Louis redesigns website (still running Drupal)
-author: Jeff Geerling
+author: geerlingguy
 nid: 416
 comments: true
 redirect_from: /blog/jeff-geerling/archdiocese-saint-lou/

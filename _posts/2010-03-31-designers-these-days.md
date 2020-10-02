@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Designers These Days...
-author: Jeff Geerling
+author: geerlingguy
 nid: 230
 comments: true
 redirect_from: /forum/topics/230/

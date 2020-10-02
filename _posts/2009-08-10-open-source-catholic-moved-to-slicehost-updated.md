@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Source Catholic Moved to Slicehost [Updated]
-author: Jeff Geerling
+author: geerlingguy
 nid: 105
 comments: true
 redirect_from: /content/open-source-catholic-moved-slicehos/

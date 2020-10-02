@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Use this Forum
-author: Jeff Geerling
+author: geerlingguy
 nid: 15
 comments: true
 redirect_from: /forum/topics/15/

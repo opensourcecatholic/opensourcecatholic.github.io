@@ -1,7 +1,7 @@
 ---
 layout: post
 title: USCCB Announces 'Browser-Based eBook' Catechism
-author: Jeff Geerling
+author: geerlingguy
 nid: 437
 comments: true
 redirect_from: /blog/jeff-geerling/usccb-announces-brows/

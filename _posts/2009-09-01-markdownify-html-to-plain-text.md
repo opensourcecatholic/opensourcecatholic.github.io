@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Markdownify: HTML to Plain Text'
-author: Joel Stein
+author: joel-stein
 nid: 124
 comments: true
 redirect_from: /forum/topics/124/

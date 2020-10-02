@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Website Performance
-author: Jeff Geerling
+author: geerlingguy
 nid: 250
 comments: true
 redirect_from: /wiki/117/website-performance/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Archdiocese of Saint Louis' Upgraded Website
-author: Jeff Geerling
+author: geerlingguy
 nid: 198
 comments: true
 redirect_from: /blog/oscatholic/archdiocese-saint-louis-upgraded-website/

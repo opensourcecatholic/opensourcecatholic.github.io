@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Source Catholic - What is it?
-author: Jeff Geerling
+author: geerlingguy
 nid: 2
 redirect_from: /content/open-source-catholic-what-it/
 created: 1246057116

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set a View's Context Inside an Organic Group
-author: Jeff Geerling
+author: geerlingguy
 nid: 268
 comments: true
 redirect_from: /blog/oscatholic/set-views-context-inside/

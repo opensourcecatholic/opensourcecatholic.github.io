@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wiki Stub Pages
-author: Jeff Geerling
+author: geerlingguy
 nid: 236
 comments: true
 redirect_from: /forum/topics/236/

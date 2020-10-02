@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Email Marketing Tools and Strategies
-author: Jeff Geerling
+author: geerlingguy
 nid: 252
 comments: true
 redirect_from: /wiki/117/email-marketing-tools-and/

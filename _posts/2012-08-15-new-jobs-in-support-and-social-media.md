@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New Jobs in support and social media
-author: Jeff Geerling
+author: geerlingguy
 nid: 444
 comments: true
 redirect_from: /forum/topics/444/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pope unveils new agency to promote 'new evangelization'
-author: Jeff Geerling
+author: geerlingguy
 nid: 335
 comments: true
 redirect_from: /blog/oscatholic/pope-unveils-new-agency-/

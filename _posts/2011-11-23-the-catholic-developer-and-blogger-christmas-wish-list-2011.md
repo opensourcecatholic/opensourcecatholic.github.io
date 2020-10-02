@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Catholic Developer and Blogger Christmas Wish List - 2011
-author: Jeff Geerling
+author: geerlingguy
 nid: 412
 comments: true
 redirect_from: /blog/jeff-geerling/catholic-developers-c/

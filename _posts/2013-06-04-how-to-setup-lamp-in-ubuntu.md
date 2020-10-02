@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to setup LAMP in Ubuntu
-author: JoaoMachado
+author: joaomachado
 nid: 471
 comments: true
 redirect_from: /blog/joao-john-machado/how-setup-lamp/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Easy Embedding of HTML5 Video on a Drupal Site
-author: Jeff Geerling
+author: geerlingguy
 nid: 302
 comments: true
 redirect_from: /blog/oscatholic/easy-embedding-html5-vid/

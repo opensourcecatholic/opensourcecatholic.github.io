@@ -1,7 +1,7 @@
 ---
 layout: post
 title: IRC Added to Open Source Catholic
-author: Jeff Geerling
+author: geerlingguy
 nid: 92
 comments: true
 redirect_from: /blog/geerlingguy/irc-added-open-source-catholic/

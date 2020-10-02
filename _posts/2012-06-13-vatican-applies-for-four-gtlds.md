@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vatican Applies for Four gTLDs
-author: Jeff Geerling
+author: geerlingguy
 nid: 436
 comments: true
 redirect_from: /blog/jeff-geerling/vatican-applies-four-/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How will my son read news in the future?
-author: BarbaraKB
+author: barbarakb
 nid: 23
 comments: true
 redirect_from: /blog/barbarakb/how-will-my-son-read-news-future/

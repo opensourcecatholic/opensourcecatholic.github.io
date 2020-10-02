@@ -1,7 +1,7 @@
 ---
 layout: post
 title: One-Page Quick SEO Optimization
-author: Jeff Geerling
+author: geerlingguy
 nid: 231
 comments: true
 redirect_from: /blog/oscatholic/one-page-quick-seo-optim/

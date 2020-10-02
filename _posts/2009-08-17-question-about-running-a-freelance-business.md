@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Question About Running A Freelance Business
-author: Cade_One
+author: cade-one
 nid: 112
 comments: true
 redirect_from: /forum/topics/112/

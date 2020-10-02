@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MassTimes.org - Parish Sacramental Information Online
-author: Matt K
+author: matt-k
 nid: 61
 comments: true
 redirect_from: /forum/topics/61/

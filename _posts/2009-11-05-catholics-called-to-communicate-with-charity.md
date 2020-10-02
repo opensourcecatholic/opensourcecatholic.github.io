@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Catholics Called to Communicate with Charity
-author: Jeff Geerling
+author: geerlingguy
 nid: 152
 comments: true
 redirect_from: /blog/oscatholic/catholics-called-communi/

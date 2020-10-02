@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WordPress vs. Drupal
-author: Cade_One
+author: cade-one
 nid: 44
 comments: true
 redirect_from: /forum/topics/44/

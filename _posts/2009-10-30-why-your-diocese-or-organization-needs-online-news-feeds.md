@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Your Diocese or Organization Needs Online News Feeds
-author: Jeff Geerling
+author: geerlingguy
 nid: 145
 comments: true
 redirect_from: /blog/oscatholic/why-your-diocese-or-orga/

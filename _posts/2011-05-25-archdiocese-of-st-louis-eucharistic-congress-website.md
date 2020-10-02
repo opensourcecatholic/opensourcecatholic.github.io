@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Archdiocese of St. Louis' Eucharistic Congress Website
-author: Jeff Geerling
+author: geerlingguy
 nid: 383
 comments: true
 redirect_from: /blog/jeff-geerling/archdiocese-st-loui-0/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Study shows 2/3 of Churches not using any Social Media
-author: Jeff Geerling
+author: geerlingguy
 nid: 301
 comments: true
 redirect_from: /blog/oscatholic/study-shows-23-churches/

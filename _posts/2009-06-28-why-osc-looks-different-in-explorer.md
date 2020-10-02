@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why OSC Looks Different in Explorer
-author: Jeff Geerling
+author: geerlingguy
 nid: 10
 comments: true
 redirect_from: /blog/oscatholic/why-osc-looks-different-explorer/

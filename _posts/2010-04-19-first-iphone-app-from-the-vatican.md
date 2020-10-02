@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'First iPhone App from the Vatican:'
-author: Jeff Geerling
+author: geerlingguy
 nid: 249
 comments: true
 redirect_from: /blog/oscatholic/first-iphone-app-vatican/

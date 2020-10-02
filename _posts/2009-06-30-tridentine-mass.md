@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tridentine Mass?
-author: Whack
+author: whack
 nid: 26
 comments: true
 redirect_from: /forum/topics/26/

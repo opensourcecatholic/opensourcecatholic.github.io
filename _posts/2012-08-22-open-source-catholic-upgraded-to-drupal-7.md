@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Source Catholic Upgraded to Drupal 7
-author: Jeff Geerling
+author: geerlingguy
 nid: 445
 comments: true
 redirect_from: /blog/jeff-geerling/open-source-catholic/

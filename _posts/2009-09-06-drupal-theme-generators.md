@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drupal Theme Generators
-author: JoaoMachado
+author: joaomachado
 nid: 127
 comments: true
 redirect_from: /forum/topics/127/

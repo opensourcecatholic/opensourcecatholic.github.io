@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Found: DISC (Diocesan Information Systems Conference)'
-author: Jeff Geerling
+author: geerlingguy
 nid: 226
 comments: true
 redirect_from: /blog/oscatholic/found-disc-diocesan-info/

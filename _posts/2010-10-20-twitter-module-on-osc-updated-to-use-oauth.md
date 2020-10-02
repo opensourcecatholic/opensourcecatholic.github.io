@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Twitter Module on OSC Updated to use OAuth
-author: Jeff Geerling
+author: geerlingguy
 nid: 341
 comments: true
 redirect_from: /blog/oscatholic/twitter-module-osc-updat/

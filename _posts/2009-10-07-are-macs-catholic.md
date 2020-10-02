@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Are Macs Catholic?
-author: Jeff Geerling
+author: geerlingguy
 nid: 136
 comments: true
 redirect_from: /forum/topics/136/

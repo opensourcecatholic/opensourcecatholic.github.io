@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Live-Blogging Steubenville 2009
-author: Jeff Geerling
+author: geerlingguy
 nid: 43
 comments: true
 redirect_from: /blog/oscatholic/live-blogging-steubenville-2009/

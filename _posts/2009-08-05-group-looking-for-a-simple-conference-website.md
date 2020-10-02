@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Group Looking for a Simple Conference Website
-author: Jeff Geerling
+author: geerlingguy
 nid: 97
 comments: true
 redirect_from: /forum/topics/97/

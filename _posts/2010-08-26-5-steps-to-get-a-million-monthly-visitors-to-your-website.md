@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 5 Steps to Get a Million Monthly Visitors to your Website
-author: Jeff Geerling
+author: geerlingguy
 nid: 309
 comments: true
 redirect_from: /blog/oscatholic/5-steps-get-million-mont/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Parish Initiative
-author: Jeff Geerling
+author: geerlingguy
 nid: 409
 comments: true
 redirect_from: /project/open-parish/

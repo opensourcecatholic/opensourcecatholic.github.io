@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Quality
-author: Matt K
+author: matt-k
 nid: 110
 comments: true
 redirect_from: /forum/topics/110/

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resetting Files Table after Drupal 4.7.x -> 6.x Upgrade
-author: Jeff Geerling
+author: geerlingguy
 nid: 260
 comments: true
 redirect_from: /blog/oscatholic/resetting-files-table/

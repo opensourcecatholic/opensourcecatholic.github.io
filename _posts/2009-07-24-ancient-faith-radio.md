@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ancient Faith Radio
-author: Matt K
+author: matt-k
 nid: 67
 comments: true
 redirect_from: /forum/topics/67/

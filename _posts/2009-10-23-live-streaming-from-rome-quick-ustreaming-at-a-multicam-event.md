@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Live Streaming from Rome - Quick Ustreaming at a Multicam Event
-author: Jeff Geerling
+author: geerlingguy
 nid: 142
 comments: true
 redirect_from: /blog/oscatholic/live-streaming-rome-quick-ustreami/

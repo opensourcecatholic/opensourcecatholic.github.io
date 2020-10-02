@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Too many ways to contribute
-author: Joel Stein
+author: joel-stein
 nid: 120
 comments: true
 redirect_from: /forum/topics/120/
