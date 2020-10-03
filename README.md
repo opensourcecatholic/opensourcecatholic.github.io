@@ -1,8 +1,10 @@
 # Open Source Catholic
 
-This Jekyll project powers http://www.opensourcecatholic.com/
+This Jekyll project powers https://www.opensourcecatholic.com/
 
 Open Source Catholic's mission is to help Catholic developers and organizations involved in software and web development find effective solutions for spreading the Gospel of Jesus Christ.
+
+See [CONTRIBUTING](CONTRIBUTING.md) if you'd like to contirbute a blog post.
 
 ## Website History
 
