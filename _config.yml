@@ -23,6 +23,7 @@ exclude:
   - Gemfile.lock
   - vendor
   - scripts
+  - post_template.md
 
 # Gems
 plugins:
