@@ -8,11 +8,11 @@ Below, you can login to the public Catholic chat channel on the Freenode's IRC (
 
 Scroll down for more details, and to find out other ways to connect.
 
-<iframe src="http://webchat.freenode.net/?channels=%23%23catholic" width="675" height="400"></iframe>
+<iframe src="https://webchat.freenode.net/?channels=%23%23catholic" width="675" height="400"></iframe>
 
 ### What is IRC?
 
-_From [Wikipedia](http://en.wikipedia.org/wiki/Internet_Relay_Chat)_: Internet Relay Chat (IRC) is a form of real-time Internet text messaging (chat) or synchronous conferencing. It is mainly designed for group communication in discussion forums, called channels, but also allows one-to-one communication via private message as well as chat and data transfers via Direct Client-to-Client.
+_From [Wikipedia](https://en.wikipedia.org/wiki/Internet_Relay_Chat)_: Internet Relay Chat (IRC) is a form of real-time Internet text messaging (chat) or synchronous conferencing. It is mainly designed for group communication in discussion forums, called channels, but also allows one-to-one communication via private message as well as chat and data transfers via Direct Client-to-Client.
 
 ### How do I join the ##catholic channel?
 
@@ -22,8 +22,8 @@ Type in `/join ##catholic` from within any IRC client. Soon you'll be speaking w
 
 There are many ways to join a channel in IRC:
 
-  - Use the web client (either above, or at http://webchat.freenode.net/).
-  - Use an IRC client for your Mac or PC (a good list of [IRC clients](http://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_clients) on Wikipedia).
+  - Use the web client (either above, or at <https://webchat.freenode.net/>).
+  - Use an IRC client for your Mac or PC (a good list of [IRC clients](https://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_clients) on Wikipedia).
 
 ### Some Cool IRC Tricks
 
