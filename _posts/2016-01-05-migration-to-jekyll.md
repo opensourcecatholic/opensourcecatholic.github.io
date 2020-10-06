@@ -2,7 +2,7 @@
 layout: post
 title:  "Migration to Jekyll and GitHub Pages from Drupal site"
 date:   2016-01-05 22:44:58 -0500
-categories: jekyll update github pages drupal migrate
+categories: [jekyll, update, github, pages, drupal, migrate]
 author: geerlingguy
 comments: true
 ---
