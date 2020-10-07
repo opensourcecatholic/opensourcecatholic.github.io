@@ -28,7 +28,7 @@ And, it can be a challenge to protect the sources of the Bible texts from being 
 So I thought about the idea of creating an API, an endpoint which can be interrogated by an application, and receive in response the text of the Bible verse or verses from the desired version or versions of the Bible.
 APIs are becoming a thing today, so it seemed fit to develop using modern technologies. And producing data from an endpoint in a format such as XML or better yet JSON can guarantee the possibility of consuming the data from any application.
 
-So I set out creating the BibleGet endpoint which can now be found at https://query.bibleget.io . The website that presents the project can be found at https://www.bibleget.io .
+So I set out creating the BibleGet endpoint which can now be found at [https://query.bibleget.io](https://query.bibleget.io) . The website that presents the project can be found at [https://www.bibleget.io](https://www.bibleget.io) .
 
 And I set out to create a few plugins, to demonstrate in practice the consumption of the endpoint by an application. With patience and constance and a little bit of help from some friends for a heads up here and there,
 I was able to produce the following plugins:
@@ -39,7 +39,7 @@ I was able to produce the following plugins:
 * BibleGet plugin for Google Docs
 * BibleGet plugin for WordPress
 
-Haven't recently started a mediawiki installation (https://seminaverbi.bibleget.io), I have started somewhat of an integration into the mediawiki software, however it's just a first attempt. Even though it's in a working state, more progress is required to turn it into a stable and installable extension.
+Haven't recently started a mediawiki installation ([https://seminaverbi.bibleget.io](https://seminaverbi.bibleget.io)), I have started somewhat of an integration into the mediawiki software, however it's just a first attempt. Even though it's in a working state, more progress is required to turn it into a stable and installable extension.
 
 I believe these are all in a functioning state. I have received a few positive feedbacks, I've fixed a couple bugs which prevented one plugin or another from working on my system or another.
 Unfortunately many people will download and maybe even use the plugins without giving any feedback, so a little bit of a sense of uncertainty is always there...
