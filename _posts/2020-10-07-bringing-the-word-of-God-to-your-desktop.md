@@ -39,9 +39,9 @@ I was able to produce the following plugins:
 * BibleGet plugin for Google Docs
 * BibleGet plugin for WordPress
 
-Haven't recently started a mediawiki installation ([https://seminaverbi.bibleget.io](https://seminaverbi.bibleget.io)), I have started somewhat of an integration into the mediawiki software, however it's just a first attempt. Even though it's in a working state, more progress is required to turn it into a stable and installable extension.
+Having recently started a MediaWiki installation ([https://seminaverbi.bibleget.io](https://seminaverbi.bibleget.io)), I have started somewhat of an integration into the mediawiki software, however it's just a first attempt. Even though it's in a working state, more progress is required to turn it into a stable and installable extension.
 
-I believe these are all in a functioning state. I have received a few positive feedbacks, I've fixed a couple bugs which prevented one plugin or another from working on my system or another.
+I believe these are all in a functioning state. I have received a few positive feedbacks, I've fixed a couple bugs which prevented one plugin or another from working on one system or another.
 Unfortunately many people will download and maybe even use the plugins without giving any feedback, so a little bit of a sense of uncertainty is always there...
 I would be glad if anyone in the OpenSourceCatholic community could try out the plugins and give their feedback!
 
