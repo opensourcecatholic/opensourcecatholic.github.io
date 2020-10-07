@@ -7,8 +7,6 @@ author: johnrdorazio
 comments: true
 ---
 
-# Bringing the Word of God to the desktop and to websites
-
 There are a number of projects out there that publish Bible texts online. You can look up Bible verses, and even compare between versions. 
 
 That's great for just consulting a Bible verse. But what if you want to quote a Bible verse in a document, or on a website? 
