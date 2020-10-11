@@ -2,7 +2,14 @@
 layout: page
 title: Archive
 permalink: /archive/
+redirect_from:
+  - /search/
+  - /search/site/
 ---
+
+<div class="search-bar">
+    <gcse:search></gcse:search>
+</div>
 
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for yearGroup in postsByYear %}
@@ -15,3 +22,17 @@ permalink: /archive/
     </ul>
 </div>
 {% endfor %}
+
+
+<script>
+    (function() {
+      var cx = '010548306397655477104:g7_7cpvfdlu';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+</script>
