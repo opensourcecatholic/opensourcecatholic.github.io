@@ -7,7 +7,7 @@ author: JohnRDOrazio
 comments: true
 ---
 
-== Open knowledge ==
+# Open knowledge
 Reading up on some of the past posts in this community, I see there have been a number of posts about open access to information, 
 in particular (in this context) as regards the Catholic faith. Access to the biblical texts, access to the Catechism and magisterial documents...
 When a project is open source, it has a good possibility of surviving over time if it is able to create a community, 
@@ -38,6 +38,8 @@ it was the great effort of Saint Justin who coined the term "Seeds of the Word" 
 thus creating the foundations of Catholic philosophy. Saint Justin considered those elements of truth found in human culture to be a "seed of the Word", 
 planted by God as Creator in human culture even if those humans didn't know God or His Word. The approach of Saint Justin is that of a very positive approach to human culture
 and expression, and was a big encouragement in expressing the message of the Gospel through the means of human culture and expression.
+
+# Seeds of the Word
 
 Over the centuries, how much artwork, music, philosophy, literature has been inspired by the message of the Gospel. And other than direct inspiration, 
 we can still think in the same terms as Saint Justin, of those expressions of humanity that even without knowing God or having any intent of evangelizing,
