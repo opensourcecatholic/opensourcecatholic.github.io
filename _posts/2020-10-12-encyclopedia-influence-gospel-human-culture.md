@@ -40,7 +40,7 @@ thus creating the foundations of Catholic philosophy. Saint Justin considered th
 planted by God as Creator in human culture even if those humans didn't know God or His Word. The approach of Saint Justin is that of a very positive approach to human culture
 and expression, and was a big encouragement in expressing the message of the Gospel through the means of human culture and expression.
 
-# Seeds of the Word
+## Seeds of the Word
 
 Over the centuries, how much artwork, music, philosophy, literature has been inspired by the message of the Gospel. And other than direct inspiration, 
 we can still think in the same terms as Saint Justin, of those expressions of humanity that even without knowing God or having any intent of evangelizing,
