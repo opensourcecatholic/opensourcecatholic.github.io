@@ -7,7 +7,8 @@ author: JohnRDOrazio
 comments: true
 ---
 
-# Open knowledge
+## Open knowledge
+
 Reading up on some of the past posts in this community, I see there have been a number of posts about open access to information, 
 in particular (in this context) as regards the Catholic faith. Access to the biblical texts, access to the Catechism and magisterial documents...
 When a project is open source, it has a good possibility of surviving over time if it is able to create a community, 
