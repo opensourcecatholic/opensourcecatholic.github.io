@@ -32,7 +32,7 @@ There are some very useful treasure troves of information out there already usin
 which has lots of information about theological topics and about church history and about the Catholic church today. Quite a praiseworthy initiative, with a lot of potential,
 which can still use a lot of community contribution to make it the useful tool that it aspires to be.
 
-But other than an encyclopedia about Catholicism in general, what has been on my mind in the past few years, is a project to bring to light the way in which the Gospel 
+But other than an encyclopedia about Catholicism in general, over the past few years I've had in mind a project that would bring to light the way in which the Gospel 
 (and the Word of God in general) has influenced human culture, human creativity and expression in the arts. More of a cultural project than a theological project,
 and yet a Catholic project nonetheless. This dialogue between faith and human expression is present in Saint Paul when he preaches in the Areopagus of Athens, 
 it was the great effort of Saint Justin who coined the term "Seeds of the Word" in trying to translate the Gospel message into the language of greek philosophy
@@ -46,7 +46,7 @@ Over the centuries, how much artwork, music, philosophy, literature has been ins
 we can still think in the same terms as Saint Justin, of those expressions of humanity that even without knowing God or having any intent of evangelizing,
 may yet contain seeds of truth that are reflections of the Gospel message. Wouldn't it be wonderful to bring all of this to light, in a wiki style encylopedia?
 
-Once you start digging, there's a whole universe of information out there along these lines. And yet, it would very useful to bring it to light, 
+Once you start digging, there's a whole universe of information out there along these lines. And yet, it would be very useful to bring it to light, 
 to help people see that christianity is not just some niche in society, and christians are not a minority of people who should be ashamed of who they are and what they think.
 Christianity, or more specifically the message of the Gospel, helps society to become more human and humane! It brings out the best of beauty that mankind has to offer.
 
