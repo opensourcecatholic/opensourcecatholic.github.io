@@ -17,7 +17,7 @@ If you're not careful about which website you're consulting, you might not even 
 Maybe you don't even know what version of the Bible you're copying and pasting from, if you're not careful and informed in Bible studies.
 
 A few years ago, a priest in a parish I was in showed me a Macro for Microsoft Word, which could retrieve a Bible quote from BibleWorks, if BibleWorks was installed on the computer.
-That was a great little tool. However, it was not officialy published anywhere, it was just some little tool someone had made and passed around.
+That was a great little tool. However, it was not officially published anywhere, it was just some little tool someone had made and passed around.
 And BibleWorks is not free software, not everyone can afford to have this kind of software. And back at the time, there weren't any Catholic versions of the Bible in BibleWorks.
 I tried contacting the developers at some point to ask why that would be the case, and they answered that they hadn't been able to gain the rights for usage of the Catholic versions of the Bible.
 
