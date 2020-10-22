@@ -11,6 +11,7 @@ github_username:  opensourcecatholic
 mailinglist_name: open-source-catholic
 permalink: /:year/:title
 paginate: 7
+post_preview_words: 42
 
 # Build settings
 markdown: kramdown
