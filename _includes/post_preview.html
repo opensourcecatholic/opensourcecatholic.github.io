@@ -1,0 +1,24 @@
+<span class="post-meta">
+  {{ post.date | date: "%b %-d, %Y" }}
+</span>
+
+<h2>
+  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+</h2>
+
+<div class="post-content" itemprop="articleBody">
+  {{ post.content | markdownify | strip_html | truncatewords: site.post_preview_words }}
+</div>
+
+{% if post.comments %}
+  {% if post.nid > 0 %}
+    {% comment %} This post was imported from Drupal. {% endcomment %}
+    {% assign comments_url = post.redirect_from %}
+  {% else %}
+    {% comment %} This is a native Jekyll post. {% endcomment %}
+    {% assign comments_url = post.url %}
+  {% endif %}
+<div class="post-comment-count">
+  <a href="{{ comments_url | prepend: site.url }}#disqus_thread">View Comments</a>
+</div>
+{% endif %}
