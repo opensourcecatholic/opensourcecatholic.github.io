@@ -7,7 +7,8 @@
 </h2>
 
 <div class="post-content" itemprop="articleBody">
-  {{ post.content | markdownify | strip_html | truncatewords: site.post_preview_words }}
+  {{ post.content | markdownify | smart_truncate: site.post_preview_words }}
+  <a href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
 </div>
 
 {% if post.comments %}
