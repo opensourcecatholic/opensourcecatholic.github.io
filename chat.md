@@ -1,9 +1,33 @@
 ---
 layout: page
-title: "IRC"
-permalink: /irc/
-redirect_from: /catholic-irc-chat-channel/
+title: "Chat"
+permalink: /chat/
+redirect_from:
+  - /irc/
+  - /catholic-irc-chat-channel/
 ---
+
+**We're building a community of Catholic developers.** Come join us! You can find us on Slack and on IRC.
+
+## Slack
+
+The [CatholicDevs Slack Workspace](<a href="https://catholicdevs.slack.com"><i class="fab fa-slack"></i> <span class="username">catholicdevs</span></a>
+) is a place to engage with other Catholic developers across the globe and grow together by getting to know each other, sharing our faith, and collaborating on projects.
+
+To join CatholicDevs on Slack, you must request an invitation.
+
+
+
+<div class="slack-invitation">
+  <div id="CommunityInviter"></div>
+</div>
+<div class="slack-help-link">
+  <a href="https://slack.com/help/articles/115004071768-What-is-Slack-">What is Slack?</a>
+</div>
+
+
+## IRC
+
 Below, you can login to the public Catholic chat channel on the Freenode's IRC (Internet Relay Chat) system. Simply type in a nickname and click the "Connect" button.
 
 Scroll down for more details, and to find out other ways to connect.
@@ -32,3 +56,21 @@ There are many ways to join a channel in IRC:
 **Changing Names**: if you'd like to change your username (say, to inform someone you're on the channel, but need to run for a minute), type in `/nick new_username` (example: if you're running to lunch, type in `/nick username_lunch`).
 
 **Directed Messages**: To 'ping' someone inside the channel, simply type in his username and hit enter, or add his username anywhere in your message. Bonus shortcut: just type in the first couple letters of a username and press tab - the program will fill in the rest of the username!
+
+
+<script>
+  window.CommunityInviterAsyncInit = function () {
+    CommunityInviter.init({
+      app_url:'open-source-catholic',
+      team_id:'catholicdevs'
+   })
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https://communityinviter.com/js/communityinviter.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'Community_Inviter'));
+</script>
