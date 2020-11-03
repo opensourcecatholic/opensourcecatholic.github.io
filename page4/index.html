@@ -72,253 +72,187 @@
     
       <li>
         <span class="post-meta">
-          Jun 4, 2013
-        </span>
+  Jun 4, 2013
+</span>
 
-        <h2>
-          <a class="post-link" href="/2013/how-to-setup-lamp-in-ubuntu">How to setup LAMP in Ubuntu</a>
-        </h2>
+<h2>
+  <a class="post-link" href="/2013/how-to-setup-lamp-in-ubuntu">How to setup LAMP in Ubuntu</a>
+</h2>
 
-        <div class="post-content" itemprop="articleBody">
-          <p>Hello all,</p>
+<div class="post-content" itemprop="articleBody">
+  <p>Hello all,</p>
 
 <p>I recently finished a tutorial on how to setup Ubuntu 13.04 as a web server for local sites hosted within the users account.</p>
 
 <p>I have switched to Ubuntu 13.04 running on my Dell XPS13 and it is amazing. Clean fast “open” :-)</p>
 
-<p>Setting up Apache to serve my local sites was not very straight forward, so I decided to make a tutorial that should get anyone up and running in about 10 to 15 minutes.</p>
+<p>Setting up Apache to serve my local sites was not very straight forward, so I decided to make a tutorial that should get anyone up and running in about 10 to 15 minutes....</p>
+  <a href="/2013/how-to-setup-lamp-in-ubuntu">Continue reading</a>
+</div>
 
-<p><a href="http://joao.machado-family.com/2013/06/04/ubuntu-13-04-apache2-setup-public_html/" target="_blank">http://joao.machado-family.com/2013/06/04/ubuntu-13-04-apache2-setup-public_html/</a></p>
 
-        </div>
+  
+<div class="post-comment-count">
+  <a href="http://www.opensourcecatholic.com/blog/joao-john-machado/how-setup-lamp/#disqus_thread">View Comments</a>
+</div>
 
-        
-          
-        <div class="post-comment-count">
-          <a href="http://www.opensourcecatholic.com/blog/joao-john-machado/how-setup-lamp/#disqus_thread">View Comments</a>
-        </div>
-        
+
       </li>
     
       <li>
         <span class="post-meta">
-          May 14, 2013
-        </span>
+  May 14, 2013
+</span>
 
-        <h2>
-          <a class="post-link" href="/2013/a-new-kind-of-church-directory-built-on-open-source">A New Kind of Church Directory, Built on Open Source</a>
-        </h2>
+<h2>
+  <a class="post-link" href="/2013/a-new-kind-of-church-directory-built-on-open-source">A New Kind of Church Directory, Built on Open Source</a>
+</h2>
 
-        <div class="post-content" itemprop="articleBody">
-          <p>I recently launched <a href="http://parish.io">a little site for finding Catholic parishes and mass times</a> called <em>parish.io</em>. It takes a very different approach to gathering parish info and mass times than other sites in this category. Not only is this approach beneficial to users (more accurate and complete mass schedules), I think it’s of particular interest to other software developers.</p>
+<div class="post-content" itemprop="articleBody">
+  <p>I recently launched <a href="http://parish.io">a little site for finding Catholic parishes and mass times</a> called <em>parish.io</em>. It takes a very different approach to gathering parish info and mass times than other sites in this category. Not only is this approach beneficial to users (more accurate and complete mass schedules), I think it’s of particular interest to other software developers.</p>
 
-<p>Rather than relying on manual data entry, <em>parish.io</em> gathers all of its info by scraping diocese and parish sites. It took months of hacking to validate the concept and develop the scraping logic, and while it’s not perfect (some parishes just don’t have sites, or don’t provide mass times, or put them in unparseable formats), overall I’m quite happy with the results I’m seeing. Here’s what I used to build it:</p>
+<p>Rather than relying on manual data entry, <em>parish.io</em> gathers all of its info by scraping diocese and parish...</p>
+  <a href="/2013/a-new-kind-of-church-directory-built-on-open-source">Continue reading</a>
+</div>
 
-<p><a href="http://www.python.org/">Python</a>: My programming language of choice. Database aside, everything that follows is a Python library.</p>
 
-<p><a href="http://lxml.de">lxml</a>: Don’t be fooled by the name. lxml is just as capable of parsing HTML as XML, especially given its support for CSS selectors (similar to jQuery). It’s very fast, and ably handles most poorly formed HTML. Some people are partial to the API in <a>BeautifulSoup</a>, but a few small hangups aside, lxml has performed so well that I’ve never been very tempted to switch.</p>
+  
+<div class="post-comment-count">
+  <a href="http://www.opensourcecatholic.com/blog/aaron-kavlie/new-kind-church/#disqus_thread">View Comments</a>
+</div>
 
-<p><a href="http://docs.python-requests.org/en/latest/">requests</a>: A simple and elegant API for HTTP requests. It’s quickly become the favorite for HTTP in Python, simply due to its superior API over the standard library’s <a>urllib2</a>.</p>
 
-<p>That toolset accounts for most of the heavy lifting in scraping sites. As for the site itself, I used <a href="http://flask.pocoo.org/">Flask</a>, a simple and very well-documented web framework; the <a href="http://www.sqlalchemy.org/">SQLAlchemy ORM</a> talking to a <a href="http://www.postgresql.org/">PostgreSQL</a> database, and critically, <a href="http://postgis.net/">PostGIS</a> for geo queries (i.e. lookup by zip code, city, or nearby).</p>
-
-<p>All of the above are open source, with very friendly licensing terms
-that will work for any project, whether open or closed source.</p>
-
-<p>If any of this is of interest to you, check out these projects. And be sure to 
-<a href="http://parish.io">give parish.io a try</a> too!</p>
-
-        </div>
-
-        
-          
-        <div class="post-comment-count">
-          <a href="http://www.opensourcecatholic.com/blog/aaron-kavlie/new-kind-church/#disqus_thread">View Comments</a>
-        </div>
-        
       </li>
     
       <li>
         <span class="post-meta">
-          May 12, 2013
-        </span>
+  May 12, 2013
+</span>
 
-        <h2>
-          <a class="post-link" href="/2013/a-saint-taxonomy-explorer-and-api">A Saint Taxonomy Explorer and API</a>
-        </h2>
+<h2>
+  <a class="post-link" href="/2013/a-saint-taxonomy-explorer-and-api">A Saint Taxonomy Explorer and API</a>
+</h2>
 
-        <div class="post-content" itemprop="articleBody">
-          <p>I’d like to announce the rollout of <a href="http://www.saintstir.com">Saintstir</a>, which is currently in beta.</p>
+<div class="post-content" itemprop="articleBody">
+  <p>I’d like to announce the rollout of <a href="http://www.saintstir.com">Saintstir</a>, which is currently in beta.</p>
 
 <h3>What is Saintstir?</h3>
 
 <p>Saintstir is the world’s first online Catholic saint taxonomy. We’re creating what can be best described as a genome that categorizes and classifies the saints by various attributes and dimensions, such as their graces/virtues, life experiences, and special powers, to name a few.</p>
 
-<p>The taxonomy itself is extremely flexible and can change with user feedback. We currently have 200 saints and blesseds, but the goal is eventually all saints of the Church.</p>
+<p>The taxonomy itself is extremely flexible and can change with user feedback. We currently have 200 saints...</p>
+  <a href="/2013/a-saint-taxonomy-explorer-and-api">Continue reading</a>
+</div>
 
-<p>Additionally, we hope to build communities around the saints by giving people the ability to share testimonies and prayers on each saint’s wall on the site as well as on social media.</p>
 
-<h3>Website Integration and API</h3>
+  
+<div class="post-comment-count">
+  <a href="http://www.opensourcecatholic.com/blog/jonathan-l/saintstircom/#disqus_thread">View Comments</a>
+</div>
 
-<p>We have an extensive API that exposes our search engine to the world.  Check out our developers page. There are also easy ways to embed our unique saint tiles on your own webpages or blogs as well.</p>
 
-<h3>How did we get started?</h3>
-
-<p>The concept for saintstir began a couple of years ago when I was trying to find a patron saint for my Catholic confirmation. With so many books in long prose form, it was difficult to find a saint with virtues that I wanted to emulate or particular life experiences that I admired. I finally did find a saint but it was a tough search. If only there were a taxonomy!</p>
-
-<p>Take a look if you have some time and let me know what you think!</p>
-
-<p>God bless,
-Jonathan L  (<a href="http://github.com/liangjh">Github</a>)</p>
-
-        </div>
-
-        
-          
-        <div class="post-comment-count">
-          <a href="http://www.opensourcecatholic.com/blog/jonathan-l/saintstircom/#disqus_thread">View Comments</a>
-        </div>
-        
       </li>
     
       <li>
         <span class="post-meta">
-          May 6, 2013
-        </span>
+  May 6, 2013
+</span>
 
-        <h2>
-          <a class="post-link" href="/2013/created-a-new-app-for-my-kids">Created a new App for my kids</a>
-        </h2>
+<h2>
+  <a class="post-link" href="/2013/created-a-new-app-for-my-kids">Created a new App for my kids</a>
+</h2>
 
-        <div class="post-content" itemprop="articleBody">
-          <p>On May 3, 2013, myself and three others, launched a new app into the world of iOS. We have been working on this app for what seems like forever. This app crosses over into my personal life, as well as business.</p>
+<div class="post-content" itemprop="articleBody">
+  <p>On May 3, 2013, myself and three others, launched a new app into the world of iOS. We have been working on this app for what seems like forever. This app crosses over into my personal life, as well as business.</p>
 
-<p>Two years ago, my wife and I were trying to teach our kids a little more about the rich history the church has with Saints. Some of the more famous ones come to mind: St. Mary, St. Joseph, St. Christopher, things from my childhood, typical Catholic Saints. Together we couldn’t remember much. Since both of us are practicing Catholics, we wanted to share this with our kids. The trouble was, there just wasn’t much out there that we found useful for our 3-7 year olds, that wasn’t too graphic, too long, or very ‘modern’. It was also spread out all over the place, and wasn’t easy to keep coming back to. We wanted something handy, something that our kids could play with.</p>
+<p>Two years ago, my wife and I were trying to teach our kids a little more about the rich history the church has with Saints. Some of the more famous ones come to mind: St. Mary,...</p>
+  <a href="/2013/created-a-new-app-for-my-kids">Continue reading</a>
+</div>
 
-<p>I started out by trying to learn xcode, but by the time I learned enough to get about half way into the design of the app, the OS was updated. I wasn’t familiar with Objective C at all, so it was a bit of stretch. After three frustrating attempts, I decided I wanted the App to come out before, phones went away, and we were all wearing watches or glass. </p>
 
-<p>I turned to hire a developer to help me out, and things finally started to move forward. A long story short we had launched this past Friday. The next project I am aiming is to pick up the code for the Diocese App of opensourcecatholic and bring it into a couple of my web projects.</p>
+  
+<div class="post-comment-count">
+  <a href="http://www.opensourcecatholic.com/blog/cary-molyneux/created-new-app-my/#disqus_thread">View Comments</a>
+</div>
 
-<p>http://saintofthedayforkids.com in case anyone is interested in having a look. And now the challenge comes to promoting it. Catholic Social Media. I am just getting into a couple of resources on it. It is very different from building Diocesan Websites. </p>
 
-<p> </p>
-
-<p><img src="/sites/opensourcecatholic.com/files/user-uploads/%5Buser-raw%5D/large-fav-3.jpg" alt="" width="600" height="600" /></p>
-
-<p> </p>
-
-        </div>
-
-        
-          
-        <div class="post-comment-count">
-          <a href="http://www.opensourcecatholic.com/blog/cary-molyneux/created-new-app-my/#disqus_thread">View Comments</a>
-        </div>
-        
       </li>
     
       <li>
         <span class="post-meta">
-          Apr 1, 2013
-        </span>
+  Apr 1, 2013
+</span>
 
-        <h2>
-          <a class="post-link" href="/2013/code-for-automatically-figuring-out-the-liturgical-season-and-changing-the-colour-on-a-website">Code for automatically figuring out the Liturgical Season and changing the colour on a website</a>
-        </h2>
+<h2>
+  <a class="post-link" href="/2013/code-for-automatically-figuring-out-the-liturgical-season-and-changing-the-colour-on-a-website">Code for automatically figuring out the Liturgical Season and changing the colour on a website</a>
+</h2>
 
-        <div class="post-content" itemprop="articleBody">
-          <p>Back in 2006, I started to work on my first Catholic blog (www.beingfrank.co.nz).  As I started to explore Wordpress as a CMS and how the themes work within that platform, I wanted to get the colours of the site to change with the liturgical seasons of the Church - i.e. violet for Lent and Advent, gold for Easter etc.</p>
+<div class="post-content" itemprop="articleBody">
+  <p>Back in 2006, I started to work on my first Catholic blog (www.beingfrank.co.nz).  As I started to explore Wordpress as a CMS and how the themes work within that platform, I wanted to get the colours of the site to change with the liturgical seasons of the Church - i.e. violet for Lent and Advent, gold for Easter etc.</p>
 
-<p>So, I searched the web trying to find the algorithm that is used to calculate when Easter is, as all the other dates in the calendar basically stem from that.  It turns out that there are multiple versions of this algorithm that have been developed and published over the centuries; Wikipedia has more information (http://en.wikipedia.org/wiki/Computus#Algorithms) if you’re interested.</p>
+<p>So, I searched the web trying to find the algorithm that is used to calculate when Easter is,...</p>
+  <a href="/2013/code-for-automatically-figuring-out-the-liturgical-season-and-changing-the-colour-on-a-website">Continue reading</a>
+</div>
 
-<p>At any rate, the algorithm I ended up using is known as the Meeus/Jones/Butcher algorithm and was originally sourced from Marcos J. Montes (http://www.smart.net/~mmontes/nature1876.html).  According to Marcos and Wikipedia, “the actual origin of this algorithm appears to be by an anonymous correspondent from New York to Nature in 1876.”</p>
 
-<p>I have recently updated the code as I refreshed Being Frank for Easter 2013, and thought that I would post it here in case it is of use to other Catholic techies out there for use on their projects.  It doesn’t require any updating of tables as it calculates everything from the server date.  The code version I’ve attached is PHP, but you could easily convert it to other formats I’m sure.</p>
+  
+<div class="post-comment-count">
+  <a href="http://www.opensourcecatholic.com/blog/james-bergin/code-automatically/#disqus_thread">View Comments</a>
+</div>
 
-<p>Hope it’s of use to someone!  :)</p>
 
-<p>GitHub project: <a href="https://github.com/jamesbergin/CatholicLiturgicalCalendar">CatholicLiturgicalCalendar</a>.</p>
-
-        </div>
-
-        
-          
-        <div class="post-comment-count">
-          <a href="http://www.opensourcecatholic.com/blog/james-bergin/code-automatically/#disqus_thread">View Comments</a>
-        </div>
-        
       </li>
     
       <li>
         <span class="post-meta">
-          Feb 25, 2013
-        </span>
+  Feb 25, 2013
+</span>
 
-        <h2>
-          <a class="post-link" href="/2013/thankspontifex-a-twitter-storm-to-thank-the-pope">#ThanksPontifex - a Twitter Storm to Thank the Pope</a>
-        </h2>
+<h2>
+  <a class="post-link" href="/2013/thankspontifex-a-twitter-storm-to-thank-the-pope">#ThanksPontifex - a Twitter Storm to Thank the Pope</a>
+</h2>
 
-        <div class="post-content" itemprop="articleBody">
-          <p>I wanted to thank the Pope as he retired but I didn’t know how. I happen to work with youth ministry, so I also wanted a way for teens to get involved. Then this idea came to me, why don’t we create a Twitter storm of thank-you messages. If we got enough, our tag would appear on “Trending” for all users on twitter even non-Catholics.</p>
+<div class="post-content" itemprop="articleBody">
+  <p>I wanted to thank the Pope as he retired but I didn’t know how. I happen to work with youth ministry, so I also wanted a way for teens to get involved. Then this idea came to me, why don’t we create a Twitter storm of thank-you messages. If we got enough, our tag would appear on “Trending” for all users on twitter even non-Catholics.</p>
 
-<p>I mentioned it to a few who have more followers than I on twitter and got a positive response. So now I would like to invite you to participate with the tag #ThanksPontifex.</p>
+<p>I mentioned it to a few who have more followers than I...</p>
+  <a href="/2013/thankspontifex-a-twitter-storm-to-thank-the-pope">Continue reading</a>
+</div>
 
-<p>We want to have messages being posted all day on the 27th and 28th to trend. Then at the moment the Pope retires (7:45-8:15pm Rome time on the 28th) we want to try and occupy multiple of the top 10 trending worldwide spots. Once #ThanksPontifex tops the list, we can add in #PontifexThanks,  #PontifexThanks, #TYBenedictXVI, and #ThanksBenedictXVI in that order.</p>
 
-<p>Many tweets are good with @Pontifex at the beginning. I think it is best if everyone personalizes it a bit after adding the one tag - then I think the tag will trend better. (Nobody knows the secret formula to determine trending on Twitter.)</p>
+  
+<div class="post-comment-count">
+  <a href="http://www.opensourcecatholic.com/blog/br-matthew-p-schneider-lc-0/#disqus_thread">View Comments</a>
+</div>
 
-<p>I have a bunch of model tweets and programs to schedule tweets at a more <a href="http://22catholic.com/?p=168">in depth post</a> on my own blog.</p>
 
-<p>I’ll add you to the list if you tweet to me <a href="https://twitter.com/22Catholic">@22Catholic</a>.</p>
-
-        </div>
-
-        
-          
-        <div class="post-comment-count">
-          <a href="http://www.opensourcecatholic.com/blog/br-matthew-p-schneider-lc-0/#disqus_thread">View Comments</a>
-        </div>
-        
       </li>
     
       <li>
         <span class="post-meta">
-          Feb 17, 2013
-        </span>
+  Feb 17, 2013
+</span>
 
-        <h2>
-          <a class="post-link" href="/2013/boodroo">BooDroo</a>
-        </h2>
+<h2>
+  <a class="post-link" href="/2013/boodroo">BooDroo</a>
+</h2>
 
-        <div class="post-content" itemprop="articleBody">
-          <p>I’d like to introduce you to BooDroo. I’ve been working on BooDroo for over a year and we’ve been testing it at St. Barnabas Church (Bronx, NY) for several months.</p>
+<div class="post-content" itemprop="articleBody">
+  <p>I’d like to introduce you to BooDroo. I’ve been working on BooDroo for over a year and we’ve been testing it at St. Barnabas Church (Bronx, NY) for several months.</p>
 
 <p>BooDroo is a tool that allows parishes to instantly communicate reminders, news and updates to their parishioners, via text message.</p>
 
-<p>The BooDroo project was borne out of my experiences as a web developer and social media consultant for churches and non-profits. I set out to build something that would have a better signal-to-noise ratio than Facebook or Twitter and would, therefore, only require a few messages every week.</p>
+<p>The BooDroo project was borne out of my experiences as a web developer and social media consultant for churches and non-profits. I set out to build something...</p>
+  <a href="/2013/boodroo">Continue reading</a>
+</div>
 
-<p>BooDroo messages are seen by 98% of the recipients, compared to 29% (Twitter) or 15% (Facebook).</p>
 
-<p>BooDroo isn’t a popularity contest. The goal isn’t to build up hundreds or thousands of followers. Instead, the goal is to communicate directly with people who need to hear your message.</p>
+  
+<div class="post-comment-count">
+  <a href="http://www.opensourcecatholic.com/blog/john-fitzgerald/boodroo/#disqus_thread">View Comments</a>
+</div>
 
-<p>BooDroo allows you to create multiple groups - a parish could create separate groups for a prayer group, a rosary society and CCD parents.</p>
 
-<p>BooDroo is free.</p>
-
-<p>BooDroo is still in its early stages. We plan to roll out more features this spring and summer. But you can get started right now - go to BooDroo.com and create an account and start your first group.</p>
-
-<p>I’ve created a few short video tutorials to help you get started: http://www.youtube.com/playlist?list=PLZU_hVeUyr13OBbLFlGv6Aid_j_9INASk</p>
-
-<p>Please give it a try and let me know your thoughts. </p>
-
-        </div>
-
-        
-          
-        <div class="post-comment-count">
-          <a href="http://www.opensourcecatholic.com/blog/john-fitzgerald/boodroo/#disqus_thread">View Comments</a>
-        </div>
-        
       </li>
     
   </ul>

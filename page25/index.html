@@ -72,259 +72,193 @@
     
       <li>
         <span class="post-meta">
-          Aug 5, 2010
-        </span>
+  Aug 5, 2010
+</span>
 
-        <h2>
-          <a class="post-link" href="/2010/easy-embedding-of-html5-video-on-a-drupal-site">Easy Embedding of HTML5 Video on a Drupal Site</a>
-        </h2>
+<h2>
+  <a class="post-link" href="/2010/easy-embedding-of-html5-video-on-a-drupal-site">Easy Embedding of HTML5 Video on a Drupal Site</a>
+</h2>
 
-        <div class="post-content" itemprop="articleBody">
-          <p>For the past year, I&#39;ve watched the HTML5&nbsp;&lt;video&gt; element debate (mostly over video formats/containers) with a great interest&mdash;I abhor having to use Adobe Flash on my sites to embed video, especially since that means many videos don&#39;t work on my Linux workstation (which doesn&#39;t have Flash), or on my iPhone/iPad.</p>
-<p>The HTML5 &lt;video&gt; element (and similarly, the less-supported &lt;audio&gt; element) promises to take away the stress of having to have flash players, FLV-encoded video, etc. just to show a viewer a non-static piece of content.</p>
-<p>In its simplest form, you can add the following code to embed a video on your page:</p>
-<p><code><video src="video-file.m4v"></video></code></p>
-<p>On my Drupal sites, I&#39;ve been wanting to be able to simply grab an m4v&nbsp;video exported from iMovie, QuickTime, or straight from my camera, attach it to a post via a filefield, and have it display. In the old days, I would use SWFTools&nbsp;to embed the video using Flash.</p>
-<p>I&#39;ve found a solution that, in my opinion, is much more elegant, using the &lt;video&gt; element, with a Flash fallback for Internet Explorer:</p>
-<ol>
-<li>I set up a filefield with which I can attach an m4v file to a piece of content.</li>
-<li>I enabled Custom Formatters (an excellent Drupal module for CCK), and set up a simple formatter for this filefield with the code below:</li>
-</ol>
-<!--break-->
-<p><code><div class="html5-video-player">
-  <video controls="controls" preload="none" width="640" height="360">
-    <source src="[site-url]/[filefield-filepath]" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" />
-    <object width="640" height="384" type="application/x-shockwave-flash" data="[site-url]/sites/all/libraries/flowplayer/flowplayer-3.2.2.swf">
-      <param name="movie" value="[site-url]/sites/all/libraries/flowplayer/flowplayer-3.2.2.swf" />
-      <param name="allowfullscreen" value="true" />
-      <param name="flashvars" value=" &quot;[site-url]/[filefield-filepath]&quot;, &quot;autoPlay&quot;:false, &quot;autoBuffering&quot;:false, &quot;canvas&quot;:{&quot;backgroundColor&quot;:&quot;#000000&quot;}, &quot;scaling&quot;:&quot;fit&quot;}}" />
-    </object>
-  </video>
-  <a href="[site-url]/[filefield-filepath]">Download this video (MP4)</a>
-</div></code></p>
-<p>Two caveats:</p>
-<ol>
-<li>FireFox = no-go. This probably deserves a post of its own, because I think the Mozilla people are shooting themselves in the foot on this issue, and might drag down the adoption of the &lt;video&gt; element, but they&#39;re basically not going to support H.264/m4v video. So if you want to support FireFox, you&#39;ll have to recompress your video again and upload it to another filefield&nbsp;as an OGG&nbsp;Video, then make a more advanced PHP custom formatter to add in a link to that filefield.</li>
-<li>Internet Explorer versions 8 and below will fall back to Flash. Not ideal, but that&#39;s how it is.</li>
-<li>For the video to play across all devices, you have to encode it using the H.264 baseline profile... you can encode with higher settings, but then the iPhone, iPad, or both might not play the video.</li>
-</ol>
-<p>Luckily, though, including a download link to the video will allow even the most ancient browser the ability to at least download the video for viewing apart from the browser.</p>
-<h3>Getting this working in FireFox</h3>
-<p>To get FireFox support, you'll need to modify your workflow a bit. For the video filefield, make it a two-value filefield, then set up a new Custom Formatter with the 'Advanced' editor. Use the code below (PHP) for your custom formatter, and name it something like 'Universal HTML5 Video Formatter.' Then attach an M4V file as the first filefield item, and the OGV file as the second. Voila! Every browser back to the good ol' days of IE6 is supported!</p>
-<p>&lt;?php
-// Define video file locations
-$m4v_video = ‘/’ . $element[‘#node’]-&gt;field_video_podcast[0][‘filepath’];
-$ogv_video = ‘/’ . $element[‘#node’]-&gt;field_video_podcast[1][‘filepath’];</p>
+<div class="post-content" itemprop="articleBody">
+  <p>For the past year, I've watched the HTML5 &lt;video&gt; element debate (mostly over video formats/containers) with a great interest—I abhor having to use Adobe Flash on my sites to embed video, especially since that means many videos don't work on my Linux workstation (which doesn't have Flash), or on my iPhone/iPad.</p>
+<p>The HTML5 &lt;video&gt; element (and similarly, the less-supported &lt;audio&gt; element) promises to take away the stress of having to have flash players, FLV-encoded video, etc. just to...</p>
+  <a href="/2010/easy-embedding-of-html5-video-on-a-drupal-site">Continue reading</a>
+</div>
 
-<p>// Print HTML5 video code
-print ‘&lt;div class="html5-video-player"&gt;</p>
-<video controls="controls" preload="none" width="640" height="360">
-    <source src="' . $m4v_video . '" type="video/mp4" />
-    <source src="' . $ogv_video . '" type="video/ogg" />
-    <object width="640" height="384" type="application/x-shockwave-flash" data="/sites/all/libraries/flowplayer/flowplayer-3.2.2.swf">
-      <param name="movie" value="/sites/all/libraries/flowplayer/flowplayer-3.2.2.swf" />
-      <param name="allowfullscreen" value="true" />
-      &lt;param name="flashvars" value=\'config={"clip": {"url": "' . $m4v_video . '", "autoPlay":false, "autoBuffering":false, "canvas":{"backgroundColor":"#000000"}, "scaling":"fit"}}\' /&gt;
-    </object>
-  </video>
-<p>Download this video: <a href="' . $m4v_video . '">MP4</a> | <a href="' . $ogv_video . '">OGV</a>
-&lt;/div&gt;’;
-?&gt;</p>
-<p><strong>Note</strong>: I am using the 'field_video_podcast' field for my nodes - your field name might be different. Also, I used <a href="http://taylanpince.com/blog/posts/oggifier-gui-wrapper-ffmpeg2theora/">Oggifier</a> as a GUI for ffmpeg2theora, though I still maintain it's stupid to have to make two video files just to support FireFox, standards be darned. Especially when FireFox won't accept an .ogv filename with spaces (see my comment below)!</p>
-<p><em><a href="http://diveintohtml5.org/video.html">Dive into HTML5 - Video</a></em> - a great source for more info on this topic.</p>
 
-        </div>
+  
+<div class="post-comment-count">
+  <a href="http://www.opensourcecatholic.com/blog/oscatholic/easy-embedding-html5-vid/#disqus_thread">View Comments</a>
+</div>
 
-        
-          
-        <div class="post-comment-count">
-          <a href="http://www.opensourcecatholic.com/blog/oscatholic/easy-embedding-html5-vid/#disqus_thread">View Comments</a>
-        </div>
-        
+
       </li>
     
       <li>
         <span class="post-meta">
-          Jul 27, 2010
-        </span>
+  Jul 27, 2010
+</span>
 
-        <h2>
-          <a class="post-link" href="/2010/study-shows-2-3-of-churches-not-using-any-social-media">Study shows 2/3 of Churches not using any Social Media</a>
-        </h2>
+<h2>
+  <a class="post-link" href="/2010/study-shows-2-3-of-churches-not-using-any-social-media">Study shows 2/3 of Churches not using any Social Media</a>
+</h2>
 
-        <div class="post-content" itemprop="articleBody">
-          <p>Buzzplant (a social media firm) recently surveyed thousands of Churches (it was a general survey, so not just Catholics), asking what forms of social communications they were using to communicate with their parishioners. Here&#39;s a summary of the results:</p>
+<div class="post-content" itemprop="articleBody">
+  <p>Buzzplant (a social media firm) recently surveyed thousands of Churches (it was a general survey, so not just Catholics), asking what forms of social communications they were using to communicate with their parishioners. Here's a summary of the results:</p>
 <ul>
 <li>62% of Churches post homilies to website as text or podcast</li>
-<li>28% of Churches have a Pastor&#39;s Blog</li>
+<li>28% of Churches have a Pastor's Blog</li>
 <li>32% of Churches use social media in one way or another</li>
-<li>25% of Churches use social media to promote parish events [really? this should probably be the highest statistic, imo]</li>
-</ul>
-<p>You can view the full <a href="http://www.buzzplant.com/site/surveys/survey_results_church_sm.pdf">report on Churches&#39; use of social communications tools</a> (PDF) from Buzzplant. With the USCCB having recently released its <a href="http://www.usccb.org/comm/social-media-guidelines.shtml">proposed guidelines for social media use</a>, and with many Archdioceses effectively using <a href="/blog/geerlingguy/us-archdioceses-and-dioceses-twit">Twitter</a> and <a href="/blog/oscatholic/us-archdioceses-and-dioceses-faceb">Facebook</a> to spread the gospel, the time is ripe to use social media on the parish level, and integrate it with parish websites.</p>
+<li>25% of Churches use social media to promote parish</li>
+</ul>...
+  <a href="/2010/study-shows-2-3-of-churches-not-using-any-social-media">Continue reading</a>
+</div>
 
-        </div>
 
-        
-          
-        <div class="post-comment-count">
-          <a href="http://www.opensourcecatholic.com/blog/oscatholic/study-shows-23-churches/#disqus_thread">View Comments</a>
-        </div>
-        
+  
+<div class="post-comment-count">
+  <a href="http://www.opensourcecatholic.com/blog/oscatholic/study-shows-23-churches/#disqus_thread">View Comments</a>
+</div>
+
+
       </li>
     
       <li>
         <span class="post-meta">
-          Jul 23, 2010
-        </span>
+  Jul 23, 2010
+</span>
 
-        <h2>
-          <a class="post-link" href="/2010/catholic-programmers-t-shirt-and-mousepad">Catholic Programmer's T-Shirt and Mousepad</a>
-        </h2>
+<h2>
+  <a class="post-link" href="/2010/catholic-programmers-t-shirt-and-mousepad">Catholic Programmer's T-Shirt and Mousepad</a>
+</h2>
 
-        <div class="post-content" itemprop="articleBody">
-          <p>A few weeks back, after finishing a full day of swimming in PHP, HTML and CSS, I was pondering the great mystery of human existence, but probably had a little too much to drink. The result?</p>
-<p class="rtecenter"><img alt="Catholic Programmer's Design" height="192" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/Catholic-Programming-Design.png" title="" width="420" /></p>
+<div class="post-content" itemprop="articleBody">
+  <p>A few weeks back, after finishing a full day of swimming in PHP, HTML and CSS, I was pondering the great mystery of human existence, but probably had a little too much to drink. The result?</p>
+<p class="rtecenter"><img alt="Catholic Programmer's Design" height="192" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/Catholic-Programming-Design.png" title="" width="420"></p>
 <p>You can buy the design on the following products (via Zazzle):</p>
 <ul>
-<li><a href="http://www.zazzle.com/catholic_programmers_t_shirt-235497535568718849">Catholic Programmer&#39;s T-Shirt</a></li>
-<li><a href="http://www.zazzle.com/catholic_programmers_mousepad-144670862553300061">Catholic Programmer&#39;s Mousepad</a></li>
+<li><a href="http://www.zazzle.com/catholic_programmers_t_shirt-235497535568718849">Catholic Programmer's T-Shirt</a></li>
+<li><a href="http://www.zazzle.com/catholic_programmers_mousepad-144670862553300061">Catholic Programmer's Mousepad</a></li>
 </ul>
-<p>Would you like the design on anything else? I could do a mug, or socks, or anything else in Zazzle&#39;s catalog...</p>
-<p>Alternatively, can you think of a way to code this better? ;-)</p>
+<p>Would you like the design on anything else? I could do a mug, or socks, or anything else in Zazzle's catalog...</p>
+<p>Alternatively, can you...</p>
+  <a href="/2010/catholic-programmers-t-shirt-and-mousepad">Continue reading</a>
+</div>
 
-        </div>
 
-        
-          
-        <div class="post-comment-count">
-          <a href="http://www.opensourcecatholic.com/blog/geerlingguy/catholic-programmers-t/#disqus_thread">View Comments</a>
-        </div>
-        
+  
+<div class="post-comment-count">
+  <a href="http://www.opensourcecatholic.com/blog/geerlingguy/catholic-programmers-t/#disqus_thread">View Comments</a>
+</div>
+
+
       </li>
     
       <li>
         <span class="post-meta">
-          Jul 22, 2010
-        </span>
+  Jul 22, 2010
+</span>
 
-        <h2>
-          <a class="post-link" href="/2010/drupal-gardens-enters-open-public-beta">Drupal Gardens enters Open Public Beta</a>
-        </h2>
+<h2>
+  <a class="post-link" href="/2010/drupal-gardens-enters-open-public-beta">Drupal Gardens enters Open Public Beta</a>
+</h2>
 
-        <div class="post-content" itemprop="articleBody">
-          <p>...and now anyone can set up a fresh, hosted Drupal 7 website in seconds&mdash;for free.</p>
+<div class="post-content" itemprop="articleBody">
+  <p>...and now anyone can set up a fresh, hosted Drupal 7 website in seconds—for free.</p>
 <p>From Dries Buytaert, creator of Drupal, and president of Acquia, the company behind Drupal Gardens (basically, a site like wordpress.com, except with more awesome):</p>
 <blockquote>
-<p>Today we&rsquo;ve reached another important milestone at Acquia: Drupal Gardens is now in open beta. No more beta codes. No more waiting to try the service. Now anyone can access Drupal Gardens and create a free Drupal 7 site!</p>
-</blockquote>
-<p>I expect this service, and others like it, to grow in popularity in the coming years. For many parishes, a site on Drupal Gardens would do 90% of <a href="/blog/oscatholic/what-makes-good-parish-website">what they&#39;d need</a> (or 100%, if they weren&#39;t <a href="/blog/carson-weber/parish-website">shooting for the stars</a>...).</p>
-<p>And it&#39;s free (for basic plans), community-based, and super-easy to use (the theme developer is especially nice). On top of that, you can, at any time, download your entire site and put it on your own web host!</p>
+<p>Today we’ve reached another important milestone at Acquia: Drupal Gardens is now in open beta. No more beta codes. No more waiting to try the service. Now anyone can access Drupal Gardens and create a free Drupal 7</p>
+</blockquote>...
+  <a href="/2010/drupal-gardens-enters-open-public-beta">Continue reading</a>
+</div>
 
-        </div>
 
-        
-          
-        <div class="post-comment-count">
-          <a href="http://www.opensourcecatholic.com/blog/oscatholic/drupal-gardens-enters/#disqus_thread">View Comments</a>
-        </div>
-        
+  
+<div class="post-comment-count">
+  <a href="http://www.opensourcecatholic.com/blog/oscatholic/drupal-gardens-enters/#disqus_thread">View Comments</a>
+</div>
+
+
       </li>
     
       <li>
         <span class="post-meta">
-          Jul 19, 2010
-        </span>
+  Jul 19, 2010
+</span>
 
-        <h2>
-          <a class="post-link" href="/2010/vatican-website-may-have-been-google-bombing-victim">Vatican website may have been 'Google bombing' victim</a>
-        </h2>
+<h2>
+  <a class="post-link" href="/2010/vatican-website-may-have-been-google-bombing-victim">Vatican website may have been 'Google bombing' victim</a>
+</h2>
 
-        <div class="post-content" itemprop="articleBody">
-          <blockquote>
-<p><span class="noticia_byline">Rome, Italy, Jul 19, 2010 / 12:11 pm (<a href="http://www.catholicnewsagency.com/news/vaticans-website-may-have-been-googlebombing-victim/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+catholicnewsagency%2Fdailynews+%28CNA+Daily+News%29&amp;utm_content=Twitter" target="_self">CNA/EWTN News</a>)</span>.- An apparent glitch in Google&#39;s ranking system for web searches&nbsp;led the company to make a change over the weekend so that the Vatican&#39;s website was not placed below a site with information on pedophilia. According to an Italian technology website, the anomaly leaves many questions unanswered.</p>
-<p>The first news reports in Italy began to come out last Friday about the fact that inserting the word &quot;Vatican&quot; in a Google search retrieved the website <a href="http://www.pedofilo.com/">www.pedofilo.com</a> as the first option, one place ahead of the Holy See&#39;s official <a href="http://www.vatican.va/">www.vatican.va</a> website. The website that replaced the Vatican&#39;s was one that provided information on the pheonomenon of pedophilia and reproduced documents from the Holy See on the matter.</p>
-<p>After momentum increased behind the story on international newswires over the weekend, Google technicians fixed the problem, and now the Vatican&#39;s website tops the results of the simple search. But that leaves the question of how it came about in the first place.</p>
-<p>The Italian technology website <a href="http://www.bitcity.it/">www.bitcity.it</a> explained that preference in the order of Google search results is dictated by the number of links available to the site from other webpages. The algorithm, in this case, could have been manipulated to give greater consideration to the pedofilo.com site over all others, a technique called &quot;Google bombing.&quot;</p>
-<p>Bitcity reported that Google had &quot;assured that this mechanism could not be used for one&#39;s own ends, but what happened with the Vatican and the pedofilo.com site brings up some perplexities&quot; on how the algorithm could have been changed.</p>
-<p>Google Italy&#39;s communications director, Simona Panseri, told ANSA &quot;I cannot confirm that it was an attack until I have more precise indications from the American engineers to understand the nature of the problem.&quot;</p>
-<p>Vatican spokesman Fr. Federico Lombardi said that Google apologized to the Vatican, and a formal protest was not necessary.</p>
-<p><a href="http://www.catholicnewsagency.com/news/vaticans-website-may-have-been-googlebombing-victim/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+catholicnewsagency%2Fdailynews+%28CNA+Daily+News%29&amp;utm_content=Twitter">Catholic News Agency</a></p>
-</blockquote>
+<div class="post-content" itemprop="articleBody">
+  <blockquote>
+<p><span class="noticia_byline">Rome, Italy, Jul 19, 2010 / 12:11 pm (<a href="http://www.catholicnewsagency.com/news/vaticans-website-may-have-been-googlebombing-victim/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+catholicnewsagency%2Fdailynews+%28CNA+Daily+News%29&amp;utm_content=Twitter" target="_self">CNA/EWTN News</a>)</span>.- An apparent glitch in Google's ranking system for web searches led the company to make a change over the weekend so that the Vatican's website was not placed below a site with information on pedophilia. According to an Italian technology website, the anomaly leaves many questions unanswered.</p>
+<p>The first news reports in Italy began to come out last Friday about the fact that inserting the</p>
+</blockquote>...
+  <a href="/2010/vatican-website-may-have-been-google-bombing-victim">Continue reading</a>
+</div>
 
-        </div>
 
-        
-          
-        <div class="post-comment-count">
-          <a href="http://www.opensourcecatholic.com/blog/matt-k/vatican-website-may-have/#disqus_thread">View Comments</a>
-        </div>
-        
+  
+<div class="post-comment-count">
+  <a href="http://www.opensourcecatholic.com/blog/matt-k/vatican-website-may-have/#disqus_thread">View Comments</a>
+</div>
+
+
       </li>
     
       <li>
         <span class="post-meta">
-          Jul 16, 2010
-        </span>
+  Jul 16, 2010
+</span>
 
-        <h2>
-          <a class="post-link" href="/2010/using-drupal-with-amazon-s3-to-backup-your-site">Using Drupal with Amazon S3 to backup your site</a>
-        </h2>
+<h2>
+  <a class="post-link" href="/2010/using-drupal-with-amazon-s3-to-backup-your-site">Using Drupal with Amazon S3 to backup your site</a>
+</h2>
 
-        <div class="post-content" itemprop="articleBody">
-          <p>I would like to share with you an extremely inexpensive and highly effective way to backup your Drupal sites (both MySQL and your /sites/default/files directory)</p>
-<p>You will need two things;<br />
-<br />
-One is this module: <a href="http://drupal.org/project/backup_migrate" target="_blank">http://drupal.org/project/backup_migrate</a><br />
+<div class="post-content" itemprop="articleBody">
+  <p>I would like to share with you an extremely inexpensive and highly effective way to backup your Drupal sites (both MySQL and your /sites/default/files directory)</p>
+<p>You will need two things;<br>
+<br>
+One is this module: <a href="http://drupal.org/project/backup_migrate" target="_blank">http://drupal.org/project/backup_migrate</a><br>
 Second, you will need an Amazon S3 Account <a href="http://aws.amazon.com/s3/" target="_blank">&gt;here</a></p>
-<p>How does it work? very simple, you create a Bucket (folder) in Amazon S3<br />
+<p>How does it work? very simple, you create a Bucket (folder) in Amazon S3<br>
 and then go into the Backup and Migrate module and enter your settings.</p>
-<p>You can backup just the db or just the files directory or both. One of the best features is the ability to restore a backed up MySQL file, the module actually lists the backed up files, select the one you want to back up and it magically restores the db to the state of when the back up was done. This one has saved me a few times!</p>
-<p>The cost? Well, I back up three sites, with one site having doing a 150MB four times per day is costing me $2.58 per month.</p>
-<p>Oh, and that 150MB backup takes about 35 seconds!!</p>
-<p><br />
-&nbsp;</p>
+<p>You can backup just the db...</p>
+  <a href="/2010/using-drupal-with-amazon-s3-to-backup-your-site">Continue reading</a>
+</div>
 
-        </div>
 
-        
-          
-        <div class="post-comment-count">
-          <a href="http://www.opensourcecatholic.com/forum/topics/296/#disqus_thread">View Comments</a>
-        </div>
-        
+  
+<div class="post-comment-count">
+  <a href="http://www.opensourcecatholic.com/forum/topics/296/#disqus_thread">View Comments</a>
+</div>
+
+
       </li>
     
       <li>
         <span class="post-meta">
-          Jul 16, 2010
-        </span>
+  Jul 16, 2010
+</span>
 
-        <h2>
-          <a class="post-link" href="/2010/live-blogging-to-drive-traffic-interest-to-organizational-events">Live-Blogging to Drive Traffic, Interest to Organizational Events</a>
-        </h2>
+<h2>
+  <a class="post-link" href="/2010/live-blogging-to-drive-traffic-interest-to-organizational-events">Live-Blogging to Drive Traffic, Interest to Organizational Events</a>
+</h2>
 
-        <div class="post-content" itemprop="articleBody">
-          <p>The <a href="http://stlyouth.org/steubenville">Steubenville St. Louis Mid-America conference</a> is attended by over 6,000 teens every year, and there are many parents, friends, and other teens who wish they could participate as well. We have always posted information after the conference, but in St. Louis, for the past two years, we&#39;ve started live-blogging and posting to social networks frequently throughout the conference, driving up traffic to our OYM websites.</p>
-<p>Here are some of the things we&#39;ve been doing to drive traffic and share information live from the conference.</p>
-<p class="rtecenter"><a href="http://www.flickr.com/photos/stlyouth/4777998697/" title="ST101 - Friday Afternoon 002 by stlyouth, on Flickr"><img alt="ST101 - Friday Afternoon 002" height="332" src="http://farm5.static.flickr.com/4134/4777998697_dcfa30a94d.jpg" width="500" /></a><br />
-My setup for the first week... <a href="http://www.lifeisaprayer.com/blog/2010/my-live-blogging-photography">watch a video highlighting the gear &raquo;</a></p>
-<!--break-->
-<p>I (Jeff Geerling) ran around taking pictures like mad on my D90 (with some nice lenses), then dumped them into Aperture, processed them, and put some selects up on the&nbsp;<a href="http://live.stlyouth.org/">OYM&#39;s Live Blog</a>. I also snapped a few videos on my iPhone 4, converted them to FLV, and posted them as well. (<a href="http://www.lifeisaprayer.com/blog/2010/my-live-blogging-photography">See a video highlighting my gear</a>). Throughout the day, I posted all my photos to the OYM&#39;s <a href="http://www.flickr.com/photos/stlyouth/collections/">Steubenville photo collections on Flickr</a>, then at night I posted my five-starred photos to <a href="http://www.facebook.com/oym.stl?v=photos">Facebook</a> and tagged them as best I could.</p>
-<p>The Live Blog was set up to allow email posts from iPhones and other mobiles (for this I used Drupal&#39;s&nbsp;<a href="http://drupal.org/project/mailhandler">mailhandler</a>&nbsp;and <a href="http://drupal.org/project/mimerouter">mimerouter</a> modules), and I set up six different users with this ability&mdash;they were posting up-to-the-minute photos from around the Missouri State University campus, with short descriptions and titles.</p>
-<p class="rtecenter"><img alt="OYM Live Blog" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/oym-live-blog.png" style="width: 480px; height: 363px; " title="" /></p>
-<p><a href="http://hootsuite.com/">HootSuite</a> checked the Live Blog and the <a href="http://stlyouth.org/">OYM&#39;s main website</a> feed&nbsp;hourly, posting updates to Twitter. We also manually posted tweets from time to time with relevant information, and we tried (and usually succeeded) to get everyone at the conference to use the <a href="http://search.twitter.com/search?q=%23steubystl">#steubystl</a> hashtag.</p>
-<p>We heavily promoted the live blog, the Twitter hashtag, and other online resources throughout the conference, and had about 300% more traffic this year than last.</p>
-<p class="rtecenter"><a href="http://www.flickr.com/photos/stlyouth/4781872664/" title="ST101 - Saturday Night 041 by stlyouth, on Flickr"><img alt="ST101 - Saturday Night 041" height="332" src="http://farm5.static.flickr.com/4074/4781872664_20afd09ea5.jpg" width="500" /></a></p>
-<p>Using a combination of Twitter, Facebook, Flickr, your own website(s), and other online mediums, especially with a dedicated team of helpers, you can drive traffic and lasting interest to one of your organization&#39;s events, if you can share compelling content.</p>
+<div class="post-content" itemprop="articleBody">
+  <p>The <a href="http://stlyouth.org/steubenville">Steubenville St. Louis Mid-America conference</a> is attended by over 6,000 teens every year, and there are many parents, friends, and other teens who wish they could participate as well. We have always posted information after the conference, but in St. Louis, for the past two years, we've started live-blogging and posting to social networks frequently throughout the conference, driving up traffic to our OYM websites.</p>
+<p>Here are some of the things we've been doing to drive...</p>
+  <a href="/2010/live-blogging-to-drive-traffic-interest-to-organizational-events">Continue reading</a>
+</div>
 
-        </div>
 
-        
-          
-        <div class="post-comment-count">
-          <a href="http://www.opensourcecatholic.com/blog/geerlingguy/live-blogging-drive/#disqus_thread">View Comments</a>
-        </div>
-        
+  
+<div class="post-comment-count">
+  <a href="http://www.opensourcecatholic.com/blog/geerlingguy/live-blogging-drive/#disqus_thread">View Comments</a>
+</div>
+
+
       </li>
     
   </ul>
