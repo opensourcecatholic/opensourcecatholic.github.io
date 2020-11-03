@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PHP Array (List) of All United States Dioceses</title>
+  <meta name="description" content="Below is a listing, via PHP array, of all U.S. Dioceses and Archdioceses by city name. The IDs were arbitrarily assigned to the dioceses (and they're not all...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://www.opensourcecatholic.com/2011/php-array-list-of-all-united-states-dioceses">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Catholic" href="http://www.opensourcecatholic.com/rss.xml">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+
+  <body>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2478239-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/"><img src="/sites/opensourcecatholic.com/files/airyblue-logo.png" width="100" height="97" alt="Open Source Catholic Logo"> Open Source Catholic</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        <a class="page-link" href="/archive/">Archive</a>
+        
+        <a class="page-link" href="/chat/">Chat</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">PHP Array (List) of All United States Dioceses</h1>
+    <p class="post-meta">
+      <time datetime="2011-07-07T00:00:00+00:00" itemprop="datePublished">Jul 7, 2011</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jeff Geerling</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Below is a listing, via PHP array, of all U.S. Dioceses and Archdioceses by city name. The IDs were arbitrarily assigned to the dioceses (and they're not <em>all</em> in the U.S., but oh well), and this is the listing that is being used to help with an open parish directory, so it may change from time to time. Any time a new diocese is added, it should be added to the list alphabetically, but with an ID one higher than the ID of the greatest item in the list.</p>
+
+<p>&lt;?php
+$dioceses = array(
+  1 =&gt; ‘Albany’,
+  2 =&gt; ‘Alexandria’,
+  3 =&gt; ‘Allentown’,
+  4 =&gt; ‘Altoona-Johnstown’,
+  5 =&gt; ‘Amarillo’,
+  6 =&gt; ‘Anchorage’,
+  7 =&gt; ‘Arlington’,
+  8 =&gt; ‘Atlanta’,
+  9 =&gt; ‘Austin’,
+  10 =&gt; ‘Baker’,
+  11 =&gt; ‘Baltimore’,
+  12 =&gt; ‘Baton Rouge’,
+  13 =&gt; ‘Beaumont’,
+  14 =&gt; ‘Belleville’,
+  15 =&gt; ‘Biloxi’,
+  16 =&gt; ‘Birmingham’,
+  17 =&gt; ‘Bismarck’,
+  18 =&gt; ‘Boise’,
+  19 =&gt; ‘Boston’,
+  20 =&gt; ‘Bridgeport’,
+  21 =&gt; ‘Brooklyn’,
+  22 =&gt; ‘Brownsville’,
+  23 =&gt; ‘Buffalo’,
+  24 =&gt; ‘Burlington’,
+  25 =&gt; ‘Camden’,
+  26 =&gt; ‘Charleston’,
+  27 =&gt; ‘Charlotte’,
+  28 =&gt; ‘Cheyenne’,
+  29 =&gt; ‘Chicago’,
+  30 =&gt; ‘Cincinnati’,
+  31 =&gt; ‘Cleveland’,
+  32 =&gt; ‘Colorado Springs’,
+  33 =&gt; ‘Columbus’,
+  34 =&gt; ‘Corpus Christi’,
+  35 =&gt; ‘Covington’,
+  36 =&gt; ‘Crookston’,
+  37 =&gt; ‘Dallas’,
+  38 =&gt; ‘Davenport’,
+  39 =&gt; ‘Denver’,
+  40 =&gt; ‘Des Moines’,
+  41 =&gt; ‘Detroit’,
+  42 =&gt; ‘Dodge City’,
+  43 =&gt; ‘Dubuque’,
+  44 =&gt; ‘Duluth’,
+  45 =&gt; ‘Edmonton (Cananda)’,
+  46 =&gt; ‘El Paso’,
+  47 =&gt; ‘Erie’,
+  48 =&gt; ‘Evansville’,
+  49 =&gt; ‘Fairbanks’,
+  50 =&gt; ‘Fall River’,
+  51 =&gt; ‘Fargo’,
+  52 =&gt; ‘Fort Wayne-South Bend’,
+  53 =&gt; ‘Fort Worth’,
+  54 =&gt; ‘Fresno’,
+  55 =&gt; ‘Gallup’,
+  56 =&gt; ‘Galveston-Houston’,
+  57 =&gt; ‘Gary’,
+  58 =&gt; ‘Gaylord’,
+  59 =&gt; ‘Grand Island’,
+  60 =&gt; ‘Grand Rapids’,
+  61 =&gt; ‘Great Falls-Billings’,
+  62 =&gt; ‘Green Bay’,
+  63 =&gt; ‘Greensburg’,
+  64 =&gt; ‘Harrisburg’,
+  65 =&gt; ‘Hartford’,
+  66 =&gt; ‘Helena’,
+  67 =&gt; ‘Honolulu’,
+  68 =&gt; ‘Houma-Thibodaux’,
+  69 =&gt; ‘Indianapolis’,
+  70 =&gt; ‘Jackson’,
+  71 =&gt; ‘Jefferson City’,
+  72 =&gt; ‘Joliet’,
+  73 =&gt; ‘Juneau’,
+  74 =&gt; ‘Kalamazoo’,
+  75 =&gt; ‘Kansas City’,
+  76 =&gt; ‘Kansas City-St. Joseph’,
+  77 =&gt; ‘Knoxville’,
+  78 =&gt; ‘La Crosse’,
+  79 =&gt; ‘Lafayette’,
+  80 =&gt; ‘Lafayette in Indiana’,
+  81 =&gt; ‘Lake Charles’,
+  82 =&gt; ‘Lansing’,
+  83 =&gt; ‘Laredo’,
+  84 =&gt; ‘Las Cruces’,
+  85 =&gt; ‘Las Vegas’,
+  86 =&gt; ‘Lexington’,
+  87 =&gt; ‘Lincoln’,
+  88 =&gt; ‘Little Rock’,
+  89 =&gt; ‘Los Angeles’,
+  90 =&gt; ‘Louisville’,
+  91 =&gt; ‘Lubbock’,
+  92 =&gt; ‘Madison’,
+  93 =&gt; ‘Manchester’,
+  94 =&gt; ‘Marquette’,
+  95 =&gt; ‘Memphis’,
+  96 =&gt; ‘Metuchen’,
+  97 =&gt; ‘Miami’,
+  98 =&gt; ‘Military Services’,
+  99 =&gt; ‘Milwaukee’,
+  100 =&gt; ‘Mobile’,
+  101 =&gt; ‘Monterey’,
+  102 =&gt; ‘Nashville’,
+  103 =&gt; ‘New Orleans’,
+  104 =&gt; ‘New Ulm’,
+  105 =&gt; ‘New York’,
+  106 =&gt; ‘Newark’,
+  107 =&gt; ‘Newton for Melkites’,
+  108 =&gt; ‘Norwich’,
+  109 =&gt; ‘Oakland’,
+  110 =&gt; ‘Ogdensburg’,
+  111 =&gt; ‘Oklahoma City’,
+  112 =&gt; ‘Omaha’,
+  113 =&gt; ‘Orange’,
+  114 =&gt; ‘Orlando’,
+  115 =&gt; ‘Our Lady of Deliverance of Newark for Syrians’,
+  116 =&gt; ‘Our Lady of Lebanon of L.A. for Maronites’,
+  117 =&gt; ‘Owensboro’,
+  118 =&gt; ‘Palm Beach’,
+  119 =&gt; ‘Paterson’,
+  120 =&gt; ‘Pensacola-Tallahassee’,
+  121 =&gt; ‘Peoria’,
+  122 =&gt; ‘Philadelphia’,
+  123 =&gt; ‘Philadelphia for Ukrainians’,
+  124 =&gt; ‘Phoenix’,
+  125 =&gt; ‘Pittsburgh’,
+  126 =&gt; ‘Portland in Maine’,
+  127 =&gt; ‘Portland in Oregon’,
+  128 =&gt; ‘Providence’,
+  129 =&gt; ‘Pueblo’,
+  130 =&gt; ‘Raleigh’,
+  131 =&gt; ‘Rapid City’,
+  132 =&gt; ‘Reno’,
+  133 =&gt; ‘Richmond’,
+  134 =&gt; ‘Rochester’,
+  135 =&gt; ‘Rockford’,
+  136 =&gt; ‘Rockville Centre’,
+  137 =&gt; ‘Sacramento’,
+  138 =&gt; ‘Saginaw’,
+  139 =&gt; ‘Salina’,
+  140 =&gt; ‘Salt Lake City’,
+  141 =&gt; ‘San Angelo’,
+  142 =&gt; ‘San Antonio’,
+  143 =&gt; ‘San Bernardino’,
+  144 =&gt; ‘San Diego’,
+  145 =&gt; ‘San Francisco’,
+  146 =&gt; ‘San Jose’,
+  147 =&gt; ‘Santa Fe’,
+  148 =&gt; ‘Santa Rosa’,
+  149 =&gt; ‘Savannah’,
+  150 =&gt; ‘Scranton’,
+  151 =&gt; ‘Seattle’,
+  152 =&gt; ‘Shreveport’,
+  153 =&gt; ‘Sioux City’,
+  154 =&gt; ‘Sioux Falls’,
+  155 =&gt; ‘Spokane’,
+  156 =&gt; ‘Springfield in Illinois’,
+  157 =&gt; ‘Springfield in Massachusetts’,
+  158 =&gt; ‘Springfield-Cape Girardeau’,
+  159 =&gt; ‘St. Augustine’,
+  160 =&gt; ‘St. Cloud’,
+  161 =&gt; ‘St. Josaphat of Parma for Ukrainians’,
+  162 =&gt; ‘St. Louis’,
+  163 =&gt; ‘St. Maron of Brooklyn for the Maronites’,
+  164 =&gt; ‘St. Nicholas of Chicago for Ukrainians’,
+  165 =&gt; ‘St. Paul-Minneapolis’,
+  166 =&gt; ‘St. Petersburg’,
+  167 =&gt; ‘St. Thomas the Apostle of Chicago-Syro-Malabars’,
+  168 =&gt; ‘St. Thomas, VI’,
+  169 =&gt; ‘Stamford for Ukrainians’,
+  170 =&gt; ‘Steubenville’,
+  171 =&gt; ‘Stockton’,
+  172 =&gt; ‘Superior’,
+  173 =&gt; ‘Syracuse’,
+  174 =&gt; ‘Toledo’,
+  175 =&gt; ‘Trenton’,
+  176 =&gt; ‘Tucson’,
+  177 =&gt; ‘Tulsa’,
+  178 =&gt; ‘Tyler’,
+  179 =&gt; ‘Venice’,
+  180 =&gt; ‘Victoria’,
+  181 =&gt; ‘Washington’,
+  182 =&gt; ‘Wheeling-Charleston’,
+  183 =&gt; ‘Wichita’,
+  184 =&gt; ‘Wilmington’,
+  185 =&gt; ‘Winona’,
+  186 =&gt; ‘Worcester’,
+  187 =&gt; ‘Yakima’,
+  188 =&gt; ‘Youngstown’,
+);
+?&gt;</p>
+
+  </div>
+
+
+  <div class="post-comments">
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      
+        
+        this.page.url = "http://www.opensourcecatholic.com/wiki/117/php-array-list-all-united/";
+        this.page.identifier = "node/394";
+      
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//opensourcecatholic.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Open Source Catholic</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p class="rss-subscribe">Subscribe <a href="/rss.xml">via RSS</a></p>
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://groups.google.com/forum/#!forum/open-source-catholic"><i class="fas fa-envelope"></i> <span class="username">open-source-catholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/opensourcecatholic"><i class="fab fa-github"></i> <span class="username">opensourcecatholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/oscatholic"><i class="fab fa-twitter"></i> <span class="username">oscatholic</span></a>
+
+          </li>
+          
+
+          <li>
+            <a href="https://catholicdevs.slack.com"><i class="fab fa-slack"></i> <span class="username">catholicdevs</span></a>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p>Helping Catholic developers and organizations involved in software and web development find effective solutions for spreading the Gospel of Jesus Christ.
+</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <script id="dsq-count-scr" src="//opensourcecatholic.disqus.com/count.js" async></script>
+  </body>
+
+</html>

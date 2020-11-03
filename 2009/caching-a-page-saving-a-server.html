@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Caching a Page; Saving a Server</title>
+  <meta name="description" content="	A couple months ago, the Archdiocese of Saint Louis announced that a new Archbishop had been chosen (then-Archbishop-elect Robert J. Carlson). For the annou...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://www.opensourcecatholic.com/2009/caching-a-page-saving-a-server">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Catholic" href="http://www.opensourcecatholic.com/rss.xml">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+
+  <body>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2478239-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/"><img src="/sites/opensourcecatholic.com/files/airyblue-logo.png" width="100" height="97" alt="Open Source Catholic Logo"> Open Source Catholic</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        <a class="page-link" href="/archive/">Archive</a>
+        
+        <a class="page-link" href="/chat/">Chat</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Caching a Page; Saving a Server</h1>
+    <p class="post-meta">
+      <time datetime="2009-07-24T00:00:00+00:00" itemprop="datePublished">Jul 24, 2009</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jeff Geerling</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>
+	A couple months ago, the Archdiocese of Saint Louis <a href="http://www.archstl.org/index.php?option=com_content&amp;task=view&amp;id=858&amp;Itemid=1">announced</a> that a new Archbishop had been chosen (then-Archbishop-elect Robert J. Carlson). For the announcement, the Archdiocese streamed the press conference online, then posted <a href="http://stlouisreview.com/article/2009-04-21/photos-bishop-carlson-during-his-first-day-st-loui">pictures on the St. Louis Review website</a> of the day&#39;s events (updated every hour or two).</p>
+<p class="rtecenter" style="width: 550px; margin: 0 auto;">
+	<img alt="Pageviews on April 21, 2009 - Archstl.org" height="180" src="/sites/opensourcecatholic.com/files/user-uploads/oscatholic/pageviews-graph.png" width="534" /><br />
+	<span style="font-size: .7em; line-height: 1.1em">Pageviews for April 21, 2009 on archstl.org &ndash; note that from 8-10 a.m., the server was practically down from the thousands of hits/requests it was getting. Just before 10 a.m., I enabled the caching described below. We announced everything via Twitter, SMS, Press Releases, and the web, just after 5 a.m.</span></p>
+<p>
+	During this period of time, the Archdiocesan website had over 2,000 visitors per hour, and almost all the visitors were hitting the home page. The website (run on Joomla 1.0.x) didn&#39;t have many caching mechanisms in place, and for almost a complete hour, the website was returning server errors as the processor was pegged at 100% utilization. Something had to be done!</p>
+<!--break-->
+<h3>
+	Quick-Fix Mode</h3>
+<p>
+	Quickly, I opened up the .htaccess file and denied all traffic except from the Archdiocesan offices (so I could access the site to make a fix!). Then I saved the home page as an .html file using FireFox (just the source), and uploaded it to the server. I finally put the rule <code>DirectoryIndex index.html index.php</code> into the .htaccess file so visitors going to www.archstl.org would be served the html file (which the server can send out <em>much</em> quicker and easier than any kind of PHP page, which requires time and memory for the server to build).</p>
+<p>
+	I then took out the deny rule, and the server was pretty happy for the rest of the day (although still hovering around 50% processor usage, due to the number of page requests). The <a href="http://stlouisreview.com/">St. Louis Review site</a>, running on its own dedicated server through SoftLayer, and running with abundant page caching and file aggregation (through Drupal&#39;s built-in means), received about half as much traffic but ran a lot faster due to (a) a brand-new, very efficient server, and (b) lots of caching.</p>
+<h3>
+	A Better Fix (for Now) - Home Page .html Caching</h3>
+<p>
+	With the pressure of the Archbishop announcement past, I knew there would be another day where traffic would reach some pretty lofty heights: the day of the <a href="http://www.archstl.org/index.php?option=com_content&amp;task=view&amp;id=899&amp;Itemid=1">Installation Mass</a>. We heavily promoted the Mass through all means possible, and advertised that it would be streamed live on our site (with up-to-the-minute pictures on the St. Louis Review site).</p>
+<p>
+	Since I didn&#39;t have time to fix all the bugs causing page caching to be more efficient on the Joomla site (www.archstl.org), I instead went the route of having a PHP script automatically update the site&#39;s home page as an html file every 5 minutes. The home page gets somewhere around 5-10,000 views every day, so this fix would help in the long run as well.</p>
+<p>
+	I found a great script online (can&#39;t find the link anymore) which I adapted (with the help of a few Twitter friends) to our site&#39;s peculiarities, and then set up a cron job on the server to run the script every five minutes. The script basically grabs the front page using PHP&#39;s file_get_contents() function, then saves it to the location you specify.</p>
+<p>
+	In addition to this, I made sure to redirect visitors to the cached .html file. For the home page, I just set the DirectoryIndex directive properly; for other pages (or for a script that will cache any page, anywhere), you&#39;ll need to write some fancy redirect rules for Apache to handle.</p>
+<p>
+	Here&#39;s the script:</p>
+<pre><?php
+
+// Uncomment below to turn on error reporting as needed.
+
+/*
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+*/
+
+/**
+ * Script is meant for caching a page on www.archstl.org in order to
+ * make the homepage load much, much faster than it would if it had to
+ * keep querying the database on each page load.
+ *
+ * The configuration.php file is included in this same directory because
+ * Joomla's index.php file requires it to be in the same directory as
+ * the script that's calling on index.php.
+ *
+ **/
+
+// Define the home page of the site.
+
+$homePage = "/home/archstl/public_html/index.html";
+
+// Delete the existing index.html file.
+
+unlink($homePage);
+
+// Get the file $filename, run the script, then save it to $contents
+
+function get_include_contents($filename) {
+   if (is_file($filename)) {
+	  
+       ob_start();
+	   
+       include $filename;
+       $contents = ob_get_contents();
+       ob_end_clean();
+       return $contents;
+   }
+   echo "no file"."<br />";
+   return false;
+}
+
+// $string is the path to the file you want to cache.
+
+$string = file_get_contents("http://www.archstl.org/");
+
+// Add a line showing when the page was last cached
+
+$string .= "\r<!-- Page cached by the supercache on " . date('m/d/Y H:i:s') . " -->";
+
+// Write the file to the cached .html file
+
+$handle = fopen("/home/archstl/public_html/index.html", "w");
+
+if (fwrite($handle, $string) === FALSE) {
+       echo "Cannot write to file.";
+       exit;
+   }
+
+echo "Success, wrote content to file!";
+
+fclose($handle);
+
+// Allow anyone (web visitors) to read the file
+
+chmod("/home/archstl/public_html/index.html", 0755);
+
+?>
+</pre>
+<p>
+	The site handled the Installation Mass day pretty well, never peaking above 50% CPU, even with both archstl.org and stlouisreview.com both hosted on the same server (unlike the day of the announcement):</p>
+<p class="rtecenter">
+	<img alt="Pageviews Graph for June 10 - Day of the Archbishop's Installation Mass" height="267" src="/sites/opensourcecatholic.com/files/user-uploads/oscatholic/pageviews-installation.png" width="568" /></p>
+<h3>
+	Long-Term Solution</h3>
+<p>
+	The above script is helping the site run pretty efficiently right now (average CPU utilization for archstl.org went down from 14-15% a day to 7-9% a day), but it would take a lot of work to get it integrated into our current Joomla system (especially since every section of the website is its own Joomla install, and would require some unique additions).</p>
+<p>
+	I&#39;m a huge fan of the Drupal <a href="http://drupal.org/project/boost">Boost</a> module, as it has performed flawlessly on the St. Louis Review drupal-based site, serving up thousands of pages a day and keeping the processor utilization and memory footprint quite tidy (<a href="http://www.midwesternmac.com/blogs/geerlingguy/using-boost-drupal-making-mcwebsite">case study here</a>), and I know there&#39;s a similar solution for WordPress (<a href="http://ocaoimh.ie/wp-super-cache/">WP Super Cache</a>), which allows html caching of everything for anonymous users. Plus, Drupal&#39;s built-in caching engines and CSS/JS aggregation options are quite amazing. The question in my mind is, where is this secret sauce for Joomla? I haven&#39;t found much in the way of high-performance options for Joomla sites, but I&#39;m keeping my eyes open.</p>
+
+  </div>
+
+
+  <div class="post-comments">
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      
+        
+        this.page.url = "http://www.opensourcecatholic.com/blog/geerlingguy/caching-page-saving-server/";
+        this.page.identifier = "node/158";
+      
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//opensourcecatholic.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Open Source Catholic</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p class="rss-subscribe">Subscribe <a href="/rss.xml">via RSS</a></p>
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://groups.google.com/forum/#!forum/open-source-catholic"><i class="fas fa-envelope"></i> <span class="username">open-source-catholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/opensourcecatholic"><i class="fab fa-github"></i> <span class="username">opensourcecatholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/oscatholic"><i class="fab fa-twitter"></i> <span class="username">oscatholic</span></a>
+
+          </li>
+          
+
+          <li>
+            <a href="https://catholicdevs.slack.com"><i class="fab fa-slack"></i> <span class="username">catholicdevs</span></a>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p>Helping Catholic developers and organizations involved in software and web development find effective solutions for spreading the Gospel of Jesus Christ.
+</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <script id="dsq-count-scr" src="//opensourcecatholic.disqus.com/count.js" async></script>
+  </body>
+
+</html>

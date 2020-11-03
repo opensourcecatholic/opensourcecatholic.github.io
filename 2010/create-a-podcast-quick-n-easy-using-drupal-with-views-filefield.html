@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Create a Podcast, Quick n' Easy, using Drupal with Views + FileField</title>
+  <meta name="description" content="After having created a few different podcasts on different Drupal sites for different purposes, using a variety of methods, I can speak with a little authori...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://www.opensourcecatholic.com/2010/create-a-podcast-quick-n-easy-using-drupal-with-views-filefield">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Catholic" href="http://www.opensourcecatholic.com/rss.xml">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+
+  <body>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2478239-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/"><img src="/sites/opensourcecatholic.com/files/airyblue-logo.png" width="100" height="97" alt="Open Source Catholic Logo"> Open Source Catholic</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        <a class="page-link" href="/archive/">Archive</a>
+        
+        <a class="page-link" href="/chat/">Chat</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Create a Podcast, Quick n' Easy, using Drupal with Views + FileField</h1>
+    <p class="post-meta">
+      <time datetime="2010-10-29T00:00:00+00:00" itemprop="datePublished">Oct 29, 2010</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jeff Geerling</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p><img alt="Podcast Logo" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/podcast.png" style="border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; float: right; width: 150px; height: 150px; " title="" />After having created a <a href="http://www.lifeisaprayer.com/catholic-car-wash">few</a> <a href="http://feeds.feedburner.com/lolsaints-podcast?format=xml">different</a> <a href="http://www.reapteam.org/podcast">podcasts</a> on different Drupal sites for different purposes, using a variety of methods, I can speak with a little authority on which methods are the best, easiest, etc. There is an <a href="http://drupal.org/project/audio">Audio</a> module, and an <a href="http://drupal.org/project/itunes">iTunes</a> module, which help with more advanced podcasting needs... but most people just want a podcast which will allow visitors to either listen while on the website, or to be able to subscribe to the podcast in iTunes or another media player.</p>
+<p>If your needs are relatively simple, it&#39;s quite easy to get a podcast up and running on your Drupal website:</p>
+<h3>Step 1 - Make a Podcast-ready Content Type</h3>
+<p>In one of your content types, add a <a href="http://drupal.org/project/filefield">filefield</a> that allows the uploading of MP3 and/or M4A files, and create a podcast episode or two. Make sure you set the filefield&#39;s display to &#39;Generic Files&#39; for the RSS display settings (at&nbsp;admin/content/node-type/[your-node-type]/display/rss).</p>
+<p><em>(You can also use something like <a href="http://drupal.org/project/swftools">SWF Tools</a>&nbsp;to display a player for the file for regular (&quot;Basic&quot;) node views&mdash;so people can play the audio file without having to open your feed in iTunes. Otherwise files will just display as links to the downloadable file).</em></p>
+<h3>Step 2 - Make a View with a Page and Feed Display</h3>
+<p>Now, create a view, and in that view, create a list of all your podcast nodes (nodes that have the MP3/M4A files attached) on a Page display, then create a Feed display that shows a few episodes, and attach that Feed display to the Page display.</p>
+<h3>Step 3 - Avoid a Hassle by Burning Your Feed</h3>
+<p><a href="feedburner.google.com/"><img alt="FeedBurner Logo" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/FeedBurner-Logo-200_0.png" style="border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; float: right; width: 200px; height: 40px; " title="" /></a>Many would recommend trying to get the feed working properly with iTunes by using the aforementioned iTunes module or some other hackery, but there&#39;s a much easier option: <a href="http://feedburner.google.com/">FeedBurner</a>. You need to set up an account with FeedBurner. Then use FeedBurner to &#39;burn&#39; one of your feeds&mdash;be sure to check the &#39;I am a podcaster!&#39; checkbox. Fill out all the relevant details, and then look at what your FeedBurner URL is (mine, for example, is http://feeds.feedburner.com/<strong>reviewcast-podcast</strong> - this is for the <a href="http://stlouisreview.com/reviewcast">ReviewCast</a>).</p>
+<p>Install the <a href="http://drupal.org/project/feedburner">FeedBurner</a> module on your Drupal site, and then go to its settings page. Click the &#39;Burn feed&#39; tab to add your new feed - you&#39;ll need to know the path to the Feed display that you configured in your View earlier, and the FeedBurner URL (just use the part that&#39;s bolded above).</p>
+<h3>Step 4 - Profit?</h3>
+<p>Now, clear all your caches (in case the feed you had in your views was cached already), and you should have a podcast page which not only allows site visitors to play files directly, but also offers iTunes (or other service) subscriptions. You can submit your FeedBurner URL to iTunes&#39; Podcast directory if you&#39;d like to be included.</p>
+<p>Nice!</p>
+
+  </div>
+
+
+  <div class="post-comments">
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      
+        
+        this.page.url = "http://www.opensourcecatholic.com/blog/oscatholic/create-podcast-quick-n-e/";
+        this.page.identifier = "node/345";
+      
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//opensourcecatholic.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Open Source Catholic</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p class="rss-subscribe">Subscribe <a href="/rss.xml">via RSS</a></p>
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://groups.google.com/forum/#!forum/open-source-catholic"><i class="fas fa-envelope"></i> <span class="username">open-source-catholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/opensourcecatholic"><i class="fab fa-github"></i> <span class="username">opensourcecatholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/oscatholic"><i class="fab fa-twitter"></i> <span class="username">oscatholic</span></a>
+
+          </li>
+          
+
+          <li>
+            <a href="https://catholicdevs.slack.com"><i class="fab fa-slack"></i> <span class="username">catholicdevs</span></a>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p>Helping Catholic developers and organizations involved in software and web development find effective solutions for spreading the Gospel of Jesus Christ.
+</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <script id="dsq-count-scr" src="//opensourcecatholic.disqus.com/count.js" async></script>
+  </body>
+
+</html>

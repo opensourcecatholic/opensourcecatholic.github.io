@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Catholic News Live - Simple iPhone App for Catholic News</title>
+  <meta name="description" content="About a week after completing work on the first release of the Archdiocese of St. Louis' "Catholic STL" app, I decided to spend a few nights and weekends wor...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://www.opensourcecatholic.com/2011/catholic-news-live-simple-iphone-app-for-catholic-news">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Catholic" href="http://www.opensourcecatholic.com/rss.xml">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+
+  <body>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2478239-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/"><img src="/sites/opensourcecatholic.com/files/airyblue-logo.png" width="100" height="97" alt="Open Source Catholic Logo"> Open Source Catholic</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        <a class="page-link" href="/archive/">Archive</a>
+        
+        <a class="page-link" href="/chat/">Chat</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Catholic News Live - Simple iPhone App for Catholic News</h1>
+    <p class="post-meta">
+      <time datetime="2011-03-17T00:00:00+00:00" itemprop="datePublished">Mar 17, 2011</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jeff Geerling</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>About a week after completing work on the first release of the Archdiocese of St. Louis' "Catholic STL" app, I decided to spend a few nights and weekends working on a more personal project...</p>
+<p>A few months ago, I was browsing the App Store, looking for a simple Catholic news app where I could quickly browse through the latest Catholic news from a relatively comprehensive array of sources. Seeing none, and realizing that my experimental '<a href="http://catholicnewslive.com/">Catholic News Live</a>' website already had the data I needed to build my own app, I decided to port some of the code from Catholic STL, and write my own app—<a href="http://catholicnewslive.com/about/mobile-app">Catholic News Live</a>, or CNL for short.</p>
+<p style="text-align: center;"><a href="http://itunes.apple.com/us/app/catholic-news-live/id422525557?mt=8"><img src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/App%20Icon.png" alt="Catholic News Live App Icon" width="125" height="125" /></a></p>
+<!--break-->
+<p>All the news data, which is gathered using the <a href="http://managingnews.com/">Managing News</a> Drupal distribution, which uses the <a href="http://drupal.org/project/feeds">Feeds</a> module, a <a href="http://drupal.org/project/geotaxonomy">Geotaxonomy</a> module, and some other glue modules, is fed into the app through a custom feed that has the news article title, URI, summary, and lat/long information.</p>
+<p>I basically parse that data in a feed at app launch time, and whenever the user refreshes the feed, then display the data either in a list, or on a world map (at one point, I was displaying all news—including stories without a location—on the map, but it took about 10 seconds for the iPhone to drop all the news pins!).</p>
+<p>Well, anyways, version 1.0 of the CNL (Catholic News Live) app is finally up for sale on the App Store, and I'm already squashing a few bugs for version 1.1, and working on a couple (small) new features.</p>
+<p>I'm starting to actually wrap my mind around memory management and performance optimizations on the iPhone—knowledge that will definitely help as multi-core processors start arriving in these mobile devices! Want to know more? Ask in the comments!</p>
+<ul><li>See the official page for the app: <strong><a href="http://catholicnewslive.com/about/mobile-app">Catholic News Live - Mobile App</a></strong>.</li><li>Buy the app: <strong><a href="http://itunes.apple.com/us/app/catholic-news-live/id422525557?mt=8">$0.99 on the App Store</a></strong>.</li></ul>
+<p>Listed below are a few of the bits and pieces of other open-source software I used in building the app; these are some invaluable tools to help anyone building an app to make it work as well/as intuitively as many other iOS apps, without doing quite so much grunt work:</p>
+<ul><li><a href="http://www.getsharekit.com/">ShareKit</a> - for sharing news on Twitter, Facebook, Instapaper, etc.</li><li><a href="http://www.midwesternmac.com/jjgwebview">JJGWebView</a> - a simple UIWebView class for the iPhone (developed by yours truly).</li><li><a href="https://github.com/enormego/EGOTableViewPullRefresh">EGOTableViewPullRefresh</a> - for the pull-to-refresh action in the news article listing.</li></ul>
+
+  </div>
+
+
+  <div class="post-comments">
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      
+        
+        this.page.url = "http://www.opensourcecatholic.com/blog/oscatholic/catholic-news-live-simpl/";
+        this.page.identifier = "node/378";
+      
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//opensourcecatholic.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Open Source Catholic</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p class="rss-subscribe">Subscribe <a href="/rss.xml">via RSS</a></p>
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://groups.google.com/forum/#!forum/open-source-catholic"><i class="fas fa-envelope"></i> <span class="username">open-source-catholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/opensourcecatholic"><i class="fab fa-github"></i> <span class="username">opensourcecatholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/oscatholic"><i class="fab fa-twitter"></i> <span class="username">oscatholic</span></a>
+
+          </li>
+          
+
+          <li>
+            <a href="https://catholicdevs.slack.com"><i class="fab fa-slack"></i> <span class="username">catholicdevs</span></a>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p>Helping Catholic developers and organizations involved in software and web development find effective solutions for spreading the Gospel of Jesus Christ.
+</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <script id="dsq-count-scr" src="//opensourcecatholic.disqus.com/count.js" async></script>
+  </body>
+
+</html>

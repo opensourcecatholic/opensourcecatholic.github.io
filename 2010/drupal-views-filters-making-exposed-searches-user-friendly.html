@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Drupal Views Filters: Making Exposed Searches User-Friendly</title>
+  <meta name="description" content="	One of the main new features of the Archdiocese of Saint Louis&#39; website (to launch on February 22!) is the much-improved parish and school&nbsp;searchin...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://www.opensourcecatholic.com/2010/drupal-views-filters-making-exposed-searches-user-friendly">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Catholic" href="http://www.opensourcecatholic.com/rss.xml">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+
+  <body>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2478239-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/"><img src="/sites/opensourcecatholic.com/files/airyblue-logo.png" width="100" height="97" alt="Open Source Catholic Logo"> Open Source Catholic</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        <a class="page-link" href="/archive/">Archive</a>
+        
+        <a class="page-link" href="/chat/">Chat</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Drupal Views Filters: Making Exposed Searches User-Friendly</h1>
+    <p class="post-meta">
+      <time datetime="2010-02-03T00:00:00+00:00" itemprop="datePublished">Feb 3, 2010</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">archstl</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>
+	One of the main new features of the Archdiocese of Saint Louis&#39; website (to launch on February 22!) is the much-improved parish and school&nbsp;searching capabilities. There are many facets to these sections of the site; everything is built using the combination of nodes built with <a href="http://drupal.org/project/cck">CCK</a>, <a href="http://drupal.org/project/views">Views</a>, and <a href="http://drupal.org/project/mapstraction">Mapstraction</a> (for Google Map interfaces).</p>
+<p class="rtecenter">
+	<img alt="Parish Search by Name" class="imagecache-300px-by-300px" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/imagecache/300px-by-300px/user-uploads/oscatholic/parish-search_0.png" title="" /></p>
+<p>
+	One of the main annoyances with most implementations of parish and school searching that I&#39;ve found (and I&#39;ve tested almost every U.S. Archdiocese&#39;s website for this functionality) is the fact that searches are extremely rigid - if you don&#39;t type in the exact terms for the title of the parish in the parish database, you won&#39;t get any results.</p>
+<p>
+	For instance, type in &quot;St. Luke,&quot; and you might get a result for St. Luke parish. However, type in &quot;Saint Luke,&quot; and you get nothing. Or, what if you type in &quot;Saints Joachim and Anne,&quot; but the parish is in the database as &quot;Sts. Joachim &amp; Anne&quot;?</p>
+<!--break-->
+<p>
+	To message search data, we used a few regex filters on the user input, and Drupal allowed us to do this pretty easily by hooking into the exposed form on the parish and school search pages.</p>
+<h3>
+	Hooking into Views&#39; Exposed Forms</h3>
+<p>
+	First, you&#39;ll have to <a href="http://drupal.org/node/206753">create a custom module</a> for your Drupal site. Inside that custom module, you&#39;ll use a hook_form_alter() to alter the user input of the views exposed form just before it&#39;s submitted to the search. Here&#39;s our form_alter():</p>
+<p>
+<?php
+/**
+ * Implementation of hook_form_alter().
+ */
+function custom_form_alter(&$form, $form_state, $form_id) {
+  if ($form_id == 'views_exposed_form') {
+    // Add custom validation form for parish search
+    if ($form['#parameters']['1']['view']->name == 'parish_directory') {
+      $form['#validate'][] = 'custom_parish_form_switcheroo';
+    }
+  }
+}
+?></p>
+<p>
+	We are using a &quot;parish_directory&quot; view, so we tell hook_form_alter to only apply our custom function, &#39;custom_parish_form_switcheroo,&#39; to the parish name search form.</p>
+<p>
+	And here&#39;s our custom function, which takes the form data as entered by the user, applies some regular expression replacements (using PHP&#39;s preg_replace()), and then sends that data to the search filter:</p>
+<p>
+<?php
+/**
+ * Makes parish search easier.
+ */
+function custom_parish_form_switcheroo($form, &$form_state) {
+  // Convert abbreviations (like "St.", "Sts.", "St", "St")
+  // Also, sometimes there is a "/" right before the "St." part, so strip that
+  $form_state['values']['name'] = preg_replace('/^(\/)?st(s)?(\.)? /i', '$1Saint$2 ', $form_state['values']['name']);
+  // Change ampersand to "and" ("Joachim & Ann" becomes "Joachim and Ann")
+  $form_state['values']['name'] = preg_replace('/&/i', 'and', $form_state['values']['name']);
+  // Strip "'s" (eg, "St. Sabina's" turns into "St. Sabina")
+  $form_state['values']['name'] = preg_replace("/'s$/i", '', $form_state['values']['name']);
+}
+?></p>
+<p>
+	Using these rules, we are able to allow people to search for &quot;St., &quot;Saint,&quot; &quot;Sts.,&quot; &quot;Saints,&quot; &quot;St,&quot; etc... they can also type in &quot;Saint Sabina&#39;s,&quot; and get the proper result. basically, we&#39;re allowing users to not have to worry as much about data purity.</p>
+<p>
+	In an ideal world, Views would provide a built-in &#39;<a href="http://googledna.blogspot.com/2006_06_01_googledna_archive.html">did you mean</a>&#39; filter, but until then, we&#39;ll have to improve user experience in Views searching using baby steps...</p>
+<p>
+	<em>I would like to thank <a href="/users/joel-stein">Joel Stein</a> for his excellent help in setting up this feature on the Archdiocesan website!</em></p>
+
+  </div>
+
+
+  <div class="post-comments">
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      
+        
+        this.page.url = "http://www.opensourcecatholic.com/blog/archstl/drupal-views-filters-mak/";
+        this.page.identifier = "node/207";
+      
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//opensourcecatholic.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Open Source Catholic</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p class="rss-subscribe">Subscribe <a href="/rss.xml">via RSS</a></p>
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://groups.google.com/forum/#!forum/open-source-catholic"><i class="fas fa-envelope"></i> <span class="username">open-source-catholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/opensourcecatholic"><i class="fab fa-github"></i> <span class="username">opensourcecatholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/oscatholic"><i class="fab fa-twitter"></i> <span class="username">oscatholic</span></a>
+
+          </li>
+          
+
+          <li>
+            <a href="https://catholicdevs.slack.com"><i class="fab fa-slack"></i> <span class="username">catholicdevs</span></a>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p>Helping Catholic developers and organizations involved in software and web development find effective solutions for spreading the Gospel of Jesus Christ.
+</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <script id="dsq-count-scr" src="//opensourcecatholic.disqus.com/count.js" async></script>
+  </body>
+
+</html>

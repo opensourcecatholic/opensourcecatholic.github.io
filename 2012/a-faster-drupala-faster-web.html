@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Faster Drupal—a Faster Web</title>
+  <meta name="description" content="I just sent a new note to the Flocknote Development list about making Flocknote speedier. Flocknote is a very complex web application, and at the beginning o...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://www.opensourcecatholic.com/2012/a-faster-drupala-faster-web">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Catholic" href="http://www.opensourcecatholic.com/rss.xml">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+
+  <body>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2478239-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/"><img src="/sites/opensourcecatholic.com/files/airyblue-logo.png" width="100" height="97" alt="Open Source Catholic Logo"> Open Source Catholic</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        <a class="page-link" href="/archive/">Archive</a>
+        
+        <a class="page-link" href="/chat/">Chat</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">A Faster Drupal—a Faster Web</h1>
+    <p class="post-meta">
+      <time datetime="2012-09-25T00:00:00+00:00" itemprop="datePublished">Sep 25, 2012</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jeff Geerling</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>I just sent a new note to the Flocknote Development list about <a href="http://www.flocknote.com/note/59251">making Flocknote speedier</a>. Flocknote is a very complex web application, and at the beginning of this summer, I noticed that some pages were taking more than a second to generate on our server (that’s <em>before</em> the page would be sent to the end user!).</p>
+
+<p>Investigating the performance problems using <a href="http://dev.mysql.com/doc/refman/5.0/en/using-explain.html">MySQL’s EXPLAIN</a>, the PHP profiler <a href="https://github.com/facebook/xhprof">XHProf</a>, and Drupal’s <a href="http://drupal.org/project/devel">Devel</a> module, I found the culprits to be some inefficient and memory-hungry caches and some inefficient database queries. Applying a couple patches that are in development for Drupal, and adding a couple indexes on different tables more than halved average page load time.</p>
+
+<p>I also am actively trying to get these patches accepted into Drupal core and the Views module. Once the patches are incorporated, millions of other Drupal websites and applications will be able to conserve memory and clock cycles as well. You could easily substitute ‘Wordpress’, ‘Joomla’, ‘DotNetNuke’, or any other CMS or platform for ‘Drupal’ here.</p>
+
+<p>When we shave milliseconds off page load times, or optimize CSS and JavaScript to conserve CPU time on an end user’s computer or mobile device, we are not only <a href="http://googlewebmastercentral.blogspot.com/2010/04/using-site-speed-in-web-search-ranking.html">making end users happier</a>, we’re effectively:</p>
+
+<ul>
+<li>Conserving battery life, and thus recharging time—reducing power demands altogether.</li>
+<li>Making end users enjoy (and thus continue) using our websites and products.</li>
+<li>Allowing for more free memory and CPU time on our servers, which in turn increases capacity.</li>
+</ul>
+
+<p>These are <em>very real</em> benefits of pursuing better performance. Do you performance test your code when you add new features? Do you run something like <a href="https://developers.google.com/speed/pagespeed/">Google PageSpeed</a> to make sure your fancy new scripted widget doesn’t kill performance on older Android devices, iPhones, and PCs?</p>
+
+<p>Just like with rampant misuse of Adobe Flash everywhere in the early part of this millenium, many people seem to be adding features, effects and widgets wily-nily to their sites and platforms with little regard for their frying servers or those using the sites. Do you <em>really</em> need a <a href="http://www.iangeorge.net/snippets/tags/">3D tag cloud</a> on your site, when it costs tons more time to generate on the backend, and tons of time to render in a browser?</p>
+
+<p>Consider learning about improved performance techniques and incorporating performance testing in all the development you do—no matter what kind of software platform or website you’re building. And if you can help large web platforms like Drupal, Wordpress and Joomla work faster using less memory, that’s a win for everyone.</p>
+
+  </div>
+
+
+  <div class="post-comments">
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      
+        
+        this.page.url = "http://www.opensourcecatholic.com/blog/jeff-geerling/faster-drupal-faster-web/";
+        this.page.identifier = "node/454";
+      
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//opensourcecatholic.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Open Source Catholic</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p class="rss-subscribe">Subscribe <a href="/rss.xml">via RSS</a></p>
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://groups.google.com/forum/#!forum/open-source-catholic"><i class="fas fa-envelope"></i> <span class="username">open-source-catholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/opensourcecatholic"><i class="fab fa-github"></i> <span class="username">opensourcecatholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/oscatholic"><i class="fab fa-twitter"></i> <span class="username">oscatholic</span></a>
+
+          </li>
+          
+
+          <li>
+            <a href="https://catholicdevs.slack.com"><i class="fab fa-slack"></i> <span class="username">catholicdevs</span></a>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p>Helping Catholic developers and organizations involved in software and web development find effective solutions for spreading the Gospel of Jesus Christ.
+</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <script id="dsq-count-scr" src="//opensourcecatholic.disqus.com/count.js" async></script>
+  </body>
+
+</html>

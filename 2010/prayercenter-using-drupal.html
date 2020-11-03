@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PrayerCenter (using Drupal)</title>
+  <meta name="description" content="	The Archdiocese of Saint Louis&#39; website has always had a very widely-used and useful prayer request functionality. Anyone in the world can submit a pray...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://www.opensourcecatholic.com/2010/prayercenter-using-drupal">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Catholic" href="http://www.opensourcecatholic.com/rss.xml">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+
+  <body>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2478239-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/"><img src="/sites/opensourcecatholic.com/files/airyblue-logo.png" width="100" height="97" alt="Open Source Catholic Logo"> Open Source Catholic</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        <a class="page-link" href="/archive/">Archive</a>
+        
+        <a class="page-link" href="/chat/">Chat</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">PrayerCenter (using Drupal)</h1>
+    <p class="post-meta">
+      <time datetime="2010-02-22T00:00:00+00:00" itemprop="datePublished">Feb 22, 2010</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jeff Geerling</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>
+	The Archdiocese of Saint Louis&#39; website has always had a very widely-used and useful prayer request functionality. Anyone in the world can submit a prayer request, and every prayer request is moderated and prayed for by contemplative sisters in the Archdiocese.</p>
+<p class="rtecenter">
+	<img alt="Old Prayer Center Form" class="imagecache-300px-by-300px" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/imagecache/300px-by-300px/user-uploads/oscatholic/old-prayer-request_1.png" title="" /><br />
+	The old prayer request form</p>
+<p>
+	The website first had an online contact form, and all prayer requests were submitted by email. However, after some time, this got to be quite a burden (hundreds of requests were coming in every day!). The Archdiocese used a Joomla! component, <a href="http://extensions.joomla.org/extensions/miscellaneous/religion/1988">PrayerCenter</a>, to handle the prayer requests for some time, with some custom modifications to speed up the workflow of moderating hundreds (some days, many hundreds!) of prayer requests. PrayerCenter is pretty good, but is not as modular and able to be customized as I would like.</p>
+<p class="rtecenter">
+	<img alt="Create Prayer Request Form" class="imagecache-300px-by-300px" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/imagecache/300px-by-300px/user-uploads/oscatholic/create-prayer-request.png" title="" /><br />
+	The new prayer request form</p>
+<p>
+	The new <a href="https://palantir.archstl.org/node/add/prayer-request">prayer request form</a> (visible to end users) is highly optimized, and much more user-friendly. It limits the amount of characters in a prayer request, and using jQuery, shows the user how many characters he has remaining. Going completely custom allowed us to also tweak every last detail to our liking, meaning we didn&#39;t have confusing PrayerCenter branding here and there.</p>
+<!--break-->
+<p>
+	PrayerCenter was working okay for a while, but every few months, when the number of prayer requests would hit something like 50,000, the request form would lock up (Prayer Center was not built to handle this kind of volume), and the database would have to be reset.</p>
+<p>
+	When the Archdiocese decided to rebuild its website in 2009, I had to ensure this prayer request functionality was present (first of all), but I also wanted to improve its usability and optimize the moderation process.</p>
+<h3>
+	Drupal CCK, Content Types, and Views: Building Blocks</h3>
+<p>
+	To begin, I set up a &quot;Prayer Request&quot; content type, and set it to have the following fields:</p>
+<ul>
+	<li>
+		<strong>First Name/Initials</strong> (this is the default &#39;Title&#39; field)</li>
+	<li>
+		<strong>Prayer Request</strong>: This CCK textarea field allows 750 characters, to make sure that prayer requests don&#39;t go on too long (our moderators don&#39;t have all day, you know!).</li>
+	<li>
+		<strong>&#39;Keep Private&#39;</strong> on/off checkbox</li>
+</ul>
+<p>
+	By default, Prayer Requests are unpublished (this way nobody can see them except for the prayer request moderators.</p>
+<p class="rtecenter">
+	<img alt="Prayer Requests Page" class="imagecache-300px-by-300px" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/imagecache/300px-by-300px/user-uploads/oscatholic/prayer-requests.png" title="" /><br />
+	The new prayer requests page</p>
+<p>
+	I then set up a view that does three things:</p>
+<ol>
+	<li>
+		<em>Shows a public listing of &#39;approved&#39; (i.e. &quot;Published&quot;) prayer requests</em>. Anybody can view this page here: <a href="http://archstl.org/prayer/requests">Prayer Requests</a></li>
+	<li>
+		<em>Shows a listing of all the prayer requests marked Private</em>. A volunteer summarizes all these prayer requests and sends that summary to the contemplative sisters for prayer. After the volunteer reads all the requests (she will check a box next to each one as she reads them), she uses <a href="http://drupal.org/project/views_bulk_operations">Views Bulk Operations</a> (VBO) to mass-delete them.</li>
+	<li>
+		<em>Shows a listing of all the submitted prayer requests that are unpublished</em> (ready for moderation). The moderator can click &#39;Publish&#39; next to the prayer request, or click in the body of the prayer request to edit it (using AJAX - I used the <a href="http://drupal.org/project/editablefields">Editable Fields</a> and the <a href="http://drupal.org/project/publishcontent">Publish Content</a> modules to enable this functionality).</li>
+</ol>
+<p class="rtecenter">
+	<img alt="Prayer Requests - Moderation" class="imagecache-300px-by-300px" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/imagecache/300px-by-300px/user-uploads/oscatholic/prayer-request-moderation.png" title="" /><br />
+	The Moderation Page</p>
+<p class="rtecenter">
+	<img alt="Private Prayer Requests" class="imagecache-300px-by-300px" src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/imagecache/300px-by-300px/user-uploads/oscatholic/private-prayer-moderation.png" title="" /><br />
+	The Private Prayer Requests page</p>
+<p>
+	After setting up the views, I simply put everything into a &#39;Request a Prayer&#39; menu, then put that menu&#39;s block on all the various prayer request-related pages.</p>
+<h3>
+	RSS Feed of Prayers</h3>
+<p>
+	Using Drupal&#39;s <a href="http://drupal.org/project/views">Views</a>, it&#39;s pretty easy to create RSS/news feeds for whatever you want. We created a feed to go along with the Prayer Requests page, which shows <a href="http://archstl.org/prayer/requests/rss.xml">the last 40 prayer requests</a> posted to the website.</p>
+<p>
+	Using two of Drupal&#39;s most used modules (Views and <a href="http://drupal.org/project/cck">CCK</a>, which is now built into Drupal 7), we&#39;ve replicated pretty much the entire core of the PrayerCenter module for Joomla... except this system can handle trillions of prayer requests before we&#39;ll even have to think about the size of the database!</p>
+
+  </div>
+
+
+  <div class="post-comments">
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      
+        
+        this.page.url = "http://www.opensourcecatholic.com/blog/oscatholic/free-alternative-prayerc/";
+        this.page.identifier = "node/204";
+      
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//opensourcecatholic.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Open Source Catholic</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p class="rss-subscribe">Subscribe <a href="/rss.xml">via RSS</a></p>
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://groups.google.com/forum/#!forum/open-source-catholic"><i class="fas fa-envelope"></i> <span class="username">open-source-catholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/opensourcecatholic"><i class="fab fa-github"></i> <span class="username">opensourcecatholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/oscatholic"><i class="fab fa-twitter"></i> <span class="username">oscatholic</span></a>
+
+          </li>
+          
+
+          <li>
+            <a href="https://catholicdevs.slack.com"><i class="fab fa-slack"></i> <span class="username">catholicdevs</span></a>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p>Helping Catholic developers and organizations involved in software and web development find effective solutions for spreading the Gospel of Jesus Christ.
+</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <script id="dsq-count-scr" src="//opensourcecatholic.disqus.com/count.js" async></script>
+  </body>
+
+</html>

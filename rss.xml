@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Source Catholic</title>
+    <description>Helping Catholic developers and organizations involved in software and web development find effective solutions for spreading the Gospel of Jesus Christ.
+</description>
+    <link>http://www.opensourcecatholic.com/</link>
+    <atom:link href="http://www.opensourcecatholic.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 03 Nov 2020 18:35:46 +0000</pubDate>
+    <lastBuildDate>Tue, 03 Nov 2020 18:35:46 +0000</lastBuildDate>
+    <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Semina Verbi: an online encylopedia of the influence of the Gospel on human culture</title>
+        <description>&lt;h2 id=&quot;open-knowledge&quot;&gt;Open knowledge&lt;/h2&gt;
+
+&lt;p&gt;Reading up on some of the past posts in this community, I see there have been a number of posts about open access to information, 
+in particular (in this context) as regards the Catholic faith. Access to the biblical texts, access to the Catechism and magisterial documents…
+When a project is open source, it has a good possibility of surviving over time if it is able to create a community, 
+because it remains accessible to the community even when the original people behind the project might not be able to continue developing the project.&lt;/p&gt;
+
+&lt;p&gt;Bringing knowledge to the masses was and is the big hope of Wikipedia, which has become a cultural phenomenon in it’s own right.
+“Jimbo” Wales and others with him made a big wager when they started the wikipedia project: they trusted the community in making knowledge available to the community.
+This model has a number of drawbacks, because it is easy for a lot of personal opinion rather than true scientific knowledge to be disseminated through such a platform.
+And thus the need for an organized community, with internal politics, so as to handle abuse of the platform.
+And yet, with all the limits and drawbacks of this open model and community effort, the project has come quite a ways, 
+and you can effectively find a lot of useful information which is readily indexed by search engines. 
+Nowadays, almost any question you might have, if you type it into a search engine, you are almost guaranteed to get some result from wikipedia.&lt;/p&gt;
+
+&lt;p&gt;Seeing how it is something we do have to take into account, becoming a tool that people are starting to use in their daily lives, 
+even though the quality of the contents cannot always be guaranteed, and seeing that the software that this platform is built on (MediaWiki) is also Open Source software
+released to the community so as to be able to make other similar wiki style encyclopedias, I’ve been thinking over the past decade or so that it would be useful,
+as Catholics, to not only contribute to Wikipedia in a scientific manner so as to contribute to the quality level of the contents,
+but also to use these same platforms to build open knowledge encyclopedias about christianity.&lt;/p&gt;
+
+&lt;p&gt;There are some very useful treasure troves of information out there already using this line of reasoning, such as &lt;a href=&quot;https://www.cathopedia.org/wiki/Main_Page&quot;&gt;Cathopedia&lt;/a&gt;, 
+which has lots of information about theological topics and about church history and about the Catholic church today. Quite a praiseworthy initiative, with a lot of potential,
+which can still use a lot of community contribution to make it the useful tool that it aspires to be.&lt;/p&gt;
+
+&lt;p&gt;But other than an encyclopedia about Catholicism in general, over the past few years I’ve had in mind a project that would bring to light the way in which the Gospel 
+(and the Word of God in general) has influenced human culture, human creativity and expression in the arts. More of a cultural project than a theological project,
+and yet a Catholic project nonetheless. This dialogue between faith and human expression is present in Saint Paul when he preaches in the Areopagus of Athens, 
+it was the great effort of Saint Justin who coined the term “Seeds of the Word” in trying to translate the Gospel message into the language of greek philosophy
+thus creating the foundations of Catholic philosophy. Saint Justin considered those elements of truth found in human culture to be a “seed of the Word”, 
+planted by God as Creator in human culture even if those humans didn’t know God or His Word. The approach of Saint Justin is that of a very positive approach to human culture
+and expression, and was a big encouragement in expressing the message of the Gospel through the means of human culture and expression.&lt;/p&gt;
+
+&lt;h2 id=&quot;seeds-of-the-word&quot;&gt;Seeds of the Word&lt;/h2&gt;
+
+&lt;p&gt;Over the centuries, how much artwork, music, philosophy, literature has been inspired by the message of the Gospel. And other than direct inspiration, 
+we can still think in the same terms as Saint Justin, of those expressions of humanity that even without knowing God or having any intent of evangelizing,
+may yet contain seeds of truth that are reflections of the Gospel message. Wouldn’t it be wonderful to bring all of this to light, in a wiki style encylopedia?&lt;/p&gt;
+
+&lt;p&gt;Once you start digging, there’s a whole universe of information out there along these lines. And yet, it would be very useful to bring it to light, 
+to help people see that christianity is not just some niche in society, and christians are not a minority of people who should be ashamed of who they are and what they think.
+Christianity, or more specifically the message of the Gospel, helps society to become more human and humane! It brings out the best of beauty that mankind has to offer.&lt;/p&gt;
+
+&lt;p&gt;I don’t want to get lost in too many words now, I’ll get right to the point: I have set out to undertake such a project, 
+and after experimenting a few times with the MediaWiki platform in the past few years, I believe I have finally succeeded in running a stable instance.
+So the &lt;a href=&quot;https://seminaverbi.bibleget.io/&quot;&gt;Semina Verbi wiki&lt;/a&gt; is born and is open to community collaboration, in an orderly fashion.
+In an orderly fashion means that it is not open to the general public, so as to avoid spam and abuse. It is sufficient to request access, 
+and if the necessary Catholic and scientific qualities of the person requesting access can be verified, community collaboration is more than welcome.&lt;/p&gt;
+
+&lt;p&gt;As a proof of concept of how I envision the project, I have started creating the following pages, which are obviously open to contributions by approved editors:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ENGLISH&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.seminaverbi.bibleget.io/wiki/Main_Page&quot;&gt;Main Page&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.seminaverbi.bibleget.io/wiki/Daredevil_(TV_series)&quot;&gt;Daredevil (TV series)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.seminaverbi.bibleget.io/wiki/Fringe_(TV_series)&quot;&gt;Fringe (TV series)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.seminaverbi.bibleget.io/wiki/Pyotr_Ilyich_Tchaikovsky&quot;&gt;Pyotr Ilyich Tchaikovsky&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;ITALIAN&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://it.seminaverbi.bibleget.io/wiki/Pagina_principale&quot;&gt;Pagina Principale&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://it.seminaverbi.bibleget.io/wiki/Il_Signore_degli_Anelli&quot;&gt;Il Signore degli Anelli&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://it.seminaverbi.bibleget.io/wiki/Daredevil_(serie_televisiva)&quot;&gt;Daredevil (serie televisiva)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://it.seminaverbi.bibleget.io/wiki/Dark_(serie_televisiva)&quot;&gt;Dark (serie televisiva)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://it.seminaverbi.bibleget.io/wiki/La_vita_%C3%A8_meravigliosa&quot;&gt;La vita è meravigliosa&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://it.seminaverbi.bibleget.io/wiki/Matrix_(trilogia)&quot;&gt;Matrix (trilogia)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://it.seminaverbi.bibleget.io/wiki/Il_Miglio_Verde_(film)&quot;&gt;Il Miglio Verde (film)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://it.seminaverbi.bibleget.io/wiki/Harry_Potter&quot;&gt;Harry Potter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://it.seminaverbi.bibleget.io/wiki/Pinocchio&quot;&gt;Pinocchio&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Anyone who is available to contribute, let me know, let’s build this community together!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 12 Oct 2020 13:56:00 +0000</pubDate>
+        <link>http://www.opensourcecatholic.com/2020/encyclopedia-influence-gospel-human-culture</link>
+        <guid isPermaLink="true">http://www.opensourcecatholic.com/2020/encyclopedia-influence-gospel-human-culture</guid>
+        
+        
+        <category>bible</category>
+        
+        <category>evangelization</category>
+        
+        <category>culture</category>
+        
+      </item>
+    
+      <item>
+        <title>Bringing the Word of God to the desktop and to websites</title>
+        <description>&lt;p&gt;There are a number of projects out there that publish Bible texts online. You can look up Bible verses, and even compare between versions.&lt;/p&gt;
+
+&lt;p&gt;That’s great for just consulting a Bible verse. But what if you want to quote a Bible verse in a document, or on a website?&lt;/p&gt;
+
+&lt;p&gt;Most people would go to one of the websites where you can find an online version of the Bible, copy the verses they are interested in, and paste them into their document (or webpage).
+But then you probably have to reformat the text, and depending how long it is, it can become a cumbersome task. You might mistakenly delete or alter a word in the Bible quote.
+If you’re not careful about which website you’re consulting, you might not even be getting an authentic source of the Bible text. 
+Maybe you don’t even know what version of the Bible you’re copying and pasting from, if you’re not careful and informed in Bible studies.&lt;/p&gt;
+
+&lt;p&gt;A few years ago, a priest in a parish I was in showed me a Macro for Microsoft Word, which could retrieve a Bible quote from BibleWorks, if BibleWorks was installed on the computer.
+That was a great little tool. However, it was not officially published anywhere, it was just some little tool someone had made and passed around.
+And BibleWorks is not free software, not everyone can afford to have this kind of software. And back at the time, there weren’t any Catholic versions of the Bible in BibleWorks.
+I tried contacting the developers at some point to ask why that would be the case, and they answered that they hadn’t been able to gain the rights for usage of the Catholic versions of the Bible.&lt;/p&gt;
+
+&lt;p&gt;So I started developing the idea, why not make a tool that is a little bit more official. A tool that can be published, that people can download and use from official sources. 
+And I thought, even though having Bible versions locally in order to work offline can guarantee usage in all cases, it is however a challenge to prevent the Bible texts from being fully copied and published without consent of the rightful copyright owners.
+And, it can be a challenge to protect the sources of the Bible texts from being modified or overwritten.&lt;/p&gt;
+
+&lt;p&gt;So I thought about the idea of creating an API, an endpoint which can be interrogated by an application, and receive in response the text of the Bible verse or verses from the desired version or versions of the Bible.
+APIs are becoming a thing today, so it seemed fit to develop using modern technologies. And producing data from an endpoint in a format such as XML or better yet JSON can guarantee the possibility of consuming the data from any application.&lt;/p&gt;
+
+&lt;p&gt;So I set out creating the BibleGet endpoint which can now be found at &lt;a href=&quot;https://query.bibleget.io&quot;&gt;https://query.bibleget.io&lt;/a&gt; . The website that presents the project can be found at &lt;a href=&quot;https://www.bibleget.io&quot;&gt;https://www.bibleget.io&lt;/a&gt; .&lt;/p&gt;
+
+&lt;p&gt;And I set out to create a few plugins, to demonstrate in practice the consumption of the endpoint by an application. With patience and constance and a little bit of help from some friends for a heads up here and there,
+I was able to produce the following plugins:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;BibleGet plugin for OpenOffice&lt;/li&gt;
+  &lt;li&gt;BibleGet plugin for LibreOffice&lt;/li&gt;
+  &lt;li&gt;BibleGet plugin for Microsoft Word&lt;/li&gt;
+  &lt;li&gt;BibleGet plugin for Google Docs&lt;/li&gt;
+  &lt;li&gt;BibleGet plugin for WordPress&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Having recently started a MediaWiki installation (&lt;a href=&quot;https://seminaverbi.bibleget.io&quot;&gt;https://seminaverbi.bibleget.io&lt;/a&gt;), I have started somewhat of an integration into the mediawiki software, however it’s just a first attempt. Even though it’s in a working state, more progress is required to turn it into a stable and installable extension.&lt;/p&gt;
+
+&lt;p&gt;I believe these are all in a functioning state. I have received a few positive feedbacks, I’ve fixed a couple bugs which prevented one plugin or another from working on one system or another.
+Unfortunately many people will download and maybe even use the plugins without giving any feedback, so a little bit of a sense of uncertainty is always there…
+I would be glad if anyone in the OpenSourceCatholic community could try out the plugins and give their feedback!&lt;/p&gt;
+
+&lt;p&gt;Of course the API endpoint and the plugins are also a work in progress, and it can be a lot of work seeing that programming is not my main occupation.
+Being a Catholic priest, I have other duties. 
+However programming is a passion, I enjoy doing it, I enjoy problem solving and it can be satisfying to see the result and to receive encouragement from people who find these tools useful.
+Perhaps in a next post I can outline some of the problems I am currently trying to solve, in order to enhance some of these projects.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 07 Oct 2020 12:35:00 +0000</pubDate>
+        <link>http://www.opensourcecatholic.com/2020/bringing-the-word-of-God-to-your-desktop</link>
+        <guid isPermaLink="true">http://www.opensourcecatholic.com/2020/bringing-the-word-of-God-to-your-desktop</guid>
+        
+        
+        <category>bible</category>
+        
+        <category>api</category>
+        
+        <category>plugins</category>
+        
+      </item>
+    
+      <item>
+        <title>Migration to Jekyll and GitHub Pages from Drupal site</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/jekyll-github-pages.png&quot; alt=&quot;Jekyll and GitHub Pages&quot; class=&quot;center-image&quot; width=&quot;600&quot; height=&quot;230&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After almost eight years with Open Source Catholic as a Drupal 7 website hosted on infrastructure generously provided by &lt;a href=&quot;http://www.midwesternmac.com/&quot;&gt;Midwestern Mac&lt;/a&gt;, I migrated &lt;em&gt;all&lt;/em&gt; the Drupal site content into a static Jekyll-powered site hosted on GitHub Pages (thanks to a suggestion from &lt;a href=&quot;https://github.com/iloveitaly&quot;&gt;Michael Bianco&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;To maintain consistency we migrated &lt;em&gt;everything&lt;/em&gt;, including comments and forum topics (we’re now using Disqus for commenting), and made sure all the old link paths were redirected to the new Jekyll structure.&lt;/p&gt;
+
+&lt;p&gt;Please let us know if you find any problems on this new version of the site by adding an issue to the &lt;a href=&quot;https://github.com/opensourcecatholic/opensourcecatholic.github.io&quot;&gt;Open Source Catholic&lt;/a&gt; website repository on GitHub.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 06 Jan 2016 03:44:58 +0000</pubDate>
+        <link>http://www.opensourcecatholic.com/2016/migration-to-jekyll</link>
+        <guid isPermaLink="true">http://www.opensourcecatholic.com/2016/migration-to-jekyll</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+        <category>github</category>
+        
+        <category>pages</category>
+        
+        <category>drupal</category>
+        
+        <category>migrate</category>
+        
+      </item>
+    
+      <item>
+        <title>Open Source Catholic - moving towards a more open site</title>
+        <description>&lt;p&gt;I just wanted to post an update at the end of 2015; as stated in &lt;a href=&quot;/blog/jeff-geerling/future-open-source&quot;&gt;The Future of Open Source Catholic&lt;/a&gt;, I wanted to find a way to move this site forward, being honest that I probably won’t have a lot of time to do much &lt;em&gt;myself&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;My main goals in doing so are to ensure Catholic developers and companies who are interested in OSS and an ‘open’ philosophy in their technological development have a central resource to learn and share ideas and software.&lt;/p&gt;
+
+&lt;p&gt;Some of the earliest suggestions have always been to make &lt;em&gt;everything&lt;/em&gt; a blog post, and to that end, I’m going to work on a migration from the current site (which is built on Drupal 7 and integrates with Apache Solr search) to a static Jekyll site hosted on GitHub pages.&lt;/p&gt;
+
+&lt;p&gt;I’ve already set up the &lt;a href=&quot;https://github.com/open-source-catholic&quot;&gt;Open Source Catholic&lt;/a&gt; organization on GitHub, inside which the new site content will reside (in a public/open repository, which anyone can fork and contribute to), and I hope that with a little time and some assistance, we can get &lt;em&gt;everything&lt;/em&gt;, including hopefully all the helpful comments and forum posts, migrated into a new static site.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 28 Dec 2015 00:00:00 +0000</pubDate>
+        <link>http://www.opensourcecatholic.com/2015/open-source-catholic-moving-towards-a-more-open-site</link>
+        <guid isPermaLink="true">http://www.opensourcecatholic.com/2015/open-source-catholic-moving-towards-a-more-open-site</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Open source is 'only reliable way' to preserve human history, argues Vatican</title>
+        <description>&lt;p&gt;From &lt;a href=&quot;http://www.theinquirer.net/inquirer/news/2407221/open-source-is-only-reliable-way-to-preserve-human-history-argues-vatican&quot;&gt;The Inquirer&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;&quot;The main question at the start of our project was which format to save the texts. We needed to make sure [people] could still read the digital files in 50 years' time.&quot;
+
+Ammenti explained that, in order for the manuscripts to be readable, the Vatican Library opted for open source tools that do not require proprietary platforms, such as Microsoft Office, to be read.&lt;/blockquote&gt;
+
+&lt;p&gt;Ammenti goes on to explain that the Vatican has chosen to use the &lt;a href=&quot;http://en.wikipedia.org/wiki/FITS&quot;&gt;FITS&lt;/a&gt; image format in order to preserve digitized scans of manuscripts and other works for decades, hopefully centuries, into the future.&lt;/p&gt;
+
+&lt;p&gt;See past post on OSC: &lt;a href=&quot;/blog/oscatholic/vatican-secret-archive&quot;&gt;Vatican Secret Archive is Digitizing to Open FITS Format&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 09 May 2015 00:00:00 +0000</pubDate>
+        <link>http://www.opensourcecatholic.com/2015/open-source-is-only-reliable-way-to-preserve-human-history-argues-vatican</link>
+        <guid isPermaLink="true">http://www.opensourcecatholic.com/2015/open-source-is-only-reliable-way-to-preserve-human-history-argues-vatican</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>5 Things Every Parish Website Should Have in 2015</title>
+        <description>&lt;p&gt;Every year it’s important to assess your website to understand things that work and don’t work. With Easter season’s arrival, now is the perfect time to renew your website for some “spring cleaning.”&lt;/p&gt;
+
+&lt;p&gt;In this article, we will go over 5 things every parish website should have this year in 2015. We’ve prepared this as a checklist that includes a combination of website tools, content suggestions, and general functions. Before we begin, it’s important for you to treat this guide as a way to enhance a well-founded Catholic church website. If your parish has a website that looks like it’s from the 90’s, this guide won’t help as there’s no substitute for sub-par quality.&lt;/p&gt;
+
+&lt;p&gt;And so we begin!&lt;/p&gt;
+
+&lt;h2 id=&quot;1-mass-times&quot;&gt;1. Mass Times&lt;/h2&gt;
+
+&lt;p&gt;Some people might find this obvious, but we’ve personally experienced and went through too many Catholic websites that fail to easily and accurately provide the #1 most sought-after information: mass times.&lt;/p&gt;
+
+&lt;p&gt;The bottom line is that the most popular reason someone visits a Catholic church website is to find out what time mass is provided at your parish. So why make that an obstacle for your website visitors? Having correct mass times and other service times listed visibly on the homepage can be one of the most effective thing you can do to improve the usability of your church website. Give the people what they want!&lt;/p&gt;
+
+&lt;p&gt;One good example of a parish website doing this right is the Church of the Good Shepherd in Los Angeles. When you arrive on their homepage, you can clearly find their mass times listed under the “Join Us This Weekend” box to the right, along with a link underneath to their full schedule of services. It’s a simple thing to feature on your church website that often gets overlooked.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-mobile-friendly&quot;&gt;2. Mobile-Friendly&lt;/h2&gt;
+
+&lt;p&gt;Did you know that about 51% of the world’s population uses a mobile device? If half the people nowadays are checking websites from their phone or tablet, it’s a necessity to make your website mobile-friendly. In addition, this year Google announced they will incorporate mobile-friendliness into their algorithms. If you’re website isn’t mobile-friendly by April 21, chances are your website won’t even show up in the search results for someone using a mobile device. That leaves your parish website in the dust.&lt;/p&gt;
+
+&lt;p&gt;If you want to check if your website is mobile-friendly, click here to use a tool created by Google.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-image-gallery&quot;&gt;3. Image Gallery&lt;/h2&gt;
+
+&lt;p&gt;Show some personality! With websites trending to be more visual and less wordy, maintaining an updated image gallery will significantly enhance the browsing experience. It also gives a nice inside look to the type of community involved at your church. This is important for building your parish “brand,” showing the great people of your congregation, and attaching a “face” to your mission.&lt;/p&gt;
+
+&lt;p&gt;A church is like a home, and anyone searching for a new home would want to see how it looks before buying. Having photos of the chapel, recreation centers, ministry leaders, youth activities, church-wide functions, and special events are just some of the many areas you can showcase for your parish.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, it’s easy to install an image gallery into your website. There are tons of image gallery platforms that you can use to integrate into your website. With a platform like Instagram, it’s a dual benefit because it allows you to build an image gallery while also gaining the benefits of social media. If you have a website built on a CMS (Content Management System) such as Wordpress, it’s as easy as installing a plugin like “Instagram Feed.”&lt;/p&gt;
+
+&lt;h2 id=&quot;4-easy-donations&quot;&gt;4. Easy Donations&lt;/h2&gt;
+
+&lt;p&gt;Let’s face it, when it comes to asking for donations it’s often met with resistance, inconvenience, and neglect. But it’s a necessary aspect of our Catholic Church as we are built on people’s charity. So imagine trying to get someone to make a donation to your church using a complicated system that is neither intuitive nor user-friendly.&lt;/p&gt;
+
+&lt;p&gt;Having an easy-to-use donation platform will take away one less barrier from receiving donations. To recommend some tools, here are a few that we came across:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;PayPal Donations: A well-known platform used by many churches around the world, PayPal has a trusting company image that won’t scare away your potential donors. It’s also very easy-to-use and donors don’t have to register for an account to send money.&lt;/li&gt;
+  &lt;li&gt;Google Checkout: Through a program called Google Grant, nonprofits can use the Google Checkout system entirely for free since all fees are waived. Yup, that means you pay absolutely nothing to accept donations. The only drawback is that donors must be registered with a Google account to send money.&lt;/li&gt;
+  &lt;li&gt;Network for Good: They offer a more robust platform specifically designed for nonprofits. You can create event pages, integrate different payment methods, organize online fundraisers, and even manage monthly recurring donations. With no set-up costs or monthly fees, they are also very affordable as you pay just the transaction price.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;5-social-media-integration&quot;&gt;5. Social Media Integration&lt;/h2&gt;
+
+&lt;p&gt;Social media has become a huge aspect of our lives today, especially if you own a mobile device. As the smartphone becomes better, social media becomes more accessible.&lt;/p&gt;
+
+&lt;p&gt;Good communication is key to building good relationships. When you have social media integrated into your website, it shows that your church is serious about expanding in the digital medium. More importantly, social media integration shows that you care about maintaining open dialogue with your parishioners outside the church every day of the week.&lt;/p&gt;
+
+&lt;p&gt;Facebook, Twitter, and Instagram are the most popular platforms used today. If you don’t have accounts created for your parish already, it’s time to get started now. Once you have your social media profiles setup, the most basic integration you can do is placing the profile links on your website. This will eventually lead your users to following your respective pages, and then joining the conversation. Social media can be used as an important part of online evangelization when used correctly. It has the power to reach an audience that we’ve never thought imaginable. Now that the future is here, we shouldn’t fall behind.&lt;/p&gt;
+
+&lt;p&gt;We understand that it can be difficult to make any improvements to your website with the lack of manpower—that’s why we’re here to help. If you need help getting any of the above-mentioned features onto your website, click here to use our contact form to send us a message at any time and we’ll respond within a day. We will provide you with a free consultation, review, and recommendation on how to improve your parish website.&lt;/p&gt;
+
+&lt;p&gt;So how ready is your Catholic church website for 2015? Let us know in the comments below. How many things can you check off?&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Apr 2015 00:00:00 +0000</pubDate>
+        <link>http://www.opensourcecatholic.com/2015/5-things-every-parish-website-should-have-in-2015</link>
+        <guid isPermaLink="true">http://www.opensourcecatholic.com/2015/5-things-every-parish-website-should-have-in-2015</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>The Future of Open Source Catholic</title>
+        <description>&lt;p&gt;When I started Open Source Catholic in 2009, I was hoping to create a centralized resource for Catholics who were involved in OSS, sharing of ideas, tips and techniques for technology and web use for Catholic organizations, and a forum for Catholic software and app developers.&lt;/p&gt;
+
+&lt;p&gt;I was also employed by the Church at the time, and spent a good deal of time working on the problem of the Catholic Church being far behind tech trends in the wider tech world.&lt;/p&gt;
+
+&lt;p&gt;Times have changed, this site has basically been on mothballs for a couple years, and besides keeping the site patched for security updates, I haven’t really had any incentive/plans to keep the site or the community going.&lt;/p&gt;
+
+&lt;p&gt;If someone else in the OSC community would like to take the reins, host the site, etc., I’d be happy to turn this over to them. Otherwise, my plan at this point is to turn the site into a static site, put it on mothballs permanently, and close out the social media accounts.&lt;/p&gt;
+
+&lt;p&gt;Are there any objections? Any feedback on this plan? I’ve been putting off this decision for some time, but it seems the time has come to do something about it, as crawlers (which aren’t respecting robots.txt, and which I don’t want to spend time fighting) have begun to practically DoS the server this site is on from time to time, and activity throughout the OSC realm has dropped to basically nil.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 03 Feb 2015 00:00:00 +0000</pubDate>
+        <link>http://www.opensourcecatholic.com/2015/the-future-of-open-source-catholic</link>
+        <guid isPermaLink="true">http://www.opensourcecatholic.com/2015/the-future-of-open-source-catholic</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Church.io OneBody directory and social networking software</title>
+        <description>&lt;p&gt;While browsing Hacker News today, I noticed a neat project by Tim Morgan, &lt;a href=&quot;https://github.com/churchio/onebody&quot;&gt;OneBody&lt;/a&gt;. It is described as a “private member portal for churches” that offers “church directory and social networking” for your Church.&lt;/p&gt;
+
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://church.io/&quot;&gt;&lt;img src=&quot;/sites/opensourcecatholic.com/files/user-uploads/other/church-io-directory.png&quot; width=&quot;600&quot; height=&quot;356&quot; alt=&quot;Church.IO Directory Screenshot&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There’s a great discussion in the Hacker News thread (&lt;a href=&quot;https://news.ycombinator.com/item?id=8085213&quot;&gt;Show HN: OneBody Church Directory software I’ve been hacking on for 7 years&lt;/a&gt;), and you can get involved with the project (or just download the software) from &lt;a href=&quot;http://church.io/&quot;&gt;Church.IO&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Jul 2014 00:00:00 +0000</pubDate>
+        <link>http://www.opensourcecatholic.com/2014/church-io-onebody-directory-and-social-networking-software</link>
+        <guid isPermaLink="true">http://www.opensourcecatholic.com/2014/church-io-onebody-directory-and-social-networking-software</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>MapTiming - a web app that adds time to maps</title>
+        <description>&lt;p&gt;Hi,&lt;/p&gt;
+
+&lt;p&gt;it’s a pity that this forum attracts so little attention, because opportunities for leveraging web technologies in the church are plenty…&lt;/p&gt;
+
+&lt;p&gt;Here’s an announcement of a new app -under development- that may be useful for churches. It’s called MapTiming and the idea is to create a web app where you store information about upcoming events or schedules. You store location information as well as calendar date and time. The events are displayed on a map, and can be filtered based on a selected timeframe. MapTiming shows in a glance what’s going on, where and when.&lt;/p&gt;
+
+&lt;p&gt;You can follow up on the development on the blog and this article tells exactly why churches can benefit:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.maptiming.com/2014/07/03/maptiming-inspiration/&quot;&gt;http://blog.maptiming.com/2014/07/03/maptiming-inspiration/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Best regards,
+Vic&lt;/p&gt;
+
+&lt;p&gt;(cross posted on &lt;a href=&quot;https://groups.google.com/forum/?hl=en&amp;amp;fromgroups#!forum/tech-support-for-churches&quot;&gt;https://groups.google.com/forum/?hl=en&amp;amp;fromgroups#!forum/tech-support-for-churches&lt;/a&gt;)&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 03 Jul 2014 00:00:00 +0000</pubDate>
+        <link>http://www.opensourcecatholic.com/2014/maptiming-a-web-app-that-adds-time-to-maps</link>
+        <guid isPermaLink="true">http://www.opensourcecatholic.com/2014/maptiming-a-web-app-that-adds-time-to-maps</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>One of the Best Days of my Life...</title>
+        <description>&lt;p&gt;Where to begin? So much has happened; my life has changed. I guess there’s no where better to start than the beginning.&lt;/p&gt;
+
+&lt;p&gt;I became addicted to drugs around the age of 21, and continued to use drugs more and more all the way up to The Night. By that I mean the night I walked into a St. Catherine’s in Morgan Hill, CA. It was Christmas Eve, my family was all gathered at my sister’s in Gilroy for the occasion, and I was sent out to go to the store for some last minute items.&lt;/p&gt;
+
+&lt;p&gt;I had never really considered religion before, except to ponder and accept that my children would be Catholic, as their mother was (I had dated two different Catholic girls, one for 3 years, and one for almost 9 years, so I was pretty sure I would marry a Catholic). I had been attending various support groups for some time now (AA, NA, and the like), as well as been in and out of several rehabs, all with varying successes, and failures. I felt helpless and alone.&lt;/p&gt;
+
+&lt;p&gt;Upon walking out of Safeway and to my truck, the church was beckoning. I can’t quite describe it fully except to say that it felt warm, and welcome. Something I hand’t felt in a long time. I quietly slipped in the doors and stood in the back as the Priest gave his sermon. I didn’t know all the peoples responses, or what all the symbolism meant, but I was in definite aw of beauty inside the church. At the end of Mass I went to leave when a perfect stranger put out his hand and asked who I was. Before I knew it there were three or four more people gathered around as I told my story, the one I’m telling you now, except focusing much more on the time of addiction.&lt;/p&gt;
+
+&lt;p&gt;To my surprise I wasn’t shunned away, like had happened so many times before, but instead was welcomed with warm greetings, hugs, and even people praising the Lord for a Miracle. We al said our goodbyes and I went back to my sister’s to finish out the Christmas holiday with my family. I didn’t speak much of what had occurred at the time; I was still processing it myself.&lt;/p&gt;
+
+&lt;p&gt;When I arrived at home, in Trinidad, CA, a small fishing village far north of the Bay Area, I couldn’t get that experience out of my mind. I began to explore various churches of all denominations, when Robert, my church Sponsor, came into my life. Before long I knew that there was no place for me but Catholicism. I began RCIA and was baptized on Easter last year (2013).&lt;/p&gt;
+
+&lt;p&gt;I thank the Lord every day for showing me the light, for bringing Robert into my life, and for showing me how to forgive, and be forgiven. I ask our  Lord every day to continue to bless us all, and to show me how to live my life more like he would want me to: to walk in his footsteps, to be more honest, to care for others, and to be a better Catholic.&lt;/p&gt;
+
+&lt;p&gt;I just wanted to share that short testament of what is was like for me, and how great God’s glory can be!&lt;/p&gt;
+
+&lt;p&gt;Josh Madrone&lt;/p&gt;
+</description>
+        <pubDate>Fri, 28 Mar 2014 00:00:00 +0000</pubDate>
+        <link>http://www.opensourcecatholic.com/2014/one-of-the-best-days-of-my-life</link>
+        <guid isPermaLink="true">http://www.opensourcecatholic.com/2014/one-of-the-best-days-of-my-life</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

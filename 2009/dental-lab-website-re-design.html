@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dental Lab Website Re-Design</title>
+  <meta name="description" content="I'm redesigning a website for some friends of mine (who also happen to be  Catholic).&nbsp; Okay, so here is my dilemma: I'm creating a custom template in  W...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://www.opensourcecatholic.com/2009/dental-lab-website-re-design">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Catholic" href="http://www.opensourcecatholic.com/rss.xml">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+
+  <body>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2478239-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/"><img src="/sites/opensourcecatholic.com/files/airyblue-logo.png" width="100" height="97" alt="Open Source Catholic Logo"> Open Source Catholic</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        <a class="page-link" href="/archive/">Archive</a>
+        
+        <a class="page-link" href="/chat/">Chat</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Dental Lab Website Re-Design</h1>
+    <p class="post-meta">
+      <time datetime="2009-11-25T00:00:00+00:00" itemprop="datePublished">Nov 25, 2009</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Cade_One</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p><style type="text/css"></style></p>
+<div><font size="2" face="Arial">
+<p>I'm redesigning a website for some friends of mine (who also happen to be  Catholic).&nbsp; <strong>Okay, so here is my dilemma:</strong> I'm creating a custom template in  <em>Wordpress</em> (and let all the <em>Drupal</em> fans moan in unison ; )&nbsp; and I've created some  pretty cool rollover buttons that look and work great on the homepage, however,  when I click on an individual page or post, the menu bar collapses and then  disappears.&nbsp; I think I know what is causing this, but may need some  assistance!</p>
+<p>The problem is that the Preload script and the Styles script is in the  &lt;head&gt; of the &quot;header.php&quot; file.&nbsp; Then the Onload script and the Slices  scripts are in the &lt;body&gt;.&nbsp; I think the problem is where I have my &lt;div  id=&quot;wrapper&quot;&gt; and &lt;div id=&quot;header&quot;&gt; placed.&nbsp; I have it placed in the  body, after the Onload script and before the slices scripts.&nbsp; Can you put the  &lt;div id=&quot;wrapper&quot;&gt; and &lt;div id=&quot;header&quot;&gt; in the &lt;head&gt;???</p>
+<p>Please don't get mad at me, if I should know this.&nbsp; I'm kind of learning this  stuff on my own.&nbsp; When I was in college (10 years ago) web design was basically  HTML&nbsp;and Java.</p>
+<p>Here is a before and after shot of what the site currently looks like (done  by someone else) and what it may look like if I figure this out.&nbsp; I'm trying to  keep a simple and clean look to the site.&nbsp; When I think of dental lab, I don't  want to see a black background, the generic navigational bar, and the old 90's  visitor's counter!&nbsp; It needs to look professional.</p>
+</font></div>
+<p><img width="508" height="600" align="middle" src="http://humblepod.com/images/temp/oldsite1.jpg" alt="Old Site" /></p>
+<p>(Right-Click and &quot;View Image&quot; to see actual size)</p>
+<p><img width="508" height="600" align="middle" src="http://humblepod.com/images/temp/newsite1.jpg" alt="New Site" /></p>
+<p class="rteleft"><font size="2" face="Arial"><a href="http://humblepod.com/images/temp/hollandwoodsmiles/hollandwood_menu4.html">Here</a>  is what the menu should look like (which it works great on the home  page) <br />
+</font></p>
+
+  </div>
+
+
+  <div class="post-comments">
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      
+        
+        this.page.url = "http://www.opensourcecatholic.com/forum/topics/166/";
+        this.page.identifier = "node/166";
+      
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//opensourcecatholic.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Open Source Catholic</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p class="rss-subscribe">Subscribe <a href="/rss.xml">via RSS</a></p>
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://groups.google.com/forum/#!forum/open-source-catholic"><i class="fas fa-envelope"></i> <span class="username">open-source-catholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/opensourcecatholic"><i class="fab fa-github"></i> <span class="username">opensourcecatholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/oscatholic"><i class="fab fa-twitter"></i> <span class="username">oscatholic</span></a>
+
+          </li>
+          
+
+          <li>
+            <a href="https://catholicdevs.slack.com"><i class="fab fa-slack"></i> <span class="username">catholicdevs</span></a>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p>Helping Catholic developers and organizations involved in software and web development find effective solutions for spreading the Gospel of Jesus Christ.
+</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <script id="dsq-count-scr" src="//opensourcecatholic.disqus.com/count.js" async></script>
+  </body>
+
+</html>

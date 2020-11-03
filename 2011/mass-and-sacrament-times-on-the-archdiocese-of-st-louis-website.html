@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mass and Sacrament Times on the Archdiocese of St. Louis' Website</title>
+  <meta name="description" content="One question I’m often asked by many other diocesan web development teams/individuals is how we put together our online Mass Time search (also used for searc...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://www.opensourcecatholic.com/2011/mass-and-sacrament-times-on-the-archdiocese-of-st-louis-website">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Catholic" href="http://www.opensourcecatholic.com/rss.xml">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+
+  <body>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2478239-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/"><img src="/sites/opensourcecatholic.com/files/airyblue-logo.png" width="100" height="97" alt="Open Source Catholic Logo"> Open Source Catholic</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        <a class="page-link" href="/archive/">Archive</a>
+        
+        <a class="page-link" href="/chat/">Chat</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Mass and Sacrament Times on the Archdiocese of St. Louis' Website</h1>
+    <p class="post-meta">
+      <time datetime="2011-02-10T00:00:00+00:00" itemprop="datePublished">Feb 10, 2011</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jeff Geerling</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>One question I’m often asked by many other diocesan web development teams/individuals is how we put together our online Mass Time search (also used for searching adoration and reconciliation times). We also get questions about how we do our online mapping—but I’ve already covered that (see: <a href="/blog/oscatholic/beautiful-easy-maps-drup">Beautiful, Easy Maps in Drupal using Views and Mapstraction</a>).</p>
+
+<p style="text-align: center;"><a href="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/search-for-mass-time-ash-wednesday.png"><img src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/imagecache/300px-by-300px/user-uploads/oscatholic/search-for-mass-time-ash-wednesday.png" alt="Mass Times Search Interface" style="border: 0px initial initial;" class="imagecache-300px-by-300px" /></a><br />The Archdiocesan <a href="http://archstl.org/parishes/mass-times">Mass Times search</a> interface (click to enlarge)</p>
+
+<p>We already have a database provided by the Archdiocesan IT department (they maintain it with the help of our diocesan Parish Support staff, and parish secretaries who can update their own schedules and information), so we needed to do the following on the web:</p>
+
+<ul>
+  <li>Import all the Sacrament time information and attach it to a parish node (so times/days could be affiliated with parishes).</li>
+  <li>Display the time information on parish node pages, in a meaningful way.</li>
+  <li>Allow users to search by Sacrament times, showing parishes on a map, and showing the Sacrament times in a list under the map.</li>
+</ul>
+
+<p>I’ll cover each of these important aspects of our website’s functionality below.</p>
+
+<p><em>Preliminary note: much of this code was provided originally by the great folks at <a href="http://www.palantir.net/">Palantir</a>, who helped us set up this and many other features on the Archdiocesan website…</em></p>
+
+<h2 id="importing-time-information-attaching-it-to-parish-nodes">Importing time information, attaching it to Parish nodes</h2>
+
+<p>The first step in the process is importing some 3,000+ parish event nodes (which contain data for each ‘event’ - the event time, the event type (Mass/Reconciliation/Adoration), whether the event is a ‘Normal Service’ or a special kind of Mass, the location of the event (often in a side chapel or somewhere else), the event day, and the reference for the parish to which the event is attached.</p>
+
+<p>Our site uses the <a href="http://drupal.org/project/migrate">Migrate</a> module to import all the data, and we have the module set up to import all the events first, then import the Parishes, attaching the events to parishes (through custom code) using a node reference.</p>
+
+<p>The CSV file containing the parish event data contains over 3,000 lines of information like the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>29,"362",1,37,48,"07:30","",0,"","English"
+</code></pre></div></div>
+
+<p>Our migrate import takes that line, creates a new node with the information, then later, while importing parish nodes, attaches all event nodes affiliated with that parish to the parish node itself. Then, as they say, the magic happens (via a nodereference field).</p>
+
+<p>Here’s the code we use to prepare our parish event node via the migrate import process:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="k">function</span> <span class="n">dir_migrate_prep_parish_event</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$node</span><span class="p">,</span> <span class="nv">$tblinfo</span><span class="p">,</span> <span class="nv">$row</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Just stick on a filler title</span>
+  <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">title</span> <span class="o">=</span> <span class="s2">"Parish event #"</span> <span class="mf">.</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="n">peventkey</span><span class="p">;</span>
+
+  <span class="c1">// Normalize the dates</span>
+  <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_start</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">int</span><span class="p">)</span> <span class="nb">substr</span><span class="p">(</span><span class="nb">str_replace</span><span class="p">(</span><span class="s1">':'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="n">jos_dir_paevents_evtime</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+  <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_end</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">int</span><span class="p">)</span> <span class="nb">substr</span><span class="p">(</span><span class="nb">str_replace</span><span class="p">(</span><span class="s1">':'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="n">jos_dir_paevents_evendtime</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+
+  <span class="c1">// Add taxo from event types</span>
+  <span class="nv">$mt</span> <span class="o">=</span> <span class="nf">dir_migrate_get_map_table</span><span class="p">(</span><span class="s1">'pe-type'</span><span class="p">);</span>
+  <span class="nv">$term</span> <span class="o">=</span> <span class="nf">taxonomy_get_term</span><span class="p">(</span><span class="nf">db_result</span><span class="p">(</span><span class="nf">db_query</span><span class="p">(</span><span class="s2">"SELECT destid FROM </span><span class="nv">$mt</span><span class="s2"> WHERE sourceid = %d"</span><span class="p">,</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="n">jos_dir_paevents_fkpesptypekey</span><span class="p">)));</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nv">$term</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">taxonomy</span><span class="p">[</span><span class="nv">$term</span><span class="o">-&gt;</span><span class="n">tid</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$term</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Add taxo from event days</span>
+  <span class="nv">$mt</span> <span class="o">=</span> <span class="nf">dir_migrate_get_map_table</span><span class="p">(</span><span class="s1">'pe-time'</span><span class="p">);</span>
+  <span class="nv">$term</span> <span class="o">=</span> <span class="nf">taxonomy_get_term</span><span class="p">(</span><span class="nf">db_result</span><span class="p">(</span><span class="nf">db_query</span><span class="p">(</span><span class="s2">"SELECT destid FROM </span><span class="nv">$mt</span><span class="s2"> WHERE sourceid = %d"</span><span class="p">,</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="n">jos_dir_paevents_fkevday</span><span class="p">)));</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nv">$term</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">taxonomy</span><span class="p">[</span><span class="nv">$term</span><span class="o">-&gt;</span><span class="n">tid</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$term</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>We basically sanitize the dates coming in from the database (we want them in standard time/0000 format), and then we add taxonomy terms to the dates.
+While importing parish nodes, among other things, we attach the parish event nid to the parish node’s masstimes/adorationtimes/reconciliationtimes nodereference fields:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="nv">$mt</span> <span class="o">=</span> <span class="nf">dir_migrate_get_map_table</span><span class="p">(</span><span class="s1">'parish-event'</span><span class="p">);</span>
+<span class="nv">$fields</span> <span class="o">=</span> <span class="nf">dir_migrate_evtype_field_mapping</span><span class="p">();</span>
+<span class="nv">$result</span> <span class="o">=</span> <span class="nf">db_query</span><span class="p">(</span><span class="s2">"SELECT mt.destid AS nid, e.fkpettypekey AS type
+  FROM jos_dir_parish AS p
+  INNER JOIN jos_dir_paevents AS e ON p.pnumber = e.fkpnumber
+  INNER JOIN </span><span class="nv">$mt</span><span class="s2"> AS mt ON e.peventkey = mt.sourceid
+  WHERE p.pnumber = %d"</span><span class="p">,</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="n">jos_dir_parish_pnumber</span><span class="p">);</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="nv">$record</span> <span class="o">=</span> <span class="nf">db_fetch_object</span><span class="p">(</span><span class="nv">$result</span><span class="p">))</span> <span class="p">{</span>
+  <span class="nv">$node</span><span class="o">-&gt;</span><span class="p">{</span><span class="nv">$fields</span><span class="p">[</span><span class="nv">$record</span><span class="o">-&gt;</span><span class="n">type</span><span class="p">]}[]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">'nid'</span> <span class="o">=&gt;</span> <span class="nv">$record</span><span class="o">-&gt;</span><span class="n">nid</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="displaying-event-time-information-in-the-nodes">Displaying Event Time Information in the Nodes</h2>
+<p>To display the time information in a particular node, we simply did a bit of theming magic. It’s not the most highly performant bit of code in the world, but it works.
+First, we set up a field_formatter and theme function for parish event times (the following code samples are all from our site’s custom.module):</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cd">/**
+ * Implementation of hook_field_formatter_info()
+ */</span>
+<span class="k">function</span> <span class="n">custom_field_formatter_info</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">'parish_event_times'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+      <span class="s1">'label'</span> <span class="o">=&gt;</span> <span class="s1">'Parish Event Times'</span><span class="p">,</span>
+      <span class="s1">'field types'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">'nodereference'</span><span class="p">),</span>
+      <span class="s1">'multiple values'</span> <span class="o">=&gt;</span> <span class="no">CONTENT_HANDLE_MODULE</span><span class="p">,</span>
+    <span class="p">),</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cd">/**
+ * Implementation of hook_theme().
+ */</span>
+<span class="k">function</span> <span class="n">custom_theme</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">'custom_formatter_parish_event_times'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+      <span class="s1">'arguments'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">'element'</span><span class="p">),</span>
+    <span class="p">),</span>
+  <span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>These two functions just tell Drupal that we’re defining a custom display formatter for parish event times (that can be used in Views, on node teasers, and in full node displays), and then defines a theme function in which we’ll tell drupal how to format everything for display.</p>
+
+<p>This next function is a doozy - it basically does all the display dirtywork, and causes a performance burden on the site—if we tried displaying the mass time information for all 200 parish nodes on the site at once, the queries/processing would probably take 20-30 seconds! Therefore, we cache everything aggressively so people don’t have to wait for the following theme function to do its work—after it’s been done once in a day, it doesn’t have to go again, as we cache the resulting page for 18 hours.</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cd">/**
+ * Theming function for the "Parish Event Times" formatter.
+ */</span>
+<span class="k">function</span> <span class="n">theme_custom_formatter_parish_event_times</span><span class="p">(</span><span class="nv">$element</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nv">$days</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+
+  <span class="c1">// @TODO - Order the $element's children by day order from the taxonomy sort, then by time</span>
+  <span class="c1">// @SEE - http://archstldev.com/node/521</span>
+
+  <span class="c1">// Loop through all the parish event times, and build a nice array</span>
+  <span class="c1">// of days and the (multiple) corresponding times</span>
+  <span class="k">foreach</span> <span class="p">(</span><span class="nf">element_children</span><span class="p">(</span><span class="nv">$element</span><span class="p">)</span> <span class="k">as</span> <span class="nv">$key</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Load the node</span>
+    <span class="nv">$node</span> <span class="o">=</span> <span class="nf">node_load</span><span class="p">(</span><span class="nv">$element</span><span class="p">[</span><span class="nv">$key</span><span class="p">][</span><span class="s1">'#item'</span><span class="p">][</span><span class="s1">'nid'</span><span class="p">]);</span>
+
+    <span class="c1">// Parse and format the time</span>
+    <span class="c1">// Pad start time with leading zero if only 3 digits</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_start</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">])</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_start</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'0'</span><span class="mf">.</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_start</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="c1">// Account for perpetual adoration start time of '0' (midnight)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_start</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">])</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_start</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'0000'</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// Pad end time with leading zero if only 3 digits</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_end</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">])</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_end</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'0'</span><span class="mf">.</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_end</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="c1">// Account for perpetual adoration end time of '2400' (midnight)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_end</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'2400'</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_end</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'2359'</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nv">$time</span> <span class="o">=</span> <span class="nb">date</span><span class="p">(</span><span class="s1">'g:i a'</span><span class="p">,</span> <span class="nb">strtotime</span><span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_start</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]));</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_end</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$time</span> <span class="mf">.</span><span class="o">=</span> <span class="s1">' &amp;ndash; '</span><span class="mf">.</span><span class="nb">date</span><span class="p">(</span><span class="s1">'g:i a'</span><span class="p">,</span> <span class="nb">strtotime</span><span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_end</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]));</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Node contains taxonomy</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">taxonomy</span><span class="p">))</span> <span class="p">{</span>
+      <span class="nv">$time_data</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+      <span class="c1">// Add event type (if not "Normal Service")</span>
+      <span class="k">foreach</span> <span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">taxonomy</span> <span class="k">as</span> <span class="nv">$term</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$term</span><span class="o">-&gt;</span><span class="n">vid</span> <span class="o">==</span> <span class="mi">24</span> <span class="k">and</span> <span class="nv">$term</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">!=</span> <span class="s1">'Normal Service'</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nv">$time_data</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$term</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">;</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+      <span class="c1">// Also add event language (if not "English")</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_lang</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">])</span> <span class="k">and</span> <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_lang</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'English'</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$time_data</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_lang</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">];</span>
+      <span class="p">}</span>
+      <span class="c1">// Add event location (if any) from the field_event_loc</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_loc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]))</span> <span class="p">{</span>
+        <span class="nv">$time_data</span><span class="p">[]</span> <span class="o">=</span> <span class="s1">'&lt;em&gt;in '</span> <span class="mf">.</span> <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_loc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]</span> <span class="mf">.</span> <span class="s1">'&lt;/em&gt;'</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="c1">// Slap it on the end of the time</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$time_data</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nv">$time</span> <span class="mf">.</span><span class="o">=</span> <span class="s1">' ('</span><span class="mf">.</span><span class="nb">join</span><span class="p">(</span><span class="s1">' - '</span><span class="p">,</span> <span class="nv">$time_data</span><span class="p">)</span><span class="mf">.</span><span class="s1">')'</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Day of the week</span>
+    <span class="k">foreach</span> <span class="p">((</span><span class="k">array</span><span class="p">)</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">taxonomy</span> <span class="k">as</span> <span class="nv">$term</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nv">$term</span><span class="o">-&gt;</span><span class="n">vid</span> <span class="o">==</span> <span class="mi">21</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Grab the weight of the term for sorting (see below)</span>
+        <span class="nv">$days</span><span class="p">[</span><span class="nv">$term</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">][</span><span class="s1">'weight'</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$term</span><span class="o">-&gt;</span><span class="n">weight</span><span class="p">;</span>
+        <span class="c1">// Grab all the times</span>
+        <span class="nv">$days</span><span class="p">[</span><span class="nv">$term</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">][</span><span class="s1">'times'</span><span class="p">][]</span> <span class="o">=</span> <span class="nv">$time</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Sort the Days using the weight above (this could be improved...)</span>
+  <span class="c1">// @see http://archstldev.com/node/521</span>
+  <span class="nb">asort</span><span class="p">(</span><span class="nv">$days</span><span class="p">);</span>
+
+  <span class="c1">// Print the days and times</span>
+  <span class="nv">$output</span> <span class="o">=</span> <span class="s1">'&lt;dl class="parish-event-time"&gt;'</span><span class="p">;</span>
+  <span class="k">foreach</span> <span class="p">(</span><span class="nv">$days</span> <span class="k">as</span> <span class="nv">$day</span> <span class="o">=&gt;</span> <span class="nv">$elements</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$elements</span><span class="p">[</span><span class="s1">'times'</span><span class="p">]</span> <span class="k">as</span> <span class="o">&amp;</span><span class="nv">$time</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$time</span> <span class="o">=</span> <span class="s1">'&lt;div&gt;'</span><span class="mf">.</span><span class="nv">$time</span><span class="mf">.</span><span class="s1">'&lt;/div&gt;'</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nv">$output</span> <span class="mf">.</span><span class="o">=</span> <span class="s1">'&lt;dt&gt;'</span><span class="mf">.</span><span class="nv">$day</span><span class="mf">.</span><span class="s1">'&lt;/dt&gt;'</span><span class="p">;</span>
+    <span class="nv">$output</span> <span class="mf">.</span><span class="o">=</span> <span class="s1">'&lt;dd&gt;'</span><span class="mf">.</span><span class="nb">implode</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="nv">$elements</span><span class="p">[</span><span class="s1">'times'</span><span class="p">])</span><span class="mf">.</span><span class="s1">'&lt;/dd&gt;'</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nv">$output</span> <span class="mf">.</span><span class="o">=</span> <span class="s1">'&lt;/dl&gt;'</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nv">$output</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>What we basically do here is load each referenced node, then grab all the metadata for that parish event from the parish event node. Then, we display all the metadata in a nice definition list, which gets themed to look like the following:</p>
+
+<p style="text-align: center;"><img src="http://www.opensourcecatholic.com/sites/opensourcecatholic.com/files/user-uploads/oscatholic/mass-times-display.png" alt="Sacramental Time Information Display on Parish Node" width="600" height="251" /></p>
+
+<p>Looks nice, eh? Using the asort() function, we were able to <a href="http://archstldev.com/node/574">sort the times in the order of our Taxonomy</a> listing (so we could control which days would appear first…).</p>
+
+<h2 id="allow-users-to-search-by-timeday-using-views">Allow Users to Search by Time/Day using Views</h2>
+
+<p>The final step in the process was to allow users to search on the website by Mass Time (or other Sacrament times), and since we were using Views for all our other search/filtering needs, we decided to use Views to do the time search as well.
+Inside our <code class="language-plaintext highlighter-rouge">dir_migrate.module</code> (though this could live just as easily in our custom.module), we added a views handler, <code class="language-plaintext highlighter-rouge">dir_migrate_views_handler_filter_inttime</code>.</p>
+
+<p>In <code class="language-plaintext highlighter-rouge">dir_migrate/dir_migrate.module</code>:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cd">/**
+ * Implementation of hook_views_api().
+ */</span>
+<span class="k">function</span> <span class="n">dir_migrate_views_api</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">'api'</span> <span class="o">=&gt;</span> <span class="s1">'2.0'</span><span class="p">,</span>
+    <span class="s1">'path'</span> <span class="o">=&gt;</span> <span class="nf">drupal_get_path</span><span class="p">(</span><span class="s1">'module'</span><span class="p">,</span> <span class="s1">'dir_migrate'</span><span class="p">)</span> <span class="mf">.</span> <span class="s1">'/views'</span><span class="p">,</span>
+  <span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>In <code class="language-plaintext highlighter-rouge">dir_migrate/views/dir_migrate.views.inc</code>:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="k">function</span> <span class="n">dir_migrate_views_handlers</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">'info'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+      <span class="s1">'path'</span> <span class="o">=&gt;</span> <span class="nf">drupal_get_path</span><span class="p">(</span><span class="s1">'module'</span><span class="p">,</span> <span class="s1">'dir_migrate'</span><span class="p">)</span> <span class="mf">.</span> <span class="s1">'/views'</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="s1">'handlers'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+      <span class="s1">'dir_migrate_views_handler_filter_inttime'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+        <span class="s1">'parent'</span> <span class="o">=&gt;</span> <span class="s1">'views_handler_filter_numeric'</span><span class="p">,</span>
+      <span class="p">),</span>
+    <span class="p">),</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="n">dir_migrate_views_data_alter</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$data</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nv">$data</span><span class="p">[</span><span class="s1">'node_data_field_event_start2'</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">'node_data_field_event_start'</span><span class="p">];</span>
+  <span class="nv">$field</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nv">$data</span><span class="p">[</span><span class="s1">'node_data_field_event_start2'</span><span class="p">][</span><span class="s1">'field_event_start_value'</span><span class="p">];</span>
+  <span class="nb">unset</span><span class="p">(</span><span class="nv">$field</span><span class="p">[</span><span class="s1">'field'</span><span class="p">],</span> <span class="nv">$field</span><span class="p">[</span><span class="s1">'argument'</span><span class="p">],</span> <span class="nv">$field</span><span class="p">[</span><span class="s1">'sort'</span><span class="p">]);</span>
+  <span class="nv">$field</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span> <span class="o">=</span> <span class="nf">t</span><span class="p">(</span><span class="s1">'Start Time (Formatted)'</span><span class="p">);</span>
+  <span class="nv">$field</span><span class="p">[</span><span class="s1">'help'</span><span class="p">]</span> <span class="o">=</span> <span class="nf">t</span><span class="p">(</span><span class="s1">'Filter handler that translates from int storage to time of day'</span><span class="p">);</span>
+  <span class="nv">$field</span><span class="p">[</span><span class="s1">'filter'</span><span class="p">][</span><span class="s1">'handler'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'dir_migrate_views_handler_filter_inttime'</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>In <code class="language-plaintext highlighter-rouge">dir_migrate/views/dir_migrate_views_handler_filter_inttime.inc</code> (this is where we define our custom views filter…):</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="kd">class</span> <span class="nc">dir_migrate_views_handler_filter_inttime</span> <span class="kd">extends</span> <span class="nc">views_handler_filter_numeric</span> <span class="p">{</span>
+  <span class="k">function</span> <span class="n">option_definition</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nv">$options</span> <span class="o">=</span> <span class="k">parent</span><span class="o">::</span><span class="nf">option_definition</span><span class="p">();</span>
+    <span class="nv">$options</span><span class="p">[</span><span class="s1">'operator'</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">'default'</span> <span class="o">=&gt;</span> <span class="s1">'between'</span><span class="p">);</span>
+    <span class="nv">$options</span><span class="p">[</span><span class="s1">'exposed'</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">'default'</span> <span class="o">=&gt;</span> <span class="kc">TRUE</span><span class="p">);</span>
+    <span class="nv">$options</span><span class="p">[</span><span class="s1">'value'</span><span class="p">][</span><span class="s1">'contains'</span><span class="p">][</span><span class="s1">'min'</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">'default'</span> <span class="o">=&gt;</span> <span class="mi">500</span><span class="p">);</span>
+    <span class="nv">$options</span><span class="p">[</span><span class="s1">'value'</span><span class="p">][</span><span class="s1">'contains'</span><span class="p">][</span><span class="s1">'max'</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">'default'</span> <span class="o">=&gt;</span> <span class="mi">2200</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nv">$options</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">function</span> <span class="n">operators</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+      <span class="s1">'between'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+        <span class="s1">'title'</span> <span class="o">=&gt;</span> <span class="nf">t</span><span class="p">(</span><span class="s1">'Is between'</span><span class="p">),</span>
+        <span class="s1">'method'</span> <span class="o">=&gt;</span> <span class="s1">'op_between'</span><span class="p">,</span>
+        <span class="s1">'short'</span> <span class="o">=&gt;</span> <span class="nf">t</span><span class="p">(</span><span class="s1">'between'</span><span class="p">),</span>
+        <span class="s1">'values'</span> <span class="o">=&gt;</span> <span class="mi">2</span><span class="p">,</span>
+      <span class="p">),</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="k">function</span> <span class="n">value_form</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$form</span><span class="p">,</span> <span class="o">&amp;</span><span class="nv">$form_state</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Get the basic loadout from the parent</span>
+    <span class="k">parent</span><span class="o">::</span><span class="nf">value_form</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$form</span><span class="p">,</span> <span class="o">&amp;</span><span class="nv">$form_state</span><span class="p">);</span>
+
+    <span class="nv">$options</span> <span class="o">=</span> <span class="nf">int_time_increments_assoc</span><span class="p">();</span>
+
+    <span class="c1">// Make the minor modifications</span>
+    <span class="nv">$form</span><span class="p">[</span><span class="s1">'value'</span><span class="p">][</span><span class="s1">'min'</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+      <span class="s1">'#type'</span> <span class="o">=&gt;</span> <span class="s1">'select'</span><span class="p">,</span>
+      <span class="s1">'#title'</span> <span class="o">=&gt;</span> <span class="nf">t</span><span class="p">(</span><span class="s1">'Between'</span><span class="p">),</span>
+      <span class="s1">'#options'</span> <span class="o">=&gt;</span> <span class="nv">$options</span><span class="p">,</span>
+      <span class="s1">'#default_value'</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">[</span><span class="s1">'min'</span><span class="p">],</span>
+    <span class="p">);</span>
+    <span class="nv">$form</span><span class="p">[</span><span class="s1">'value'</span><span class="p">][</span><span class="s1">'max'</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+      <span class="s1">'#type'</span> <span class="o">=&gt;</span> <span class="s1">'select'</span><span class="p">,</span>
+      <span class="s1">'#title'</span> <span class="o">=&gt;</span> <span class="nf">t</span><span class="p">(</span><span class="s1">'And'</span><span class="p">),</span>
+      <span class="s1">'#options'</span> <span class="o">=&gt;</span> <span class="nv">$options</span><span class="p">,</span>
+      <span class="s1">'#default_value'</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">[</span><span class="s1">'max'</span><span class="p">],</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>…and finally, some helpful functions for our integer/time CCK field/formatting, found in <code class="language-plaintext highlighter-rouge">dir_migrate/dir_migrate.module</code>:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="c1">// ==================== CCK Bits</span>
+
+<span class="k">function</span> <span class="n">int_time_theme</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">'int_time'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">'arguments'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">'element'</span> <span class="o">=&gt;</span> <span class="kc">NULL</span><span class="p">)),</span>
+    <span class="s1">'int_time_formatter_default'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">'arguments'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">'element'</span> <span class="o">=&gt;</span> <span class="kc">NULL</span><span class="p">),</span> <span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'theme_int_time_generic'</span><span class="p">),</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="n">theme_int_time</span><span class="p">(</span><span class="nv">$element</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nv">$element</span><span class="p">[</span><span class="s1">'#children'</span><span class="p">];</span>
+<span class="p">}</span>
+<span class="cd">/**
+* Declare information about a formatter.
+*
+* @return
+*   An array keyed by formatter name. Each element of the array is an associative
+*   array with these keys and values:
+*   - "label": The human-readable label for the formatter.
+*   - "field types": An array of field type names that can be displayed using
+*     this formatter.
+*/</span>
+<span class="k">function</span> <span class="n">int_time_field_formatter_info</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">'default'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+      <span class="s1">'label'</span> <span class="o">=&gt;</span> <span class="nf">t</span><span class="p">(</span><span class="s1">'As time of day'</span><span class="p">),</span>
+      <span class="s1">'field types'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">'number_integer'</span><span class="p">),</span>
+    <span class="p">),</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="n">theme_int_time_generic</span><span class="p">(</span><span class="nv">$element</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nf">int_time_int_as_time</span><span class="p">(</span><span class="nv">$element</span><span class="p">[</span><span class="s1">'#item'</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]);</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="n">int_time_int_as_time</span><span class="p">(</span><span class="nv">$int</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nv">$string</span> <span class="o">=</span> <span class="p">(</span><span class="n">string</span><span class="p">)</span> <span class="nv">$int</span><span class="p">;</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$string</span><span class="p">))</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s1">''</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">while</span> <span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$string</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$string</span> <span class="o">=</span> <span class="s1">'0'</span> <span class="mf">.</span> <span class="nv">$string</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">list</span><span class="p">(</span><span class="nv">$hour</span><span class="p">,</span> <span class="nv">$minute</span><span class="p">)</span> <span class="o">=</span> <span class="nb">str_split</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">((</span><span class="n">int</span><span class="p">)</span> <span class="nv">$hour</span> <span class="o">&gt;=</span> <span class="mi">12</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$ex</span> <span class="o">=</span> <span class="s1">'PM'</span><span class="p">;</span>
+    <span class="nv">$hour</span> <span class="o">-=</span> <span class="mi">12</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">else</span> <span class="p">{</span>
+    <span class="nv">$ex</span> <span class="o">=</span> <span class="s1">'AM'</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nv">$hour</span> <span class="o">=</span> <span class="nb">ltrim</span><span class="p">(</span><span class="nv">$hour</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">);</span>
+  <span class="nv">$hour</span> <span class="o">=</span> <span class="nb">empty</span><span class="p">(</span><span class="nv">$hour</span><span class="p">)</span> <span class="o">?</span> <span class="s1">'12'</span> <span class="o">:</span> <span class="nv">$hour</span><span class="p">;</span>
+
+  <span class="k">return</span> <span class="s2">"</span><span class="nv">$hour</span><span class="s2">:</span><span class="nv">$minute</span><span class="s2"> </span><span class="nv">$ex</span><span class="s2">"</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cd">/**
+ * Helper function to return all possible inttimes in 15-minute increments.
+ */</span>
+<span class="k">function</span> <span class="n">int_time_increments</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+    <span class="mi">0</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span>
+    <span class="mi">100</span><span class="p">,</span> <span class="mi">115</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="mi">145</span><span class="p">,</span>
+    <span class="mi">200</span><span class="p">,</span> <span class="mi">215</span><span class="p">,</span> <span class="mi">230</span><span class="p">,</span> <span class="mi">245</span><span class="p">,</span>
+    <span class="mi">300</span><span class="p">,</span> <span class="mi">315</span><span class="p">,</span> <span class="mi">330</span><span class="p">,</span> <span class="mi">345</span><span class="p">,</span>
+    <span class="mi">400</span><span class="p">,</span> <span class="mi">415</span><span class="p">,</span> <span class="mi">430</span><span class="p">,</span> <span class="mi">445</span><span class="p">,</span>
+    <span class="mi">500</span><span class="p">,</span> <span class="mi">515</span><span class="p">,</span> <span class="mi">530</span><span class="p">,</span> <span class="mi">545</span><span class="p">,</span>
+    <span class="mi">600</span><span class="p">,</span> <span class="mi">615</span><span class="p">,</span> <span class="mi">630</span><span class="p">,</span> <span class="mi">645</span><span class="p">,</span>
+    <span class="mi">700</span><span class="p">,</span> <span class="mi">715</span><span class="p">,</span> <span class="mi">730</span><span class="p">,</span> <span class="mi">745</span><span class="p">,</span>
+    <span class="mi">800</span><span class="p">,</span> <span class="mi">815</span><span class="p">,</span> <span class="mi">830</span><span class="p">,</span> <span class="mi">845</span><span class="p">,</span>
+    <span class="mi">900</span><span class="p">,</span> <span class="mi">915</span><span class="p">,</span> <span class="mi">930</span><span class="p">,</span> <span class="mi">945</span><span class="p">,</span>
+    <span class="mi">1000</span><span class="p">,</span> <span class="mi">1015</span><span class="p">,</span> <span class="mi">1030</span><span class="p">,</span> <span class="mi">1045</span><span class="p">,</span>
+    <span class="mi">1100</span><span class="p">,</span> <span class="mi">1115</span><span class="p">,</span> <span class="mi">1130</span><span class="p">,</span> <span class="mi">1145</span><span class="p">,</span>
+    <span class="mi">1200</span><span class="p">,</span> <span class="mi">1215</span><span class="p">,</span> <span class="mi">1230</span><span class="p">,</span> <span class="mi">1245</span><span class="p">,</span>
+    <span class="mi">1300</span><span class="p">,</span> <span class="mi">1315</span><span class="p">,</span> <span class="mi">1330</span><span class="p">,</span> <span class="mi">1345</span><span class="p">,</span>
+    <span class="mi">1400</span><span class="p">,</span> <span class="mi">1415</span><span class="p">,</span> <span class="mi">1430</span><span class="p">,</span> <span class="mi">1445</span><span class="p">,</span>
+    <span class="mi">1500</span><span class="p">,</span> <span class="mi">1515</span><span class="p">,</span> <span class="mi">1530</span><span class="p">,</span> <span class="mi">1545</span><span class="p">,</span>
+    <span class="mi">1600</span><span class="p">,</span> <span class="mi">1615</span><span class="p">,</span> <span class="mi">1630</span><span class="p">,</span> <span class="mi">1645</span><span class="p">,</span>
+    <span class="mi">1700</span><span class="p">,</span> <span class="mi">1715</span><span class="p">,</span> <span class="mi">1730</span><span class="p">,</span> <span class="mi">1745</span><span class="p">,</span>
+    <span class="mi">1800</span><span class="p">,</span> <span class="mi">1815</span><span class="p">,</span> <span class="mi">1830</span><span class="p">,</span> <span class="mi">1845</span><span class="p">,</span>
+    <span class="mi">1900</span><span class="p">,</span> <span class="mi">1915</span><span class="p">,</span> <span class="mi">1930</span><span class="p">,</span> <span class="mi">1945</span><span class="p">,</span>
+    <span class="mi">2000</span><span class="p">,</span> <span class="mi">2015</span><span class="p">,</span> <span class="mi">2030</span><span class="p">,</span> <span class="mi">2045</span><span class="p">,</span>
+    <span class="mi">2100</span><span class="p">,</span> <span class="mi">2115</span><span class="p">,</span> <span class="mi">2130</span><span class="p">,</span> <span class="mi">2145</span><span class="p">,</span>
+    <span class="mi">2200</span><span class="p">,</span> <span class="mi">2215</span><span class="p">,</span> <span class="mi">2230</span><span class="p">,</span> <span class="mi">2245</span><span class="p">,</span>
+    <span class="mi">2300</span><span class="p">,</span> <span class="mi">2315</span><span class="p">,</span> <span class="mi">2330</span><span class="p">,</span> <span class="mi">2345</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="n">int_time_increments_assoc</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">static</span> <span class="nv">$assoc</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nb">is_null</span><span class="p">(</span><span class="nv">$assoc</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nv">$assoc</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="nf">int_time_increments</span><span class="p">()</span> <span class="k">as</span> <span class="nv">$int</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$assoc</span><span class="p">[</span><span class="nv">$int</span><span class="p">]</span> <span class="o">=</span> <span class="nf">int_time_int_as_time</span><span class="p">(</span><span class="nv">$int</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nv">$assoc</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><em>Wow… this is probably the longest post/code-dump I’ve ever written… sorry about that! Complex issues demand complex solutions, I guess?</em></p>
+
+<h2 id="some-things-could-be-improved">Some Things Could Be Improved…</h2>
+
+<p>Well, actually, a <em>lot</em> of things could be improved. For instance, we could avoid a lot of this custom code if there were a way to create Date fields without a month or year attached—basically, a timestamp without a fully-compliant ‘date’ attached to it—but this is currently not possible.</p>
+
+<p>Right now, I’m focusing on a few other projects, but someday I really want to tackle issue #499 on our internal tracker: <em>Create timefield module for Time CCK/Field</em>. I envision a module that allows you to add time information to a node like “Saturday, from 4 p.m. to 5 p.m.,” and then be able to filter Views results by time values alone… but I don’t know if/when I’ll get the time to do this :(</p>
+
+<p>Any other thoughts or ideas?</p>
+
+  </div>
+
+
+  <div class="post-comments">
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      
+        
+        this.page.url = "http://www.opensourcecatholic.com/blog/oscatholic/mass-and-sacrament-times/";
+        this.page.identifier = "node/373";
+      
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//opensourcecatholic.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Open Source Catholic</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p class="rss-subscribe">Subscribe <a href="/rss.xml">via RSS</a></p>
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://groups.google.com/forum/#!forum/open-source-catholic"><i class="fas fa-envelope"></i> <span class="username">open-source-catholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/opensourcecatholic"><i class="fab fa-github"></i> <span class="username">opensourcecatholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/oscatholic"><i class="fab fa-twitter"></i> <span class="username">oscatholic</span></a>
+
+          </li>
+          
+
+          <li>
+            <a href="https://catholicdevs.slack.com"><i class="fab fa-slack"></i> <span class="username">catholicdevs</span></a>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p>Helping Catholic developers and organizations involved in software and web development find effective solutions for spreading the Gospel of Jesus Christ.
+</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <script id="dsq-count-scr" src="//opensourcecatholic.disqus.com/count.js" async></script>
+  </body>
+
+</html>

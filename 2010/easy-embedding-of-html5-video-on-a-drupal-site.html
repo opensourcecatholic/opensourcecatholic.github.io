@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Easy Embedding of HTML5 Video on a Drupal Site</title>
+  <meta name="description" content="For the past year, I&#39;ve watched the HTML5&nbsp;&lt;video&gt; element debate (mostly over video formats/containers) with a great interest&mdash;I abhor ha...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://www.opensourcecatholic.com/2010/easy-embedding-of-html5-video-on-a-drupal-site">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Catholic" href="http://www.opensourcecatholic.com/rss.xml">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+
+  <body>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2478239-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/"><img src="/sites/opensourcecatholic.com/files/airyblue-logo.png" width="100" height="97" alt="Open Source Catholic Logo"> Open Source Catholic</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        <a class="page-link" href="/archive/">Archive</a>
+        
+        <a class="page-link" href="/chat/">Chat</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Easy Embedding of HTML5 Video on a Drupal Site</h1>
+    <p class="post-meta">
+      <time datetime="2010-08-05T00:00:00+00:00" itemprop="datePublished">Aug 5, 2010</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jeff Geerling</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>For the past year, I&#39;ve watched the HTML5&nbsp;&lt;video&gt; element debate (mostly over video formats/containers) with a great interest&mdash;I abhor having to use Adobe Flash on my sites to embed video, especially since that means many videos don&#39;t work on my Linux workstation (which doesn&#39;t have Flash), or on my iPhone/iPad.</p>
+<p>The HTML5 &lt;video&gt; element (and similarly, the less-supported &lt;audio&gt; element) promises to take away the stress of having to have flash players, FLV-encoded video, etc. just to show a viewer a non-static piece of content.</p>
+<p>In its simplest form, you can add the following code to embed a video on your page:</p>
+<p><code><video src="video-file.m4v"></video></code></p>
+<p>On my Drupal sites, I&#39;ve been wanting to be able to simply grab an m4v&nbsp;video exported from iMovie, QuickTime, or straight from my camera, attach it to a post via a filefield, and have it display. In the old days, I would use SWFTools&nbsp;to embed the video using Flash.</p>
+<p>I&#39;ve found a solution that, in my opinion, is much more elegant, using the &lt;video&gt; element, with a Flash fallback for Internet Explorer:</p>
+<ol>
+<li>I set up a filefield with which I can attach an m4v file to a piece of content.</li>
+<li>I enabled Custom Formatters (an excellent Drupal module for CCK), and set up a simple formatter for this filefield with the code below:</li>
+</ol>
+<!--break-->
+<p><code><div class="html5-video-player">
+  <video controls="controls" preload="none" width="640" height="360">
+    <source src="[site-url]/[filefield-filepath]" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" />
+    <object width="640" height="384" type="application/x-shockwave-flash" data="[site-url]/sites/all/libraries/flowplayer/flowplayer-3.2.2.swf">
+      <param name="movie" value="[site-url]/sites/all/libraries/flowplayer/flowplayer-3.2.2.swf" />
+      <param name="allowfullscreen" value="true" />
+      <param name="flashvars" value=" &quot;[site-url]/[filefield-filepath]&quot;, &quot;autoPlay&quot;:false, &quot;autoBuffering&quot;:false, &quot;canvas&quot;:{&quot;backgroundColor&quot;:&quot;#000000&quot;}, &quot;scaling&quot;:&quot;fit&quot;}}" />
+    </object>
+  </video>
+  <a href="[site-url]/[filefield-filepath]">Download this video (MP4)</a>
+</div></code></p>
+<p>Two caveats:</p>
+<ol>
+<li>FireFox = no-go. This probably deserves a post of its own, because I think the Mozilla people are shooting themselves in the foot on this issue, and might drag down the adoption of the &lt;video&gt; element, but they&#39;re basically not going to support H.264/m4v video. So if you want to support FireFox, you&#39;ll have to recompress your video again and upload it to another filefield&nbsp;as an OGG&nbsp;Video, then make a more advanced PHP custom formatter to add in a link to that filefield.</li>
+<li>Internet Explorer versions 8 and below will fall back to Flash. Not ideal, but that&#39;s how it is.</li>
+<li>For the video to play across all devices, you have to encode it using the H.264 baseline profile... you can encode with higher settings, but then the iPhone, iPad, or both might not play the video.</li>
+</ol>
+<p>Luckily, though, including a download link to the video will allow even the most ancient browser the ability to at least download the video for viewing apart from the browser.</p>
+<h3>Getting this working in FireFox</h3>
+<p>To get FireFox support, you'll need to modify your workflow a bit. For the video filefield, make it a two-value filefield, then set up a new Custom Formatter with the 'Advanced' editor. Use the code below (PHP) for your custom formatter, and name it something like 'Universal HTML5 Video Formatter.' Then attach an M4V file as the first filefield item, and the OGV file as the second. Voila! Every browser back to the good ol' days of IE6 is supported!</p>
+<p>&lt;?php
+// Define video file locations
+$m4v_video = ‘/’ . $element[‘#node’]-&gt;field_video_podcast[0][‘filepath’];
+$ogv_video = ‘/’ . $element[‘#node’]-&gt;field_video_podcast[1][‘filepath’];</p>
+
+<p>// Print HTML5 video code
+print ‘&lt;div class="html5-video-player"&gt;</p>
+<video controls="controls" preload="none" width="640" height="360">
+    <source src="' . $m4v_video . '" type="video/mp4" />
+    <source src="' . $ogv_video . '" type="video/ogg" />
+    <object width="640" height="384" type="application/x-shockwave-flash" data="/sites/all/libraries/flowplayer/flowplayer-3.2.2.swf">
+      <param name="movie" value="/sites/all/libraries/flowplayer/flowplayer-3.2.2.swf" />
+      <param name="allowfullscreen" value="true" />
+      &lt;param name="flashvars" value=\'config={"clip": {"url": "' . $m4v_video . '", "autoPlay":false, "autoBuffering":false, "canvas":{"backgroundColor":"#000000"}, "scaling":"fit"}}\' /&gt;
+    </object>
+  </video>
+<p>Download this video: <a href="' . $m4v_video . '">MP4</a> | <a href="' . $ogv_video . '">OGV</a>
+&lt;/div&gt;’;
+?&gt;</p>
+<p><strong>Note</strong>: I am using the 'field_video_podcast' field for my nodes - your field name might be different. Also, I used <a href="http://taylanpince.com/blog/posts/oggifier-gui-wrapper-ffmpeg2theora/">Oggifier</a> as a GUI for ffmpeg2theora, though I still maintain it's stupid to have to make two video files just to support FireFox, standards be darned. Especially when FireFox won't accept an .ogv filename with spaces (see my comment below)!</p>
+<p><em><a href="http://diveintohtml5.org/video.html">Dive into HTML5 - Video</a></em> - a great source for more info on this topic.</p>
+
+  </div>
+
+
+  <div class="post-comments">
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      
+        
+        this.page.url = "http://www.opensourcecatholic.com/blog/oscatholic/easy-embedding-html5-vid/";
+        this.page.identifier = "node/302";
+      
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//opensourcecatholic.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Open Source Catholic</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p class="rss-subscribe">Subscribe <a href="/rss.xml">via RSS</a></p>
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://groups.google.com/forum/#!forum/open-source-catholic"><i class="fas fa-envelope"></i> <span class="username">open-source-catholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/opensourcecatholic"><i class="fab fa-github"></i> <span class="username">opensourcecatholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/oscatholic"><i class="fab fa-twitter"></i> <span class="username">oscatholic</span></a>
+
+          </li>
+          
+
+          <li>
+            <a href="https://catholicdevs.slack.com"><i class="fab fa-slack"></i> <span class="username">catholicdevs</span></a>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p>Helping Catholic developers and organizations involved in software and web development find effective solutions for spreading the Gospel of Jesus Christ.
+</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <script id="dsq-count-scr" src="//opensourcecatholic.disqus.com/count.js" async></script>
+  </body>
+
+</html>
