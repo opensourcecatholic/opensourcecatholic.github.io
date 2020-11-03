@@ -16,7 +16,6 @@ post_preview_words: 77
 # Build settings
 markdown: kramdown
 exclude:
-  - CNAME
   - CONTRIBUTING.md
   - LICENSE
   - README.md
