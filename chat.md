@@ -11,12 +11,9 @@ redirect_from:
 
 ## Slack
 
-The [CatholicDevs Slack Workspace](<a href="https://catholicdevs.slack.com"><i class="fab fa-slack"></i> <span class="username">catholicdevs</span></a>
-) is a place to engage with other Catholic developers across the globe and grow together by getting to know each other, sharing our faith, and collaborating on projects.
+The <a href="https://catholicdevs.slack.com"><i class="fab fa-slack"></i> <span class="username">catholicdevs</span></a> Slack Workspace is a place to engage with other Catholic developers across the globe and grow together by getting to know each other, sharing our faith, and collaborating on projects.
 
 To join CatholicDevs on Slack, you must request an invitation.
-
-
 
 <div class="slack-invitation">
   <div id="CommunityInviter"></div>
