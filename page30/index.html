@@ -82,7 +82,7 @@
 <div class="post-content" itemprop="articleBody">
   <p>Interesting Quote from the blog '<a href="http://vitaminc.surefireorange.com/2010/why-the-ipad-makes-me-think-of-jesus/">Vitamin C</a>':</p>
 <blockquote>
-<p>How we do this through design is the big question. <strong>Our designs have to reflect Christ.</strong> We do this through demanding people’s interest, respect, and most importantly their time through our designs. Christ deserves the best designs possible. I don’t know if I speak for all people, but for me to take Church retreats, events, or other ministries serious I want to see that reflected in their designs.</p>
+<p>How we do this through design is the big question. <strong>Our designs have to reflect Christ.</strong> We do this through demanding people’s interest, respect, and most importantly their time through our designs. Christ deserves the best designs possible. I don’t know if I speak for all people, but for me to take Church retreats, events, or other ministries serious I want to see that reflected in their designs. If the design is lacking then (in my mind) the retreat must be</p>
 </blockquote>...
   <a href="/2010/our-designs-have-to-reflect-christ">Continue reading</a>
 </div>
@@ -112,7 +112,7 @@
 <!--break-->
 <ol>
 <li>
-<strong>Make people comfortable, not upset.</strong><br>The person just hit a missing</li>
+<strong>Make people comfortable, not upset.</strong><br>The person just hit a missing page, and this threw them off from whatever they may have expected. Best</li>
 </ol>...
   <a href="/2010/creating-a-more-friendly-404-page">Continue reading</a>
 </div>
@@ -165,7 +165,9 @@ I just don't have the time to work on it anymore.</p>
 
 <div class="post-content" itemprop="articleBody">
   <p>At some point during the upgrade process from Drupal 4.7.11 to 6.16 (through versions of 5.x, with contributed module updates along the way), one of my sites' files tables got screwed up. All the 'filepath' entries were converted to 'filepath' (instead of sites/example.com/files/filename.ext).</p>
-<p>Luckily, since the original 4.7.x version of the site only saved files directly under the 'files' directory, I could write a simple SQL query to update all the filepath entries in the files table:...</p>
+<p>Luckily, since the original 4.7.x version of the site only saved files directly under the 'files' directory, I could write a simple SQL query to update all the filepath entries in the files table:</p>
+<pre>UPDATE files SET filepath = CONCAT('sites/reapteam.org/files/',filename);</pre>
+<p>I ran that query, and it put...</p>
   <a href="/2010/resetting-files-table-after-drupal-4-7-x-6-x-upgrade">Continue reading</a>
 </div>
 
@@ -190,7 +192,7 @@ I just don't have the time to work on it anymore.</p>
 <div class="post-content" itemprop="articleBody">
   <p>Tip 'o the hat to the <a href="http://www.splendoroftruth.com/curtjester/2010/04/fits/">Curt Jester</a>, and originally posted on <a href="http://hardware.slashdot.org/story/10/04/28/1814221/Vatican-Chooses-Open-FITS-Image-Format">Slashdot</a>:</p>
 <blockquote>
-<p>"The Vatican Library plans to digtize 80,000 manuscripts and store them in the open data format <a href="http://en.wikipedia.org/wiki/FITS">FITS</a>, originally developed for astronomy and maintained under the IAU. The result is expected to be 40 million pages and 45 petabytes. FITS was chosen because it 'has been used for more than 40 years for the conservation of data concerning spatial missions and, in</p>
+<p>"The Vatican Library plans to digtize 80,000 manuscripts and store them in the open data format <a href="http://en.wikipedia.org/wiki/FITS">FITS</a>, originally developed for astronomy and maintained under the IAU. The result is expected to be 40 million pages and 45 petabytes. FITS was chosen because it 'has been used for more than 40 years for the conservation of data concerning spatial missions and, in the past decade, in astrophysics and nuclear medicine. It permits the conservation of</p>
 </blockquote>...
   <a href="/2010/vatican-secret-archive-is-digitizing-to-open-fits-format">Continue reading</a>
 </div>
@@ -218,7 +220,7 @@ I just don't have the time to work on it anymore.</p>
 <blockquote>
 <p>[At Drupalcon, we] organized a core developer summit with 150 attendees, 16 lightning talks, 11 breakout sessions and 1 Franciscan monk.</p>
 </blockquote>
-<p>Where are the Jesuits? The Dominicans? Any other orders? In the Archdiocese of Saint Louis, <a href="http://archstl.org/">many</a> <a href="http://stlyouth.org/">of</a> <a href="http://stlouisreview.com/">the</a> <a href="http://cycstl.net/">curial</a> <a href="http://store.stlyouth.org/">websites</a> <a href="http://idcards.cycstl.net/">are</a> <a href="http://catholicscoutingstl.org/">running</a> <a href="http://reapteam.org/">on</a> <a href="http://registration.stlyouth.org/">Drupal</a>. I...</p>
+<p>Where are the Jesuits? The Dominicans? Any other orders? In the Archdiocese of Saint Louis, <a href="http://archstl.org/">many</a> <a href="http://stlyouth.org/">of</a> <a href="http://stlouisreview.com/">the</a> <a href="http://cycstl.net/">curial</a> <a href="http://store.stlyouth.org/">websites</a> <a href="http://idcards.cycstl.net/">are</a> <a href="http://catholicscoutingstl.org/">running</a> <a href="http://reapteam.org/">on</a> <a href="http://registration.stlyouth.org/">Drupal</a>. I also hear the Legionaries have a lot of Drupal involvement (for instance, their ...</p>
   <a href="/2010/franciscan-monks-involved-in-drupal-core-development">Continue reading</a>
 </div>
 
@@ -242,7 +244,7 @@ I just don't have the time to work on it anymore.</p>
 
 <div class="post-content" itemprop="articleBody">
   <p>On the Archdiocese of Saint Louis website, we moved thousands of files around as part of our <a href="http://archstl.org/commoffice/page/evolution-archdiocesan-website">site migration</a> from 49 separate Joomla sites to Drupal. Internally, all our file links were updated. However, there are thousands of hotlinks from different websites to the Archdiocesan website (for instance, the blog American Papist hits a missing file of a Church interior about 80 times a day).</p>
-<p>This was creating a lot of overhead for the server, as Drupal...</p>
+<p>This was creating a lot of overhead for the server, as Drupal would do a full bootstrap, sending out a fully-rendered 404 page on each...</p>
   <a href="/2010/speeding-up-a-site-quicker-404-errors-for-files-in-drupal">Continue reading</a>
 </div>
 

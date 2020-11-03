@@ -126,17 +126,17 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .post-content { margin-bottom: 30px; }
 
-.post-content h2 { font-size: 32px; }
+.post-content h2 { font-size: 1.5em; }
 
-@media screen and (max-width: 800px) { .post-content h2 { font-size: 28px; } }
+@media screen and (max-width: 800px) { .post-content h2 { font-size: 1.2em; } }
 
-.post-content h3 { font-size: 26px; }
+.post-content h3 { font-size: 1.3em; }
 
-@media screen and (max-width: 800px) { .post-content h3 { font-size: 22px; } }
+@media screen and (max-width: 800px) { .post-content h3 { font-size: 1.1em; } }
 
-.post-content h4 { font-size: 20px; }
+.post-content h4 { font-size: 1.1em; }
 
-@media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
+@media screen and (max-width: 800px) { .post-content h4 { font-size: 1em; } }
 
 .center-image { margin: 0 auto; display: block; }
 
