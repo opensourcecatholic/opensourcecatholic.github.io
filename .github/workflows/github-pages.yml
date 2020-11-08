@@ -24,7 +24,7 @@ jobs:
       - name: Install Ruby dependencies.
         run: |
           gem install bundler
-          bundle install
+          bundle install --path vendor/bundle 
 
       - name: Build static site with Jekyll.
         run: bundle exec jekyll build
