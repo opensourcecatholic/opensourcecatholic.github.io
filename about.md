@@ -15,7 +15,7 @@ Our logo, which displays one of the keys to the Church (as seen on the Papal coa
 You can help this website by doing one of many things:
 
   1. Join the discussion on posts on the site.
-  2. Contribute new content to the site by following the [CONTRIBUTING](CONTRIBUTING.md) guide.
+  2. Contribute new content to the site by following the [CONTRIBUTING](https://github.com/opensourcecatholic/opensourcecatholic.github.io/blob/master/CONTRIBUTING.md) guide.
   3. Join public discussions in the [Open Source Catholic mailing list](https://groups.google.com/forum/#!forum/open-source-catholic).
   4. Pray for the Church (it works wonders!).
 
