@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Tale of the Episode Numbers Bug</title>
+  <meta name="description" content="One of the ways I put my talents as a software developer to use for the churchis I maintain the Catholic Stuff You ShouldKnow website. I love reading stories...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://www.opensourcecatholic.com/2020/the-tale-of-the-episode-numbers-bug">
+  <link rel="alternate" type="application/rss+xml" title="Open Source Catholic" href="http://www.opensourcecatholic.com/rss.xml">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+
+  <body>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2478239-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" href="/"><img src="/sites/opensourcecatholic.com/files/airyblue-logo.png" width="100" height="97" alt="Open Source Catholic Logo"> Open Source Catholic</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+        <a class="page-link" href="/about/">About</a>
+        
+        <a class="page-link" href="/archive/">Archive</a>
+        
+        <a class="page-link" href="/chat/">Chat</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">The Tale of the Episode Numbers Bug</h1>
+    <p class="post-meta">
+      <time datetime="2020-12-31T19:30:00+00:00" itemprop="datePublished">Dec 31, 2020</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Mike Kasberg</span></span>
+      
+      <br />
+      <small>
+        Categories: <span class="category-label">website, jekyll, podcast, bugs</span>
+      </small>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>One of the ways I put my talents as a software developer to use for the church
+is I maintain the <a href="https://catholicstuffpodcast.com">Catholic Stuff You Should
+Know</a> website. I love reading stories about
+interesting bugs other developers have encountered, so I thought I’d share my
+own story about a bug I recently fixed on
+<a href="https://catholicstuffpodcast.com">catholicstuffpodcast.com</a>.</p>
+
+<p>To understand the bug, it will be helpful to have a little bit of the backstory.
+The Catholic Stuff You Should Know website was
+<a href="https://web.archive.org/web/20160331001430/http://catholicstuffpodcast.com/">originally</a>
+built with <a href="https://wordpress.org/">WordPress</a>.  In 2016, I migrated the website
+off of WordPress and onto <a href="https://jekyllrb.com/">Jekyll</a> (which is what the
+site still uses today). As part of that migration, I added episode numbers to
+all of our existing episodes to help keep things organized.</p>
+
+<p>I even still have the simple PHP script I used to pull these episode numbers out
+of the audio filenames (which already had them) and add them to the Jekyll
+frontmatter for the episode so we could show the episode numbers on the website.
+It’s a little bit hacky, but it got the job done.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nv">$postFiles</span> <span class="o">=</span> <span class="nb">scandir</span><span class="p">(</span><span class="s2">"./_posts"</span><span class="p">);</span>
+
+<span class="k">foreach</span><span class="p">(</span><span class="nv">$postFiles</span> <span class="k">as</span> <span class="nv">$file</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$file</span> <span class="o">==</span> <span class="s2">"."</span> <span class="o">||</span> <span class="nv">$file</span> <span class="o">==</span> <span class="s2">".."</span><span class="p">)</span> <span class="p">{</span> <span class="k">continue</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="nv">$contents</span> <span class="o">=</span> <span class="nb">file_get_contents</span><span class="p">(</span><span class="s2">"./_posts/"</span><span class="mf">.</span><span class="nv">$file</span><span class="p">);</span>
+    <span class="nb">preg_match</span><span class="p">(</span><span class="s2">"/audio: '(\d</span><span class="si">{</span><span class="nv">1,3</span><span class="si">}</span><span class="s2">)-/"</span><span class="p">,</span> <span class="nv">$contents</span><span class="p">,</span> <span class="nv">$matches</span><span class="p">);</span>
+    <span class="nv">$number</span> <span class="o">=</span> <span class="nv">$matches</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+
+    <span class="k">print</span> <span class="nv">$number</span> <span class="mf">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+
+    <span class="nv">$contents</span> <span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">title:"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">number: </span><span class="nv">$number</span><span class="se">\n</span><span class="s2">title:"</span><span class="p">,</span> <span class="nv">$contents</span><span class="p">);</span>
+
+    <span class="nb">file_put_contents</span><span class="p">(</span><span class="s2">"./_posts/"</span><span class="mf">.</span><span class="nv">$file</span><span class="p">,</span> <span class="nv">$contents</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Recently, one of our listeners notified us that the episode numbers for some of
+our episodes from summer 2010 appeared to be incorrect. I took a peek, and sure
+enough, the listener was right!</p>
+
+<p><img src="/images/CSYSK-misnumbered-episodes.png" alt="Misnumbered Catholic Stuff You Should Know
+Episodes" /></p>
+
+<p>I looked around a little more and compiled this list of our first 24 episodes,
+as they appeared on our website.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>06 Jan 2010 · #1 Stylites
+12 Jan 2010 · #2 Indulgences
+15 Jan 2010 · #3 Prayer, Contemplation, and Liturgy
+20 Jan 2010 · #4 Tetragrammaton
+25 Jan 2010 · #5 Le Grande Chartreuse
+28 Jan 2010 · #6 Eutrapelia and The Risus Paschalis
+03 Feb 2010 · #7 Who Punched Arius?
+09 Feb 2010 · #008 Cecchina Cabrini
+18 Feb 2010 · #009 Ash Wednesday
+25 Feb 2010 · #8 Ethiopian Christianity
+03 Mar 2010 · #9 Campion's Brag
+11 Mar 2010 · #10 Gregorian Chant
+01 Apr 2010 · #11 Tenebrae
+09 Apr 2010 · #12 The Holy Sepulcher
+16 Apr 2010 · #13 Bona Coniugali
+23 Apr 2010 · #14 How to Make a Priest
+24 May 2010 · #15 Skellig Michael
+01 Jun 2010 · #019 Abstinence
+01 Jun 2010 · #018 Schisms
+15 Jun 2010 · #16 Quiz Show
+14 Sep 2010 · #17 Eros and Agape
+21 Sep 2010 · #18 New Translation of the Mass
+28 Sep 2010 · #19 When Bad Popes Go Good
+05 Oct 2010 · #20 Peter's Bones
+</code></pre></div></div>
+
+<p>If you can correctly identify the bug from that list, well done! And if you
+can’t… Neither could I, initially. I was perplexed – there’s nothing
+complicated about the way our episode numbers work. We simply pull them from the
+YAML frontmatter for the jekyll blog post. From this initial list I had
+compiled, it looked like whatever was assigning episode numbers had somehow
+ignored a few episodes in the numbering.</p>
+
+<p>Because this is a Jekyll site, each “episode” is just a “post”, which is just a
+markdown file in a folder in the repository. I broke out some Unix tools to try
+to pin down the problem. As I write this, the most recent episode on our website
+is #471. And that matches the number of files in our <code class="language-plaintext highlighter-rouge">_posts</code> directory.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ls _posts/*.md | wc -l
+471
+</code></pre></div></div>
+
+<p>Well, it’s good news that our total number of episodes matches the current
+episode number. But what the heck is going on then? Knowing that our frontmatter
+uses a <code class="language-plaintext highlighter-rouge">number:</code> key for episode numbers, I tried this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cat _posts/*.md | grep "number:" | cut -f 2 -d ' ' | sort -n
+001
+002
+003
+...
+469
+470
+471
+</code></pre></div></div>
+
+<p>At a glance, that list looks correct. Let’s look at all frontmatter “source” for
+all the numbers for all episodes from 2010.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ grep "number:" _posts/2010-*
+_posts/2010-01-06-stylites.md:number: 001
+_posts/2010-01-12-indulgences.md:number: 002
+_posts/2010-01-15-prayer-contemplation-and-liturgy.md:number: 003
+_posts/2010-01-20-tetragrammaton.md:number: 004
+_posts/2010-01-25-le-grande-chartreuse.md:number: 005
+_posts/2010-01-28-eutrapelia-and-the-risus-paschalis.md:number: 006
+_posts/2010-02-03-who-punched-arius.md:number: 007
+_posts/2010-02-09-cecchina-cabrini.md:number: 008
+_posts/2010-02-18-ash-wednesday.md:number: 009
+_posts/2010-02-25-ethiopian-christianity.md:number: 010
+...
+</code></pre></div></div>
+
+<p>Everything’s apparently correct!</p>
+
+<p>Still confused, I started looking at a specific post in more detail. I started
+with February 2010, the first month where broken posts show up. And I noticed
+that the “Ethiopian Christianity” episode was showing number 8 on the site but
+the frontmatter was number 10:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s1">'</span><span class="s">Ethiopian</span><span class="nv"> </span><span class="s">Christianity'</span>
+<span class="na">number</span><span class="pi">:</span> <span class="m">010</span>
+</code></pre></div></div>
+
+<p>Can you spot the bug? Our episode numbers were padded with zeros - a common
+practice that makes them sort correctly in filenames. (Remember, I initially
+pulled these episode numbers from our audio filenames.) But in this case, Ruby’s
+YAML parser was interpreting the number as an octal number because of the
+leading 0!</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">irb</span><span class="o">&gt;</span> <span class="nb">require</span> <span class="s1">'yaml'</span>
+<span class="n">irb</span><span class="o">&gt;</span> <span class="no">YAML</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="s2">"---</span><span class="se">\n</span><span class="s2">number: 010"</span><span class="p">)</span>
+<span class="o">=&gt;</span> <span class="p">{</span><span class="s2">"number"</span><span class="o">=&gt;</span><span class="mi">8</span><span class="p">}</span>
+</code></pre></div></div>
+
+<p>Fortunately for us, this ceases to be a problem after episode 100 (when we no
+longer have any leading zeros). So our most recent 371 episodes are numbered
+correctly. But some episodes between 1 and 100 have incorrect numbering. In
+fact, <em>most do</em>. All numbers between 7 and 100 that are valid octal numbers will
+be incorrect because only numbers 1-7 have the same representation in octal and
+base 10. Some numbers, like <code class="language-plaintext highlighter-rouge">009</code>, don’t parse correctly as an octal number. I
+think, in this case, the YAML parser falls back to a string, which is why the
+leading zeros showed up on the web for these numbers.</p>
+
+<p>Although the problem was hard to identify, The fix is easy – we just need to
+remove the leading zeros from our YAML!</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sed</span> <span class="nt">-i</span> <span class="s1">'s/number: [0]*\([1-9]*\)/number: \1/'</span> _posts/<span class="k">*</span>.md
+</code></pre></div></div>
+
+<p>So that’s how we found and fixed an episode numbering but for the Catholic Stuff
+You Should Know website. I hope you enjoyed the story. This wasn’t the first bug
+I’ve seen related to parsing octals, and it probably won’t be the last! So it’s
+good to remember this can happen any time you see a leading zero on a number -
+particularly number literals in YAML or code. And despite this small bug,
+working with Jekyll for the last 4 years has been a pleasure overall.</p>
+
+<hr />
+
+<p>Catholic Stuff You Should Know is a weekly podcast that explores Catholic
+topics. Learn more at
+<a href="https://catholicstuffpodcast.com/#about">catholicstuffpodcast.com</a>.</p>
+
+  </div>
+
+
+  <div class="post-comments">
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      
+        
+        this.page.url = "http://www.opensourcecatholic.com/2020/the-tale-of-the-episode-numbers-bug";
+        this.page.identifier = "/2020/the-tale-of-the-episode-numbers-bug";
+      
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = '//opensourcecatholic.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Open Source Catholic</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <p class="rss-subscribe">Subscribe <a href="/rss.xml">via RSS</a></p>
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://groups.google.com/forum/#!forum/open-source-catholic"><i class="fas fa-envelope"></i> <span class="username">open-source-catholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/opensourcecatholic"><i class="fab fa-github"></i> <span class="username">opensourcecatholic</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/oscatholic"><i class="fab fa-twitter"></i> <span class="username">oscatholic</span></a>
+
+          </li>
+          
+
+          <li>
+            <a href="https://catholicdevs.slack.com"><i class="fab fa-slack"></i> <span class="username">catholicdevs</span></a>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p>Helping Catholic developers and organizations involved in software and web development find effective solutions for spreading the Gospel of Jesus Christ.
+</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <script id="dsq-count-scr" src="//opensourcecatholic.disqus.com/count.js" async></script>
+  </body>
+
+</html>

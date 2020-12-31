@@ -6,9 +6,197 @@
 </description>
     <link>http://www.opensourcecatholic.com/</link>
     <atom:link href="http://www.opensourcecatholic.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Dec 2020 04:08:58 +0000</pubDate>
-    <lastBuildDate>Sun, 20 Dec 2020 04:08:58 +0000</lastBuildDate>
+    <pubDate>Thu, 31 Dec 2020 19:44:40 +0000</pubDate>
+    <lastBuildDate>Thu, 31 Dec 2020 19:44:40 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>The Tale of the Episode Numbers Bug</title>
+        <description>&lt;p&gt;One of the ways I put my talents as a software developer to use for the church
+is I maintain the &lt;a href=&quot;https://catholicstuffpodcast.com&quot;&gt;Catholic Stuff You Should
+Know&lt;/a&gt; website. I love reading stories about
+interesting bugs other developers have encountered, so I thought I’d share my
+own story about a bug I recently fixed on
+&lt;a href=&quot;https://catholicstuffpodcast.com&quot;&gt;catholicstuffpodcast.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To understand the bug, it will be helpful to have a little bit of the backstory.
+The Catholic Stuff You Should Know website was
+&lt;a href=&quot;https://web.archive.org/web/20160331001430/http://catholicstuffpodcast.com/&quot;&gt;originally&lt;/a&gt;
+built with &lt;a href=&quot;https://wordpress.org/&quot;&gt;WordPress&lt;/a&gt;.  In 2016, I migrated the website
+off of WordPress and onto &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; (which is what the
+site still uses today). As part of that migration, I added episode numbers to
+all of our existing episodes to help keep things organized.&lt;/p&gt;
+
+&lt;p&gt;I even still have the simple PHP script I used to pull these episode numbers out
+of the audio filenames (which already had them) and add them to the Jekyll
+frontmatter for the episode so we could show the episode numbers on the website.
+It’s a little bit hacky, but it got the job done.&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$postFiles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;scandir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./_posts&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;foreach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$postFiles&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;.&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;..&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;nv&quot;&gt;$contents&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;file_get_contents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./_posts/&quot;&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;preg_match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/audio: '(\d&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;1,3&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;)-/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$contents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$matches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$matches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$number&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;nv&quot;&gt;$contents&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str_replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;title:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;number: &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$number&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;title:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$contents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;nb&quot;&gt;file_put_contents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./_posts/&quot;&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$contents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Recently, one of our listeners notified us that the episode numbers for some of
+our episodes from summer 2010 appeared to be incorrect. I took a peek, and sure
+enough, the listener was right!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/CSYSK-misnumbered-episodes.png&quot; alt=&quot;Misnumbered Catholic Stuff You Should Know
+Episodes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I looked around a little more and compiled this list of our first 24 episodes,
+as they appeared on our website.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;06 Jan 2010 · #1 Stylites
+12 Jan 2010 · #2 Indulgences
+15 Jan 2010 · #3 Prayer, Contemplation, and Liturgy
+20 Jan 2010 · #4 Tetragrammaton
+25 Jan 2010 · #5 Le Grande Chartreuse
+28 Jan 2010 · #6 Eutrapelia and The Risus Paschalis
+03 Feb 2010 · #7 Who Punched Arius?
+09 Feb 2010 · #008 Cecchina Cabrini
+18 Feb 2010 · #009 Ash Wednesday
+25 Feb 2010 · #8 Ethiopian Christianity
+03 Mar 2010 · #9 Campion's Brag
+11 Mar 2010 · #10 Gregorian Chant
+01 Apr 2010 · #11 Tenebrae
+09 Apr 2010 · #12 The Holy Sepulcher
+16 Apr 2010 · #13 Bona Coniugali
+23 Apr 2010 · #14 How to Make a Priest
+24 May 2010 · #15 Skellig Michael
+01 Jun 2010 · #019 Abstinence
+01 Jun 2010 · #018 Schisms
+15 Jun 2010 · #16 Quiz Show
+14 Sep 2010 · #17 Eros and Agape
+21 Sep 2010 · #18 New Translation of the Mass
+28 Sep 2010 · #19 When Bad Popes Go Good
+05 Oct 2010 · #20 Peter's Bones
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you can correctly identify the bug from that list, well done! And if you
+can’t… Neither could I, initially. I was perplexed – there’s nothing
+complicated about the way our episode numbers work. We simply pull them from the
+YAML frontmatter for the jekyll blog post. From this initial list I had
+compiled, it looked like whatever was assigning episode numbers had somehow
+ignored a few episodes in the numbering.&lt;/p&gt;
+
+&lt;p&gt;Because this is a Jekyll site, each “episode” is just a “post”, which is just a
+markdown file in a folder in the repository. I broke out some Unix tools to try
+to pin down the problem. As I write this, the most recent episode on our website
+is #471. And that matches the number of files in our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ls _posts/*.md | wc -l
+471
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Well, it’s good news that our total number of episodes matches the current
+episode number. But what the heck is going on then? Knowing that our frontmatter
+uses a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;number:&lt;/code&gt; key for episode numbers, I tried this:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ cat _posts/*.md | grep &quot;number:&quot; | cut -f 2 -d ' ' | sort -n
+001
+002
+003
+...
+469
+470
+471
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;At a glance, that list looks correct. Let’s look at all frontmatter “source” for
+all the numbers for all episodes from 2010.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ grep &quot;number:&quot; _posts/2010-*
+_posts/2010-01-06-stylites.md:number: 001
+_posts/2010-01-12-indulgences.md:number: 002
+_posts/2010-01-15-prayer-contemplation-and-liturgy.md:number: 003
+_posts/2010-01-20-tetragrammaton.md:number: 004
+_posts/2010-01-25-le-grande-chartreuse.md:number: 005
+_posts/2010-01-28-eutrapelia-and-the-risus-paschalis.md:number: 006
+_posts/2010-02-03-who-punched-arius.md:number: 007
+_posts/2010-02-09-cecchina-cabrini.md:number: 008
+_posts/2010-02-18-ash-wednesday.md:number: 009
+_posts/2010-02-25-ethiopian-christianity.md:number: 010
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Everything’s apparently correct!&lt;/p&gt;
+
+&lt;p&gt;Still confused, I started looking at a specific post in more detail. I started
+with February 2010, the first month where broken posts show up. And I noticed
+that the “Ethiopian Christianity” episode was showing number 8 on the site but
+the frontmatter was number 10:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Ethiopian&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Christianity'&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;010&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Can you spot the bug? Our episode numbers were padded with zeros - a common
+practice that makes them sort correctly in filenames. (Remember, I initially
+pulled these episode numbers from our audio filenames.) But in this case, Ruby’s
+YAML parser was interpreting the number as an octal number because of the
+leading 0!&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;irb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'yaml'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;irb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;YAML&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;---&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;number: 010&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;number&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Fortunately for us, this ceases to be a problem after episode 100 (when we no
+longer have any leading zeros). So our most recent 371 episodes are numbered
+correctly. But some episodes between 1 and 100 have incorrect numbering. In
+fact, &lt;em&gt;most do&lt;/em&gt;. All numbers between 7 and 100 that are valid octal numbers will
+be incorrect because only numbers 1-7 have the same representation in octal and
+base 10. Some numbers, like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;009&lt;/code&gt;, don’t parse correctly as an octal number. I
+think, in this case, the YAML parser falls back to a string, which is why the
+leading zeros showed up on the web for these numbers.&lt;/p&gt;
+
+&lt;p&gt;Although the problem was hard to identify, The fix is easy – we just need to
+remove the leading zeros from our YAML!&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s/number: [0]*\([1-9]*\)/number: \1/'&lt;/span&gt; _posts/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So that’s how we found and fixed an episode numbering but for the Catholic Stuff
+You Should Know website. I hope you enjoyed the story. This wasn’t the first bug
+I’ve seen related to parsing octals, and it probably won’t be the last! So it’s
+good to remember this can happen any time you see a leading zero on a number -
+particularly number literals in YAML or code. And despite this small bug,
+working with Jekyll for the last 4 years has been a pleasure overall.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Catholic Stuff You Should Know is a weekly podcast that explores Catholic
+topics. Learn more at
+&lt;a href=&quot;https://catholicstuffpodcast.com/#about&quot;&gt;catholicstuffpodcast.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Dec 2020 19:30:00 +0000</pubDate>
+        <link>http://www.opensourcecatholic.com/2020/the-tale-of-the-episode-numbers-bug</link>
+        <guid isPermaLink="true">http://www.opensourcecatholic.com/2020/the-tale-of-the-episode-numbers-bug</guid>
+        
+        
+        <category>website</category>
+        
+        <category>jekyll</category>
+        
+        <category>podcast</category>
+        
+        <category>bugs</category>
+        
+      </item>
     
       <item>
         <title>Semina Verbi: an online encylopedia of the influence of the Gospel on human culture</title>
@@ -340,33 +528,6 @@ Vic&lt;/p&gt;
         <pubDate>Thu, 03 Jul 2014 00:00:00 +0000</pubDate>
         <link>http://www.opensourcecatholic.com/2014/maptiming-a-web-app-that-adds-time-to-maps</link>
         <guid isPermaLink="true">http://www.opensourcecatholic.com/2014/maptiming-a-web-app-that-adds-time-to-maps</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>One of the Best Days of my Life...</title>
-        <description>&lt;p&gt;Where to begin? So much has happened; my life has changed. I guess there’s no where better to start than the beginning.&lt;/p&gt;
-
-&lt;p&gt;I became addicted to drugs around the age of 21, and continued to use drugs more and more all the way up to The Night. By that I mean the night I walked into a St. Catherine’s in Morgan Hill, CA. It was Christmas Eve, my family was all gathered at my sister’s in Gilroy for the occasion, and I was sent out to go to the store for some last minute items.&lt;/p&gt;
-
-&lt;p&gt;I had never really considered religion before, except to ponder and accept that my children would be Catholic, as their mother was (I had dated two different Catholic girls, one for 3 years, and one for almost 9 years, so I was pretty sure I would marry a Catholic). I had been attending various support groups for some time now (AA, NA, and the like), as well as been in and out of several rehabs, all with varying successes, and failures. I felt helpless and alone.&lt;/p&gt;
-
-&lt;p&gt;Upon walking out of Safeway and to my truck, the church was beckoning. I can’t quite describe it fully except to say that it felt warm, and welcome. Something I hand’t felt in a long time. I quietly slipped in the doors and stood in the back as the Priest gave his sermon. I didn’t know all the peoples responses, or what all the symbolism meant, but I was in definite aw of beauty inside the church. At the end of Mass I went to leave when a perfect stranger put out his hand and asked who I was. Before I knew it there were three or four more people gathered around as I told my story, the one I’m telling you now, except focusing much more on the time of addiction.&lt;/p&gt;
-
-&lt;p&gt;To my surprise I wasn’t shunned away, like had happened so many times before, but instead was welcomed with warm greetings, hugs, and even people praising the Lord for a Miracle. We al said our goodbyes and I went back to my sister’s to finish out the Christmas holiday with my family. I didn’t speak much of what had occurred at the time; I was still processing it myself.&lt;/p&gt;
-
-&lt;p&gt;When I arrived at home, in Trinidad, CA, a small fishing village far north of the Bay Area, I couldn’t get that experience out of my mind. I began to explore various churches of all denominations, when Robert, my church Sponsor, came into my life. Before long I knew that there was no place for me but Catholicism. I began RCIA and was baptized on Easter last year (2013).&lt;/p&gt;
-
-&lt;p&gt;I thank the Lord every day for showing me the light, for bringing Robert into my life, and for showing me how to forgive, and be forgiven. I ask our  Lord every day to continue to bless us all, and to show me how to live my life more like he would want me to: to walk in his footsteps, to be more honest, to care for others, and to be a better Catholic.&lt;/p&gt;
-
-&lt;p&gt;I just wanted to share that short testament of what is was like for me, and how great God’s glory can be!&lt;/p&gt;
-
-&lt;p&gt;Josh Madrone&lt;/p&gt;
-</description>
-        <pubDate>Fri, 28 Mar 2014 00:00:00 +0000</pubDate>
-        <link>http://www.opensourcecatholic.com/2014/one-of-the-best-days-of-my-life</link>
-        <guid isPermaLink="true">http://www.opensourcecatholic.com/2014/one-of-the-best-days-of-my-life</guid>
         
         
       </item>
