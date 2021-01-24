@@ -133,7 +133,7 @@
 <div class="post-content" itemprop="articleBody">
   <p>If you are using mega menus, like we use on archstl.org, then you need to be careful when posting Flash content to your website; if the content is anywhere around one of the mega menu flyouts, then the flash content will cover the menu in certain browsers (notably, IE and older FireFox versions).</p>
 <p>To fix this, add the following code to your flash object embed:</p>
-<p>Inside the &lt;object&gt; tags, with your other &lt;param&gt; tags: <code><param name="wmode" value="transparent"></code></p>
+<p>Inside the &lt;object&gt; tags, with your other &lt;param&gt; tags: <code><param name="wmode" value="transparent" /></code></p>
 <p>Inside the &lt;embed&gt; tag, with the other value:key pairs: <code>wmode="transparent"</code></p>
 
   <a href="/2010/stupid-flash-making-menus-appear-over-flash-video-content">Continue reading</a>
@@ -160,7 +160,7 @@
 <div class="post-content" itemprop="articleBody">
   <p>A very simple way to allow a view to display as if it were a page in an organic group on your Drupal site: Simply paste the code below in your view's Header or Footer, using the PHP Code input format.</p>
 <p><?php og_set_group_context(node_load(46405)); ?></p>
-<p>Note: the node ID inside node_load() must be set to the group into which you'd like the view to display. To get this to function perfectly (as of OG 2.1), you might need to apply the patch in this issue on drupal.org: <a href="http://drupal.org/node/649630#comment-2987518">Group theme doesn't display on Views that</a>...</p>
+<p>Note: the node ID inside node_load() must be set to the group into which you'd like the view to display. To get this to function perfectly (as of OG 2.1), you might need to apply the patch in this issue on drupal.org: <a href="http://drupal.org/node/649630#comment-2987518">Group theme doesn't display on Views that...</a></p>
   <a href="/2010/set-a-views-context-inside-an-organic-group">Continue reading</a>
 </div>
 
@@ -186,8 +186,8 @@
   <p>Reposted from Life is a Prayer.com:</p>
 <blockquote>
 <p>Today Google announced they'd help advance web typography by hosting open-sourced fonts on their CDN, and by giving the code to easily embed fonts on websites on a new website, the <a href="http://code.google.com/webfonts">Google Font Directory</a>.</p>
-<p>It was amazingly simple: just copy the &lt;link&gt; code and paste it in your template's header, then set any element on your page to use the Google-provided font(s). I started using <a href="http://code.google.com/webfonts/family?family=OFL+Sorts+Mill+Goudy+TT">OFL Sorts Mill Goudy TT</a>, and I like the look (except for the lower-case y, which seems</p>
-</blockquote>...
+<p>It was amazingly simple: just copy the &lt;link&gt; code and paste it in your template's header, then set any element on your page to use the Google-provided font(s). I started using <a href="http://code.google.com/webfonts/family?family=OFL+Sorts+Mill+Goudy+TT">OFL Sorts Mill Goudy TT</a>, and I like the look (except for the lower-case y, which seems...</p>
+</blockquote>
   <a href="/2010/googles-new-open-font-library">Continue reading</a>
 </div>
 
@@ -234,8 +234,9 @@
 </h2>
 
 <div class="post-content" itemprop="articleBody">
-  <p>Over on my personal blog, I write about <a href="http://www.lifeisaprayer.com/articles/web-design/post-photos-from-ipad-to-drupal">how to post photos from the iPad to ImageFields on a Drupal site</a>. I intend to do so quite a bit this weekend on my visit to New York City (this will be my first trip without a laptop—yikes!).</p>
-<p>I basically use Dropbox as a middleman to get a URL for the photo, which I can pass to FileField Sources so my Drupal site can use the photo. Unfortunately, for the time being, Mobile Safari doesn't support file select fields :-(...</p>
+  <p>Over on my personal blog, I write about <a href="http://www.lifeisaprayer.com/articles/web-design/post-photos-from-ipad-to-drupal">how to post photos from the iPad to ImageFields on a Drupal site</a>. I intend to do so quite a bit this weekend on my visit to New York City (this will be my first trip without a laptop&mdash;yikes!).</p>
+<p>I basically use Dropbox as a middleman to get a URL for the photo, which I can pass to FileField Sources so my Drupal site can use the photo. Unfortunately, for the time being, Mobile Safari doesn&#39;t support file select fields :-(</p>
+
   <a href="/2010/post-photos-to-your-drupal-site-from-the-ipad">Continue reading</a>
 </div>
 
