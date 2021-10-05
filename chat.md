@@ -25,25 +25,27 @@ To join CatholicDevs on Slack, you must request an invitation.
 
 ## IRC
 
-Below, you can login to the public Catholic chat channel on the Freenode's IRC (Internet Relay Chat) system. Simply type in a nickname and click the "Connect" button.
+Below, you can login to the public Catholic chat channel on the [Libera.Chat](https://libera.chat/) IRC (Internet Relay Chat) system. Simply type in a nickname and click the "Connect" button.
 
 Scroll down for more details, and to find out other ways to connect.
 
-<iframe src="https://webchat.freenode.net/?channels=%23%23catholic" width="675" height="400"></iframe>
+<iframe src="https://web.libera.chat/##catholic" width="675" height="490"></iframe>
 
 ### What is IRC?
 
 _From [Wikipedia](https://en.wikipedia.org/wiki/Internet_Relay_Chat)_: Internet Relay Chat (IRC) is a form of real-time Internet text messaging (chat) or synchronous conferencing. It is mainly designed for group communication in discussion forums, called channels, but also allows one-to-one communication via private message as well as chat and data transfers via Direct Client-to-Client.
 
+The [Libera.Chat Documentation](https://libera.chat/guides/basics) is a good place to start if you want to learn more.
+
 ### How do I join the ##catholic channel?
 
-Type in `/join ##catholic` from within any IRC client. Soon you'll be speaking with many others like you, who are interested in spreading the Catholic faith through technology.
+Connect to the `irc.libera.chat` server and type in `/join ##catholic` from within any IRC client. Soon you'll be speaking with many others like you, who are interested in spreading the Catholic faith through technology.
 
 ### Alternate Ways to Access IRC
 
 There are many ways to join a channel in IRC:
 
-  - Use the web client (either above, or at <https://webchat.freenode.net/>).
+  - Use the web client (either above, or at <https://web.libera.chat/##catholic>).
   - Use an IRC client for your Mac or PC (a good list of [IRC clients](https://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_clients) on Wikipedia).
 
 ### Some Cool IRC Tricks
