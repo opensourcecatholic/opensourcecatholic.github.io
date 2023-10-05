@@ -214,7 +214,7 @@ First, we set up a field_formatter and theme function for parish event times (th
     <span class="p">}</span>
 
     <span class="c1">// Node contains taxonomy</span>
-    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">taxonomy</span><span class="p">))</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">taxonomy</span><span class="p">))</span> <span class="p">{</span>
       <span class="nv">$time_data</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
       <span class="c1">// Add event type (if not "Normal Service")</span>
       <span class="k">foreach</span> <span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">taxonomy</span> <span class="k">as</span> <span class="nv">$term</span><span class="p">)</span> <span class="p">{</span>
@@ -223,15 +223,15 @@ First, we set up a field_formatter and theme function for parish event times (th
         <span class="p">}</span>
       <span class="p">}</span>
       <span class="c1">// Also add event language (if not "English")</span>
-      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_lang</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">])</span> <span class="k">and</span> <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_lang</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'English'</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_lang</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">])</span> <span class="k">and</span> <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_lang</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'English'</span><span class="p">)</span> <span class="p">{</span>
         <span class="nv">$time_data</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_lang</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">];</span>
       <span class="p">}</span>
       <span class="c1">// Add event location (if any) from the field_event_loc</span>
-      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_loc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]))</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_loc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]))</span> <span class="p">{</span>
         <span class="nv">$time_data</span><span class="p">[]</span> <span class="o">=</span> <span class="s1">'&lt;em&gt;in '</span> <span class="mf">.</span> <span class="nv">$node</span><span class="o">-&gt;</span><span class="n">field_event_loc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'value'</span><span class="p">]</span> <span class="mf">.</span> <span class="s1">'&lt;/em&gt;'</span><span class="p">;</span>
       <span class="p">}</span>
       <span class="c1">// Slap it on the end of the time</span>
-      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$time_data</span><span class="p">))</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$time_data</span><span class="p">))</span> <span class="p">{</span>
         <span class="nv">$time</span> <span class="mf">.</span><span class="o">=</span> <span class="s1">' ('</span><span class="mf">.</span><span class="nb">join</span><span class="p">(</span><span class="s1">' - '</span><span class="p">,</span> <span class="nv">$time_data</span><span class="p">)</span><span class="mf">.</span><span class="s1">')'</span><span class="p">;</span>
       <span class="p">}</span>
     <span class="p">}</span>
@@ -306,7 +306,7 @@ Inside our <code class="language-plaintext highlighter-rouge">dir_migrate.module
 <span class="k">function</span> <span class="n">dir_migrate_views_data_alter</span><span class="p">(</span><span class="o">&amp;</span><span class="nv">$data</span><span class="p">)</span> <span class="p">{</span>
   <span class="nv">$data</span><span class="p">[</span><span class="s1">'node_data_field_event_start2'</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">[</span><span class="s1">'node_data_field_event_start'</span><span class="p">];</span>
   <span class="nv">$field</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nv">$data</span><span class="p">[</span><span class="s1">'node_data_field_event_start2'</span><span class="p">][</span><span class="s1">'field_event_start_value'</span><span class="p">];</span>
-  <span class="nb">unset</span><span class="p">(</span><span class="nv">$field</span><span class="p">[</span><span class="s1">'field'</span><span class="p">],</span> <span class="nv">$field</span><span class="p">[</span><span class="s1">'argument'</span><span class="p">],</span> <span class="nv">$field</span><span class="p">[</span><span class="s1">'sort'</span><span class="p">]);</span>
+  <span class="k">unset</span><span class="p">(</span><span class="nv">$field</span><span class="p">[</span><span class="s1">'field'</span><span class="p">],</span> <span class="nv">$field</span><span class="p">[</span><span class="s1">'argument'</span><span class="p">],</span> <span class="nv">$field</span><span class="p">[</span><span class="s1">'sort'</span><span class="p">]);</span>
   <span class="nv">$field</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span> <span class="o">=</span> <span class="nf">t</span><span class="p">(</span><span class="s1">'Start Time (Formatted)'</span><span class="p">);</span>
   <span class="nv">$field</span><span class="p">[</span><span class="s1">'help'</span><span class="p">]</span> <span class="o">=</span> <span class="nf">t</span><span class="p">(</span><span class="s1">'Filter handler that translates from int storage to time of day'</span><span class="p">);</span>
   <span class="nv">$field</span><span class="p">[</span><span class="s1">'filter'</span><span class="p">][</span><span class="s1">'handler'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'dir_migrate_views_handler_filter_inttime'</span><span class="p">;</span>
@@ -397,7 +397,7 @@ Inside our <code class="language-plaintext highlighter-rouge">dir_migrate.module
 <span class="k">function</span> <span class="n">int_time_int_as_time</span><span class="p">(</span><span class="nv">$int</span><span class="p">)</span> <span class="p">{</span>
   <span class="nv">$string</span> <span class="o">=</span> <span class="p">(</span><span class="n">string</span><span class="p">)</span> <span class="nv">$int</span><span class="p">;</span>
 
-  <span class="k">if</span> <span class="p">(</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$string</span><span class="p">))</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$string</span><span class="p">))</span> <span class="p">{</span>
     <span class="k">return</span> <span class="s1">''</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="k">while</span> <span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$string</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
@@ -413,7 +413,7 @@ Inside our <code class="language-plaintext highlighter-rouge">dir_migrate.module
     <span class="nv">$ex</span> <span class="o">=</span> <span class="s1">'AM'</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="nv">$hour</span> <span class="o">=</span> <span class="nb">ltrim</span><span class="p">(</span><span class="nv">$hour</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">);</span>
-  <span class="nv">$hour</span> <span class="o">=</span> <span class="nb">empty</span><span class="p">(</span><span class="nv">$hour</span><span class="p">)</span> <span class="o">?</span> <span class="s1">'12'</span> <span class="o">:</span> <span class="nv">$hour</span><span class="p">;</span>
+  <span class="nv">$hour</span> <span class="o">=</span> <span class="k">empty</span><span class="p">(</span><span class="nv">$hour</span><span class="p">)</span> <span class="o">?</span> <span class="s1">'12'</span> <span class="o">:</span> <span class="nv">$hour</span><span class="p">;</span>
 
   <span class="k">return</span> <span class="s2">"</span><span class="nv">$hour</span><span class="s2">:</span><span class="nv">$minute</span><span class="s2"> </span><span class="nv">$ex</span><span class="s2">"</span><span class="p">;</span>
 <span class="p">}</span>
