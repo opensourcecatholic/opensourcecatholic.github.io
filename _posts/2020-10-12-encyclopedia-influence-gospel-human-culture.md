@@ -3,7 +3,7 @@ layout: post
 title:  "Semina Verbi: an online encylopedia of the influence of the Gospel on human culture"
 date:   2020-10-12 15:56:00 +0200
 categories: [bible, evangelization, culture]
-author: JohnRDOrazio
+author: johnrdorazio
 comments: true
 ---
 
