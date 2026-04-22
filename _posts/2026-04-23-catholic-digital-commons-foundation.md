@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A new chapter for open source Catholic: announcing the Catholic Digital Commons Foundation"
-date:   2026-04-22 10:00:00 +0200
+date:   2026-04-23 01:31:00 +0200
 categories: [community, opensource, foundation]
 author: johnrdorazio
 comments: true
