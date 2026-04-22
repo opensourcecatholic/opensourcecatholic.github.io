@@ -1,0 +1,10 @@
+# Rules: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+config:
+  default: true
+  MD013: false  # line-length — too disruptive for prose content
+  MD033: false  # no-inline-html — Jekyll posts frequently embed raw HTML
+
+ignores:
+  - 'vendor/**'
+  - '_site/**'
+  - 'node_modules/**'

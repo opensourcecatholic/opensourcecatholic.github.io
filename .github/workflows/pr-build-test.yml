@@ -1,0 +1,34 @@
+name: PR build test
+
+on:
+  pull_request:
+    paths:
+      - '.ruby-version'
+      - 'Gemfile'
+      - 'Gemfile.lock'
+      - '_config.yml'
+      - '_data/**'
+      - '_includes/**'
+      - '_layouts/**'
+      - '_plugins/**'
+      - '.github/workflows/pr-build-test.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: ruby:3.4.9-bookworm
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock', '.ruby-version') }}
+
+      - name: Install Ruby dependencies.
+        run: |
+          gem install bundler
+          bundle install --path vendor/bundle
+
+      - name: Build static site with Jekyll.
+        run: bundle exec jekyll build
