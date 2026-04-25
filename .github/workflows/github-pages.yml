@@ -16,18 +16,8 @@ jobs:
     container: ruby:3.2.2-bookworm
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/cache@v1
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
 
-      - name: Install Ruby dependencies.
-        run: |
-          gem install bundler
-          bundle install --path vendor/bundle 
-
-      - name: Build static site with Jekyll.
-        run: bundle exec jekyll build
+      - uses: ./.github/actions/jekyll-build
 
       - name: Deploy static site to gh-pages branch.
         uses: peaceiris/actions-gh-pages@v3

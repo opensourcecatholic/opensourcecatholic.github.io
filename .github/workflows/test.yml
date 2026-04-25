@@ -1,0 +1,19 @@
+# GitHub Action for Jekyll
+#
+# Runs jekyll build on pull requests to verify that they build.
+
+name: Test Build
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container: ruby:3.2.2-bookworm
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: ./.github/actions/jekyll-build
