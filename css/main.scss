@@ -3,6 +3,8 @@
 ---
 @charset "utf-8";
 
+@use "sass:color";
+@use "sass:math";
 
 
 // Our variables
@@ -21,8 +23,8 @@ $brand-color:      #2a7ae2;
 $osc-color:        #1583bd;
 
 $grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-light: color.adjust($grey-color, $lightness: 40%);
+$grey-color-dark:  color.adjust($grey-color, $lightness: -25%);
 
 // Width of the content area
 $content-width:    800px;
@@ -35,8 +37,8 @@ $on-laptop:        800px;
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
+//         padding-right: calc($spacing-unit / 2);
+//         padding-left: calc($spacing-unit / 2);
 //     }
 // }
 @mixin media-query($device) {
