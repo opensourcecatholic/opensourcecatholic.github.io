@@ -14,6 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     container: ruby:3.4
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
 
       - uses: ./.github/actions/jekyll-build
