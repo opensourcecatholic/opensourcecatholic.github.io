@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  "A new chapter for open source Catholic: announcing the Catholic Digital Commons Foundation"
+title:  "A new chapter for Open Source Catholic: announcing the Catholic Digital Commons Foundation"
 date:   2026-04-23 01:31:00 +0200
 categories: [community, opensource, foundation]
 author: johnrdorazio
 comments: true
 ---
+
+After years of conversations, drafts, and quiet collaboration behind the scenes, I'm glad to be able to share some news with this community: the **Catholic Digital Commons Foundation** has been formally incorporated, and Open Source Catholic is entering a new chapter alongside it. What follows is the story of how we got here — where we started, the people who made it possible, what the new foundation is (and isn't), and an invitation for those of you who have been reading along to take the next step with us.
 
 ## Where we started
 
